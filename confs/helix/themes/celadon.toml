@@ -1,0 +1,129 @@
+# Syntax highlighting
+# -------------------
+# Green for things that do stuff (functions).
+"function" = "green"
+
+# Cold for things that are stuff and often stay constant. Also constructors to differentiate them from functions.
+"type" = "cyan"
+"constructor" = "cyan"
+"namespace" = "cyan"
+"constant" = "blue"
+"string" = "dark-cyan"
+
+# Warm colors for things that are stuff but often don't stay constant
+"variable" = "sand"
+"attribute" = "yellow"
+"variable.parameter" = "yellow"
+"variable.other.member" = "yellow"
+
+# Orange for keywords, language-specific stuff and operators
+"keyword" = "orange"
+"variable.builtin" = "orange"
+"label" = "orange"
+"tag" = "orange"
+"operator" = "orange"
+
+# Dark punctuation
+"punctuation" = "rock"
+
+
+# Markup and other non-syntax stuff
+# ---------------------------------------
+"special" = "white" # fuzzy highlight
+"comment" = { fg = "dark-fg", modifiers = ["italic"] }
+
+"markup.heading.marker" = { fg = "orange", modifiers = ["bold"] }
+"markup.heading" = { fg = "sand", modifiers = ["bold"] }
+"markup.list" = "orange"
+"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "yellow", modifiers = ["italic"] }
+"markup.link.url" = { fg = "dark-cyan", modifiers = ["underlined"] }
+"markup.link.text" = "cyan"
+"markup.quote" = "green"
+"markup.raw" = "green"
+
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "blue"
+
+# User Interface
+# --------------
+"ui.background" = { fg = "dark-fg", bg = "dark-bg" }
+
+"ui.linenr" = { fg = "dark-fg" }
+"ui.linenr.selected" = { fg = "yellow", bg = "faint-hl" }
+
+"ui.statusline" = { fg = "light-fg", bg = "light-bg" }
+"ui.statusline.inactive" = { fg = "dark-fg", bg = "faint-hl" }
+"ui.statusline.normal" = { fg = "dark-bg", bg = "dark-cyan", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
+"ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
+
+# TODO
+"ui.bufferline" = { fg = "dark-fg", bg = "dark-bg" }
+"ui.bufferline.active" = { fg = "light-fg", bg = "light-bg" }
+
+# hover
+"ui.popup" = { fg = "light-fg", bg = "light-bg" }
+# whichkey
+"ui.popup.info" = { fg = "light-fg", bg = "faint-hl" }
+# splits
+"ui.window" = { fg = "light-bg", bg = "dark-bg" }
+# command description
+"ui.help" = { fg = "light-fg", bg = "faint-hl" }
+
+# base text (including markdown)
+"ui.text" = "light-fg" 
+# picker hl
+"ui.text.focus" = { fg = "dark-bg", bg = "orange" }
+
+"ui.virtual" = "dark-fg"
+"ui.virtual.ruler" = "dark-fg"
+"ui.virtual.indent-guide" = "light-bg"
+"ui.virtual.whitespace" = "light-fg"
+
+"ui.selection" = { fg = "dark-bg", bg = "dark-fg" }
+"ui.selection.primary" = { fg = "dark-bg", bg = "orange" }
+
+"ui.cursor" = { fg = "dark-bg", bg = "light-fg" }
+"ui.cursor.match" = { fg = "yellow", bg = "light-bg", modifiers = ["underlined", "bold"] }
+"ui.cursor.primary" = { fg = "dark-bg", bg = "yellow" }
+
+"ui.cursorline" = { bg = "faint-hl" }
+
+# TODO
+"ui.highlight" = { fg = "sand", bg = "light-bg" }
+
+"ui.menu" = { fg = "light-fg", bg = "light-bg" }
+"ui.menu.selected" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"] }
+
+diagnostic = { modifiers = ["underlined"] }
+
+error = "red"
+warning = "yellow"
+info = "green"
+hint = "cyan"
+
+[palette]
+# Grays
+dark-bg        = "#1E1E1E"
+faint-hl       = "#282828"
+light-bg       = "#404040"
+dark-fg        = "#6E6E6E"
+light-fg       = "#BBBBBB"
+white          = "#FFFFFF"
+
+# Syntax colors
+green          = "#93B649"
+cyan           = "#83CDA4"
+dark-cyan      = "#5E9689"
+blue           = "#5BAEEA"
+yellow         = "#FFDE82"
+# yellow         = "#EDD790"
+orange         = "#DA7E42"
+sand           = "#F1ECCE"
+rock           = "#8FA096"
+red            = "#FE5F55"
+
+# Palette:
+# https://coolors.co/5e9689-5baeea-83cda4-93b649-da7e42-ffde82-f1ecce

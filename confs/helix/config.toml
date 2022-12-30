@@ -1,0 +1,34 @@
+theme = "celadon"
+
+[editor]
+line-number = "relative"
+mouse = false
+idle-timeout = 0
+completion-trigger-len = 1
+color-modes = true
+cursorline = true
+bufferline = "always"
+
+[editor.statusline]
+left = ["mode", "file-name", "spinner"]
+right = ["diagnostics", "selections", "position-percentage"]
+
+[editor.lsp]
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+
+[editor.file-picker]
+hidden = false
+# ignore = false
+# git-ignore = false
+
+[editor.indent-guides]
+render = true
+
+[keys.normal]
+"C-l" = ":bn"
+"C-h" = ":bp"
+"space" = { f = "file_picker_in_current_directory" }
