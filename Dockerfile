@@ -27,7 +27,7 @@ RUN pacman -S --noconfirm \
 # Node
 RUN npm install -g typescript typescript-language-server
 
-RUN git clone --depth=1 https://github.com/eemilhaa/kontti
+RUN git clone --depth=1 https://github.com/eemilhaa/kontti /dotfiles
 
 RUN mkdir -p ~/.config
 
