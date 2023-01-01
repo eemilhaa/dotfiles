@@ -8,6 +8,7 @@ RUN pacman -S --noconfirm \
     helix \
     neofetch \
     nodejs \
+    npm \
     openssh \
     python \
     python-pip \
