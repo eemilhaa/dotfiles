@@ -24,8 +24,10 @@ RUN pacman -S --noconfirm \
 #     # && zsh -c "cargo install lsd rm-improved" \
 #     && rm rustup-init
 
-# RUN git clone --depth=1 https://github.com/...
-COPY . /dotfiles/
+# Node
+RUN npm install -g typescript typescript-language-server
+
+RUN git clone --depth=1 https://github.com/eemilhaa/kontti
 
 RUN mkdir -p ~/.config
 
