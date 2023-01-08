@@ -37,7 +37,6 @@ RUN npm install -g typescript typescript-language-server
 # poetry
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
-
 # git
 RUN git config --global user.name "eemilhaa" \
     && git config --global user.email "eemil.haapanen@gmail.com" \

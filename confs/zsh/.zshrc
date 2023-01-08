@@ -2,14 +2,26 @@
 autoload -Uz compinit && compinit
 
 # env
-export VISUAL=hx
-export EDITOR="$VISUAL"
 export COLORTERM="truecolor"
 export HISTFILE="$HOME/.zsh_history"
 export SHELL="/bin/zsh"
 export COLORTERM="truecolor"
+export PATH="/root/.local/bin:$PATH"
 HISTSIZE=1000
 SAVEHIST=1000
+
+# pick editor
+if hash helix 2>/dev/null
+then
+  alias hx="helix"
+  export VISUAL=helix
+elif hash hx 2>/dev/null
+then
+  export VISUAL=hx
+else
+  export VISUAL=vi
+fi
+export EDITOR="$VISUAL"
 
 # opts
 setopt hist_save_no_dups hist_ignore_dups
@@ -36,17 +48,6 @@ alias gl="git log --graph --abbrev-commit --oneline"
 alias db="distrobox"
 # less ui in zellij
 alias zel="zellij -l compact"
-# pick editor
-if hash helix 2>/dev/null
-then
-  alias hx="helix"
-  export VISUAL=helix
-elif hash hx 2>/dev/null
-then
-  export VISUAL=hx
-else
-  export VISUAL=vi
-fi
 
 # keys
 bindkey "^[[1;5C" forward-word
