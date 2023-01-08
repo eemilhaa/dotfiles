@@ -1,21 +1,29 @@
 FROM docker.io/library/archlinux:latest
 
-RUN pacman -Syyu --noconfirm
-RUN pacman-key --init
-RUN pacman -S --noconfirm \
-    curl \
-    git \
-    helix \
-    neofetch \
-    nodejs \
-    npm \
-    openssh \
-    python \
-    python-pip \
-    pyright \
-    starship \
-    zellij \
-    zsh
+RUN pacman -Syyu --noconfirm \
+    && pacman-key --init \
+    && pacman -S --noconfirm \
+        curl \
+        git \
+        helix \
+        neofetch \
+        nodejs \
+        npm \
+        openssh \
+        python \
+        python-pip \
+        pyright \
+        starship \
+        zellij \
+        zsh
+
+RUN git clone --depth=1 https://github.com/eemilhaa/kontti /dotfiles \
+    && mkdir -p ~/.config
+
+RUN ln -s /dotfiles/confs/helix ~/.config/ \
+    && ln -s /dotfiles/confs/zellij ~/.config/ \
+    && ln -s /dotfiles/confs/zsh/.zshrc ~/.zshrc && chsh -s /bin/zsh \
+    && ln -s /dotfiles/confs/starship/starship.toml ~/.config/starship.toml
 
 # Rust
 # RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rustup-init \
@@ -29,18 +37,6 @@ RUN npm install -g typescript typescript-language-server
 # poetry
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
-RUN git clone --depth=1 https://github.com/eemilhaa/kontti /dotfiles
-RUN mkdir -p ~/.config
-
-# helix
-RUN ln -s /dotfiles/confs/helix ~/.config/
-# zellij
-RUN ln -s /dotfiles/confs/zellij ~/.config/
-# zsh
-RUN ln -s /dotfiles/confs/zsh/.zshrc ~/.zshrc \
-    && chsh -s /bin/zsh
-# starship
-RUN ln -s /dotfiles/confs/starship/starship.toml ~/.config/starship.toml
 
 # git
 RUN git config --global user.name "eemilhaa" \
