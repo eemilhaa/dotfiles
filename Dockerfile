@@ -24,11 +24,12 @@ RUN pacman -S --noconfirm \
 #     # && zsh -c "cargo install lsd rm-improved" \
 #     && rm rustup-init
 
-# Node
+# node lsp
 RUN npm install -g typescript typescript-language-server
+# poetry
+RUN curl -sSL https://install.python-poetry.org | python3 -
 
 RUN git clone --depth=1 https://github.com/eemilhaa/kontti /dotfiles
-
 RUN mkdir -p ~/.config
 
 # helix
