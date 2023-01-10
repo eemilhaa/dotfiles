@@ -1,5 +1,6 @@
 FROM docker.io/library/archlinux:latest
 
+# Setup pacman, install system packages, clean cache
 RUN pacman -Syyu --noconfirm \
     && pacman-key --init \
     && pacman -S --noconfirm \
@@ -15,11 +16,14 @@ RUN pacman -Syyu --noconfirm \
         pyright \
         starship \
         zellij \
-        zsh
+        zsh \
+    && pacman -Scc --noconfirm
 
+# Get configs
 RUN git clone --depth=1 https://github.com/eemilhaa/kontti /dotfiles \
     && mkdir -p ~/.config
 
+# Symlink everything
 RUN ln -s /dotfiles/confs/helix ~/.config/ \
     && ln -s /dotfiles/confs/zellij ~/.config/ \
     && ln -s /dotfiles/confs/zsh/.zshrc ~/.zshrc && chsh -s /bin/zsh \
@@ -33,8 +37,11 @@ RUN ln -s /dotfiles/confs/helix ~/.config/ \
 #     # && zsh -c "cargo install lsd rm-improved" \
 #     && rm rustup-init
 
-# node lsp
-RUN npm install -g typescript typescript-language-server
+# npm installs and cache
+RUN npm install -g typescript typescript-language-server \
+    && npm install -g prettier \
+    && npm cache clean -f
+
 # poetry
 RUN curl -sSL https://install.python-poetry.org | python3 -
 

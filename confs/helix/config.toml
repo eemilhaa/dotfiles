@@ -7,6 +7,7 @@ idle-timeout = 0
 completion-trigger-len = 1
 color-modes = true
 cursorline = true
+auto-format = false
 bufferline = "always"
 
 [editor.statusline]
