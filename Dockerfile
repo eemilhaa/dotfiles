@@ -5,6 +5,7 @@ RUN pacman -Syyu --noconfirm \
     && pacman-key --init \
     && pacman -S --noconfirm \
         curl \
+        gcc \
         git \
         helix \
         neofetch \
