@@ -115,7 +115,7 @@ white          = "#FFFFFF"
 
 # Syntax colors
 green          = "#93B649"
-cyan           = "#83CDA4"
+cyan           = "#A2DEB4"
 dark-cyan      = "#5E9689"
 blue           = "#5BAEEA"
 yellow         = "#FFDE82"
@@ -126,4 +126,4 @@ rock           = "#8FA096"
 red            = "#FE5F55"
 
 # Palette:
-# https://coolors.co/5e9689-5baeea-83cda4-93b649-da7e42-ffde82-f1ecce
+# https://coolors.co/5e9689-5baeea-A2DEB4-93b649-da7e42-ffde82-f1ecce
