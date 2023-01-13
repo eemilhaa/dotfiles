@@ -40,7 +40,6 @@ RUN ln -s /dotfiles/confs/helix ~/.config/ \
 
 # npm installs and cache
 RUN npm install -g typescript typescript-language-server \
-    && npm install -g prettier \
     && npm cache clean -f
 
 # poetry
