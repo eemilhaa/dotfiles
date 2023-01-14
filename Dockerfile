@@ -1,6 +1,6 @@
 FROM docker.io/library/archlinux:latest
 
-# Setup pacman, install system packages, clean cache
+# Setup pacman, install packages, clean cache
 RUN pacman -Syyu --noconfirm \
     && pacman-key --init \
     && pacman -S --noconfirm \

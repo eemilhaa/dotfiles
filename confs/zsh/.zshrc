@@ -47,7 +47,7 @@ alias gs="git status"
 alias gl="git log --graph --abbrev-commit --oneline"
 alias db="distrobox"
 # less ui in zellij
-alias zel="zellij -l compact"
+alias zel="zellij --layout tabs"
 
 # keys
 bindkey "^[[1;5C" forward-word
