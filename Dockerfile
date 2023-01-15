@@ -18,6 +18,7 @@ RUN pacman -Syyu --noconfirm \
         starship \
         zellij \
         zsh \
+        zsh-syntax-highlighting \
     && pacman -Scc --noconfirm
 
 # Get configs
