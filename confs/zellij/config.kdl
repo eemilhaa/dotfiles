@@ -4,6 +4,7 @@ keybinds {
         bind "Alt l" { MoveFocusOrTab "Right"; }
         bind "Alt j" "Alt Down" { MoveFocus "Down"; }
         bind "Alt k" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt =" { ToggleFloatingPanes; }
     }
     tab {
         bind "n" { NewTab; }
@@ -16,6 +17,7 @@ ui {
     }
 }
 pane_frames false
+default_mode "locked"
 
 themes {
     default {
