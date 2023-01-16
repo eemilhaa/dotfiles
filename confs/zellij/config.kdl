@@ -11,26 +11,24 @@ keybinds {
         bind "x" { CloseTab; }
     }
 }
-ui {
-    pane_frames {
-        rounded_corners true
-    }
-}
 pane_frames false
 default_mode "locked"
 
 themes {
     default {
-        fg 64 64 64
-        bg 30 30 30
-        black 30 30 30
-        red 218 126 66
-        green 94 150 137
-        yellow 255 200 87
-        blue 94 150 137
-        magenta 218 126 66
-        cyan 94 150 137
-        white 110 110 110
-        orange 218 126 66
+        black "#1E1E1E"
+
+        red "#DA7E42"
+        magenta "#DA7E42"
+        orange "#DA7E42"
+
+        bg "#404040"
+        fg "#404040"
+        white "#404040"
+
+        green "#6E6E6E"
+        yellow "#6E6E6E"
+        blue "#6E6E6E"
+        cyan "#6E6E6E"
     }
 }
