@@ -5,7 +5,16 @@ layout {
 	        plugin location="zellij:compact-bar"
 	    }
 	}
-	tab name="editor" focus=true
+	tab_template name="hsplit" {
+		pane split_direction="horizontal" {
+			pane size="80%"
+			pane size="20%"
+		}
+   		pane size=1 borderless=true {
+	        plugin location="zellij:compact-bar"
+	    }
+	}
+	hsplit name="editor" focus=true
 	tab name="cli 1"
 	tab name="cli 2"
 	tab name="process 1"
