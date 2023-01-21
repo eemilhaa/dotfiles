@@ -6,8 +6,8 @@ layout {
 	    }
 	}
 	tab name="editor" focus=true
-	tab name="files"
-	tab name="git"
-	tab name="extra 1"
-	tab name="extra 2"
+	tab name="cli 1"
+	tab name="cli 2"
+	tab name="process 1"
+	tab name="process 2"
 }
