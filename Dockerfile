@@ -16,6 +16,8 @@ RUN pacman -Syyu --noconfirm \
         python-pip \
         pyright \
         starship \
+        unzip \
+        wget \
         zellij \
         zsh \
         zsh-syntax-highlighting \
