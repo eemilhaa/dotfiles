@@ -12,7 +12,6 @@ export HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
 setopt hist_save_no_dups hist_ignore_dups
-setopt correctall
 
 # pick editor
 if hash helix 2>/dev/null
