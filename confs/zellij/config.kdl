@@ -4,7 +4,7 @@ keybinds {
         bind "Alt l" { MoveFocusOrTab "Right"; }
         bind "Alt j" "Alt Down" { MoveFocus "Down"; }
         bind "Alt k" "Alt Up" { MoveFocus "Up"; }
-        bind "Alt =" { ToggleFloatingPanes; }
+        bind "Alt ;" { ToggleFloatingPanes; }
         bind "Alt f" { ToggleFocusFullscreen; }
     }
     tab {
