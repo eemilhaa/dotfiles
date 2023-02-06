@@ -7,6 +7,7 @@
 "type" = "cyan"
 "constructor" = "cyan"
 "namespace" = "cyan"
+"module" = "cyan"
 "constant" = "blue"
 "string" = "dark-cyan"
 
@@ -23,14 +24,14 @@
 "tag" = "orange"
 "operator" = "orange"
 
-# Dark punctuation
+# Dark punctuation and comments
 "punctuation" = "rock"
+"comment" = { fg = "dark-fg", modifiers = ["italic"] }
 
 
 # Markup and other non-syntax stuff
 # ---------------------------------------
 "special" = "white" # fuzzy highlight
-"comment" = { fg = "dark-fg", modifiers = ["italic"] }
 
 "markup.heading.marker" = { fg = "orange", modifiers = ["bold"] }
 "markup.heading" = { fg = "sand", modifiers = ["bold"] }
@@ -43,15 +44,15 @@
 "markup.raw" = "green"
 
 "diff.plus" = "green"
-"diff.minus" = "red"
 "diff.delta" = "blue"
+"diff.minus" = "red"
 
 # User Interface
 # --------------
 "ui.background" = { fg = "dark-fg", bg = "dark-bg" }
 
 "ui.linenr" = { fg = "dark-fg" }
-"ui.linenr.selected" = { fg = "yellow", bg = "faint-hl" }
+"ui.linenr.selected" = { fg = "dark-yellow", bg = "faint-hl" }
 
 "ui.statusline" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "faint-hl" }
@@ -59,9 +60,9 @@
 "ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
 "ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
 
-# TODO
+"ui.bufferline.background" = { bg = "dark-bg" }
 "ui.bufferline" = { fg = "dark-fg", bg = "dark-bg" }
-"ui.bufferline.active" = { fg = "light-fg", bg = "light-bg" }
+"ui.bufferline.active" = { fg = "white", bg = "light-bg" }
 
 # hover
 "ui.popup" = { fg = "light-fg", bg = "light-bg" }
@@ -86,23 +87,24 @@
 "ui.selection.primary" = { fg = "dark-bg", bg = "orange" }
 
 "ui.cursor" = { fg = "dark-bg", bg = "light-fg" }
-"ui.cursor.match" = { fg = "yellow", bg = "light-bg", modifiers = ["underlined", "bold"] }
-"ui.cursor.primary" = { fg = "dark-bg", bg = "yellow" }
+"ui.cursor.match" = { fg = "dark-yellow", bg = "light-bg", modifiers = ["underlined", "bold"] }
+"ui.cursor.primary" = { fg = "dark-bg", bg = "dark-yellow" }
 
 "ui.cursorline" = { bg = "faint-hl" }
 
-# TODO
-"ui.highlight" = { fg = "sand", bg = "light-bg" }
+"ui.highlight" = { bg = "light-bg" }
 
 "ui.menu" = { fg = "light-fg", bg = "light-bg" }
 "ui.menu.selected" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"] }
 
-diagnostic = { modifiers = ["underlined"] }
-
-error = "red"
-warning = "yellow"
-info = "green"
-hint = "cyan"
+"info" = "blue"
+"hint" = "green"
+"warning" = "dark-yellow"
+"error" = "red"
+"diagnostic.info".underline = { color = "blue", style = "curl" }
+"diagnostic.hint".underline = { color = "green", style = "curl" }
+"diagnostic.warning".underline = { color = "dark-yellow", style = "curl" }
+"diagnostic.error".underline = { color = "red", style = "curl" }
 
 [palette]
 # Grays
@@ -111,7 +113,7 @@ faint-hl       = "#282828"
 light-bg       = "#404040"
 dark-fg        = "#6E6E6E"
 light-fg       = "#BBBBBB"
-white          = "#FFFFFF"
+white          = "#E6E6E6"
 
 # Syntax colors
 green          = "#93B649"
@@ -119,7 +121,7 @@ cyan           = "#A2DEB4"
 dark-cyan      = "#5E9689"
 blue           = "#5BAEEA"
 yellow         = "#FFDE82"
-# yellow         = "#EDD790"
+dark-yellow    = "#F0B858"
 orange         = "#DA7E42"
 sand           = "#F1ECCE"
 rock           = "#8FA096"
