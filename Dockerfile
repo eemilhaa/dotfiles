@@ -16,6 +16,7 @@ RUN pacman -Syyu --noconfirm \
         python-pip \
         pyright \
         starship \
+        tree \
         unzip \
         wget \
         zellij \
