@@ -60,9 +60,9 @@
 "ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
 "ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
 
-"ui.bufferline.background" = { bg = "dark-bg" }
-"ui.bufferline" = { fg = "dark-fg", bg = "dark-bg" }
-"ui.bufferline.active" = { fg = "white", bg = "light-bg" }
+"ui.bufferline.background" = { bg = "faint-hl" }
+"ui.bufferline" = { fg = "light-fg", bg = "faint-hl" }
+"ui.bufferline.active" = { fg = "white", bg = "dark-blue" }
 
 # hover
 "ui.popup" = { fg = "light-fg", bg = "light-bg" }
@@ -74,20 +74,20 @@
 "ui.help" = { fg = "light-fg", bg = "faint-hl" }
 
 # base text (including markdown)
-"ui.text" = "light-fg" 
+"ui.text" = "light-fg"
 # picker hl
-"ui.text.focus" = { fg = "dark-bg", bg = "orange" }
+"ui.text.focus" = { fg = "white", bg = "dark-blue" }
 
 "ui.virtual" = "dark-fg"
 "ui.virtual.ruler" = "dark-fg"
 "ui.virtual.indent-guide" = "light-bg"
 "ui.virtual.whitespace" = "light-fg"
 
-"ui.selection" = { fg = "dark-bg", bg = "dark-fg" }
-"ui.selection.primary" = { fg = "dark-bg", bg = "orange" }
+"ui.selection" = { fg = "light-fg", bg = "light-bg" }
+"ui.selection.primary" = { fg = "white", bg = "dark-blue" }
 
 "ui.cursor" = { fg = "dark-bg", bg = "light-fg" }
-"ui.cursor.match" = { fg = "dark-yellow", bg = "light-bg", modifiers = ["underlined", "bold"] }
+"ui.cursor.match" = { fg = "blue", bg = "light-bg", modifiers = ["underlined", "bold"] }
 "ui.cursor.primary" = { fg = "dark-bg", bg = "dark-yellow" }
 
 "ui.cursorline" = { bg = "faint-hl" }
@@ -95,7 +95,7 @@
 "ui.highlight" = { bg = "light-bg" }
 
 "ui.menu" = { fg = "light-fg", bg = "light-bg" }
-"ui.menu.selected" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"] }
+"ui.menu.selected" = { fg = "white", bg = "dark-blue", modifiers = ["bold"] }
 
 "info" = "blue"
 "hint" = "green"
@@ -120,6 +120,7 @@ green          = "#93B649"
 cyan           = "#A2DEB4"
 dark-cyan      = "#5E9689"
 blue           = "#5BAEEA"
+dark-blue      = "#285577"
 yellow         = "#FFDE82"
 dark-yellow    = "#F0B858"
 orange         = "#DA7E42"
