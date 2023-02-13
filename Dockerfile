@@ -8,6 +8,7 @@ RUN pacman -Syyu --noconfirm \
         gcc \
         git \
         helix \
+        make \
         neofetch \
         nodejs \
         npm \
