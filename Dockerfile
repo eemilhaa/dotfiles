@@ -15,7 +15,8 @@ RUN pacman -Syyu --noconfirm \
         openssh \
         python \
         python-pip \
-        pyright \
+        # pyright \
+        python-lsp-server \
         starship \
         tree \
         unzip \
