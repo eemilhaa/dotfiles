@@ -11,8 +11,12 @@ auto-format = false
 bufferline = "always"
 
 [editor.statusline]
-left = ["mode", "file-name", "spinner"]
-right = ["diagnostics", "selections", "position-percentage"]
+left = ["mode", "selections", "diagnostics", "spinner"]
+center = []
+right = ["version-control", "file-name" ]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
 [editor.lsp]
 display-messages = true
