@@ -1,9 +1,9 @@
 [[language]]
 name = "python"
-# file-types = ["py", "pyi"]
-# roots = ["pyproject.toml", "pyrightconfig.json"]
-# language-server = { command = "pyright-langserver", args = ["--stdio"] }
-# config = {}
+file-types = ["py", "pyi"]
+roots = ["pyproject.toml", "pyrightconfig.json"]
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
+config = {}
 formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 
