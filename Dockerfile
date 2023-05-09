@@ -18,6 +18,8 @@ RUN pacman -Syyu --noconfirm \
         pyright \
         # python-lsp-server \
         starship \
+        texlab \
+        texlive-most \
         tree \
         unzip \
         wget \
