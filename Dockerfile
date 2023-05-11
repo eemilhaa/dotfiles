@@ -4,6 +4,7 @@ FROM docker.io/library/archlinux:latest
 RUN pacman -Syyu --noconfirm \
     && pacman-key --init \
     && pacman -S --noconfirm \
+        biber \
         curl \
         gcc \
         git \
@@ -20,6 +21,7 @@ RUN pacman -Syyu --noconfirm \
         starship \
         texlab \
         texlive-most \
+        texlive-bibtexextra \
         tree \
         unzip \
         wget \
