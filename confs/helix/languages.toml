@@ -28,3 +28,7 @@ auto-format = true
 name = "typescript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
+
+[[language]]
+name = "latex"
+file-types = ["tex", "sty"]
