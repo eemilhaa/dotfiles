@@ -5,7 +5,7 @@ autoload -Uz compinit && compinit
 export COLORTERM="truecolor"
 export SHELL="/bin/zsh"
 export COLORTERM="truecolor"
-export PATH="/root/.local/bin:$PATH"
+export PATH="/root/.local/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
 
 # history
 export HISTFILE="$HOME/.zsh_history"
