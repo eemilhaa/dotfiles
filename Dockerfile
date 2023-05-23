@@ -16,8 +16,8 @@ RUN pacman -Syyu --noconfirm \
         openssh \
         python \
         python-pip \
-        pyright \
-        # python-lsp-server \
+        # pyright \
+        python-lsp-server \
         starship \
         texlab \
         texlive-most \
