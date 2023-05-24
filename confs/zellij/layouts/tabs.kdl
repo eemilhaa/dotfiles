@@ -14,9 +14,9 @@ layout {
 	        plugin location="zellij:compact-bar"
 	    }
 	}
-	hsplit name="editor" focus=true
-	tab name="cli 1"
-	tab name="cli 2"
-	tab name="process 1"
-	tab name="process 2"
+	hsplit name=" 1 " focus=true
+	tab name=" 2 "
+	tab name=" 3 "
+	tab name=" 4 "
+	tab name=" 5 "
 }
