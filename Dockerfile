@@ -9,6 +9,7 @@ RUN pacman -Syyu --noconfirm \
         gcc \
         git \
         helix \
+        lsd \
         make \
         neofetch \
         nodejs \
@@ -40,13 +41,6 @@ RUN ln -s /dotfiles/confs/helix ~/.config/ \
     && ln -s /dotfiles/confs/zsh/.zshrc ~/.zshrc && chsh -s /bin/zsh \
     && ln -s /dotfiles/confs/starship/starship.toml ~/.config/starship.toml \
     && ln -s /dotfiles/confs/pypoetry ~/.config/
-
-# Rust
-# RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rustup-init \
-#     && sh rustup-init --default-toolchain nightly --component rust-analyzer-preview -y \
-#     # && zsh -c "rustup component remove rust-docs" \
-#     # && zsh -c "cargo install lsd rm-improved" \
-#     && rm rustup-init
 
 # npm installs and cache
 RUN npm install -g typescript typescript-language-server \

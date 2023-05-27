@@ -5,7 +5,8 @@ autoload -Uz compinit && compinit
 export COLORTERM="truecolor"
 export SHELL="/bin/zsh"
 export COLORTERM="truecolor"
-export PATH="/root/.local/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
+export PATH="/root/.local/bin:$PATH"
+export PATH="/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
 
 # history
 export HISTFILE="$HOME/.zsh_history"
@@ -28,7 +29,11 @@ export EDITOR="$VISUAL"
 
 
 # aliases
-alias ls='ls --color=auto'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias ll='ls -la'
+alias lt='ls --tree'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
@@ -38,14 +43,9 @@ alias egrep='egrep --color=auto'
 alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
-# ls
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 # git
 alias gs="git status"
 alias gl="git log --graph --abbrev-commit --oneline"
-alias db="distrobox"
 # custom zellij
 alias zel="zellij --layout tabs"
 
