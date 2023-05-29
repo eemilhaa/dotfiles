@@ -32,7 +32,7 @@ export EDITOR="$VISUAL"
 alias ls='lsd'
 alias l='ls -l'
 alias la='ls -a'
-alias ll='ls -la'
+alias ll='ls -l --almost-all'
 alias lt='ls --tree'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'

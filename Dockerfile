@@ -38,6 +38,7 @@ RUN git clone --depth=1 https://github.com/eemilhaa/kontti /dotfiles \
 # Symlink everything
 RUN ln -s /dotfiles/confs/helix ~/.config/ \
     && ln -s /dotfiles/confs/zellij ~/.config/ \
+    && ln -s /dotfiles/confs/lsd ~/.config/ \
     && ln -s /dotfiles/confs/zsh/.zshrc ~/.zshrc && chsh -s /bin/zsh \
     && ln -s /dotfiles/confs/starship/starship.toml ~/.config/starship.toml \
     && ln -s /dotfiles/confs/pypoetry ~/.config/
