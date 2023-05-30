@@ -54,15 +54,15 @@
 "ui.linenr" = { fg = "dark-fg" }
 "ui.linenr.selected" = { fg = "dark-yellow", bg = "faint-hl" }
 
-"ui.statusline" = { fg = "light-fg", bg = "light-bg" }
+"ui.statusline" = { fg = "white", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "faint-hl" }
 "ui.statusline.normal" = { fg = "dark-bg", bg = "rock", modifiers = ["bold"] }
 "ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
 "ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
 
-"ui.bufferline.background" = { bg = "faint-hl" }
-"ui.bufferline" = { fg = "light-fg", bg = "faint-hl" }
-"ui.bufferline.active" = { fg = "dark-bg", bg = "rock" }
+"ui.bufferline.background" = { bg = "dark-bg" }
+"ui.bufferline" = { fg = "light-fg", bg = "dark-bg" }
+"ui.bufferline.active" = { fg = "white", bg = "light-bg" }
 
 # hover
 "ui.popup" = { fg = "light-fg", bg = "light-bg" }
