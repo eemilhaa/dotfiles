@@ -21,7 +21,7 @@ RUN pacman -Syyu --noconfirm \
         python-lsp-server \
         starship \
         texlab \
-        texlive-most \
+        texlive \
         texlive-bibtexextra \
         tree \
         unzip \
