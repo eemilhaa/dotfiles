@@ -56,7 +56,7 @@
 
 "ui.statusline" = { fg = "white", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "faint-hl" }
-"ui.statusline.normal" = { fg = "dark-bg", bg = "rock", modifiers = ["bold"] }
+"ui.statusline.normal" = { fg = "dark-bg", bg = "dark-cyan", modifiers = ["bold"] }
 "ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
 "ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
 
@@ -76,7 +76,7 @@
 # base text (including markdown)
 "ui.text" = "light-fg"
 # picker hl
-"ui.text.focus" = { fg = "dark-bg", bg = "rock" }
+"ui.text.focus" = { fg = "dark-bg", bg = "orange" }
 
 "ui.virtual" = "dark-fg"
 "ui.virtual.ruler" = "dark-fg"
@@ -95,7 +95,7 @@
 "ui.highlight" = { bg = "light-bg" }
 
 "ui.menu" = { fg = "light-fg", bg = "light-bg" }
-"ui.menu.selected" = { fg = "dark-bg", bg = "rock" }
+"ui.menu.selected" = { fg = "dark-bg", bg = "orange" }
 
 "info" = "blue"
 "hint" = "green"

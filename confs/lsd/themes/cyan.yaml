@@ -1,27 +1,27 @@
 user: cyan
-group: cyan
+group: magenta
 permission:
   read: cyan
   write: cyan
-  exec: dark_red
-  exec-sticky: cyan
-  no-access: dark_red
-  octal: cyan
-  acl: cyan
-  context: cyan
+  exec: blue
+  exec-sticky: blue
+  no-access: blue
+  octal: magenta
+  acl: magenta
+  context: magenta
 date:
-  hour-old: green
-  day-old: green
-  older: yellow
+  hour-old: cyan
+  day-old: magenta
+  older: magenta
 size:
-  none: cyan
-  small: cyan
-  medium: cyan
-  large: cyan
+  none: magenta
+  small: green
+  medium: yellow
+  large: red
 inode:
   valid: cyan
-  invalid: cyan
+  invalid: red
 links:
   valid: cyan
-  invalid: cyan
-tree-edge: cyan
+  invalid: red
+tree-edge: magenta
