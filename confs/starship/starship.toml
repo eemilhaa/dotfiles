@@ -4,5 +4,8 @@ truncation_length = 2
 [package]
 disabled = true
 
+[git_branch]
+style = 'bold blue'
+
 [container]
 disabled = true

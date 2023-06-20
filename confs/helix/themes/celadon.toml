@@ -31,7 +31,7 @@
 
 # Markup and other non-syntax stuff
 # ---------------------------------------
-"special" = "white" # fuzzy highlight
+"special" = "orange" # fuzzy highlight
 
 "markup.heading.marker" = { fg = "orange", modifiers = ["bold"] }
 "markup.heading" = { fg = "sand", modifiers = ["bold"] }
@@ -60,28 +60,28 @@
 "ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
 "ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
 
-"ui.bufferline.background" = { bg = "dark-bg" }
-"ui.bufferline" = { fg = "light-fg", bg = "dark-bg" }
-"ui.bufferline.active" = { fg = "white", bg = "light-bg" }
+"ui.bufferline.background" = { bg = "faint-hl" }
+"ui.bufferline" = { fg = "dark-fg", bg = "faint-hl" }
+"ui.bufferline.active" = { fg = "white", bg = "dark-bg" }
 
 # hover
 "ui.popup" = { fg = "light-fg", bg = "light-bg" }
 # whichkey
 "ui.popup.info" = { fg = "light-fg", bg = "faint-hl" }
-# splits
-"ui.window" = { fg = "light-bg", bg = "dark-bg" }
 # command description
 "ui.help" = { fg = "light-fg", bg = "faint-hl" }
+# splits
+"ui.window" = { fg = "light-bg", bg = "dark-bg" }
 
 # base text (including markdown)
 "ui.text" = "light-fg"
 # picker hl
-"ui.text.focus" = { fg = "dark-bg", bg = "orange" }
+"ui.text.focus" = { fg = "white", bg = "faint-hl" }
 
 "ui.virtual" = "dark-fg"
-"ui.virtual.ruler" = "dark-fg"
+"ui.virtual.ruler" = { bg = "faint-hl" }
 "ui.virtual.indent-guide" = "light-bg"
-"ui.virtual.whitespace" = "light-fg"
+"ui.virtual.whitespace" = "dark-fg"
 
 "ui.selection" = { fg = "light-fg", bg = "light-bg" }
 "ui.selection.primary" = { fg = "white", bg = "dark-blue" }
@@ -94,15 +94,15 @@
 
 "ui.highlight" = { bg = "light-bg" }
 
-"ui.menu" = { fg = "light-fg", bg = "light-bg" }
-"ui.menu.selected" = { fg = "dark-bg", bg = "orange" }
+"ui.menu" = { fg = "light-fg", bg = "faint-hl" }
+"ui.menu.selected" = { fg = "white", bg = "light-bg" }
 
 "info" = "blue"
-"hint" = "green"
+"hint" = "blue"
 "warning" = "dark-yellow"
 "error" = "red"
 "diagnostic.info".underline = { color = "blue", style = "curl" }
-"diagnostic.hint".underline = { color = "green", style = "curl" }
+"diagnostic.hint".underline = { color = "blue", style = "curl" }
 "diagnostic.warning".underline = { color = "dark-yellow", style = "curl" }
 "diagnostic.error".underline = { color = "red", style = "curl" }
 
