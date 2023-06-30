@@ -1,0 +1,23 @@
+[user]
+    name = eemilhaa
+    email = eemil.haapanen@gmail.com
+
+[safe]
+    directory = /root/work
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    light = false
+    side-by-side = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default

@@ -8,6 +8,7 @@ RUN pacman -Syyu --noconfirm \
         curl \
         gcc \
         git \
+        git-delta \
         helix \
         lsd \
         make \
@@ -41,7 +42,8 @@ RUN ln -s /dotfiles/confs/helix ~/.config/ \
     && ln -s /dotfiles/confs/lsd ~/.config/ \
     && ln -s /dotfiles/confs/zsh/.zshrc ~/.zshrc && chsh -s /bin/zsh \
     && ln -s /dotfiles/confs/starship/starship.toml ~/.config/starship.toml \
-    && ln -s /dotfiles/confs/pypoetry ~/.config/
+    && ln -s /dotfiles/confs/pypoetry ~/.config/ \
+    && ln -s /dotfiles/confs/git/.gitconfig ~/.gitconfig
 
 # npm installs and cache
 RUN npm install -g typescript typescript-language-server \
@@ -49,11 +51,6 @@ RUN npm install -g typescript typescript-language-server \
 
 # poetry
 RUN curl -sSL https://install.python-poetry.org | python3 -
-
-# git
-RUN git config --global user.name "eemilhaa" \
-    && git config --global user.email "eemil.haapanen@gmail.com" \
-    && git config --global --add safe.directory /root/work
 
 WORKDIR /root/work
 
