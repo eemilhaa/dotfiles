@@ -32,6 +32,10 @@ RUN pacman -Syyu --noconfirm \
         zsh-syntax-highlighting \
     && pacman -Scc --noconfirm
 
+# Set timezone
+ENV TZ=Europe/Helsinki
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Get configs
 RUN git clone --depth=1 https://github.com/eemilhaa/kontti /dotfiles \
     && mkdir -p ~/.config
