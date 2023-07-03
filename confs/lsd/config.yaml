@@ -1,4 +1,12 @@
 sorting:
   dir-grouping: first
+
 color:
   theme: cyan
+
+date: relative
+
+icons:
+  separator: "  "
+
+total-size: true
