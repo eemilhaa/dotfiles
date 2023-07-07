@@ -1,6 +1,5 @@
 ## What
-A container image with some development tools (and other cli niceties) with
-my configurations.
+My terminal setup, containerized.
 
 ## Why
 To have a cross-system command-line environment that works the same everywhere
