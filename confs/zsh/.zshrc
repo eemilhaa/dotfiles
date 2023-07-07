@@ -23,12 +23,10 @@ set_general_settings () {
 }
 
 pick_editor () {
-  if hash helix 2>/dev/null
-  then
+  if hash helix 2>/dev/null; then
     alias hx='helix'
     export VISUAL=helix
-  elif hash hx 2>/dev/null
-  then
+  elif hash hx 2>/dev/null; then
     export VISUAL=hx
   else
     export VISUAL=vi
@@ -37,14 +35,11 @@ pick_editor () {
 }
 
 define_aliases () {
-  if hash lsd 2>/dev/null
-  then
+  if hash lsd 2>/dev/null; then
     alias ls='lsd'
-    alias ll='ls -l --almost-all'
-  else
-    alias ll='ls -la'
   fi
   alias l='ls -l'
+  alias ll='ls -l --almost-all'
   alias la='ls -a'
   alias lt='ls --tree'
   alias dir='dir --color=auto'
