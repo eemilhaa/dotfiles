@@ -73,11 +73,11 @@ set_prompt () {
   prompt='❯'
   blue='%B%F{blue}'
   cyan='%B%F{cyan}'
-  magenta='%B%F{magenta}'
+  green='%B%F{green}'
   normal='%b%f'
   workdir='%2~'
   reminder='[ @kontti ]'
-  PROMPT="$newline$magenta$reminder $cyan$workdir $blue$git_info $newline$cyan$prompt $normal"
+  PROMPT="$newline$green$reminder $blue$workdir $cyan$git_info $newline$cyan$prompt $normal"
 }
 
 set_extras () {
