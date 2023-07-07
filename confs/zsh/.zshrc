@@ -1,8 +1,6 @@
 source_if_exists() {
   if [ -f $1 ]; then
     source $1
-  else
-    print "Error loading $1: not found"
   fi
 }
 
