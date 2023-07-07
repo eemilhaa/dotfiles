@@ -15,7 +15,6 @@ and is always up to date.
 - Shell: zsh
 - Editor: [Helix](https://github.com/helix-editor/helix)
 - Terminal workspace and multiplexer: [Zellij](https://github.com/zellij-org/zellij)
-- Prompt: [Starship](https://github.com/starship/starship)
 - LSP and other tooling for python and js/ts
 - Latex
 - And a lot more, see `Dockerfile` for everything

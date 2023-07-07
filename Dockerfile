@@ -20,7 +20,6 @@ RUN pacman -Syyu --noconfirm \
         python-pip \
         # pyright \
         python-lsp-server \
-        starship \
         texlab \
         texlive \
         texlive-bibtexextra \
