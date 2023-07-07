@@ -1,6 +1,5 @@
 source_if_exists() {
-  if [ -f $1 ]
-  then
+  if [ -f $1 ]; then
     source $1
   else
     print "Error loading $1: not found"
@@ -68,28 +67,36 @@ set_keybinds () {
   bindkey "^X^E" edit-command-line
 }
 
-set_extras () {
-  source_if_exists /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-}
-
 set_prompt () {
   setopt prompt_subst
   autoload -Uz vcs_info
   zstyle ':vcs_info:*' enable git svn
   zstyle ':vcs_info:git*' formats "(%b)"
   precmd() {
-     vcs_info
+    vcs_info
   }
   newline=$'\n'
   git_info='${vcs_info_msg_0_}'
   prompt='❯'
   blue='%B%F{blue}'
   cyan='%B%F{cyan}'
-  green='%B%F{green}'
+  magenta='%B%F{magenta}'
   normal='%b%f'
   workdir='%2~'
   reminder='[ @kontti ]'
-  PROMPT="$newline$green$reminder $cyan$workdir $blue$git_info $newline$cyan$prompt $normal"
+  PROMPT="$newline$magenta$reminder $cyan$workdir $blue$git_info $newline$cyan$prompt $normal"
+}
+
+set_extras () {
+  source_if_exists /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+}
+
+check_extra_dir () {
+  if [ -d $1 ]; then
+    for rc in $1/*; do
+      source_if_exists "$rc"
+    done
+  fi
 }
 
 set_general_settings
@@ -98,3 +105,4 @@ define_aliases
 set_keybinds
 set_extras
 set_prompt
+check_extra_dir ~/.zshrc.d  # Any extra zsh stuff / possible overrides
