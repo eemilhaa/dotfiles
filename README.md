@@ -1,6 +1,8 @@
 ## What
 My terminal setup, containerized.
 
+![image](https://github.com/eemilhaa/kontti/assets/70660230/4ca023d3-6695-44ed-96ff-115a5219d7f0)
+
 ## Why
 To have a cross-system command-line environment that works the same everywhere
 and is always up to date.
@@ -20,7 +22,7 @@ and is always up to date.
 
 ## How to run it
 Running is as simple as:
-```
+```console
 <docker/podman> run -it --rm ghcr.io/eemilhaa/kontti:main
 ```
 To actually get something done, mount the directory you are working in as
