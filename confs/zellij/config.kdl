@@ -1,10 +1,8 @@
 keybinds {
-    locked {
-        bind "Alt h" { MoveFocusOrTab "Left"; }
-        bind "Alt l" { MoveFocusOrTab "Right"; }
-        bind "Alt j" "Alt Down" { MoveFocus "Down"; }
-        bind "Alt k" "Alt Up" { MoveFocus "Up"; }
-        bind "Alt ;" { ToggleFloatingPanes; }
+    shared {
+        bind "Alt h" { GoToPreviousTab; }
+        bind "Alt l" { GoToNextTab; }
+        bind "Alt j" { FocusNextPane; }
         bind "Alt f" { ToggleFocusFullscreen; }
     }
     tab {
@@ -12,6 +10,8 @@ keybinds {
         bind "x" { CloseTab; }
     }
 }
+
+simplified_ui true
 pane_frames false
 default_mode "locked"
 
