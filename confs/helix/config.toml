@@ -13,7 +13,7 @@ bufferline = "always"
 [editor.statusline]
 left = ["mode", "selections", "diagnostics", "spinner"]
 center = []
-right = ["file-name"]
+right = ["position-percentage", "file-name"]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"

@@ -2,6 +2,7 @@ keybinds {
     shared {
         bind "Alt h" { GoToPreviousTab; }
         bind "Alt l" { GoToNextTab; }
+        bind "Alt k" { FocusPreviousPane; }
         bind "Alt j" { FocusNextPane; }
         bind "Alt f" { ToggleFocusFullscreen; }
     }
