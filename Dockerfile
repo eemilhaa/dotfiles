@@ -20,6 +20,8 @@ RUN pacman -Syyu --noconfirm \
         python-pip \
         # pyright \
         python-lsp-server \
+        rustup \
+        rust-analyzer \
         texlab \
         texlive \
         texlive-bibtexextra \
@@ -47,6 +49,8 @@ RUN ln -s /dotfiles/confs/helix ~/.config/ \
     && ln -s /dotfiles/confs/starship/starship.toml ~/.config/starship.toml \
     && ln -s /dotfiles/confs/pypoetry ~/.config/ \
     && ln -s /dotfiles/confs/git/.gitconfig ~/.gitconfig
+
+RUN rustup toolchain install nightly
 
 # npm installs and cache
 RUN npm install -g typescript typescript-language-server \

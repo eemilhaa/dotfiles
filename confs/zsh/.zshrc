@@ -9,8 +9,8 @@ set_general_settings () {
   zstyle ':completion:*' menu select
   export COLORTERM="truecolor"
   export SHELL="/bin/zsh"
-  export PATH="/root/.local/bin:$PATH"
   export PATH="/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
+  export PATH="$HOME/.local/bin:$PATH"
   export HISTFILE="$HOME/.zsh_history"
   export HISTSIZE=1000
   export SAVEHIST=1000
