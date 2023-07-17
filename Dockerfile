@@ -4,7 +4,6 @@ FROM docker.io/library/archlinux:latest
 RUN pacman -Syyu --noconfirm \
     && pacman-key --init \
     && pacman -S --noconfirm \
-        biber \
         curl \
         gcc \
         git \
@@ -23,8 +22,6 @@ RUN pacman -Syyu --noconfirm \
         rustup \
         rust-analyzer \
         texlab \
-        texlive \
-        texlive-bibtexextra \
         tree \
         unzip \
         wget \
@@ -50,6 +47,7 @@ RUN ln -s /dotfiles/confs/helix ~/.config/ \
     && ln -s /dotfiles/confs/pypoetry ~/.config/ \
     && ln -s /dotfiles/confs/git/.gitconfig ~/.gitconfig
 
+# Rust
 RUN rustup toolchain install nightly
 
 # npm installs and cache

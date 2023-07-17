@@ -20,7 +20,7 @@ and is always up to date.
   - Python
   - JS / TS
   - Rust
-- Latex
+  - Latex
 - And a lot more, see `Dockerfile` for everything
 
 ## How to run it
