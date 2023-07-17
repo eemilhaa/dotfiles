@@ -1,3 +1,5 @@
+![workflow](https://github.com/eemilhaa/kontti/actions/workflows/build.yml/badge.svg)
+
 ## What
 My terminal setup, containerized.
 
