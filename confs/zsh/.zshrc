@@ -11,6 +11,7 @@ set_general_settings () {
   export SHELL="/bin/zsh"
   export PATH="/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
   export PATH="$HOME/.local/bin:$PATH"
+  export PATH="$HOME/.cargo/bin:$PATH"
   export HISTFILE="$HOME/.zsh_history"
   export HISTSIZE=1000
   export SAVEHIST=1000
