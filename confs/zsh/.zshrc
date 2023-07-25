@@ -48,6 +48,7 @@ define_aliases () {
   alias egrep='egrep --color=auto'
   alias zel="zellij --layout tabs"
   alias gs="git status"
+  alias gd="git diff --color-words"
   alias gl="git log --graph --abbrev-commit --oneline"
 }
 

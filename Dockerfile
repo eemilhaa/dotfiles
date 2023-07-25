@@ -7,7 +7,6 @@ RUN pacman -Syyu --noconfirm \
         curl \
         gcc \
         git \
-        git-delta \
         helix \
         lsd \
         make \
