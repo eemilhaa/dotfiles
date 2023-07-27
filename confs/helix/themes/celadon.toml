@@ -60,9 +60,9 @@
 "ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
 "ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
 
-"ui.bufferline.background" = { bg = "faint-hl" }
-"ui.bufferline" = { fg = "dark-fg", bg = "faint-hl" }
-"ui.bufferline.active" = { fg = "white", bg = "dark-bg" }
+"ui.bufferline.background" = { bg = "dark-bg" }
+"ui.bufferline" = { fg = "light-fg", bg = "light-bg" }
+"ui.bufferline.active" = { fg = "white", bg = "dark-fg" }
 
 # hover
 "ui.popup" = { fg = "light-fg", bg = "light-bg" }
