@@ -14,8 +14,8 @@ layout {
 	        plugin location="zellij:compact-bar"
 	    }
 	}
-	hsplit name=" 1 " focus=true
-	tab name=" 2 "
+	hsplit name=" 1 "
+	tab name=" 2 " focus=true
 	tab name=" 3 "
 	tab name=" 4 "
 	tab name=" 5 "
