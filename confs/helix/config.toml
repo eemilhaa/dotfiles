@@ -1,4 +1,4 @@
-theme = "celadon"
+theme = "celadon_light"
 
 [editor]
 line-number = "relative"

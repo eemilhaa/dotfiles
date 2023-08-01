@@ -16,8 +16,10 @@ simplified_ui true
 pane_frames false
 default_mode "locked"
 
+theme "light"
+
 themes {
-    default {
+    dark {
         black "#1E1E1E"
 
         red "#6E6E6E"
@@ -33,5 +35,22 @@ themes {
         yellow "#6E6E6E"
         blue "#6E6E6E"
         cyan "#6E6E6E"
+    }
+    light {
+        black "#FDF6E3"
+
+        red "#B2B29A"
+        magenta "#B2B29A"
+
+        orange "#B88050"
+        green "#B88050"
+
+        bg "#C8C8B0"
+        fg "#C8C8B0"
+        white "#C8C8B0"
+
+        yellow "#B2B29A"
+        blue "#B2B29A"
+        cyan "#B2B29A"
     }
 }
