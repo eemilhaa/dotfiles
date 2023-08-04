@@ -26,7 +26,7 @@
 
 # Dark punctuation and comments
 "punctuation" = "rock"
-"comment" = { fg = "dark-fg", modifiers = ["italic"] }
+"comment" = { fg = "comment", modifiers = ["italic"] }
 
 
 # Markup and other non-syntax stuff
@@ -55,7 +55,7 @@
 "ui.linenr.selected" = { fg = "dark-yellow", bg = "faint-hl" }
 
 "ui.statusline" = { fg = "white", bg = "light-bg" }
-"ui.statusline.inactive" = { fg = "dark-fg", bg = "faint-hl" }
+"ui.statusline.inactive" = { fg = "dark-fg", bg = "light-bg" }
 "ui.statusline.normal" = { fg = "dark-bg", bg = "dark-cyan", modifiers = ["bold"] }
 "ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
 "ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
@@ -76,7 +76,7 @@
 # base text (including markdown)
 "ui.text" = "light-fg"
 # picker hl
-"ui.text.focus" = { fg = "white", bg = "faint-hl" }
+"ui.text.focus" = { fg = "sand", bg = "light-bg", modifiers = ["bold"] }
 
 "ui.virtual" = "dark-fg"
 "ui.virtual.ruler" = { bg = "faint-hl" }
@@ -84,7 +84,7 @@
 "ui.virtual.whitespace" = "dark-fg"
 
 "ui.selection" = { fg = "light-fg", bg = "light-bg" }
-"ui.selection.primary" = { fg = "white", bg = "dark-blue" }
+"ui.selection.primary" = { fg = "sand", bg = "dark-blue" }
 
 "ui.cursor" = { fg = "dark-bg", bg = "light-fg" }
 "ui.cursor.match" = { fg = "blue", bg = "light-bg", modifiers = ["underlined", "bold"] }
@@ -95,7 +95,7 @@
 "ui.highlight" = { bg = "light-bg" }
 
 "ui.menu" = { fg = "light-fg", bg = "faint-hl" }
-"ui.menu.selected" = { fg = "white", bg = "light-bg" }
+"ui.menu.selected" = { fg = "sand", bg = "light-bg" }
 
 "info" = "blue"
 "hint" = "blue"
@@ -108,25 +108,23 @@
 
 [palette]
 # Grays
-dark-bg        = "#1E1E1E"
-faint-hl       = "#282828"
+dark-bg        = "#333333"
+faint-hl       = "#292929"
 light-bg       = "#404040"
-dark-fg        = "#6E6E6E"
-light-fg       = "#BBBBBB"
+dark-fg        = "#6A6A6A"
+light-fg       = "#E6E6E6"
 white          = "#E6E6E6"
 
 # Syntax colors
-green          = "#93B649"
+comment        = "#939393"
+green          = "#88B830"
 cyan           = "#A2DEB4"
-dark-cyan      = "#5E9689"
-blue           = "#5BAEEA"
-dark-blue      = "#285577"
+dark-cyan      = "#489888"
+blue           = "#30B0F0"
+dark-blue      = "#007888"
 yellow         = "#FFDE82"
 dark-yellow    = "#F0B858"
-orange         = "#DA7E42"
-sand           = "#F1ECCE"
+orange         = "#F09038"
+sand           = "#FDF6E3"
 rock           = "#8FA096"
 red            = "#FE5F55"
-
-# Palette:
-# https://coolors.co/5e9689-5baeea-A2DEB4-93b649-da7e42-ffde82-f1ecce

@@ -38,6 +38,7 @@ light-fg       = "#6E6E6E"
 white          = "#404040"
 
 # Syntax colors
+comment        = "#B2B29A"
 green          = "#78A828"
 cyan           = "#0090A8"
 dark-cyan      = "#489888"
