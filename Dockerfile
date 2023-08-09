@@ -50,7 +50,10 @@ RUN ln -s /dotfiles/confs/helix ~/.config/ \
 RUN rustup toolchain install nightly
 
 # npm installs and cache
-RUN npm install -g typescript typescript-language-server \
+RUN npm install -g \
+    typescript \
+    typescript-language-server \
+    npm-check-updates \
     && npm cache clean -f
 
 # poetry
