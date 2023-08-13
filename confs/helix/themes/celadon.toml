@@ -1,9 +1,10 @@
-# Syntax highlighting
-# -------------------
+# Syntax
+# ----------------------------------------------------
 # Green for things that do stuff (functions).
 "function" = "green"
 
-# Cold for things that are stuff and often stay constant. Also constructors to differentiate them from functions.
+# Cold colors for things that are stuff and often stay constant.
+# Also constructors to differentiate them from functions.
 "type" = "cyan"
 "constructor" = "cyan"
 "namespace" = "cyan"
@@ -11,7 +12,7 @@
 "constant" = "blue"
 "string" = "dark-cyan"
 
-# Warm colors for things that are stuff but often don't stay constant
+# light warm colors for things that are stuff but often don't stay constant
 "variable" = "sand"
 "attribute" = "yellow"
 "variable.parameter" = "yellow"
@@ -26,11 +27,11 @@
 
 # Dark punctuation and comments
 "punctuation" = "rock"
-"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment" = { fg = "medium-fg", modifiers = ["italic"] }
 
 
-# Markup and other non-syntax stuff
-# ---------------------------------------
+# UI, markup, other non-syntax stuff
+# ----------------------------------------------------
 "special" = "orange" # fuzzy highlight
 
 "markup.heading.marker" = { fg = "orange", modifiers = ["bold"] }
@@ -38,7 +39,7 @@
 "markup.list" = "orange"
 "markup.bold" = { fg = "yellow", modifiers = ["bold"] }
 "markup.italic" = { fg = "yellow", modifiers = ["italic"] }
-"markup.link.url" = { fg = "dark-cyan", modifiers = ["underlined"] }
+"markup.link.url" = "dark-cyan"
 "markup.link.text" = "cyan"
 "markup.quote" = "green"
 "markup.raw" = "green"
@@ -52,79 +53,93 @@
 "ui.background" = { fg = "dark-fg", bg = "dark-bg" }
 
 "ui.linenr" = { fg = "dark-fg" }
-"ui.linenr.selected" = { fg = "dark-yellow", bg = "faint-hl" }
+"ui.linenr.selected" = "dark-yellow"
 
-"ui.statusline" = { fg = "white", bg = "light-bg" }
+"ui.statusline" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "light-bg" }
-"ui.statusline.normal" = { fg = "dark-bg", bg = "dark-cyan", modifiers = ["bold"] }
-"ui.statusline.insert" = { fg = "dark-bg", bg = "green", modifiers = ["bold"]  }
-"ui.statusline.select" = { fg = "dark-bg", bg = "orange", modifiers = ["bold"]  }
+"ui.statusline.normal" = { fg = "light-fg", bg = "light-bg" }
+"ui.statusline.insert" = { fg = "black", bg = "green" }
+"ui.statusline.select" = { fg = "black", bg = "orange" }
 
-"ui.bufferline.background" = { bg = "dark-bg" }
+"ui.bufferline.background" = { bg = "light-bg" }
 "ui.bufferline" = { fg = "light-fg", bg = "light-bg" }
 "ui.bufferline.active" = { fg = "white", bg = "dark-fg" }
 
 # hover
 "ui.popup" = { fg = "light-fg", bg = "light-bg" }
-# whichkey
-"ui.popup.info" = { fg = "light-fg", bg = "faint-hl" }
+# menus
+"ui.menu" = { fg = "light-fg", bg = "light-bg" }
+"ui.menu.selected" = { fg = "white", bg = "dark-fg", modifiers = ["bold"] }
 # command description
-"ui.help" = { fg = "light-fg", bg = "faint-hl" }
+"ui.help" = { fg = "light-fg", bg = "light-bg" }
 # splits
 "ui.window" = { fg = "light-bg", bg = "dark-bg" }
 
 # base text (including markdown)
 "ui.text" = "light-fg"
 # picker hl
-"ui.text.focus" = { fg = "sand", bg = "light-bg", modifiers = ["bold"] }
+"ui.text.focus" = { fg = "white", bg = "light-bg", modifiers = ["bold"] }
 
 "ui.virtual" = "dark-fg"
 "ui.virtual.ruler" = { bg = "faint-hl" }
 "ui.virtual.indent-guide" = "light-bg"
-"ui.virtual.whitespace" = "dark-fg"
 
-"ui.selection" = { fg = "light-fg", bg = "light-bg" }
-"ui.selection.primary" = { fg = "sand", bg = "dark-blue" }
+# selections & cursors
+"ui.selection.primary" = { fg = "white", bg = "dark-blue" }
+"ui.selection" = { fg = "light-fg", bg = "dark-fg" }
 
-"ui.cursor" = { fg = "dark-bg", bg = "light-fg" }
-"ui.cursor.match" = { fg = "blue", bg = "light-bg", modifiers = ["underlined", "bold"] }
-"ui.cursor.primary" = { fg = "dark-bg", bg = "dark-yellow" }
+"ui.cursor.primary" = { fg = "black", bg = "dark-yellow" }
+"ui.cursor.primary.select" = { fg = "black", bg = "orange" }
+"ui.cursor.primary.insert" = { fg = "black", bg = "green" }
+"ui.cursor" = { fg = "black", bg = "light-fg" }
+"ui.cursor.match" = { fg = "blue", bg = "light-bg", modifiers = ["bold"] }
 
-"ui.cursorline" = { bg = "faint-hl" }
+"ui.cursorline.primary" = { bg = "faint-hl" }
+"ui.cursorcolumn.primary" = { bg = "faint-hl" }
 
 "ui.highlight" = { bg = "light-bg" }
-
-"ui.menu" = { fg = "light-fg", bg = "faint-hl" }
-"ui.menu.selected" = { fg = "sand", bg = "light-bg" }
 
 "info" = "blue"
 "hint" = "blue"
 "warning" = "dark-yellow"
 "error" = "red"
-"diagnostic.info".underline = { color = "blue", style = "curl" }
-"diagnostic.hint".underline = { color = "blue", style = "curl" }
-"diagnostic.warning".underline = { color = "dark-yellow", style = "curl" }
-"diagnostic.error".underline = { color = "red", style = "curl" }
+"diagnostic" = "blue"
+"diagnostic.info" = "blue"
+"diagnostic.hint" = "blue"
+"diagnostic.warning" = "dark-yellow"
+"diagnostic.error" = "red"
+
 
 [palette]
-# Grays
-dark-bg        = "#333333"
-faint-hl       = "#292929"
-light-bg       = "#404040"
-dark-fg        = "#6A6A6A"
-light-fg       = "#E6E6E6"
-white          = "#E6E6E6"
 
-# Syntax colors
-comment        = "#939393"
-green          = "#88B830"
-cyan           = "#A2DEB4"
-dark-cyan      = "#489888"
-blue           = "#30B0F0"
-dark-blue      = "#007888"
-yellow         = "#FFDE82"
-dark-yellow    = "#F0B858"
-orange         = "#F09038"
-sand           = "#FDF6E3"
-rock           = "#8FA096"
-red            = "#FE5F55"
+# Syntax colors (don't use / use sparingly in the UI)
+# ----------------------------------------------------
+green          = "#88B830"  # function
+cyan           = "#A2DEB4"  # type, namespace
+dark-cyan      = "#489888"  # string
+blue           = "#30B0F0"  # const
+yellow         = "#FFDE82"  # parameter
+orange         = "#F09038"  # keyword
+sand           = "#FDF6E3"  # variable
+rock           = "#8FA096"  # punctuation
+
+# UI
+# ----------------------------------------------------
+# Grays dark to bright
+black          = "#1e1e1e"  # dark text on bright bg
+faint-hl       = "#292929"  # cursorline
+dark-bg        = "#333333"  # base background
+light-bg       = "#404040"  # menu / popup bg
+dark-fg        = "#6A6A6A"  # barely legible text
+medium-fg      = "#939393"  # low prio text
+light-fg       = "#E6E6E6"  # normal text
+white          = "#F2F2F2"  # highlighted text
+
+# colors (non-syntax)
+dark-blue      = "#007888"  # text selection
+dark-yellow    = "#F0B858"  # primary cursor, warnings
+red            = "#FE5F55"  # error, deletion
+
+# Preview (syntax colors only)
+# ----------------------------------------------------
+# https://coolors.co/f09038-88b830-fdf6e3-ffde82-a2deb4-489888-30b0f0-8fa096-404040
