@@ -57,7 +57,7 @@
 
 "ui.statusline" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "light-bg" }
-"ui.statusline.normal" = { fg = "light-fg", bg = "light-bg" }
+"ui.statusline.normal" = { fg = "medium-fg", bg = "light-bg" }
 "ui.statusline.insert" = { fg = "black", bg = "green" }
 "ui.statusline.select" = { fg = "black", bg = "orange" }
 
@@ -81,8 +81,11 @@
 "ui.text.focus" = { fg = "white", bg = "light-bg", modifiers = ["bold"] }
 
 "ui.virtual" = "dark-fg"
-"ui.virtual.ruler" = { bg = "faint-hl" }
-"ui.virtual.indent-guide" = "light-bg"
+"ui.virtual.ruler" = { bg = "medium-bg" }
+# "ui.virtual.indent-guide" = "light-bg"
+
+"ui.cursorline.primary" = { bg = "darkened" }
+"ui.cursorcolumn.primary" = { bg = "darkened" }
 
 # selections & cursors
 "ui.selection.primary" = { fg = "white", bg = "dark-blue" }
@@ -93,9 +96,6 @@
 "ui.cursor.primary.insert" = { fg = "black", bg = "green" }
 "ui.cursor" = { fg = "black", bg = "light-fg" }
 "ui.cursor.match" = { fg = "blue", bg = "light-bg", modifiers = ["bold"] }
-
-"ui.cursorline.primary" = { bg = "faint-hl" }
-"ui.cursorcolumn.primary" = { bg = "faint-hl" }
 
 "ui.highlight" = { bg = "light-bg" }
 
@@ -127,13 +127,14 @@ rock           = "#8FA096"  # punctuation
 # ----------------------------------------------------
 # Grays dark to bright
 black          = "#1e1e1e"  # dark text on bright bg
-faint-hl       = "#292929"  # cursorline
+darkened       = "#292929"  # cursorline / col
 dark-bg        = "#333333"  # base background
+medium-bg      = "#3A3A3A"  # rulers
 light-bg       = "#404040"  # menu / popup bg
 dark-fg        = "#6A6A6A"  # barely legible text
 medium-fg      = "#939393"  # low prio text
-light-fg       = "#E6E6E6"  # normal text
-white          = "#F2F2F2"  # highlighted text
+light-fg       = "#E6E6E6"  # normal / bright text
+white          = "#F2F2F2"  # very bright text
 
 # colors (non-syntax)
 dark-blue      = "#007888"  # text selection
