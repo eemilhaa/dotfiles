@@ -61,7 +61,7 @@
 "ui.statusline.insert" = { fg = "black", bg = "green" }
 "ui.statusline.select" = { fg = "black", bg = "orange" }
 
-"ui.bufferline.background" = { bg = "light-bg" }
+"ui.bufferline.background" = { bg = "dark-bg" }
 "ui.bufferline" = { fg = "light-fg", bg = "light-bg" }
 "ui.bufferline.active" = { fg = "white", bg = "dark-fg" }
 
