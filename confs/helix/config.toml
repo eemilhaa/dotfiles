@@ -9,7 +9,7 @@ color-modes = true
 cursorline = true
 auto-format = false
 bufferline = "always"
-rulers = [80]
+# rulers = [80]
 
 [editor.statusline]
 left = ["mode", "selections", "diagnostics", "spinner"]
