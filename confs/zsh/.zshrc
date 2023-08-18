@@ -38,11 +38,12 @@ pick_editor () {
 define_aliases () {
   if hash lsd 2>/dev/null; then
     alias ls='lsd'
+    alias lls='ls -l --almost-all --total-size'
+    alias lt='ls --tree'
   fi
   alias l='ls -l'
   alias ll='ls -l --almost-all'
   alias la='ls -a'
-  alias lt='ls --tree'
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'

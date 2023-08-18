@@ -128,7 +128,7 @@ rock           = "#8FA096"  # punctuation
 # Grays dark to bright
 black          = "#1e1e1e"  # black text, cursorline
 dark-bg        = "#242424"  # base background
-medium-bg      = "#303030"  # rulers
+medium-bg      = "#2D2D2D"  # rulers
 light-bg       = "#353535"  # menu / popup bg
 indent         = "#404040"  # menu / popup bg
 dark-fg        = "#6A6A6A"  # barely legible text
