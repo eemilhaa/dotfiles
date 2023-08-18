@@ -20,7 +20,7 @@ theme "dark"
 
 themes {
     dark {
-        black "#333333"
+        black "#1e1e1e"
 
         red "#6a6a6a"
         magenta "#6a6a6a"
@@ -28,9 +28,9 @@ themes {
         orange "#F09038"
         green "#88B830"
 
-        bg "#404040"
-        fg "#404040"
-        white "#404040"
+        bg "#242424"  // TODO
+        fg "#6a6a6a"
+        white "#6a6a6a"
 
         yellow "#6a6a6a"
         blue "#6a6a6a"
