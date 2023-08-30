@@ -28,9 +28,9 @@ tree-edge: blue
 git-status:
   default:  dark_grey
   unmodified: dark_grey
-  ignored: dark_grey
+  ignored: grey
   new-in-index: green
-  new-in-workdir: green
+  new-in-workdir: red
   typechange: yellow
   deleted: red
   renamed: green
