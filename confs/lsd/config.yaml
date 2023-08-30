@@ -1,8 +1,17 @@
 sorting:
   dir-grouping: first
 
+blocks:
+  - permission
+  - user
+  - group
+  - size
+  - date
+  - name
+  - git
+
 color:
-  theme: cyan
+  theme: custom
 
 date: relative
 

@@ -6,15 +6,15 @@ permission:
   exec: cyan
   exec-sticky: cyan
   no-access: blue
-  octal: blue
-  acl: blue
-  context: blue
+  octal: cyan
+  acl: cyan
+  context: cyan
 date:
   hour-old: cyan
   day-old: blue
   older: dark_grey
 size:
-  none: blue
+  none: dark_grey
   small: green
   medium: yellow
   large: red
@@ -25,3 +25,14 @@ links:
   valid: cyan
   invalid: red
 tree-edge: blue
+git-status:
+  default:  dark_grey
+  unmodified: dark_grey
+  ignored: dark_grey
+  new-in-index: green
+  new-in-workdir: green
+  typechange: yellow
+  deleted: red
+  renamed: green
+  modified: yellow
+  conflicted: red
