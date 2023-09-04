@@ -6,7 +6,22 @@ source_if_exists() {
 
 set_general_settings () {
   autoload -Uz compinit && compinit
+  autoload -U history-search-end
+  autoload -z edit-command-line
   zstyle ':completion:*' menu select
+  zle -N history-beginning-search-backward-end history-search-end
+  zle -N history-beginning-search-forward-end history-search-end
+  zle -N history-incremental-search-backward history-search-end
+  zle -N edit-command-line
+  setopt HIST_EXPIRE_DUPS_FIRST
+  setopt HIST_IGNORE_DUPS
+  setopt HIST_IGNORE_ALL_DUPS
+  setopt HIST_IGNORE_SPACE
+  setopt HIST_FIND_NO_DUPS
+  setopt HIST_SAVE_NO_DUPS
+}
+
+set_exports () {
   export COLORTERM="truecolor"
   export SHELL="/bin/zsh"
   export PATH="/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
@@ -15,12 +30,6 @@ set_general_settings () {
   export HISTFILE="$HOME/.zsh_history"
   export HISTSIZE=1000
   export SAVEHIST=1000
-  setopt HIST_EXPIRE_DUPS_FIRST
-  setopt HIST_IGNORE_DUPS
-  setopt HIST_IGNORE_ALL_DUPS
-  setopt HIST_IGNORE_SPACE
-  setopt HIST_FIND_NO_DUPS
-  setopt HIST_SAVE_NO_DUPS
 }
 
 pick_editor () {
@@ -54,11 +63,12 @@ define_aliases () {
 }
 
 set_keybinds () {
+  bindkey '^ ' history-incremental-search-backward
+  bindkey "^[[A" history-beginning-search-backward-end
+  bindkey "^[[B" history-beginning-search-forward-end
   bindkey "^[[1;5C" forward-word
   bindkey "^[[1;5D" backward-word
-  autoload -z edit-command-line
-  zle -N edit-command-line
-  bindkey "^X^E" edit-command-line
+  bindkey "^O" edit-command-line
 }
 
 set_prompt () {
@@ -94,6 +104,7 @@ check_extra_dir () {
 }
 
 set_general_settings
+set_exports
 pick_editor
 define_aliases
 set_keybinds
