@@ -26,7 +26,19 @@ and is always up to date.
 - And a lot more, see `Dockerfile` for everything
 
 ## How to run it
-Running is as simple as:
+
+### Distrobox (Linux only)
+On linux [distrobox](https://github.com/89luca89/distrobox) is probably the
+smoothest experience. It has things like networking, shell history and graphical
+applications working out of the box.
+```console
+distrobox create -n kontti --image ghcr.io/eemilhaa/kontti:main
+distrobox enter kontti
+```
+
+### Without distrobox (any OS)
+You can run the image like any other with Docker or Podman if you cannot / dont
+want to use distrobox.
 ```console
 <docker/podman> run -it --rm ghcr.io/eemilhaa/kontti:main
 ```
