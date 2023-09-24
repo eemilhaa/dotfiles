@@ -3,7 +3,6 @@ name: Build
 on:
   push:
     paths:
-      - 'confs/**'
       - 'Dockerfile'
   schedule:
     - cron: "0 0 * * 6"  # build every saturday at 00:00
