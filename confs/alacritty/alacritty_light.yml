@@ -1,0 +1,66 @@
+custom_cursor_colors: true
+# env:
+#   TERM: xterm-256color
+
+colors:
+  primary:
+    background:        "#FDF6E3"
+    foreground:        "#404040"
+    dim_foreground:    "#B2B29A"
+    bright_foreground: "#404040"
+
+  # Normal colors
+  normal:
+    black:   "#FDF6E3"
+    red:     "#FE5F55"
+    green:   "#78A828"
+    yellow:  "#B88050"
+    blue:    "#489888"
+    magenta: "#827CDF"
+    cyan:    "#0090A8"
+    white:   "#B2B29A"
+
+  # bright colors
+  bright:
+    black:   "#9F9B92"
+    red:     "#FE5F55"
+    green:   "#78A828"
+    yellow:  "#B88050"
+    blue:    "#489888"
+    magenta: "#827CDF"
+    cyan:    "#0090A8"
+    white:   "#6e6e6e"
+
+draw_bold_text_with_bright_colors: true
+
+font:  # just set this system-wide
+  normal:
+    family: IosevkaTerm Nerd Font
+    style: Regular
+  bold:
+    family: IosevkaTerm Nerd Font
+    style: Bold
+  italic:
+    family: IosevkaTerm Nerd Font
+    style: Italic
+  bold_italic:
+    family: IosevkaTerm Nerd Font
+    style: Bold Italic
+
+  size: 12.0
+
+window:
+  dynamic_title: false
+  padding:
+    x: 0
+    y: 0
+  dimensions:
+    columns: 100
+    lines: 35
+  # decorations: none
+  # startup_mode: Maximized
+
+
+# new term in cwd
+key_bindings:
+  - { key: N,   mods: Control|Shift, action: SpawnNewInstance }

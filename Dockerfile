@@ -34,17 +34,17 @@ ENV TZ=Europe/Helsinki
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Get configs
-RUN git clone --depth=1 https://github.com/eemilhaa/kontti /dotfiles \
-    && mkdir -p ~/.config
+COPY ./confs /confs
+RUN mkdir -p ~/.config
 
 # Symlink everything
-RUN ln -s /dotfiles/confs/helix ~/.config/ \
-    && ln -s /dotfiles/confs/zellij ~/.config/ \
-    && ln -s /dotfiles/confs/lsd ~/.config/ \
-    && ln -s /dotfiles/confs/zsh/.zshrc ~/.zshrc && chsh -s /bin/zsh \
-    && ln -s /dotfiles/confs/starship/starship.toml ~/.config/starship.toml \
-    && ln -s /dotfiles/confs/pypoetry ~/.config/ \
-    && ln -s /dotfiles/confs/git/.gitconfig ~/.gitconfig
+RUN ln -s /confs/helix ~/.config/ \
+    && ln -s /confs/zellij ~/.config/ \
+    && ln -s /confs/lsd ~/.config/ \
+    && ln -s /confs/zsh/.zshrc ~/.zshrc && chsh -s /bin/zsh \
+    && ln -s /confs/starship/starship.toml ~/.config/starship.toml \
+    && ln -s /confs/pypoetry ~/.config/ \
+    && ln -s /confs/git/.gitconfig ~/.gitconfig
 
 # Rust
 RUN rustup toolchain install nightly
