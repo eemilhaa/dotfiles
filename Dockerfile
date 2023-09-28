@@ -9,6 +9,7 @@ RUN pacman -Syyu --noconfirm \
         git \
         helix \
         lsd \
+        man-db \
         make \
         neofetch \
         nodejs \
