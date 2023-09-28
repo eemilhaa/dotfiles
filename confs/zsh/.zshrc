@@ -22,6 +22,18 @@ set_general_settings () {
 }
 
 set_exports () {
+  pick_editor () {
+    if hash helix 2>/dev/null; then
+      alias hx='helix'
+      export VISUAL=helix
+    elif hash hx 2>/dev/null; then
+      export VISUAL=hx
+    else
+      export VISUAL=vi
+    fi
+    export EDITOR="$VISUAL"
+  }
+  pick_editor
   export COLORTERM="truecolor"
   export SHELL="/bin/zsh"
   export PATH="/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
@@ -30,18 +42,6 @@ set_exports () {
   export HISTFILE="$HOME/.zsh_history"
   export HISTSIZE=1000
   export SAVEHIST=1000
-}
-
-pick_editor () {
-  if hash helix 2>/dev/null; then
-    alias hx='helix'
-    export VISUAL=helix
-  elif hash hx 2>/dev/null; then
-    export VISUAL=hx
-  else
-    export VISUAL=vi
-  fi
-  export EDITOR="$VISUAL"
 }
 
 define_aliases () {
@@ -105,7 +105,6 @@ check_extra_dir () {
 
 set_general_settings
 set_exports
-pick_editor
 define_aliases
 set_keybinds
 set_extras
