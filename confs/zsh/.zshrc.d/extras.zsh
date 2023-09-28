@@ -1,14 +1,12 @@
 define_aliases () {
-  alias db="distrobox"
   alias colorpick='grim -g "$(slurp -p)" -t ppm - | convert - -format "%[pixel:p{0,0}]" txt:-'
   alias recordscreen='wf-recorder -g "$(slurp)"'
-  dev () {
-    podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/kontti:main /bin/zsh -c "zellij --layout tabs options --default-shell zsh"
-  }
-  devsh () {
-    podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/kontti:main
-  }
+  alias db="distrobox"
+  alias dbinit="distrobox create -n dev --image ghcr.io/eemilhaa/dotfiles:main"
   alias ddev="distrobox enter dev"
+  dev () {
+    podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/dotfiles:main
+  }
   ghclone () {
     if [ -z $2 ]; then
       git clone git@github.com:eemilhaa/$1.git
