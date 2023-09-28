@@ -1,5 +1,10 @@
 FROM docker.io/library/archlinux:latest
 
+# env
+ENV TZ=Europe/Helsinki
+ENV HOST=dev
+ENV HOSTNAME=$HOST
+
 # Setup pacman, install packages, clean cache
 RUN pacman -Syyu --noconfirm \
     && pacman-key --init \
@@ -31,7 +36,6 @@ RUN pacman -Syyu --noconfirm \
     && pacman -Scc --noconfirm
 
 # Set timezone
-ENV TZ=Europe/Helsinki
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Get configs
