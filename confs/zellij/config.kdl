@@ -22,13 +22,13 @@ themes {
     dark {
         black "#1e1e1e"
 
-        red "#6a6a6a"
+        red "#1e1e1e"
         magenta "#6a6a6a"
 
         orange "#F09038"
         green "#88B830"
 
-        bg "#242424"  // TODO
+        bg "#6a6a6a"
         fg "#6a6a6a"
         white "#6a6a6a"
 
