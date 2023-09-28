@@ -87,8 +87,8 @@ set_prompt () {
   green='%B%F{green}'
   normal='%b%f'
   workdir='%2~'
-  reminder='[ @kontti ]'
-  PROMPT="$newline$green$reminder $blue$workdir $cyan$git_info $newline$cyan$prompt $normal"
+  hostname='[ @%m ]'
+  PROMPT="$newline$green$hostname $blue$workdir $cyan$git_info $newline$cyan$prompt $normal"
 }
 
 set_extras () {

@@ -1,23 +1,3 @@
-set_prompt () {
-  setopt prompt_subst
-  autoload -Uz vcs_info
-  zstyle ':vcs_info:*' enable git svn
-  zstyle ':vcs_info:git*' formats "(%b)"
-  precmd() {
-    vcs_info
-  }
-  newline=$'\n'
-  git_info='${vcs_info_msg_0_}'
-  prompt='❯'
-  blue='%B%F{blue}'
-  cyan='%B%F{cyan}'
-  green='%B%F{green}'
-  normal='%b%f'
-  workdir='%2~'
-  hostname='[ @%m ]'
-  PROMPT="$newline$green$hostname $blue$workdir $cyan$git_info $newline$cyan$prompt $normal"
-}
-
 define_aliases () {
   alias db="distrobox"
   alias colorpick='grim -g "$(slurp -p)" -t ppm - | convert - -format "%[pixel:p{0,0}]" txt:-'
@@ -63,7 +43,5 @@ ssway () {
   sway
 }
 
-
-set_prompt
 define_aliases
 set_osc7_shell_escape
