@@ -6,11 +6,7 @@ source_if_exists() {
 
 set_general_settings () {
   set_completion() {
-    autoload -Uz compinit
-    for dump in ~/.zcompdump(N.mh+24); do
-      compinit  # only compinit once a day
-    done
-    compinit -C
+    autoload -Uz compinit && compinit
   }
   set_completion
   autoload -U history-search-end
