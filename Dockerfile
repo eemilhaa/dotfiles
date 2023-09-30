@@ -33,6 +33,7 @@ RUN pacman -Syyu --noconfirm \
         zellij \
         zsh \
         zsh-syntax-highlighting \
+        zsh-autosuggestions \
     && pacman -Scc --noconfirm
 
 # Set timezone
