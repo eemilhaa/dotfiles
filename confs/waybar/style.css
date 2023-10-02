@@ -36,10 +36,12 @@ window#waybar {
 #pulseaudio,
 #tray,
 #scratchpad,
-#mode {
+#mode,
+#workspaces button {
   color: @light-fg;
   /*background-color: @light-bg;
   border: 1px solid @border;*/
+  border: 1px solid @dark-bg;
   padding: 0 0.8em;
   margin: 0 2px;
 }
@@ -54,53 +56,31 @@ window#waybar {
   margin-right: 0;
 }
 
-#scratchpad {
-  color: @dark-fg;
-  background-color: @dark-bg;
-  border: none;
+#workspaces button {
+  padding: 0 0.2em;
+  margin: 0;
+  color: @light-fg;
+  background-color: @light-bg;
+  border: 1px solid @border;
 }
 
-#workspaces button {
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
   color: @light-fg;
-  padding: 0em 0.2em;
-  background-color: @light-bg;
-  border: 1px solid @border;
+  background: @dark-fg;
 }
-#workspaces button.persistent {
-  color: @dark-fg;
-  background-color: @light-bg;
-  border: 1px solid @border;
-}
-#workspaces button.focused {
-  color: @white;
-  background-color: @neutral;
-  border: 1px solid @neutralborder;
-}
+
+#battery.bad,
+#network.disconnected,
 #workspaces button.urgent {
   color: @white;
   background-color: @urgent;
   border: 1px solid @urgentborder;
 }
-#workspaces button:hover {
-  box-shadow: inherit;
-  text-shadow: inherit;
-}
-#workspaces button:hover {
-  color: @light-fg;
-  background: @dark-fg;
-}
 
-#mode {
-  color: @white;
-  background-color: @neutral;
-  border: 1px solid @neutralborder;
-}
-
-#battery.bad {
-  color: @white;
-  background-color: @urgent;
-  border: 1px solid @urgentborder;
-}
+#workspaces button.focused, 
+#mode,
 #battery.charging,
 #battery.plugged {
   color: @white;
@@ -108,13 +88,8 @@ window#waybar {
   border: 1px solid @neutralborder;
 }
 
-#network.disconnected {
-  color: @white;
-  background-color: @urgent;
-  border: 1px solid @urgentborder;
-}
-
-#pulseaudio.muted {
+#pulseaudio.muted,
+#scratchpad {
   color: @dark-fg;
 }
 
@@ -124,5 +99,4 @@ window#waybar {
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
   background-color: @urgent;
-  border: 1px solid @urgentborder;
 }
