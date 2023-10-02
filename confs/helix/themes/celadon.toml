@@ -103,11 +103,10 @@
 "hint" = "blue"
 "warning" = "dark-yellow"
 "error" = "red"
-"diagnostic" = "blue"
-"diagnostic.info" = "blue"
-"diagnostic.hint" = "blue"
-"diagnostic.warning" = "dark-yellow"
-"diagnostic.error" = "red"
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "dark-yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
 
 
 [palette]
