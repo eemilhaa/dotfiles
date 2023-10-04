@@ -8,6 +8,7 @@ rpm-ostree install --allow-inactive --idempotent \
   xdg-desktop-portal-gtk \
   xdg-desktop-portal \
   wl-clipboard \
+  wl-mirror \
   wf-recorder \
   grim \
   slurp \
