@@ -9,6 +9,7 @@ ENV HOSTNAME=$HOST
 RUN pacman -Syyu --noconfirm \
     && pacman-key --init \
     && pacman -S --noconfirm \
+        bash-language-server \
         curl \
         gcc \
         git \
