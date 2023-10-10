@@ -3,11 +3,12 @@
 @define-color light-bg    #353535;
 @define-color border      #404040;
 @define-color dark-fg     #6a6a6a;
+@define-color medium-fg   #7A7A7A;
 @define-color light-fg    #e6e6e6;
 @define-color white       #ffffff;
 
-@define-color neutral        #285577;
-@define-color neutralborder  #4c7899;
+@define-color neutral        #F6AE2D;
+@define-color neutralborder  #F0B858;
 @define-color urgent         #900000;
 @define-color urgentborder   #B80000;
 
@@ -60,10 +61,14 @@ window#waybar {
   padding: 0 0.2em;
   margin: 0;
   color: @light-fg;
+  background-color: @dark-fg;
+  border: 1px solid @medium-fg;
+}
+#workspaces button.persistent {
+  color: @dark-fg;
   background-color: @light-bg;
   border: 1px solid @border;
 }
-
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
@@ -83,7 +88,7 @@ window#waybar {
 #mode,
 #battery.charging,
 #battery.plugged {
-  color: @white;
+  color: @black;
   background-color: @neutral;
   border: 1px solid @neutralborder;
 }
