@@ -48,10 +48,10 @@ set $term foot
     # output DP-1 mode 2560x1440@99.946Hz position 1920,0
     # output DP-2 mode 2560x1440@99.946Hz position 1920,0
     # output DP-2 transform 270
-    # output HDMI-A-1 resolution 1920x1080 position 1920,0
+    output HDMI-A-1 position 0,-1440
 
-    output DP-1 mode 2560x1440@143.998Hz position 1920,0
-    output DP-2 mode 2560x1440@143.998Hz position 1920,0
+    output DP-1 mode 2560x1440@143.998Hz position 0,-1440
+    output DP-2 mode 2560x1440@143.998Hz position 0,-1440
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
     #output * bg #1e1e1e solid_color
@@ -175,8 +175,6 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     bindsym $mod+0 workspace number 10
     bindsym $mod+Ctrl+$right workspace next_on_output
     bindsym $mod+Ctrl+$left workspace prev_on_output
-    bindsym $mod+Ctrl+$down output next
-    bindsym $mod+Ctrl+$up output prev
 
     assign [title="Slack"] workspace number 10
 
