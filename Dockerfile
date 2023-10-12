@@ -11,6 +11,7 @@ RUN pacman -Syyu --noconfirm \
     && pacman -S --noconfirm \
         bash-language-server \
         curl \
+        fakeroot \
         gcc \
         git \
         helix \
