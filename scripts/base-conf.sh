@@ -10,6 +10,7 @@ ln -s ~/dotfiles/confs/pypoetry ~/.config/
 ln -s ~/dotfiles/confs/alacritty ~/.config/
 ln -s ~/dotfiles/confs/containers ~/.config/
 ln -s ~/dotfiles/confs/zsh/.zshrc.d ~/
+ln -s ~/dotfiles/confs/git/.gitconfig ~/.gitconfig
 
 chsh -s /bin/zsh  # This must be done manually on silverblue
 

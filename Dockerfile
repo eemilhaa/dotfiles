@@ -14,6 +14,7 @@ RUN pacman -Syyu --noconfirm \
         fakeroot \
         gcc \
         git \
+        git-delta \
         helix \
         lsd \
         man-db \
