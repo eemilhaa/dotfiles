@@ -33,13 +33,24 @@ set_osc7_shell_escape () {
   add-zsh-hook -Uz chpwd chpwd-osc7-pwd
 }
 
-ssway () {
-  export WLR_DRM_NO_ATOMIC=1
-  export XDG_CURRENT_DESKTOP=sway
-  #export XDG_CURRENT_DESKTOP=unity  # for tray
+define_sway_stuff () {
+  ssway () {
+    export WLR_DRM_NO_ATOMIC=1
+    export XDG_CURRENT_DESKTOP=sway
+    #export XDG_CURRENT_DESKTOP=unity  # for tray
+    sway
+  }
 
-  sway
+  sway_ext_output_scale () {  # TODO get output dynamically
+    swaymsg output HDMI-A-1 enable scale $1
+  }
+
+  sway_ext_output_position () {
+    swaymsg output HDMI-A-1 position 0 0
+    swaymsg output eDP-1 position $1 $2
+  }
 }
 
 define_aliases
 set_osc7_shell_escape
+define_sway_stuff
