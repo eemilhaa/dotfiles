@@ -14,9 +14,6 @@ define_aliases () {
       git clone git@github.com:$1/$2.git
     fi
   }
-  did () {
-    ~/.cargo/bin/did ~/repos/hours/$1.md
-  }
 }
 
 set_osc7_shell_escape () {
