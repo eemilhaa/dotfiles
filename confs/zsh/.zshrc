@@ -67,8 +67,6 @@ define_aliases () {
 
 set_keybinds () {
   bindkey "^ " history-incremental-search-backward
-  bindkey "^[[A" history-beginning-search-backward-end
-  bindkey "^[[B" history-beginning-search-forward-end
   bindkey "^P" history-beginning-search-backward-end
   bindkey "^N" history-beginning-search-forward-end
   bindkey "^[[1;5C" forward-word
