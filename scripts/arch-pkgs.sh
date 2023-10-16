@@ -19,6 +19,7 @@ sudo pacman -S \
 sudo pacman -S \
   xorg-xwayland \
   sway \
+  swaybg \
   foot \
   waybar \
   fuzzel \
@@ -45,6 +46,7 @@ sudo pacman -S \
 sudo pacman -S \
   imagemagick \
   evince \
+  git-delta \
   podman \
   podman-compose \
   aardvark-dns \
