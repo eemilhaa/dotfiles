@@ -9,8 +9,10 @@
 "constructor" = "cyan"
 "namespace" = "cyan"
 "module" = "cyan"
-"constant" = "blue"
 "string" = "dark-cyan"
+"string.special" = "blue"
+"string.regexp" = "blue"
+"constant" = "blue"
 
 # light warm colors for things that are stuff but often don't stay constant
 "variable" = "sand"
@@ -26,8 +28,9 @@
 "operator" = "orange"
 
 # Dark punctuation and comments
-"punctuation" = "rock"
-"comment" = { fg = "medium-fg", modifiers = ["italic"] }
+"punctuation" = "punct"
+"punctuation.special" = "blue"
+"comment" = { fg = "comment", modifiers = ["italic"] }
 
 
 # UI, markup, other non-syntax stuff
@@ -57,7 +60,7 @@
 
 "ui.statusline" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "light-bg" }
-"ui.statusline.normal" = { fg = "medium-fg", bg = "light-bg" }
+"ui.statusline.normal" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.insert" = { fg = "black", bg = "green" }
 "ui.statusline.select" = { fg = "black", bg = "orange" }
 
@@ -65,8 +68,8 @@
 "ui.bufferline" = { fg = "light-fg", bg = "light-bg" }
 "ui.bufferline.active" = { fg = "white", bg = "dark-fg" }
 
-# hover
-"ui.popup" = { fg = "light-fg", bg = "light-bg" }
+# hover, whichkey
+"ui.popup" = { fg = "dark-fg", bg = "light-bg" }
 # menus
 "ui.menu" = { fg = "light-fg", bg = "light-bg" }
 "ui.menu.selected" = { fg = "white", bg = "dark-fg", modifiers = ["bold"] }
@@ -120,7 +123,8 @@ blue           = "#30B0F0"  # const
 yellow         = "#FFDE82"  # parameter
 orange         = "#F09038"  # keyword
 sand           = "#FDF6E3"  # variable
-rock           = "#8FA096"  # punctuation
+punct          = "#98A8A0"
+comment        = "#808880"  # TODO
 
 # UI
 # ----------------------------------------------------
@@ -131,7 +135,6 @@ medium-bg      = "#2D2D2D"  # rulers
 light-bg       = "#353535"  # menu / popup bg
 indent         = "#404040"  # indent
 dark-fg        = "#6A6A6A"  # barely legible text
-medium-fg      = "#939393"  # low prio text
 light-fg       = "#E6E6E6"  # normal / bright text
 white          = "#FFFFFF"  # very bright text
 
