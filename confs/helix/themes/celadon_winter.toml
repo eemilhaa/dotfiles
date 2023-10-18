@@ -1,0 +1,5 @@
+inherits = "celadon"
+
+[palette]
+green          = "#50B068"  # function
+yellow         = "#E0C888"  # parameter

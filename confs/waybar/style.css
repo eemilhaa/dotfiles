@@ -7,8 +7,8 @@
 @define-color light-fg    #e6e6e6;
 @define-color white       #ffffff;
 
-@define-color neutral        #F6AE2D;
-@define-color neutralborder  #F0B858;
+@define-color neutral        #285577;
+@define-color neutralborder  #4c7899;
 @define-color urgent         #900000;
 @define-color urgentborder   #B80000;
 
@@ -61,13 +61,13 @@ window#waybar {
   padding: 0 0.2em;
   margin: 0;
   color: @light-fg;
-  background-color: @dark-fg;
-  border: 1px solid @medium-fg;
+  background-color: @light-bg;
+  border: 1px solid @border;
 }
 #workspaces button.persistent {
   color: @dark-fg;
-  background-color: @light-bg;
-  border: 1px solid @border;
+  background-color: @dark-bg;
+  border: 1px solid @dark-bg;
 }
 #workspaces button:hover {
   box-shadow: inherit;
@@ -88,7 +88,7 @@ window#waybar {
 #mode,
 #battery.charging,
 #battery.plugged {
-  color: @black;
+  color: @white;
   background-color: @neutral;
   border: 1px solid @neutralborder;
 }
