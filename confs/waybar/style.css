@@ -38,6 +38,7 @@ window#waybar {
 #tray,
 #scratchpad,
 #mode,
+#workspaces,
 #workspaces button {
   color: @light-fg;
   /*background-color: @light-bg;
@@ -48,9 +49,9 @@ window#waybar {
 }
 
 #workspaces {
-  padding: 0;
+  border: none;
+  padding-left: 0;
   margin-left: 0;
-  margin-right: 2px;
 }
 
 #clock {
