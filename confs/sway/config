@@ -12,18 +12,20 @@ bar {
 
 ### Variables
 # Colors
-set $neutral         #285577
-set $neutralborder   #4c7899
-#set $neutral         #F0A82B
-#set $neutralborder   #F0B858
+#set $neutral         #285577
+#set $neutralborder   #4c7899
+#set $neutral         #809088
+#set $neutralborder   #98A8A0
+set $neutral         #F0A82B
+set $neutralborder   #F0B858
 #set $neutral         #516F53
 #set $neutralborder   #5E8261
 set $urgent          #900000
 set $urgentborder    #B80000
 set $inactive        #353535
 set $inactiveborder  #404040
-set $secondary       #353535
-set $secondaryborder #404040
+set $secondary       #6a6a6a
+set $secondaryborder #7a7a7a
 set $light-fg        #E6E6E6
 set $white           #FFFFFF
 set $black           #000000
@@ -124,8 +126,8 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     --background            353535ff \
     --text-color            E6E6E6ff \
     --match-color           E6E6E6ff \
-    --selection-color       285577ff \
-    --selection-text-color  FFFFFFff \
+    --selection-color       F0A82Bff \
+    --selection-text-color  000000ff \
     --selection-match-color FFFFFFff \
     --border-color          404040ff \
     --border-width          1 \
@@ -305,7 +307,7 @@ for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set wid
 
 # Window colors
 # Window state           bar border        bar fill    bar text    window border    split direction border
-client.focused           $neutralborder    $neutral    $white      $neutralborder   $neutralborder
+client.focused           $neutralborder    $neutral    $black      $neutralborder   $neutralborder
 client.focused_inactive  $secondaryborder  $secondary  $light-fg   $inactive        $inactive
 client.unfocused         $inactiveborder   $inactive   $light-fg   $inactive        $inactive
 client.urgent            $urgentborder     $urgent     $white      $urgent          $urgent
