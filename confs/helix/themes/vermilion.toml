@@ -1,0 +1,33 @@
+inherits = "celadon"
+
+"diff.plus" = "cyan"
+"diff.delta" = "yellow"
+"diff.minus" = "red"
+"ui.statusline.insert" = { fg = "black", bg = "cyan" }
+"markup.heading" = { fg = "green", modifiers = ["bold"] }
+
+[palette]
+green       = "#f0f0f0"
+sand        = "#B8B8B8"
+# sand        = "#C5BDA5"
+# sand        = "#E0C888"
+yellow      = "#F0A858"
+# yellow      = "#80A060"
+cyan        = "#A8A860"
+# cyan        = "#F0A858"
+dark-cyan   = "#80A060"
+orange      = "#F08048"
+blue        = "#E0C888"
+punct       = "#A0A088"
+comment     = "#6a6a6a"
+dark-blue   = "#407878"
+dark-yellow = "#F0B020"
+
+black          = "#242424"  # black text, cursorline
+dark-bg        = "#1e1e1e"  # base background
+medium-bg      = "#2D2D2D"  # rulers
+light-bg       = "#353535"  # menu / popup bg
+indent         = "#353535"  # indent
+dark-fg        = "#6A6A6A"  # barely legible text
+light-fg       = "#B8B8B8"  # normal / bright text
+white          = "#FFFFFF"  # very bright text

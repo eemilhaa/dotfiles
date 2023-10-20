@@ -20,13 +20,13 @@ theme "dark"
 
 themes {
     dark {
-        black "#242424"
+        black "#1e1e1e"
 
-        red "#242424"
+        red "#1e1e1e"
         magenta "#6a6a6a"
 
-        orange "#F09038"
-        green "#50B068"
+        orange "#b8b8b8"
+        green "#b8b8b8"
 
         bg "#6a6a6a"
         fg "#6a6a6a"

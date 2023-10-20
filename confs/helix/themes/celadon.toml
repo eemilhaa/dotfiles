@@ -30,7 +30,7 @@
 # Dark punctuation and comments
 "punctuation" = "punct"
 "punctuation.special" = "blue"
-"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment" = "comment"
 
 
 # UI, markup, other non-syntax stuff
@@ -117,7 +117,7 @@
 # Syntax colors (don't use / use sparingly in the UI)
 # ----------------------------------------------------
 green          = "#88B830"  # function
-cyan           = "#A2DEB4"  # type, namespace
+cyan           = "#90E0B0"  # type, namespace
 dark-cyan      = "#489888"  # string
 blue           = "#30B0F0"  # const
 yellow         = "#FFDE82"  # parameter

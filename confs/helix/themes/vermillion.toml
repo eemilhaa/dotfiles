@@ -1,9 +1,0 @@
-inherits = "celadon"
-
-[palette]
-green       = "#F0B020"
-sand        = "#E0C888"
-yellow      = "#E0C888"
-cyan        = "#80A060"
-orange      = "#F08048"
-blue        = "#90E0B0"

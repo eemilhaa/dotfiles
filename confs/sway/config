@@ -16,8 +16,8 @@ bar {
 #set $neutralborder   #4c7899
 #set $neutral         #809088
 #set $neutralborder   #98A8A0
-set $neutral         #F0A82B
-set $neutralborder   #F0B858
+set $neutral         #F09830
+set $neutralborder   #F0A858
 #set $neutral         #516F53
 #set $neutralborder   #5E8261
 set $urgent          #900000
@@ -126,7 +126,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     --background            353535ff \
     --text-color            E6E6E6ff \
     --match-color           E6E6E6ff \
-    --selection-color       F0A82Bff \
+    --selection-color       F09830ff \
     --selection-text-color  000000ff \
     --selection-match-color FFFFFFff \
     --border-color          404040ff \
@@ -316,7 +316,7 @@ client.urgent            $urgentborder     $urgent     $white      $urgent      
 # Gaps and borders
 #smart_gaps on
 #smart_borders on
-#gaps inner 10
+gaps inner 8
 default_border pixel 2
 # default_floating_border normal 1  # this is useless
 
