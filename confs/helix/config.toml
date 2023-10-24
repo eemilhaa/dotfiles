@@ -35,6 +35,9 @@ hidden = false
 render = true
 character = "▏"
 
+[editor.soft-wrap]
+enable = true
+
 [keys.normal]
 "C-l" = ":bn"
 "C-h" = ":bp"
