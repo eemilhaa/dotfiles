@@ -3,7 +3,7 @@ define_aliases () {
   alias recordscreen='wf-recorder -g "$(slurp)"'
   alias db="distrobox"
   alias dbinit="distrobox create -n dev --image ghcr.io/eemilhaa/dotfiles:main"
-  alias ddev="distrobox enter dev"
+  alias dbe="distrobox enter dev"
   dev () {
     podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/dotfiles:main
   }

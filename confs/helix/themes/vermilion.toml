@@ -1,5 +1,8 @@
 inherits = "celadon"
 
+"type" = "blue"
+"constructor" = "green"
+
 "diff.plus" = "cyan"
 "diff.delta" = "yellow"
 "diff.minus" = "red"
@@ -31,3 +34,5 @@ indent         = "#353535"  # indent
 dark-fg        = "#6A6A6A"  # barely legible text
 light-fg       = "#B8B8B8"  # normal / bright text
 white          = "#FFFFFF"  # very bright text
+
+# https://coolors.co/f08048-f0a858-e0c888-a8a860-80a060-f0f0f0-b8b8b8-a0a088
