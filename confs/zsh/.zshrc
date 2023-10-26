@@ -1,3 +1,5 @@
+# zmodload zsh/zprof  # debug zsh startup time
+
 source_if_exists() {
   if [ -f $1 ]; then
     source $1
@@ -6,7 +8,12 @@ source_if_exists() {
 
 set_general_settings () {
   set_completion() {
-    autoload -Uz compinit && compinit
+    autoload -Uz compinit
+    for dump in ~/.zcompdump(N.mh+24); do  # compinit only once a day
+      compinit
+    done
+    compinit -C
+    # autoload -Uz compinit && compinit  # compinit always
   }
   set_completion
   autoload -U history-search-end
@@ -114,3 +121,5 @@ set_keybinds
 set_extras
 set_prompt
 check_extra_dir ~/.zshrc.d  # Any extra zsh stuff / possible overrides
+
+# zprof  # debug zsh startup time
