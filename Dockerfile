@@ -27,6 +27,7 @@ RUN pacman -Syyu --noconfirm \
         python-pip \
         pyright \
         # python-lsp-server \
+        ruff-lsp \
         rustup \
         rust-analyzer \
         texlab \
