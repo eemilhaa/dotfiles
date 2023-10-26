@@ -1,13 +1,16 @@
 [language-server.ruff-lsp]
 command = "ruff-lsp"
 
+[language-server.ltex-ls]  # get this from aur
+command = "ltex-ls"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
 [[language]]
 name = "python"
 language-servers = ["pyright", "ruff-lsp"]
 formatter = { command = "black", args = ["--quiet", "-"] }
-
-[language-server.rust-analyzer.config.check]
-command = "clippy"
 
 [[language]]
 name = "html"
@@ -32,3 +35,4 @@ formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 [[language]]
 name = "latex"
 file-types = ["tex", "sty"]
+language-servers = ["texlab", "ltex-ls"]
