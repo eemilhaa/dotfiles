@@ -3,6 +3,7 @@ command = "ruff-lsp"
 
 [language-server.ltex-ls]  # get this from aur
 command = "ltex-ls"
+config = { ltex.language = "en-GB" }
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
