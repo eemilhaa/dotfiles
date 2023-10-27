@@ -315,7 +315,7 @@ client.urgent            $urgentborder     $urgent     $white      $urgent      
 
 # Gaps and borders
 #smart_gaps on
-#smart_borders on
+smart_borders on
 #gaps inner 8
 default_border pixel 2
 # default_floating_border normal 1  # this is useless
