@@ -4,6 +4,7 @@ define_aliases () {
   alias db="distrobox"
   alias dbinit="distrobox create -n dev --image ghcr.io/eemilhaa/dotfiles:main"
   alias dbe="distrobox enter dev"
+  alias dbh="distrobox-host-exec"
   dev () {
     podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/dotfiles:main
   }
