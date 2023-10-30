@@ -2,16 +2,17 @@ inherits = "celadon"
 
 "type" = "blue"
 "constructor" = "green"
+"constant" = "dark-yellow"
 
 "diff.plus" = "cyan"
-"diff.delta" = "yellow"
+"diff.delta" = "dark-yellow"
 "diff.minus" = "red"
 "ui.statusline.insert" = { fg = "black", bg = "cyan" }
 "markup.heading" = { fg = "green", modifiers = ["bold"] }
 
 [palette]
 green       = "#f0f0f0"
-sand        = "#B8B8B8"
+sand        = "#B0B0B0"
 # sand        = "#C5BDA5"
 # sand        = "#E0C888"
 yellow      = "#F0A858"
@@ -21,7 +22,7 @@ cyan        = "#A8A860"
 dark-cyan   = "#80A060"
 orange      = "#F08048"
 blue        = "#E0C888"
-punct       = "#A0A088"
+punct       = "#A0A0A0"
 comment     = "#6a6a6a"
 dark-blue   = "#407878"
 dark-yellow = "#F0B020"
@@ -32,7 +33,7 @@ medium-bg      = "#2D2D2D"  # rulers
 light-bg       = "#353535"  # menu / popup bg
 indent         = "#353535"  # indent
 dark-fg        = "#6A6A6A"  # barely legible text
-light-fg       = "#B8B8B8"  # normal / bright text
+light-fg       = "#B0B0B0"  # normal / bright text
 white          = "#FFFFFF"  # very bright text
 
-# https://coolors.co/f08048-f0a858-e0c888-a8a860-80a060-f0f0f0-b8b8b8-a0a088
+# https://coolors.co/f08048-f0a858-e0c888-a8a860-80a060-F0B020-f0f0f0-b0b0b0-a0a0a0

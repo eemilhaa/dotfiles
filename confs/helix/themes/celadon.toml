@@ -98,7 +98,7 @@
 "ui.cursor.primary.select" = { fg = "black", bg = "orange" }
 "ui.cursor.primary.insert" = { fg = "black", bg = "green" }
 "ui.cursor" = { fg = "black", bg = "light-fg" }
-"ui.cursor.match" = { fg = "blue", bg = "light-bg", modifiers = ["bold"] }
+"ui.cursor.match" = { fg = "black", bg = "dark-blue", modifiers = ["bold"] }
 
 "ui.highlight" = { bg = "light-bg" }
 
