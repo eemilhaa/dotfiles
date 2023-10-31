@@ -1,31 +1,26 @@
 inherits = "celadon"
 
-"type" = "blue"
-"constructor" = "green"
-"constant" = "dark-yellow"
+# "constructor" = "function"
+"type" = "const"
 
-"diff.plus" = "cyan"
-"diff.delta" = "dark-yellow"
+"diff.plus" = "string"
+"diff.delta" = "const"
 "diff.minus" = "red"
-"ui.statusline.insert" = { fg = "black", bg = "cyan" }
-"markup.heading" = { fg = "green", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "black", bg = "string" }
+"markup.heading" = { fg = "function", modifiers = ["bold"] }
 
 [palette]
-green       = "#f0f0f0"
-sand        = "#B0B0B0"
-# sand        = "#C5BDA5"
-# sand        = "#E0C888"
-yellow      = "#F0A858"
-# yellow      = "#80A060"
-cyan        = "#A8A860"
-# cyan        = "#F0A858"
-dark-cyan   = "#80A060"
-orange      = "#F08048"
-blue        = "#E0C888"
-punct       = "#A0A0A0"
-comment     = "#6a6a6a"
-dark-blue   = "#407878"
-dark-yellow = "#F0B020"
+function   = "#f0f0f0"
+variable   = "#b0b0b0"
+attribute  = "#A8A860"
+namespace  = "#f0f0f0"
+string     = "#80A060"
+keyword    = "#F08048"
+const      = "#F0A858"
+punct      = "#a0a0a0"
+comment    = "#6a6a6a"
+selection  = "#407878"
+attention  = "#F0C068"
 
 black          = "#242424"  # black text, cursorline
 dark-bg        = "#1e1e1e"  # base background
@@ -36,4 +31,4 @@ dark-fg        = "#6A6A6A"  # barely legible text
 light-fg       = "#B0B0B0"  # normal / bright text
 white          = "#FFFFFF"  # very bright text
 
-# https://coolors.co/f08048-f0a858-e0c888-a8a860-80a060-F0B020-f0f0f0-b0b0b0-a0a0a0
+# https://coolors.co/f08048-f0a858-e0c888-a8a860-80a060-fff0d0-B8A888
