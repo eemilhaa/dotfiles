@@ -2,9 +2,11 @@ define_aliases () {
   alias colorpick='grim -g "$(slurp -p)" -t ppm - | convert - -format "%[pixel:p{0,0}]" txt:-'
   alias recordscreen='wf-recorder -g "$(slurp)"'
   alias db="distrobox"
-  alias dbinit="distrobox create -n dev --image ghcr.io/eemilhaa/dotfiles:main"
   alias dbe="distrobox enter dev"
   alias dbh="distrobox-host-exec"
+  dbinit () {
+    distrobox create -n $1 --image ghcr.io/eemilhaa/dotfiles:main
+  }
   dev () {
     podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/dotfiles:main
   }
