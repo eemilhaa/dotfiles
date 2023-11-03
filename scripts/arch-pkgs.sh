@@ -51,6 +51,7 @@ sudo pacman -S \
   podman-compose \
   aardvark-dns \
   distrobox \
+  flatpak \
   lsd \
   zathura \
   zathura-pdf-mupdf \
