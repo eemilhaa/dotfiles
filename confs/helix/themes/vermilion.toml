@@ -2,6 +2,7 @@ inherits = "celadon"
 
 # "constructor" = "function"
 "type" = "const"
+"variable.other.member" = "member"
 
 "diff.plus" = "string"
 "diff.delta" = "const"
@@ -12,6 +13,7 @@ inherits = "celadon"
 [palette]
 function   = "#f0f0f0"
 variable   = "#b0b0b0"
+member     = "#E0C888"
 attribute  = "#A8A860"
 namespace  = "#f0f0f0"
 string     = "#80A060"
