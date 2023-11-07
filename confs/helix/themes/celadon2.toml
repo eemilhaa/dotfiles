@@ -1,8 +1,6 @@
 inherits = "celadon"
 
-"variable.other.member" = "member"
-
-"diff.plus" = "string"
+"diff.plus" = "attribute"
 "diff.delta" = "const"
 "diff.minus" = "red"
 "ui.statusline.insert" = { fg = "black", bg = "string" }
@@ -11,16 +9,15 @@ inherits = "celadon"
 [palette]
 function   = "#f0f0f0"
 variable   = "#b0b0b0"
-member     = "#E0C888"
-attribute  = "#A8A860"
-namespace  = "#f0f0f0"
-string     = "#80A060"
-keyword    = "#F08048"
-const      = "#F0A858"
+# namespace  = "#90E0B0"
+# string     = "#489888"
+const      = "#e0c888"
+attribute  = "#50B068"
+# keyword    = "#F09038"
 punct      = "#a0a0a0"
 comment    = "#6a6a6a"
-selection  = "#407878"
-attention  = "#F0C068"
+# selection  = "#407878"
+# attention  = "#F0C068"
 
 black          = "#242424"  # black text, cursorline
 dark-bg        = "#1e1e1e"  # base background
@@ -31,4 +28,4 @@ dark-fg        = "#6A6A6A"  # barely legible text
 light-fg       = "#B0B0B0"  # normal / bright text
 white          = "#FFFFFF"  # very bright text
 
-# https://coolors.co/f08048-f0a858-e0c888-a8a860-80a060-fff0d0-B8A888
+# https://coolors.co/f09038-e0c888-90e0b0-50b068-489888-f0f0f0-b0b0b0

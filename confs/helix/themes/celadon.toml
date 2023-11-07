@@ -1,35 +1,33 @@
 # Syntax
 # ----------------------------------------------------
-# function for things that do stuff (functions).
 "function" = "function"
+"constructor" = "function"
 
-# Cold colors for things that are stuff and often stay constant.
-# Also constructors to differentiate them from functions.
 "type" = "namespace"
-"constructor" = "namespace"
-"namespace" = "namespace"
-"module" = "namespace"
-"string" = "string"
 "string.special" = "const"
 "string.regexp" = "const"
 "constant" = "const"
 
-# light warm colors for things that are stuff but often don't stay constant
+"namespace" = "namespace"
+"module" = "namespace"
+
 "variable" = "variable"
+
+"string" = "string"
+
 "attribute" = "attribute"
 "variable.parameter" = "attribute"
 "variable.other.member" = "attribute"
 
-# keyword for keywords, language-specific stuff and operators
 "keyword" = "keyword"
 "variable.builtin" = "keyword"
 "label" = "keyword"
 "tag" = "keyword"
 "operator" = "keyword"
 
-# Dark punctuation and comments
 "punctuation" = "punct"
 "punctuation.special" = "const"
+
 "comment" = "comment"
 
 
@@ -60,9 +58,9 @@
 
 "ui.statusline" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "light-bg" }
-"ui.statusline.normal" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.insert" = { fg = "black", bg = "function" }
-"ui.statusline.select" = { fg = "black", bg = "keyword" }
+"ui.statusline.select" = { fg = "black", bg = "attribute" }
+"ui.statusline.normal" = { fg = "black", bg = "selection" }
 
 "ui.bufferline.background" = { bg = "dark-bg" }
 "ui.bufferline" = { fg = "light-fg", bg = "light-bg" }
@@ -95,7 +93,7 @@
 "ui.selection" = { fg = "light-fg", bg = "dark-fg" }
 
 "ui.cursor.primary" = { fg = "black", bg = "attention" }
-"ui.cursor.primary.select" = { fg = "black", bg = "keyword" }
+"ui.cursor.primary.select" = { fg = "black", bg = "attribute" }
 "ui.cursor.primary.insert" = { fg = "black", bg = "function" }
 "ui.cursor" = { fg = "black", bg = "light-fg" }
 "ui.cursor.match" = { fg = "black", bg = "selection", modifiers = ["bold"] }
@@ -111,9 +109,7 @@
 "diagnostic.info" = { underline = { color = "const", style = "curl" } }
 "diagnostic.hint" = { underline = { color = "const", style = "curl" } }
 
-
 [palette]
-
 # Syntax colors (don't use / use sparingly in the UI)
 # ----------------------------------------------------
 function   = "#88B830"

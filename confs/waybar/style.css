@@ -7,8 +7,8 @@
 @define-color light-fg    #e6e6e6;
 @define-color white       #ffffff;
 
-@define-color neutral        #F0A858;
-@define-color neutralborder  #F4BC7C;
+@define-color neutral        #285577;
+@define-color neutralborder  #4c7899;
 @define-color urgent         #900000;
 @define-color urgentborder   #B80000;
 
@@ -41,9 +41,7 @@ window#waybar {
 #workspaces,
 #workspaces button {
   color: @light-fg;
-  /*background-color: @light-bg;
-  border: 1px solid @border;*/
-  border: 1px solid @dark-bg;
+  /*border: 1px solid @dark-bg;*/
   padding: 0 0.8em;
   margin: 0 2px;
 }
@@ -89,7 +87,7 @@ window#waybar {
 #mode,
 #battery.charging,
 #battery.plugged {
-  color: @black;
+  color: @white;
   background-color: @neutral;
   border: 1px solid @neutralborder;
 }

@@ -1,0 +1,16 @@
+inherits = "starlight"
+
+[palette]
+red        = "#F62B5A"
+green      = "#47B413"
+yellow     = "#E3C401"
+blue       = "#24ACD4"
+dark-blue  = "#24ACD4"
+magenta    = "#F2AFFD"
+cyan       = "#13C299"
+white      = "#E6E6E6"
+punct      = "#b0b0b0"
+
+# Grays
+indent     = "#404040"
+dark-fg    = "#616161"

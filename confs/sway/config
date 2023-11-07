@@ -12,16 +12,18 @@ bar {
 
 ### Variables
 # Colors
-#set $neutral         #285577
-#set $neutralborder   #4c7899
+set $neutral         #285577
+set $neutralborder   #4c7899
 #set $neutral         #809088
 #set $neutralborder   #98A8A0
-set $neutral         #F0A858
-set $neutralborder   #F4BC7C
+#set $neutral         #F0A858
+#set $neutralborder   #F4BC7C
 #set $neutral         #516F53
 #set $neutralborder   #5E8261
-set $urgent          #900000
-set $urgentborder    #B80000
+#set $urgent          #900000
+#set $urgentborder    #B80000
+set $urgent          #FF4D51
+set $urgentborder    #FF4D51
 set $inactive        #353535
 set $inactiveborder  #404040
 set $secondary       #6a6a6a
@@ -56,8 +58,8 @@ set $term foot
     output DP-2 mode 2560x1440@143.998Hz position 0,-1440
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
-    #output * bg #1e1e1e solid_color
-    output * bg ~/Pictures/walls/mountains.jpg fill
+    output * bg #1e1e1e solid_color
+    #output * bg ~/Pictures/walls/fuji.jpg fill
 
 # Screen closing disables laptop
     bindswitch lid:on output eDP-1 disable
@@ -126,8 +128,8 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     --background            353535ff \
     --text-color            E6E6E6ff \
     --match-color           E6E6E6ff \
-    --selection-color       F0A858ff \
-    --selection-text-color  000000ff \
+    --selection-color       285577ff \
+    --selection-text-color  FFFFFFff \
     --selection-match-color FFFFFFff \
     --border-color          404040ff \
     --border-width          1 \
@@ -307,7 +309,7 @@ for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set wid
 
 # Window colors
 # Window state           bar border        bar fill    bar text    window border    split direction border
-client.focused           $neutralborder    $neutral    $black      $neutral         $neutral
+client.focused           $neutralborder    $neutral    $white      $neutralborder   $neutralborder
 client.focused_inactive  $secondaryborder  $secondary  $light-fg   $inactive        $inactive
 client.unfocused         $inactiveborder   $inactive   $light-fg   $inactive        $inactive
 client.urgent            $urgentborder     $urgent     $white      $urgent          $urgent
@@ -315,7 +317,7 @@ client.urgent            $urgentborder     $urgent     $white      $urgent      
 
 # Gaps and borders
 #smart_gaps on
-smart_borders on
+#smart_borders on
 #gaps inner 8
 default_border pixel 2
 # default_floating_border normal 1  # this is useless

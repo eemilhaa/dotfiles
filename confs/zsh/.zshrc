@@ -92,13 +92,13 @@ set_prompt () {
   newline=$'\n'
   git_info='${vcs_info_msg_0_}'
   prompt='❯'
-  yellow='%B%F{yellow}'
+  cyan='%B%F{cyan}'
   blue='%B%F{blue}'
   green='%B%F{green}'
   normal='%b%f'
   workdir='%2~'
   hostname='[ @%m ]'
-  PROMPT="$newline$green$hostname $blue$workdir $yellow$git_info $newline$yellow$prompt $normal"
+  PROMPT="$newline$green$hostname $blue$workdir $cyan$git_info $newline$cyan$prompt $normal"
 }
 
 set_extras () {
