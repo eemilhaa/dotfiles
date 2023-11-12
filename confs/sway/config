@@ -333,8 +333,8 @@ title_align center
 #     XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
 # }
 bindsym {
-    XF86MonBrightnessDown exec brightnessctl set 10%-
-    XF86MonBrightnessUp exec brightnessctl set 10%+
+    XF86MonBrightnessDown exec brightnessctl set 5%-
+    XF86MonBrightnessUp exec brightnessctl set 5%+
 }
 # Audio
 bindsym $mod+a exec pavucontrol
