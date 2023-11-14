@@ -66,6 +66,7 @@
 "ui.virtual"                = "dark-fg"
 "ui.virtual.ruler"          = { bg = "medium-bg" }
 "ui.virtual.indent-guide"   = "indent"
+"ui.virtual.whitespace"     = "indent"
 "ui.menu"                   = { fg = "light-fg", bg = "light-bg" }
 "ui.menu.selected"          = { fg = "white", bg = "dark-fg", modifiers = ["bold"] }
 "ui.selection"              = { fg = "light-fg", bg = "dark-fg" }
@@ -104,6 +105,6 @@ black      = "#1e1e1e"
 dark-bg    = "#242424"
 medium-bg  = "#2D2D2D"
 light-bg   = "#353535"
-indent     = "#5B5B5B"
+indent     = "#616161"
 dark-fg    = "#929292"
 light-fg   = "#E6E6E6"
