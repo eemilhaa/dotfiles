@@ -45,17 +45,8 @@ RUN pacman -Syyu --noconfirm \
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Get configs
-COPY ./confs /confs
-RUN mkdir -p ~/.config
-
-# Symlink everything
-RUN ln -s /confs/helix ~/.config/ \
-    && ln -s /confs/zellij ~/.config/ \
-    && ln -s /confs/lsd ~/.config/ \
-    && ln -s /confs/zsh/.zshrc ~/.zshrc && chsh -s /bin/zsh \
-    && ln -s /confs/starship/starship.toml ~/.config/starship.toml \
-    && ln -s /confs/pypoetry ~/.config/ \
-    && ln -s /confs/git/.gitconfig ~/.gitconfig
+COPY ./confs/home /root
+COPY ./confs/.config /root/.config
 
 # Rust
 RUN rustup toolchain install nightly
