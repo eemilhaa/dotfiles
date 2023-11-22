@@ -11,6 +11,14 @@ auto-format = false
 bufferline = "always"
 # rulers = [80]
 
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
 [editor.statusline]
 left = ["mode", "selections", "diagnostics", "spinner"]
 center = []
