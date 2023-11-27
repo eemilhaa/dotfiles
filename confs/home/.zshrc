@@ -99,7 +99,7 @@ set_prompt () {
   normal='%b%f'
   workdir='%2~'
   hostname='[ @%m ]'
-  venv='%(1V.(%1v).)'
+  venv='%(1V.(%1v) .)'
 
   export VIRTUAL_ENV_DISABLE_PROMPT=1
   venv_indicator() {
@@ -112,7 +112,7 @@ set_prompt () {
   add-zsh-hook precmd venv_indicator
 
   PROMPT="
-$green$hostname $blue$workdir $cyan$git_info $magenta$venv
+$magenta$venv$green$hostname $blue$workdir $cyan$git_info
 $cyan$prompt $normal"
 }
 
