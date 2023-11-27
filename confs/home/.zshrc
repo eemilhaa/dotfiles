@@ -16,6 +16,7 @@ set_general_settings () {
     # autoload -Uz compinit && compinit  # compinit always
   }
   set_completion
+  autoload -Uz add-zsh-hook
   autoload -U history-search-end
   autoload -z edit-command-line
   zstyle ':completion:*' menu select
