@@ -95,10 +95,25 @@ set_prompt () {
   cyan='%B%F{cyan}'
   blue='%B%F{blue}'
   green='%B%F{green}'
+  magenta='%B%F{magenta}'
   normal='%b%f'
   workdir='%2~'
   hostname='[ @%m ]'
-  PROMPT="$newline$green$hostname $blue$workdir $cyan$git_info $newline$cyan$prompt $normal"
+  venv='%(1V.(%1v).)'
+
+  export VIRTUAL_ENV_DISABLE_PROMPT=1
+  venv_indicator() {
+    if [[ -z $VIRTUAL_ENV ]] then
+      psvar[1]=''
+    else
+      psvar[1]=${VIRTUAL_ENV##*/}
+    fi
+  }
+  add-zsh-hook precmd venv_indicator
+
+  PROMPT="
+$green$hostname $blue$workdir $cyan$git_info $magenta$venv
+$cyan$prompt $normal"
 }
 
 set_extras () {
