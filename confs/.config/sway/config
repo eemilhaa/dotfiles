@@ -58,7 +58,7 @@ set $term foot
     output DP-2 mode 2560x1440@143.998Hz position 0,-1440
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
-    output * bg #1e1e1e solid_color
+    output * bg #353535 solid_color
     #output * bg ~/Pictures/walls/fuji.jpg fill
 
 # Screen closing disables laptop
@@ -318,7 +318,7 @@ client.urgent            $urgentborder     $urgent     $white      $urgent      
 # Gaps and borders
 #smart_gaps on
 #smart_borders on
-#gaps inner 8
+gaps inner 4
 default_border pixel 2
 # default_floating_border normal 1  # this is useless
 
