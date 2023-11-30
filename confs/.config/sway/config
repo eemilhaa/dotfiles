@@ -26,8 +26,8 @@ set $urgent          #F62B5A
 set $urgentborder    #FF4D51
 set $inactive        #353535
 set $inactiveborder  #404040
-set $secondary       #6a6a6a
-set $secondaryborder #7a7a7a
+set $secondary       #616161
+set $secondaryborder #717171
 set $light-fg        #E6E6E6
 set $white           #FFFFFF
 set $black           #000000
@@ -58,7 +58,7 @@ set $term foot
     output DP-2 mode 2560x1440@143.998Hz position 0,-1440
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
-    output * bg #353535 solid_color
+    output * bg #1e1e1e solid_color
     #output * bg ~/Pictures/walls/fuji.jpg fill
 
 # Screen closing disables laptop
@@ -310,7 +310,7 @@ for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set wid
 # Window colors
 # Window state           bar border        bar fill    bar text    window border    split direction border
 client.focused           $neutralborder    $neutral    $white      $neutralborder   $neutralborder
-client.focused_inactive  $secondaryborder  $secondary  $light-fg   $inactiveborder  $inactiveborder
+client.focused_inactive  $inactiveborder   $inactive   $light-fg   $inactiveborder  $inactiveborder
 client.unfocused         $inactiveborder   $inactive   $light-fg   $inactiveborder  $inactiveborder
 client.urgent            $urgentborder     $urgent     $white      $urgent          $urgent
 
@@ -318,12 +318,12 @@ client.urgent            $urgentborder     $urgent     $white      $urgent      
 # Gaps and borders
 #smart_gaps on
 #smart_borders on
-gaps inner 4
-default_border pixel 2
+#gaps inner 4
+default_border normal 1
 # default_floating_border normal 1  # this is useless
 
 titlebar_padding 1
-title_align center
+#title_align center
 
 
 # Program specific binds
