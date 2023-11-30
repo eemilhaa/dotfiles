@@ -1,7 +1,7 @@
 #font pango:Monospace 11
 
 # Detect xwayland
-for_window [shell="xwayland"] title_format "%title (xwayland)
+for_window [shell="xwayland"] title_format "%title (xwayland)"
 
 # waybar
 bar {
