@@ -4,6 +4,9 @@ define_aliases () {
   alias db="distrobox"
   alias dbe="distrobox enter dev"
   alias dbh="distrobox-host-exec"
+  battery () {
+    upower -i $(upower -e | grep 'BAT') | grep -E "state|percentage"
+  }
   dbinit () {
     distrobox create -n $1 --image ghcr.io/eemilhaa/dotfiles:main
   }
