@@ -5,8 +5,13 @@
     // "ipc": true,
     // "height": 30, // Waybar height (to be removed for auto height)
     "spacing": 0, // Gaps between modules (4px)
-    "modules-left": ["sway/workspaces", "sway/scratchpad", "sway/mode"],
-    "modules-center": [],
+    "modules-left": [
+        "sway/workspaces",
+        "sway/scratchpad",
+        "sway/mode",
+    ],
+    "modules-center": [
+    ],
     "modules-right": [
         "tray",
         "battery",
@@ -49,7 +54,7 @@
         "states": {
             "good": 100,
             "ok": 50,
-            "bad": 25,
+            "bad": 20,
         },
         "format": "Battery: {capacity}%",
         // "format-plugged": "Battery (plugged): {capacity}%",

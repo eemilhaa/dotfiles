@@ -9,8 +9,8 @@
 
 @define-color neutral        #285577;
 @define-color neutralborder  #4c7899;
-@define-color urgent         #900000;
-@define-color urgentborder   #B80000;
+@define-color urgent         #F62B5A;
+@define-color urgentborder   #FF4D51;
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
