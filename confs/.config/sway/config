@@ -93,9 +93,11 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
         middle_emulation enabled
         scroll_factor 0.3
     }
-    input * {
+    input "type:keyboard" {
         xkb_layout "us"
         xkb_variant "altgr-intl"
+        xkb_options caps:escape
+        #xkb_options caps:swapescape
     }
     input type:mouse {
         accel_profile "flat"  # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
