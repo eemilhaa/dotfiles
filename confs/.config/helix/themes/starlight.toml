@@ -50,6 +50,8 @@
 "ui.background"             = { fg = "dark-fg", bg = "dark-bg" }
 "ui.cursor"                 = { fg = "black", bg = "light-fg" }
 "ui.cursor.primary"         = { fg = "black", bg = "yellow" }
+# "ui.cursor.primary.select"  = { fg = "black", bg = "magenta" }
+# "ui.cursor.primary.insert"  = { fg = "black", bg = "green" }
 "ui.cursor.match"           = { fg = "black", bg = "dark-blue", modifiers = ["bold"] }
 "ui.linenr"                 = "dark-fg"
 "ui.linenr.selected"        = "yellow"
