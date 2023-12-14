@@ -1,34 +1,55 @@
-inherits = "celadon"
+inherits = "starlight"
 
-"variable.other.member" = "member"
 
-"diff.plus" = "string"
-"diff.delta" = "const"
-"diff.minus" = "red"
-"ui.statusline.insert" = { fg = "black", bg = "string" }
-"markup.heading" = { fg = "function", modifiers = ["bold"] }
+"function"               = "white"
+"constructor"            = "white"
+
+"type"                   = "yellow"
+"string.special"         = "yellow"
+"string.regexp"          = "yellow"
+"constant"               = "yellow"
+"punctuation.special"    = "yellow"
+
+"namespace"              = "green"
+"module"                 = "green"
+"variable"               = "green"
+
+"attribute"              = "cyan"
+"variable.parameter"     = "cyan"
+"variable.other.member"  = "cyan"
+"type.parameter"         = "cyan"
+
+"keyword"                = "red"
+"variable.builtin"       = "red"
+"label"                  = "red"
+"tag"                    = "red"
+"operator"               = "red"
+"special"                = "red"
+
+"string"                 = "sand"
+
+"punctuation"            = "punct"
+
+"comment"                = "dark-fg"
+
 
 [palette]
-function   = "#f0f0f0"
-variable   = "#b0b0b0"
-member     = "#E0C888"
-attribute  = "#A8A860"
-namespace  = "#f0f0f0"
-string     = "#80A060"
-keyword    = "#F08048"
-const      = "#F0A858"
-punct      = "#a0a0a0"
-comment    = "#6a6a6a"
-selection  = "#407878"
-attention  = "#F0C068"
+red        = "#F08048"
+green      = "#8FA775"
+yellow     = "#F0A858"
+sand       = "#E0C888"
+blue       = "#48B0E8"
+dark-blue  = "#1098E0"
+magenta    = "#B09890"
+cyan       = "#90E0B0"
+white      = "#ffffff"
+punct      = "#C9C9C9"
 
-black          = "#242424"  # black text, cursorline
-dark-bg        = "#1e1e1e"  # base background
-medium-bg      = "#2D2D2D"  # rulers
-light-bg       = "#353535"  # menu / popup bg
-indent         = "#353535"  # indent
-dark-fg        = "#6A6A6A"  # barely legible text
-light-fg       = "#B0B0B0"  # normal / bright text
-white          = "#FFFFFF"  # very bright text
-
-# https://coolors.co/f08048-f0a858-e0c888-a8a860-80a060-fff0d0-B8A888
+# Grays
+black      = "#1e1e1e"
+dark-bg    = "#242424"
+medium-bg  = "#2D2D2D"
+light-bg   = "#353535"
+indent     = "#616161"
+dark-fg    = "#929292"
+light-fg   = "#E6E6E6"
