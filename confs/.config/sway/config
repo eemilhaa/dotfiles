@@ -215,7 +215,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 #
     bindsym $mod+Escape move window to scratchpad
     set $scratch_title Scratch-term
-    set $scratch_term $term --title $scratch_title
+    set $scratch_term $term --title $scratch_title --override locked-title=yes
     for_window [title="$scratch_title"] move container to scratchpad
     exec $scratch_term
     bindsym $mod+Shift+s exec $scratch_term
