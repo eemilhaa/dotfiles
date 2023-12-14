@@ -87,9 +87,12 @@ set_prompt () {
   autoload -Uz vcs_info
   zstyle ':vcs_info:*' enable git svn
   zstyle ':vcs_info:git*' formats "(%b)"
-  precmd() {
+
+  precmd () {
     vcs_info
+    print -Pn "\e]0;%~\e"
   }
+
   newline=$'\n'
   git_info='${vcs_info_msg_0_}'
   prompt='❯'
@@ -103,7 +106,7 @@ set_prompt () {
   venv='%(1V.(%1v) .)'
 
   export VIRTUAL_ENV_DISABLE_PROMPT=1
-  venv_indicator() {
+  venv_indicator () {
     if [[ -z $VIRTUAL_ENV ]] then
       psvar[1]=''
     else
