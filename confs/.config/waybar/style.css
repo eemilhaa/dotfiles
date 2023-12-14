@@ -73,6 +73,7 @@ window#waybar {
   text-shadow: inherit;
   color: @light-fg;
   background: @dark-fg;
+  border: 1px solid @medium-fg;
 }
 
 #battery.bad,
