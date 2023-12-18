@@ -90,7 +90,7 @@ set_prompt () {
 
   precmd () {
     vcs_info
-    print -Pn "\e]0;%~\e"
+    print -Pn "\e]0;Terminal: %~\e"
   }
 
   newline=$'\n'
@@ -117,7 +117,7 @@ set_prompt () {
 
   PROMPT="
 $magenta$venv$green$hostname $blue$workdir $cyan$git_info
-$cyan$prompt $normal"
+$normal$prompt $normal"
 }
 
 set_extras () {

@@ -41,7 +41,7 @@ hidden = false
 
 [editor.indent-guides]
 render = true
-character = "▏"
+# character = "▏"
 
 [editor.soft-wrap]
 enable = true

@@ -1,52 +1,54 @@
 # Syntax
 # ----------------------------------------------------
-"function" = "function"
-"constructor" = "function"
+# Syntax
+"function"               = "green"
+"constructor"            = "green"
 
-"type" = "namespace"
-"string.special" = "const"
-"string.regexp" = "const"
-"constant" = "const"
+"type"                   = "cyan"
+"namespace"              = "cyan"
+"module"                 = "cyan"
 
-"namespace" = "namespace"
-"module" = "namespace"
+"constant"               = "blue"
 
-"variable" = "variable"
+"variable"               = "warm-white"
 
-"string" = "string"
+"attribute"              = "yellow"
+"variable.parameter"     = "yellow"
+"variable.other.member"  = "yellow"
+"type.parameter"         = "yellow"
 
-"attribute" = "attribute"
-"variable.parameter" = "attribute"
-"variable.other.member" = "attribute"
+"keyword"                = "orange"
+"variable.builtin"       = "orange"
+"label"                  = "orange"
+"tag"                    = "orange"
+"operator"               = "orange"
+"special"                = "orange" # fuzzy highlight
 
-"keyword" = "keyword"
-"variable.builtin" = "keyword"
-"label" = "keyword"
-"tag" = "keyword"
-"operator" = "keyword"
+"punctuation.special"    = "orange"
+"string.special"         = "orange"
+"string.regexp"          = "orange"
 
-"punctuation" = "punct"
-"punctuation.special" = "const"
+"string"                 = "dark-cyan"
 
-"comment" = "comment"
+"punctuation"            = "punct"
 
+"comment"                = "comment"
 
 # UI, markup, other non-syntax stuff
 # ----------------------------------------------------
-"special" = "keyword" # fuzzy highlight
 
-"markup.heading.marker" = { fg = "keyword", modifiers = ["bold"] }
-"markup.heading" = { fg = "variable", modifiers = ["bold"] }
-"markup.list" = "keyword"
-"markup.bold" = { fg = "attribute", modifiers = ["bold"] }
-"markup.italic" = { fg = "attribute", modifiers = ["italic"] }
-"markup.link.url" = "string"
-"markup.link.text" = "namespace"
-"markup.quote" = "function"
-"markup.raw" = "function"
+"markup.heading.marker" = { fg = "orange", modifiers = ["bold"] }
+"markup.heading" = { fg = "white", modifiers = ["bold"] }
+"markup.list" = "orange"
+"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "yellow", modifiers = ["italic"] }
+"markup.link.url" = "dark-cyan"
+"markup.link.text" = "cyan"
+"markup.quote" = "green"
+"markup.raw" = "green"
 
-"diff.plus" = "function"
-"diff.delta" = "const"
+"diff.plus" = "green"
+"diff.delta" = "blue"
 "diff.minus" = "red"
 
 # User Interface
@@ -54,13 +56,13 @@
 "ui.background" = { fg = "dark-fg", bg = "dark-bg" }
 
 "ui.linenr" = { fg = "dark-fg" }
-"ui.linenr.selected" = "attention"
+"ui.linenr.selected" = "saturated-yellow"
 
 "ui.statusline" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "light-bg" }
-"ui.statusline.insert" = { fg = "black", bg = "function" }
-"ui.statusline.select" = { fg = "black", bg = "attribute" }
-"ui.statusline.normal" = { fg = "black", bg = "selection" }
+"ui.statusline.insert" = { fg = "black", bg = "green" }
+"ui.statusline.select" = { fg = "black", bg = "yellow" }
+"ui.statusline.normal" = { fg = "black", bg = "orange" }
 
 "ui.bufferline.background" = { bg = "dark-bg" }
 "ui.bufferline" = { fg = "light-fg", bg = "light-bg" }
@@ -89,55 +91,49 @@
 "ui.cursorcolumn.primary" = { bg = "black" }
 
 # selections & cursors
-"ui.selection.primary" = { fg = "white", bg = "selection" }
+"ui.selection.primary" = { fg = "white", bg = "dark-blue" }
 "ui.selection" = { fg = "light-fg", bg = "dark-fg" }
 
-"ui.cursor.primary" = { fg = "black", bg = "attention" }
-"ui.cursor.primary.select" = { fg = "black", bg = "attribute" }
-"ui.cursor.primary.insert" = { fg = "black", bg = "function" }
+"ui.cursor.primary" = { fg = "black", bg = "saturated-yellow" }
+"ui.cursor.primary.select" = { fg = "black", bg = "yellow" }
+"ui.cursor.primary.insert" = { fg = "black", bg = "green" }
 "ui.cursor" = { fg = "black", bg = "light-fg" }
-"ui.cursor.match" = { fg = "black", bg = "selection", modifiers = ["bold"] }
+"ui.cursor.match" = { fg = "black", bg = "blue", modifiers = ["bold"] }
 
 "ui.highlight" = { bg = "light-bg" }
 
-"info" = "const"
-"hint" = "const"
-"warning" = "attention"
+"info" = "blue"
+"hint" = "blue"
+"warning" = "saturated-yellow"
 "error" = "red"
 "diagnostic.error" = { underline = { color = "red", style = "curl" } }
-"diagnostic.warning" = { underline = { color = "attention", style = "curl" } }
-"diagnostic.info" = { underline = { color = "const", style = "curl" } }
-"diagnostic.hint" = { underline = { color = "const", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "saturated-yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
 
 [palette]
-# Syntax colors (don't use / use sparingly in the UI)
-# ----------------------------------------------------
-function   = "#88B830"
-namespace  = "#90E0B0"
-string     = "#489888"
-const      = "#30B0F0"
-attribute  = "#FFDE82"
-keyword    = "#F09038"
-variable   = "#FDF6E3"
+red        = "#FE5F55"
+green      = "#88B830"
+yellow     = "#FFDE82"
+dark-cyan  = "#54B3A0"
+orange     = "#F09038"
+cyan       = "#93E6B4"
+blue       = "#30B0F0"
+warm-white = "#fffdf0"
 punct      = "#98A8A0"
-comment    = "#808880"
+comment    = "#929292"
 
-# UI
-# ----------------------------------------------------
-# Grays dark to bright
-black      = "#1e1e1e"  # black text, cursorline
-dark-bg    = "#242424"  # base background
-medium-bg  = "#2D2D2D"  # rulers
-light-bg   = "#353535"  # menu / popup bg
-indent     = "#404040"  # indent
-dark-fg    = "#6A6A6A"  # barely legible text
-light-fg   = "#E6E6E6"  # normal / bright text
-white      = "#FFFFFF"  # very bright text
+black      = "#1e1e1e"
+dark-bg    = "#242424"
+medium-bg  = "#2D2D2D"
+light-bg   = "#353535"
+indent     = "#404040"
+dark-fg    = "#616161"
+light-fg   = "#fffdf0"
+white      = "#fffdf0"  # very bright text
 
-# colors (non-syntax)
-selection  = "#007888"  # text selection
-attention  = "#F0B858"  # primary cursor, warnings
-red        = "#FE5F55"  # error, deletion
+dark-blue         = "#007888"
+saturated-yellow  = "#F0B858"
 
 # Preview (syntax colors only)
 # ----------------------------------------------------
