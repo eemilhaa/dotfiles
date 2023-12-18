@@ -2,20 +2,20 @@
 "function"               = "blue"
 "constructor"            = "blue"
 
-"type"                   = "yellow"
-"string.special"         = "yellow"
-"string.regexp"          = "yellow"
-"constant"               = "yellow"
-"punctuation.special"    = "yellow"
+"type"                   = "magenta"
+"string.special"         = "magenta"
+"string.regexp"          = "magenta"
+"constant"               = "magenta"
+"punctuation.special"    = "magenta"
 
 "namespace"              = "fg0"
 "module"                 = "fg0"
 "variable"               = "fg0"
 
-"attribute"              = "cyan"
-"variable.parameter"     = "cyan"
-"variable.other.member"  = "cyan"
-"type.parameter"         = "cyan"
+"attribute"              = "green"
+"variable.parameter"     = "green"
+"variable.other.member"  = "green"
+"type.parameter"         = "green"
 
 "keyword"                = "red"
 "variable.builtin"       = "red"
@@ -24,7 +24,7 @@
 "operator"               = "red"
 "special"                = "red"
 
-"string"                 = "green"
+"string"                 = "yellow"
 
 "punctuation"            = "punct"
 
@@ -38,7 +38,7 @@
 "markup.italic"          = { fg = "magenta", modifiers = ["italic"] }
 "markup.strikethrough"   = "red"
 "markup.link"            = "cyan"
-"markup.link.text"       = "yellow"
+"markup.link.text"       = "blue"
 "markup.quote"           = "magenta"
 "markup.raw"             = "green"
 
@@ -49,17 +49,17 @@
 
 "ui.background"             = { fg = "fg1", bg = "bg0" }
 "ui.cursor"                 = { fg = "bg0", bg = "fg1" }
-"ui.cursor.primary"         = { fg = "bg0", bg = "yellow" }
-"ui.cursor.primary.select"  = { fg = "bg0", bg = "blue" }
+"ui.cursor.primary"         = { fg = "bg0", bg = "blue" }
+"ui.cursor.primary.select"  = { fg = "bg0", bg = "red" }
 "ui.cursor.primary.insert"  = { fg = "bg0", bg = "green" }
 "ui.cursor.match"           = { fg = "fg0", bg = "dark-blue", modifiers = ["bold"] }
 "ui.linenr"                 = "fg1"
-"ui.linenr.selected"        = "yellow"
+"ui.linenr.selected"        = "blue"
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
 "ui.statusline.insert"      = { fg = "bg0", bg = "green" }
-"ui.statusline.select"      = { fg = "bg0", bg = "blue" }
-"ui.statusline.normal"      = { fg = "bg0", bg = "yellow" }
+"ui.statusline.select"      = { fg = "bg0", bg = "red" }
+"ui.statusline.normal"      = { fg = "bg0", bg = "blue" }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -92,14 +92,14 @@
 
 [palette]
 # Colors
-red        = "#F02000"
-green      = "#009000"
-yellow     = "#E09000"
-blue       = "#0050F0"
+red        = "#E02000"
+green      = "#008000"
+yellow     = "#C08000"
+blue       = "#0030E0"
+magenta    = "#C020D0"
+cyan       = "#008080"
 dark-blue  = "#A0E0F0"
-magenta    = "#E050E0"
-cyan       = "#00A0A0"
-punct      = "#7D7D80"
+punct      = "#616161"
 
 # Grays
 bg0        = "#FaFaFa"
