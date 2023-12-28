@@ -55,5 +55,4 @@ sudo pacman -S \
   lsd \
   zathura \
   zathura-pdf-mupdf \
-  zsh-syntax-highlighting \
   zsh-autosuggestions
