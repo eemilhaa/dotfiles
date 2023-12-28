@@ -60,7 +60,7 @@
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
 "ui.statusline.insert"      = { fg = "bg0", bg = "green" }
 "ui.statusline.select"      = { fg = "bg0", bg = "blue" }
-"ui.statusline.normal"      = { fg = "bg0", bg = "fg0" }
+"ui.statusline.normal"      = { fg = "fg0", bg = "bg2" }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -95,13 +95,12 @@
 # Colors
 red        = "#cc2a1b"
 green      = "#218a00"
-yellow     = "#936800"
+yellow     = "#8d6c00"
 blue       = "#0077c5"
 magenta    = "#a23db8"
 cyan       = "#00868d"
-
 selection  = "#87daff"
-attention  = "#ffeac3"
+attention  = "#ffecb6"
 
 # Grays
 fg0        = "#000000"
