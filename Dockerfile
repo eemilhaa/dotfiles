@@ -49,7 +49,7 @@ COPY ./confs/home /root
 COPY ./confs/.config /root/.config
 
 # Rust
-RUN rustup toolchain install nightly
+RUN rustup default stable
 
 # npm installs and cache
 RUN npm install -g \
