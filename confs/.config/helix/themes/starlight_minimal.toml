@@ -1,0 +1,33 @@
+inherits = "starlight"
+
+"function"               = "blue"
+"constructor"            = "blue"
+"tag"                    = "blue"
+"special"                = "blue"
+
+"type"                   = "magenta"
+"punctuation.special"    = "cyan"
+
+"constant"               = "cyan"
+
+"namespace"              = "white"
+"module"                 = "white"
+"variable"               = "white"
+
+"attribute"              = "white"
+"variable.parameter"     = "white"
+"variable.other.member"  = "white"
+"type.parameter"         = "white"
+"label"                  = "white"
+
+"keyword"                = "white"
+"variable.builtin"       = "white"
+
+"string"                 = "green"
+"string.special"         = "green"
+"string.regexp"          = "green"
+
+"punctuation"            = "punct"
+"operator"               = "punct"
+
+"comment"                = { fg = "yellow", bg = "dark-bg" }
