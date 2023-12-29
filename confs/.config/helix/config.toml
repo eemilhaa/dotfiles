@@ -1,4 +1,4 @@
-theme = "starlight_minimal"
+theme = "light"
 
 [editor]
 line-number = "relative"

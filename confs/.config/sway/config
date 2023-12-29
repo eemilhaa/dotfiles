@@ -25,8 +25,8 @@ set $urgent          #900000
 set $urgentborder    #B80000
 #set $urgent          #F62B5A
 #set $urgentborder    #FF4D51
-set $inactive        #353535
-set $inactiveborder  #404040
+set $inactive        #1e1e1e
+set $inactiveborder  #353535
 set $secondary       #616161
 set $secondaryborder #717171
 set $light-fg        #E6E6E6
