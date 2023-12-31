@@ -1,14 +1,14 @@
-user: cyan
+user: magenta
 group: blue
 permission:
-  read: cyan
-  write: cyan
-  exec: cyan
-  exec-sticky: cyan
+  read: blue
+  write: blue
+  exec: blue
+  exec-sticky: blue
   no-access: blue
-  octal: cyan
-  acl: cyan
-  context: cyan
+  octal: blue
+  acl: blue
+  context: blue
 date:
   hour-old: blue
   day-old: blue
@@ -19,10 +19,10 @@ size:
   medium: yellow
   large: red
 inode:
-  valid: cyan
+  valid: blue
   invalid: red
 links:
-  valid: cyan
+  valid: blue
   invalid: red
 tree-edge: blue
 git-status:
@@ -31,8 +31,8 @@ git-status:
   ignored: grey
   new-in-index: green
   new-in-workdir: red
-  typechange: yellow
+  typechange: blue
   deleted: red
   renamed: green
-  modified: yellow
+  modified: blue
   conflicted: red

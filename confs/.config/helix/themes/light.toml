@@ -93,19 +93,19 @@
 
 [palette]
 # Colors
-red        = "#cc2a1b"
-green      = "#218a00"
-yellow     = "#8d6c00"
-blue       = "#0077c5"
-magenta    = "#a23db8"
-cyan       = "#00868d"
-selection  = "#87daff"
-attention  = "#ffecb6"
+red        = "#eb0000"
+green      = "#008800"
+yellow     = "#946F00"
+blue       = "#003feb"
+magenta    = "#c400eb"
+cyan       = "#008099"
+selection  = "#6CD4FF"
+attention  = "#FFEE99"
 
 # Grays
 fg0        = "#000000"
-fg1        = "#777777"
-fg2        = "#999999"
+fg1        = "#747474"
+fg2        = "#888888"
 bg0        = "#FcFcFc"
 bg1        = "#f0f0f0"
 bg2        = "#d0d0d0"
