@@ -67,7 +67,7 @@
 "ui.text"                   = "fg0"
 "ui.text.focus"             = { fg = "fg0", bg = "bg1", modifiers = ["bold"] }
 "ui.virtual"                = "fg1"
-"ui.virtual.ruler"          = { bg = "bg1" }
+"ui.virtual.ruler"          = { bg = "bg2" }
 "ui.virtual.indent-guide"   = "bg2"
 "ui.virtual.whitespace"     = "bg2"
 "ui.menu"                   = { fg = "fg0", bg = "bg1" }
