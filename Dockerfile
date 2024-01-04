@@ -2,7 +2,7 @@ FROM docker.io/library/archlinux:latest
 
 # env
 ENV TZ=Europe/Helsinki
-ENV HOST=container
+ENV HOST=kontti
 ENV HOSTNAME=$HOST
 
 # Setup pacman, install packages, clean cache

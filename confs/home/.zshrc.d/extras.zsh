@@ -2,7 +2,7 @@ define_aliases () {
   alias colorpick='grim -g "$(slurp -p)" -t ppm - | convert - -format "%[pixel:p{0,0}]" txt:-'
   alias recordscreen='wf-recorder -g "$(slurp)"'
   alias db="distrobox"
-  alias dbe="distrobox enter dev"
+  alias dbe="distrobox enter kontti"
   alias dbh="distrobox-host-exec"
   battery () {
     upower -i $(upower -e | grep 'BAT') | grep -E "state|percentage"
