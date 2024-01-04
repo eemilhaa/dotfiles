@@ -2,7 +2,7 @@ FROM docker.io/library/archlinux:latest
 
 # env
 ENV TZ=Europe/Helsinki
-ENV HOST=dev
+ENV HOST=container
 ENV HOSTNAME=$HOST
 
 # Setup pacman, install packages, clean cache
@@ -26,7 +26,6 @@ RUN pacman -Syyu --noconfirm \
         python \
         python-pip \
         pyright \
-        # python-lsp-server \
         ruff-lsp \
         rustup \
         rust-analyzer \
