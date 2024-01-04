@@ -1,6 +1,5 @@
 # Syntax
 "function"               = "blue"
-"constructor"            = "blue"
 "tag"                    = "blue"
 "special"                = "blue"
 
@@ -9,6 +8,7 @@
 # "punctuation.special"    = "yellow"
 
 "type"                   = "magenta"
+"constructor"            = "magenta"
 "constant"               = "red"
 
 "namespace"              = "fg0"
