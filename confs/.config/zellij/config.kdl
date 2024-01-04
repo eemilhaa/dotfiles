@@ -5,13 +5,14 @@ keybinds {
         bind "Alt k" { FocusPreviousPane; }
         bind "Alt j" { FocusNextPane; }
         bind "Alt z" { ToggleFocusFullscreen; }
-        bind "Enter" { SwitchToMode "locked"; }
-        bind "Esc" { SwitchToMode "locked"; }
+        unbind "Ctrl g"
+        bind "Ctrl b" { SwitchToMode "locked"; }
+        // bind "Esc" { SwitchToMode "locked"; }
     }
     locked {
         unbind "Enter"
         unbind "Esc"
-        bind "Alt /" { SwitchToMode "tab"; }
+        bind "Ctrl b" { SwitchToMode "normal"; }
     }
     tab {
         bind "1" { GoToTab 1; }
@@ -37,41 +38,39 @@ simplified_ui true
 pane_frames false
 default_mode "locked"
 
-theme "dark"
+theme "light"
 
 themes {
     dark {
-        black "#1e1e1e"
+        black   "#1e1e1e"
+        red     "#1e1e1e"
 
-        red "#1e1e1e"
-        magenta "#6a6a6a"
+        bg      "#616161"
 
-        orange "#b8b8b8"
-        green "#b8b8b8"
+        fg      "#929292"
+        white   "#929292"
 
-        bg "#6a6a6a"
-        fg "#6a6a6a"
-        white "#6a6a6a"
-
-        yellow "#6a6a6a"
-        blue "#6a6a6a"
-        cyan "#6a6a6a"
+        green   "#ffffff"
+        yellow  "#ffffff"
+        blue    "#ffffff"
+        magenta "#ffffff"
+        cyan    "#ffffff"
+        orange  "#ffffff"
     }
     light {
-        black "#FDF6E3"
+        black   "#f0f0f0"
 
-        red "#B2B29A"
-        magenta "#B2B29A"
+        bg      "#f0f0f0"
 
-        orange "#B88050"
-        green "#B88050"
+        fg      "#747474"
+        white   "#747474"
+        magenta "#747474"
 
-        bg "#C8C8B0"
-        fg "#C8C8B0"
-        white "#C8C8B0"
-
-        yellow "#B2B29A"
-        blue "#B2B29A"
-        cyan "#B2B29A"
+        red     "#000000"
+        green   "#000000"
+        yellow  "#000000"
+        blue    "#000000"
+        cyan    "#000000"
+        orange  "#000000"
     }
 }

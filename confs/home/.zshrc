@@ -67,7 +67,7 @@ define_aliases () {
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'
-  alias zel="zellij --layout tabs"
+  alias zel="zellij"
   alias gs="git status"
   alias gd="git diff --color-words"
   alias gl="git log --graph --abbrev-commit --oneline"
