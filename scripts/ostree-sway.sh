@@ -12,4 +12,5 @@ rpm-ostree install --allow-inactive --idempotent \
   wf-recorder \
   grim \
   slurp \
-  mako
+  mako \
+  power-profiles-daemon
