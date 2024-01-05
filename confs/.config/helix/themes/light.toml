@@ -1,6 +1,5 @@
 # Syntax
 "function"               = "blue"
-"tag"                    = "blue"
 "special"                = "blue"
 
 # "string.special"         = "yellow"
@@ -9,6 +8,7 @@
 
 "type"                   = "magenta"
 "constructor"            = "magenta"
+
 "constant"               = "red"
 
 "namespace"              = "fg0"
@@ -22,6 +22,7 @@
 
 "keyword"                = "fg0"
 "variable.builtin"       = "fg0"
+"tag"                    = "fg0"
 "label"                  = "fg0"
 
 "punctuation"            = "fg1"
@@ -100,7 +101,7 @@ blue       = "#003feb"
 magenta    = "#c400eb"
 cyan       = "#008099"
 selection  = "#6CD4FF"
-attention  = "#FFEE99"
+attention  = "#FFF2B3"
 
 # Grays
 fg0        = "#000000"
@@ -115,4 +116,4 @@ bg2        = "#d0d0d0"
 # bg1        = "#eff0f1"
 # bg2        = "#bdc3c7"
 
-# https://coolors.co/d60047-0047d6-8f00d6-008080-2c8500-9e6900
+# https://coolors.co/eb0000-008800-946F00-003feb-c400eb-c400eb
