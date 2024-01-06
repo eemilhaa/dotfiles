@@ -61,7 +61,7 @@
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
 "ui.statusline.insert"      = { fg = "bg0", bg = "green" }
 "ui.statusline.select"      = { fg = "bg0", bg = "blue" }
-"ui.statusline.normal"      = { fg = "fg0", bg = "bg2" }
+"ui.statusline.normal"      = { fg = "bg0", bg = "fg0" }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -94,17 +94,17 @@
 
 [palette]
 # Colors
-red        = "#eb0000"
-green      = "#008800"
+red        = "#dd0000"
+green      = "#008000"
 yellow     = "#946F00"
-blue       = "#003feb"
-magenta    = "#c400eb"
-cyan       = "#008099"
+blue       = "#0039dd"
+magenta    = "#b800dd"
+cyan       = "#007a7a"
 selection  = "#6CD4FF"
 attention  = "#FFF2B3"
 
 # Grays
-fg0        = "#000000"
+fg0        = "#1e1e1e"
 fg1        = "#747474"
 fg2        = "#888888"
 bg0        = "#FcFcFc"
@@ -116,4 +116,4 @@ bg2        = "#d0d0d0"
 # bg1        = "#eff0f1"
 # bg2        = "#bdc3c7"
 
-# https://coolors.co/eb0000-008800-946F00-003feb-c400eb-c400eb
+# https://coolors.co/dd0000-008000-946F00-0039dd-b800dd-b800dd
