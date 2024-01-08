@@ -38,7 +38,7 @@
 "markup.bold"            = { modifiers = ["bold"] }
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = "red"
-"markup.link"            = "fg1"
+"markup.link"            = { fg = "fg0", modifiers = ["underlined"] }
 "markup.link.text"       = "blue"
 "markup.quote"           = "magenta"
 "markup.raw"             = "green"
@@ -49,19 +49,19 @@
 "diff.delta"  = "blue"
 
 "ui.background"             = { fg = "fg1", bg = "bg0" }
-"ui.cursor"                 = { fg = "bg0", bg = "fg1" }
-"ui.cursor.primary"         = { fg = "bg0", bg = "fg0" }
-# "ui.cursor.primary.select"  = { fg = "bg0", bg = "red" }
-# "ui.cursor.primary.insert"  = { fg = "bg0", bg = "green" }
+"ui.cursor"                 = { fg = "fgr", bg = "fg1" }
+"ui.cursor.primary"         = { fg = "fgr", bg = "fg0" }
+# "ui.cursor.primary.select"  = { fg = "fgr", bg = "red" }
+# "ui.cursor.primary.insert"  = { fg = "fgr", bg = "green" }
 "ui.cursor.match"           = { fg = "fg0", bg = "selection", modifiers = ["bold"] }
 # "ui.gutter"                 = {fg = "fg1", bg = "bg1" }
 "ui.linenr"                 = "fg2"
 "ui.linenr.selected"        = "fg0"
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
-"ui.statusline.insert"      = { fg = "bg0", bg = "green" }
-"ui.statusline.select"      = { fg = "bg0", bg = "blue" }
-"ui.statusline.normal"      = { fg = "bg0", bg = "fg0" }
+"ui.statusline.insert"      = { fg = "fgr", bg = "green" }
+"ui.statusline.select"      = { fg = "fgr", bg = "blue" }
+"ui.statusline.normal"      = { fg = "fgr", bg = "fg0" }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -107,6 +107,7 @@ attention  = "#FFF2B3"
 fg0        = "#1e1e1e"
 fg1        = "#747474"
 fg2        = "#888888"
+fgr        = "#ffffff"
 bg0        = "#FcFcFc"
 bg1        = "#f0f0f0"
 bg2        = "#d0d0d0"
