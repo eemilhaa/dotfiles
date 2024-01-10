@@ -38,9 +38,9 @@
 "markup.bold"            = { modifiers = ["bold"] }
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = "red"
-"markup.link"            = { fg = "fg0", modifiers = ["underlined"] }
+"markup.link"            = "magenta"
 "markup.link.text"       = "blue"
-"markup.quote"           = "magenta"
+"markup.quote"           = "green"
 "markup.raw"             = "green"
 
 # UI
@@ -96,7 +96,7 @@
 # Colors
 red        = "#dd0000"
 green      = "#008000"
-yellow     = "#946F00"
+yellow     = "#8C6900"
 blue       = "#0039dd"
 magenta    = "#b800dd"
 cyan       = "#007a7a"
@@ -117,4 +117,4 @@ bg2        = "#d0d0d0"
 # bg1        = "#eff0f1"
 # bg2        = "#bdc3c7"
 
-# https://coolors.co/dd0000-008000-946F00-0039dd-b800dd-b800dd
+# https://coolors.co/dd0000-008000-8C6900-0039dd-b800dd-007a7a
