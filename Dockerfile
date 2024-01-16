@@ -23,6 +23,7 @@ RUN pacman -Syyu --noconfirm \
         nodejs \
         npm \
         openssh \
+        pacman-contrib \
         python \
         python-pip \
         pyright \
