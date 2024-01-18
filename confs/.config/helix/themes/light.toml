@@ -53,7 +53,7 @@
 "ui.cursor.primary"         = { fg = "fgr", bg = "fg0" }
 # "ui.cursor.primary.select"  = { fg = "fgr", bg = "red" }
 # "ui.cursor.primary.insert"  = { fg = "fgr", bg = "green" }
-"ui.cursor.match"           = { fg = "fg0", bg = "selection", modifiers = ["bold"] }
+"ui.cursor.match"           = { fg = "fg0", bg = "bg2", modifiers = ["underlined"] }
 # "ui.gutter"                 = {fg = "fg1", bg = "bg1" }
 "ui.linenr"                 = "fg2"
 "ui.linenr.selected"        = "fg0"
@@ -74,7 +74,7 @@
 "ui.menu"                   = { fg = "fg0", bg = "bg1" }
 "ui.menu.selected"          = { fg = "fg0", bg = "bg2" }
 "ui.selection"              = { fg = "fg0", bg = "bg2" }
-"ui.selection.primary"      = { fg = "fg0", bg = "selection" }
+"ui.selection.primary"      = { fg = "fgr", bg = "selection" }
 "ui.highlight"              = { bg = "bg2" }
 "ui.cursorline.primary"     = { bg = "bg1" }
 "ui.cursorcolumn.primary"   = { bg = "bg1" }
@@ -94,13 +94,13 @@
 
 [palette]
 # Colors
-red        = "#dd0000"
+red        = "#db0000"  # OKLrCH: 49, 23, 29 
 green      = "#008000"
 yellow     = "#8C6900"
-blue       = "#0039dd"
-magenta    = "#b800dd"
+blue       = "#0041d3"  # OKLrCH: 37, 23, 263
+magenta    = "#b32aba"  # OKLrCH: 49, 23, 326
 cyan       = "#007a7a"
-selection  = "#6CD4FF"
+selection  = "#4984ff"
 attention  = "#FFF2B3"
 
 # Grays
@@ -117,4 +117,4 @@ bg2        = "#d5d5d5"
 # bg1        = "#eff0f1"
 # bg2        = "#bdc3c7"
 
-# https://coolors.co/dd0000-008000-8C6900-0039dd-b800dd-007a7a
+# https://coolors.co/db0000-008000-8C6900-0041d3-b32aba-007a7a
