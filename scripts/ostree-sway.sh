@@ -13,4 +13,5 @@ rpm-ostree install --allow-inactive --idempotent \
   grim \
   slurp \
   mako \
-  power-profiles-daemon
+  power-profiles-daemon \
+  polkit-gnome
