@@ -2,20 +2,20 @@
 # ----------------------------------------------------
 # Syntax
 "function"               = "green"
-"constructor"            = "green"
 
 "type"                   = "cyan"
+"constructor"            = "cyan"
 "namespace"              = "cyan"
-"module"                 = "cyan"
 
 "constant"               = "blue"
 
 "variable"               = "warm-white"
+"module"                 = "warm-white"
 
-"attribute"              = "yellow"
-"variable.parameter"     = "yellow"
-"variable.other.member"  = "yellow"
-"type.parameter"         = "yellow"
+"attribute"              = "warm-white"
+"variable.parameter"     = "warm-white"
+"variable.other.member"  = "warm-white"
+"type.parameter"         = "warm-white"
 
 "keyword"                = "orange"
 "variable.builtin"       = "orange"
@@ -32,7 +32,7 @@
 
 "punctuation"            = "punct"
 
-"comment"                = "comment"
+"comment"                = "yellow"
 
 # UI, markup, other non-syntax stuff
 # ----------------------------------------------------
