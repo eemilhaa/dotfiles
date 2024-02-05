@@ -22,7 +22,7 @@ set $neutralborder   #4c7899
 #set $neutral         #516F53
 #set $neutralborder   #5E8261
 set $urgent          #db0000
-set $urgentborder    #ff4f3e
+set $urgentborder    #fc6351
 #set $urgent          #F62B5A
 #set $urgentborder    #FF4D51
 set $inactive        #353535
