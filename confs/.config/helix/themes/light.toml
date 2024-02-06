@@ -2,14 +2,12 @@
 "function"               = "blue"
 "special"                = "blue"
 
-# "string.special"         = "yellow"
-# "string.regexp"          = "yellow"
-# "punctuation.special"    = "yellow"
-
 "type"                   = "magenta"
 "constructor"            = "magenta"
 
-"constant"               = "red"
+"constant.builtin"       = "red"
+"constant.numeric"       = "red"
+"constant.character"     = "red"
 
 "namespace"              = "fg0"
 "module"                 = "fg0"
