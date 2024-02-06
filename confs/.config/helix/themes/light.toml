@@ -61,7 +61,7 @@
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2", modifiers = ["bold"] }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
 "ui.statusline.select"      = { fg = "fgr", bg = "selection", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fgr", bg = "fg1", modifiers = ["bold"] }
+"ui.statusline.normal"      = { fg = "fgr", bg = "fg0", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -76,7 +76,7 @@
 "ui.menu.scroll"            = { fg = "fg1", bg = "bg2" }
 "ui.selection"              = { fg = "fg0", bg = "bg2" }
 "ui.selection.primary"      = { fg = "fgr", bg = "selection" }
-"ui.highlight"              = { bg = "bg2" }
+"ui.highlight"              = { bg = "bg1" }
 "ui.cursorline.primary"     = { bg = "bg1" }
 "ui.cursorcolumn.primary"   = { bg = "bg1" }
 "ui.bufferline.background"  = { bg = "bg2" }
