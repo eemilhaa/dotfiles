@@ -122,24 +122,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     bindsym $mod+q kill
 
     # Start your launcher
-    set $launcher fuzzel \
-    --prompt                "❯ " \
-    --no-icons \
-    --lines                 7 \
-    --horizontal-pad        8 \
-    --vertical-pad          8 \
-    --inner-pad             8 \
-    --background            353535ff \
-    --text-color            E6E6E6ff \
-    --match-color           E6E6E6ff \
-    --selection-color       285577ff \
-    --selection-text-color  FFFFFFff \
-    --selection-match-color FFFFFFff \
-    --border-color          404040ff \
-    --border-width          1 \
-    --border-radius         0 \
-    --font                  monospace:size=15 \
-    --dpi-aware             no \
+    set $launcher fuzzel
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
