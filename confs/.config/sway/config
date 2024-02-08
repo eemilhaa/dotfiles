@@ -252,9 +252,9 @@ bindsym $mod+m mode "Move"
 
 mode "Capture" {
     # to clipboard
-    bindsym c exec grim -g "$(slurp; sleep 5)" - | wl-copy
+    bindsym c exec grim -c -g "$(slurp; sleep 5)" - | wl-copy
     # to Pictures
-    bindsym s exec grim -g "$(slurp; sleep 5)"
+    bindsym s exec grim -c -g "$(slurp; sleep 5)"
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
