@@ -5,16 +5,19 @@ layout {
 	        plugin location="zellij:compact-bar"
 	    }
 	}
-	tab_template name="hsplit" {
-		pane split_direction="horizontal" {
-			pane size="80%"
-			pane size="20%"
+	tab_template name="multi" {
+		pane split_direction="vertical" {
+			pane size="55%"
+			pane size="45%" split_direction="horizontal" {
+				pane size="80%"
+				pane size="20%"
+			}
 		}
    		pane size=1 borderless=true {
 	        plugin location="zellij:compact-bar"
 	    }
 	}
-	tab name=" 1 " focus=true
+	multi name=" 1 " focus=true
 	tab name=" 2 "
 	tab name=" 3 "
 	tab name=" 4 "
