@@ -108,7 +108,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
         #accel_profile "flat"
         pointer_accel 0.4
     }
-    seat * hide_cursor 10000
+    seat * hide_cursor 5000
 
 
 ### Key bindings
