@@ -51,13 +51,14 @@ set $term foot
     # laptop screen
     output eDP-1 position 0,0
 
-    # output DP-1 mode 2560x1440@99.946Hz position 1920,0
-    # output DP-2 mode 2560x1440@99.946Hz position 1920,0
+    #output DP-1 mode 2560x1440@143.998Hz position 0,-1440
+    #output DP-2 mode 2560x1440@143.998Hz position 0,-1440
+    output DP-1 mode 2560x1440@143.998Hz position 1920,0
+    output DP-2 mode 2560x1440@143.998Hz position 1920,0
+
     # output DP-2 transform 270
     output HDMI-A-1 position 0,-1440
 
-    output DP-1 mode 2560x1440@143.998Hz position 0,-1440
-    output DP-2 mode 2560x1440@143.998Hz position 0,-1440
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
     #output * bg #1e1e1e solid_color
