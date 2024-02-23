@@ -49,13 +49,13 @@ themes {
         fg      "#4a4a4a"
         white   "#4a4a4a"
 
-        red     "#FF4D51"
-        green   "#35D450"
-        yellow  "#E9E836"
-        blue    "#5DC5F8"
-        magenta "#FEABF2"
-        cyan    "#24DFC4"
-        orange  "#E9E836"
+        red     "#ffffff"
+        green   "#ffffff"
+        yellow  "#ffffff"
+        blue    "#ffffff"
+        magenta "#ffffff"
+        cyan    "#ffffff"
+        orange  "#ffffff"
     }
     light {
         black   "#f0f0f0"
@@ -66,11 +66,11 @@ themes {
         white   "#8a8a8a"
         magenta "#8a8a8a"
 
-        red     "#1e1e1e"
-        green   "#1e1e1e"
-        yellow  "#1e1e1e"
-        blue    "#1e1e1e"
-        cyan    "#1e1e1e"
-        orange  "#1e1e1e"
+        red     "#242424"
+        green   "#242424"
+        yellow  "#242424"
+        blue    "#242424"
+        cyan    "#242424"
+        orange  "#242424"
     }
 }

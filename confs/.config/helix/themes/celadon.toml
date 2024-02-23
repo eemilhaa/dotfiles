@@ -5,13 +5,13 @@
 
 "type"                   = "cyan"
 "constructor"            = "cyan"
-"namespace"              = "cyan"
 
 "constant"               = "blue"
 
 "variable"               = "warm-white"
 "module"                 = "warm-white"
 
+"namespace"              = "warm-white"
 "attribute"              = "warm-white"
 "variable.parameter"     = "warm-white"
 "variable.other.member"  = "warm-white"

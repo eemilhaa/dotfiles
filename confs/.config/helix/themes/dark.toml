@@ -1,0 +1,36 @@
+inherits = "light"
+
+"function"               = "blue"
+"special"                = "blue"
+
+"constructor"            = "cyan"
+"type"                   = "cyan"
+
+"constant.builtin"       = "magenta"
+"constant.numeric"       = "magenta"
+"constant.character"     = "magenta"
+
+"string"                 = "green"
+
+"comment"                = "yellow"
+
+[palette]
+red        = "#FF4D51"
+green      = "#35D450"
+yellow     = "#E9E836"
+blue       = "#5DC5F8"
+magenta    = "#FEABF2"
+cyan       = "#24DFC4"
+
+selection  = "#24ACD4"
+
+# Grays
+fg0        = "#ffffff"
+fg1        = "#afafaf"
+fg2        = "#8b8b8b"
+fgr        = "#000000"
+bg0        = "#242424"
+bg1        = "#353535"
+bg2        = "#595959"
+
+# https://coolors.co/FF4D51-35D450-E9E836-5DC5F8-FEABF2-24DFC4
