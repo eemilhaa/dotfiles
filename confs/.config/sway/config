@@ -62,7 +62,7 @@ set $term foot
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
     #output * bg #1e1e1e solid_color
-    output * bg ~/Pictures/walls/crater.png fill
+    output * bg ~/Pictures/walls/ship.jpg fill
 
 # Screen closing disables laptop
     bindswitch lid:on output eDP-1 disable
@@ -167,6 +167,8 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     bindsym $mod+0 workspace number 10
     bindsym $mod+Ctrl+$right workspace next_on_output
     bindsym $mod+Ctrl+$left workspace prev_on_output
+    bindsym $mod+bracketright workspace next_on_output
+    bindsym $mod+bracketleft workspace prev_on_output
 
     assign [title="Slack"] workspace number 10
 
@@ -281,6 +283,16 @@ mode "Go to" {
     bindsym Escape mode "default"
 }
 bindsym $mod+Slash mode "Go to"
+
+mode "Volume" {
+    bindsym u exec wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
+    bindsym d exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+    bindsym m exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+v mode "Volume"
 
 
 # Floats
