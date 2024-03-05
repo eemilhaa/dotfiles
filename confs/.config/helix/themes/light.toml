@@ -58,7 +58,7 @@
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2", modifiers = ["bold"] }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
-"ui.statusline.select"      = { fg = "fgr", bg = "selection", modifiers = ["bold"] }
+"ui.statusline.select"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
 "ui.statusline.normal"      = { fg = "fgr", bg = "fg0", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
@@ -92,15 +92,16 @@
 "error"    = "red"
 
 [palette]
-# Colors
-red        = "#c13534"  # OKLrCH: 47, 18, 25
-green      = "#008800"  # OKLrCH: 47, 18, 142
-yellow     = "#ac8200"  # OKLrCH: 57, 13, 86
-blue       = "#006dd4"  # OKLrCH: 47, 18, 255
-magenta    = "#9b43af"  # OKLrCH: 47, 18, 320
-cyan       = "#008e92"  # OKLrCH: 52, 10, 199
-selection  = "#2989fd"
-attention  = "#FFF2B3"
+# Colors                oklch:   Lightness  chroma  hue
+red        = "#d2393b"         # 57         19      25
+green      = "#12930f"         # 57         19      142
+yellow     = "#ac8200"         # 63         13      86
+blue       = "#0077e6"         # 57         19      255
+magenta    = "#a94abe"         # 57         19      320
+cyan       = "#008e92"         # 58         10      199
+
+selection  = "#258afb"         # 63         19      255
+attention  = "#FFF2B3"         # 96         0.08    98
 
 # Grays
 fg0        = "#242424"
@@ -113,7 +114,8 @@ bg2        = "#d5d5d5"
 
 # fg0        = "#232629"
 # fg1        = "#7f8c8d"
+# fg2        = "#7f8c8d"
+# fgr        = "#ffffff"
+# bg0        = "#FcFcFc"
 # bg1        = "#eff0f1"
 # bg2        = "#bdc3c7"
-
-# https://coolors.co/db0000-008000-8C6900-0041d3-b32aba-007a7a

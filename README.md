@@ -1,20 +1,18 @@
 # dotfiles
 
-<img align="right" width="50%" src="https://github.com/eemilhaa/dotfiles/assets/70660230/5b841ae4-99cd-4db7-912c-fc134d323d63" alt="Screenshot">
+<img align="right" width="50%" src="https://github.com/eemilhaa/dotfiles/assets/70660230/a36b9697-65cf-42cf-bf86-cffcef97b2ad" alt="Screenshot">
 
 My configurations for various things.
 - GUI: Swaywm, Waybar, Fuzzel
 - CLI: Zsh, Helix, Zellij and many more
 
-## Install
+### Install
 To setup all configs:
 ```console
 bash scripts/symlink.sh
 ```
-This symlinks the contents of `confs/.config/` and `confs/home/` to `~/.config/` and `~/`.
-It keeps the target directories otherwise untouched, so only necessary files need to be included.
 
-## Container
+### Container
 Some generic cli utilities
 (shell, multiplexer, editor, language tooling etc.)
 along with their configs are bundled into a container image.

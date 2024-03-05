@@ -15,25 +15,21 @@ bar {
 # Colors
 set $neutral         #285577
 set $neutralborder   #4c7899
-#set $neutral         #FaFaFF
-#set $neutralborder   #FaFaFF
-#set $neutral         #F0A858
-#set $neutralborder   #F4BC7C
-#set $neutral         #516F53
-#set $neutralborder   #5E8261
-set $urgent          #db0000
-set $urgentborder    #fc6351
+set $urgent          #d2393b
+set $urgentborder    #f65c58
 #set $urgent          #F62B5A
 #set $urgentborder    #FF4D51
-set $inactive        #353535
-set $inactiveborder  #404040
 set $secondary       #616161
 set $secondaryborder #717171
-set $light-fg        #E6E6E6
-set $dark-fg         #929292
-set $white           #FFFFFF
-set $black           #202024
 set $nothing         #00000000
+
+set $fg0             #ffffff
+set $fg1             #e6e6e6
+set $fg2             #6a6a6a
+set $fgr             #242424
+set $bg0             #1e1e1e
+set $bg1             #353535
+set $bg2             #404040
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -61,8 +57,8 @@ set $term foot
 
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
-    #output * bg #1e1e1e solid_color
-    output * bg ~/Pictures/walls/ship.jpg fill
+    output * bg #1e1e1e solid_color
+    #output * bg ~/Pictures/walls/monterey.jpg fill
 
 # Screen closing disables laptop
     bindswitch lid:on output eDP-1 disable
@@ -309,18 +305,18 @@ for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set wid
 
 # Window colors
 # Window state           bar border        bar fill    bar text    window border    split direction border
-client.focused           $neutralborder    $neutral    $white      $neutralborder   $neutralborder
-client.focused_inactive  $inactiveborder   $inactive   $light-fg   $inactiveborder  $inactiveborder
-client.unfocused         $inactiveborder   $inactive   $light-fg   $inactiveborder  $inactiveborder
-client.urgent            $urgentborder     $urgent     $white      $urgent          $urgent
+client.focused           $neutralborder    $neutral    $fg0        $neutralborder   $neutralborder
+client.focused_inactive  $bg2              $bg1        $fg1        $bg2             $bg2
+client.unfocused         $bg2              $bg1        $fg1        $bg2             $bg2
+client.urgent            $urgentborder     $urgent     $fg0        $urgent          $urgent
 
 
 # Gaps and borders
 #smart_gaps on
 #smart_borders on
-#gaps inner 4
+#gaps inner 3
 default_border normal 1
-# default_floating_border normal 1  # this is useless
+default_floating_border normal 1
 
 titlebar_padding 1
 #title_align center
