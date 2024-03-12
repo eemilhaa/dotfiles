@@ -37,3 +37,8 @@ formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 name = "latex"
 file-types = ["tex", "sty"]
 language-servers = ["texlab", "ltex-ls"]
+
+[[language]]
+name = "markdown"
+file-types = ["md"]
+language-servers = ["ltex-ls"]
