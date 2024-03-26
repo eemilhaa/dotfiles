@@ -1,26 +1,31 @@
 inherits = "light"
 
-"special" = "green"
-"function" = "green"
-"constant" = "red"
-"type" = "orange"
-"constructor" = "orange"
-"string"                = "yellow"
-"comment" = "blue"
+"function"               = "blue"
+"special"                = "blue"
+
+"type"                   = "cyan"
+"constructor"            = "cyan"
+
+"constant.builtin"       = "magenta"
+"constant.numeric"       = "magenta"
+"constant.character"     = "magenta"
+
+"string"                 = "green"
+
+"comment"                = "yellow"
 
 [palette]
-red        = "#f67400"
-green      = "#1cdc9a"
-yellow     = "#c9ce3b"
-orange     = "#fdbc4b"
-blue       = "#3daee9"
+red        = "#FF4D51"
+green      = "#35D450"
+yellow     = "#E9E836"
+blue       = "#5DC5F8"
 magenta    = "#FEABF2"
 cyan       = "#24DFC4"
 
 selection  = "#24ACD4"
 
 # Grays
-fg0        = "#ffffff"
+fg0        = "#e6e6e6"
 fg1        = "#afafaf"
 fg2        = "#8b8b8b"
 fgr        = "#000000"
