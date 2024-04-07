@@ -24,12 +24,12 @@ set $secondaryborder #717171
 set $nothing         #00000000
 
 set $fg0             #ffffff
-set $fg1             #e6e6e6
+set $fg1             #f0f0f0
 set $fg2             #6a6a6a
 set $fgr             #242424
 set $bg0             #1e1e1e
-set $bg1             #353535
-set $bg2             #404040
+set $bg1             #242424
+set $bg2             #353535
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4

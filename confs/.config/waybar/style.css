@@ -1,10 +1,10 @@
 @define-color fg0  #ffffff;
-@define-color fg1  #e6e6e6;
+@define-color fg1  #f0f0f0;
 @define-color fg2  #6a6a6a;
 @define-color fgr  #242424;
 @define-color bg0  #1e1e1e;
-@define-color bg1  #353535;
-@define-color bg2  #404040;
+@define-color bg1  #242424;
+@define-color bg2  #353535;
 
 @define-color neutral        #285577;
 @define-color neutralborder  #4c7899;

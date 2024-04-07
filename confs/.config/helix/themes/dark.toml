@@ -25,7 +25,7 @@ cyan       = "#24DFC4"
 selection  = "#24ACD4"
 
 # Grays
-fg0        = "#e6e6e6"
+fg0        = "#f0f0f0"
 fg1        = "#afafaf"
 fg2        = "#8b8b8b"
 fgr        = "#000000"
