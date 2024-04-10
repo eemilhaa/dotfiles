@@ -9,6 +9,7 @@ color-modes = true
 cursorline = true
 auto-format = false
 bufferline = "always"
+jump-label-alphabet = " asdfghjkl;qwertyuiopzxcvbnm,."
 # rulers = [80]
 
 [editor.auto-pairs]
@@ -49,4 +50,5 @@ enable = true
 [keys.normal]
 "C-l" = ":bn"
 "C-h" = ":bp"
+"f" = "goto_word"
 "space" = { f = "file_picker_in_current_directory" }
