@@ -42,3 +42,5 @@ language-servers = ["texlab", "ltex-ls"]
 name = "markdown"
 file-types = ["md"]
 language-servers = ["ltex-ls"]
+formatter = { command = 'mdformat', args = ["--wrap", "80", "-"] }
+auto-format = true
