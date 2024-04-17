@@ -96,10 +96,10 @@
 # Colors                oklch:   Lightness  chroma  hue
 red        = "#d2393b"         # 57         19      25
 green      = "#12930f"         # 57         19      142
-yellow     = "#ac8200"         # 63         13      86
+yellow     = "#b98c00"         # 66         14      86
 blue       = "#0077e6"         # 57         19      255
 magenta    = "#a94abe"         # 57         19      320
-cyan       = "#008e92"         # 58         10      199
+cyan       = "#00999e"         # 62         11      199
 
 selection  = "#258afb"         # 63         19      255
 attention  = "#FFF2B3"         # 96         0.08    98
