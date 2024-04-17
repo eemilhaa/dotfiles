@@ -107,7 +107,7 @@ attention  = "#FFF2B3"         # 96         0.08    98
 # Grays
 fg0        = "#242424"
 fg1        = "#6d6d6d"
-fg2        = "#8a8a8a"
+fg2        = "#929292"
 fgr        = "#ffffff"
 bg0        = "#FcFcFc"
 bg1        = "#f0f0f0"

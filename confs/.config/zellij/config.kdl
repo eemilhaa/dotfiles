@@ -62,9 +62,9 @@ themes {
 
         bg      "#f0f0f0"
 
-        fg      "#8a8a8a"
-        white   "#8a8a8a"
-        magenta "#8a8a8a"
+        fg      "#929292"
+        white   "#929292"
+        magenta "#929292"
 
         red     "#242424"
         green   "#242424"
