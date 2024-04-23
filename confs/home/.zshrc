@@ -96,7 +96,7 @@ set_prompt () {
 
   newline=$'\n'
   git_info='${vcs_info_msg_0_}'
-  prompt='❯'
+  prompt='->'
   cyan='%B%F{cyan}'
   blue='%B%F{blue}'
   green='%B%F{green}'
