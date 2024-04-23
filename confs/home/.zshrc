@@ -57,6 +57,7 @@ set_exports () {
 }
 
 define_aliases () {
+  alias ls="ls --color=auto"
   if hash lsd 2>/dev/null; then
     alias ls='lsd'
     alias lls='ls -l --almost-all --total-size'
