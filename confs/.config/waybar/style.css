@@ -1,15 +1,15 @@
-@define-color fg0  #ffffff;
-@define-color fg1  #f0f0f0;
-@define-color fg2  #6a6a6a;
-@define-color fgr  #242424;
-@define-color bg0  #1e1e1e;
-@define-color bg1  #242424;
-@define-color bg2  #353535;
+@define-color fg0 #ffffff;
+@define-color fg1 #f0f0f0;
+@define-color fg2 #6a6a6a;
+@define-color fgr #242424;
+@define-color bg0 #1e1e1e;
+@define-color bg1 #242424;
+@define-color bg2 #353535;
 
-@define-color neutral        #285577;
-@define-color neutralborder  #4c7899;
-@define-color urgent         #db0000;
-@define-color urgentborder   #ff4f3e;
+@define-color neutral #285577;
+@define-color neutralborder #4c7899;
+@define-color urgent #db0000;
+@define-color urgentborder #ff4f3e;
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
@@ -62,11 +62,13 @@ window#waybar {
   background-color: @bg1;
   border: 1px solid @bg2;
 }
+
 #workspaces button.persistent {
   color: @fg2;
   background-color: @bg0;
   border: 1px solid @bg0;
 }
+
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
@@ -83,7 +85,7 @@ window#waybar {
   border: 1px solid @urgentborder;
 }
 
-#workspaces button.focused, 
+#workspaces button.focused,
 #mode,
 #battery.charging,
 #battery.plugged {
@@ -97,10 +99,11 @@ window#waybar {
   color: @fg2;
 }
 
-#tray > .passive {
+#tray>.passive {
   -gtk-icon-effect: dim;
 }
-#tray > .needs-attention {
+
+#tray>.needs-attention {
   -gtk-icon-effect: highlight;
   background-color: @urgent;
 }
