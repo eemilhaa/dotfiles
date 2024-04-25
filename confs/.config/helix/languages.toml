@@ -39,6 +39,10 @@ file-types = ["tex", "sty"]
 language-servers = ["texlab", "ltex-ls"]
 
 [[language]]
+name = "typst"
+language-servers = ["typst-lsp", "ltex-ls"]
+
+[[language]]
 name = "markdown"
 file-types = ["md"]
 language-servers = ["ltex-ls"]
