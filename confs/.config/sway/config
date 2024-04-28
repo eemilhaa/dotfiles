@@ -176,7 +176,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     bindsym $mod+z fullscreen
 
     # Swap focus between the tiling area and the floating area
-    #bindsym $mod+f focus mode_toggle
+    bindsym $mod+f focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+p focus parent
@@ -191,7 +191,6 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     # layouts
     bindsym $mod+i layout toggle split
     bindsym $mod+o layout toggle tabbed split
-    bindsym $mod+f floating toggle
 
 #
 # Scratchpad:
@@ -218,10 +217,13 @@ mode "Swap" {
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
+    bindsym m mode "Move"
 }
-bindsym $mod+s mode "Swap"
 
 mode "Move" {
+    bindsym s mode "Swap"
+    bindsym f floating toggle
+
     # Move windows
     bindsym $left move left 200px
     bindsym $down move down 200px
