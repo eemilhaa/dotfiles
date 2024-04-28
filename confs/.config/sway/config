@@ -190,7 +190,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 
     # layouts
     bindsym $mod+i layout toggle split
-    bindsym $mod+o layout toggle tabbed stacking split
+    bindsym $mod+o layout toggle tabbed split
     bindsym $mod+f floating toggle
 
 #
