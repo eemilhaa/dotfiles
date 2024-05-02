@@ -125,6 +125,8 @@ $normal$prompt $normal"
 set_extras () {
   source_if_exists /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   source_if_exists /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+  source_if_exists /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source_if_exists /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 }
 
 check_extra_dir () {
