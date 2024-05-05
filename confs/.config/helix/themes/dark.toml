@@ -6,6 +6,7 @@ inherits = "light"
 "type"                   = "cyan"
 "constructor"            = "cyan"
 
+"constant"               = "magenta"
 "constant.builtin"       = "magenta"
 "constant.numeric"       = "magenta"
 "constant.character"     = "magenta"
@@ -13,6 +14,32 @@ inherits = "light"
 "string"                 = "green"
 
 "comment"                = "yellow"
+
+# Markup
+"markup.heading.marker"  = { fg = "blue", modifiers = ["bold"] }
+"markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
+"markup.list"            = "blue"
+"markup.bold"            = { modifiers = ["bold"] }
+"markup.italic"          = { modifiers = ["italic"] }
+"markup.strikethrough"   = { modifiers = ["crossed_out"] }
+"markup.link"            = "magenta"
+"markup.link.text"       = "blue"
+"markup.quote"           = "green"
+"markup.raw"             = "green"
+
+# UI
+"ui.cursor"                 = { fg = "fgr", bg = "fg1" }
+"ui.cursor.primary"         = { fg = "fgr", bg = "yellow" }
+"ui.cursor.match"           = { fg = "yellow", bg = "bg2", modifiers = ["underlined"] }
+"ui.linenr.selected"        = "yellow"
+"ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
+"ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.normal"      = { fg = "fgr", bg = "yellow", modifiers = ["bold"] }
+"ui.selection"              = { fg = "fgr", bg = "fg2" }
+"ui.bufferline.background"  = { bg = "bg0" }
+"ui.bufferline"             = { fg = "fg0", bg = "bg2" }
+"ui.bufferline.active"      = { fg = "fgr", bg = "yellow" }
 
 [palette]
 red        = "#FF4D51"
@@ -22,12 +49,12 @@ blue       = "#5DC5F8"
 magenta    = "#FEABF2"
 cyan       = "#24DFC4"
 
-selection  = "#24ACD4"
+selection  = "#5DC5F8"
 
 # Grays
 fg0        = "#f0f0f0"
-fg1        = "#afafaf"
-fg2        = "#8b8b8b"
+fg1        = "#c4c4c4"
+fg2        = "#9d9d9d"
 fgr        = "#000000"
 bg0        = "#242424"
 bg1        = "#353535"

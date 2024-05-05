@@ -69,7 +69,7 @@
 "ui.virtual.whitespace"     = "bg2"
 "ui.virtual.jump-label"     = { fg = "fgr", bg = "selection" }
 "ui.menu"                   = { fg = "fg0", bg = "bg2" }
-"ui.menu.selected"          = { fg = "fgr", bg = "fg1" }
+"ui.menu.selected"          = { fg = "fgr", bg = "fg0" }
 "ui.menu.scroll"            = { fg = "fg1", bg = "bg2" }
 "ui.selection"              = { fg = "fg0", bg = "bg2" }
 "ui.selection.primary"      = { fg = "fgr", bg = "selection" }
