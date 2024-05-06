@@ -53,7 +53,7 @@ set $term foot
     output DP-2 mode 2560x1440@143.998Hz position 1920,0
 
     # output DP-2 transform 270
-    output HDMI-A-1 position 0,-1440
+    output HDMI-A-1 position 1920,0
 
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
