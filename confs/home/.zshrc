@@ -88,25 +88,29 @@ set_prompt () {
   setopt prompt_subst
   autoload -Uz vcs_info
   zstyle ':vcs_info:*' enable git svn
-  zstyle ':vcs_info:git*' formats "(%b)"
+  # zstyle ':vcs_info:git*' formats "(%b)"
+  zstyle ':vcs_info:git:*' formats '(%b) '
 
   precmd () {
     vcs_info
     print -Pn "\e]0;Terminal: %~\e"
   }
 
-  newline=$'\n'
-  git_info='${vcs_info_msg_0_}'
-  prompt='❯'
-  cyan='%F{cyan}'
   bold='%B'
-  blue='%F{blue}'
+  red='%F{red}'
   green='%F{green}'
+  yellow='%F{yellow}'
+  blue='%F{blue}'
   magenta='%F{magenta}'
+  cyan='%F{cyan}'
   normal='%b%f'
-  workdir='%2~'
-  hostname='[ @%m ]'
+
+  newline=$'\n'
+  hostname='@%m '
+  workdir='%2~ '
+  git_info='${vcs_info_msg_0_}'
   venv='%(1V.(%1v) .)'
+  prompt='❯ '
 
   export VIRTUAL_ENV_DISABLE_PROMPT=1
   venv_indicator () {
@@ -119,8 +123,8 @@ set_prompt () {
   add-zsh-hook precmd venv_indicator
 
   PROMPT="
-$magenta$venv$green$hostname $blue$workdir $cyan$git_info
-$normal$prompt $normal"
+$green$hostname$blue$workdir$cyan$git_info$venv
+$normal$prompt"
 }
 
 set_extras () {
