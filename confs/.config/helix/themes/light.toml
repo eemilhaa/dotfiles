@@ -41,9 +41,9 @@
 "markup.raw"             = "green"
 
 # UI
-"diff.plus"   = "green"
-"diff.minus"  = "red"
-"diff.delta"  = "blue"
+"diff.plus"   = "lightgreen"
+"diff.minus"  = "lightred"
+"diff.delta"  = "lightblue"
 
 "ui.background"             = { fg = "fg1", bg = "bg0" }
 "ui.cursor"                 = { fg = "fgr", bg = "fg1" }
@@ -68,12 +68,12 @@
 "ui.virtual.ruler"          = { bg = "bg2" }
 "ui.virtual.indent-guide"   = "bg2"
 "ui.virtual.whitespace"     = "bg2"
-"ui.virtual.jump-label"     = { fg = "fgr", bg = "selection" }
+"ui.virtual.jump-label"     = { fg = "fgr", bg = "lightblue" }
 "ui.menu"                   = { fg = "fg0", bg = "bg2" }
 "ui.menu.selected"          = { fg = "fgr", bg = "fg0" }
 "ui.menu.scroll"            = { fg = "fg1", bg = "bg2" }
 "ui.selection"              = { fg = "fg0", bg = "bg2" }
-"ui.selection.primary"      = { fg = "fgr", bg = "selection" }
+"ui.selection.primary"      = { fg = "fgr", bg = "lightblue" }
 "ui.highlight"              = { bg = "bg1" }
 "ui.cursorline.primary"     = { bg = "bg1" }
 "ui.cursorcolumn.primary"   = { bg = "bg1" }
@@ -81,15 +81,15 @@
 "ui.bufferline"             = { fg = "fg0", bg = "bg2" }
 "ui.bufferline.active"      = { fg = "fg0", bg = "bg0" }
 
-"diagnostic.error"    = { underline = { color = "red", style = "curl" } }
-"diagnostic.warning"  = { underline = { color = "blue", style = "curl" } }
-"diagnostic.info"     = { underline = { color = "green", style = "curl" } }
-"diagnostic.hint"     = { underline = { color = "green", style = "curl" } }
+"diagnostic.error"    = { underline = { color = "lightred", style = "curl" } }
+"diagnostic.warning"  = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info"     = { underline = { color = "lightblue", style = "curl" } }
+"diagnostic.hint"     = { underline = { color = "lightblue", style = "curl" } }
 
-"info"     = "green"
-"hint"     = "green"
-"warning"  = "blue"
-"error"    = "red"
+"info"     = "lightblue"
+"hint"     = "lightblue"
+"warning"  = "yellow"
+"error"    = "lightred"
 
 [palette]
 # Colors                oklch:   Lightness  chroma  hue
@@ -104,12 +104,14 @@
 
 red        = "#ce3d02"         # 57         19      33
 green      = "#129104"         # 57         19      142
-yellow     = "#b98c00"         # 66         14      86
+yellow     = "#b0890e"         # 65         13      88
 blue       = "#0a74e4"         # 57         19      256
 magenta    = "#ac45b4"         # 57         19      324
-cyan       = "#00999e"         # 62         11      199
+cyan       = "#04a3a8"         # 65         11      199
 
-selection  = "#2b89fc"         # 63         19      256
+lightred   = "#ec5639"         # 65
+lightgreen = "#38aa2f"         # 65
+lightblue  = "#318dff"         # 65
 attention  = "#fef2b3"         # 96         0.08    98
 
 # Neutral
