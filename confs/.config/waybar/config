@@ -20,20 +20,20 @@
         "pulseaudio",
         "clock",
     ],
-    // "sway/workspaces": {
-    //     "persistent-workspaces":{
-    //         "1": [],
-    //         "2": [],
-    //         "3": [],
-    //         "4": [],
-    //         "5": [],
-    //         "6": [],
-    //         "7": [],
-    //         "8": [],
-    //         "9": [],
-    //         "10": []
-    //     },
-    // },
+    "sway/workspaces": {
+        "persistent-workspaces":{
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        },
+    },
     "sway/scratchpad": {
         "format": "Scratchpad: {count}",
         "show-empty": true,
