@@ -2,10 +2,10 @@
 "function"               = "blue"
 "special"                = "blue"
 
-"type"                   = "magenta"
-"constructor"            = "magenta"
+"type"                   = "red"
+"constructor"            = "red"
 
-"constant"               = "red"
+"constant"               = "magenta"
 
 "namespace"              = "fg0"
 "module"                 = "fg0"
@@ -18,7 +18,7 @@
 
 "keyword"                = "fg0"
 "variable.builtin"       = "fg0"
-"tag"                    = "fg0"
+"tag"                    = "red"
 "label"                  = "fg0"
 
 "punctuation"            = "fg1"
@@ -35,7 +35,7 @@
 "markup.bold"            = { modifiers = ["bold"] }
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = { modifiers = ["crossed_out"] }
-"markup.link"            = "magenta"
+"markup.link"            = "green"
 "markup.link.text"       = "blue"
 "markup.quote"           = "green"
 "markup.raw"             = "green"
@@ -102,11 +102,11 @@
 
 # More distinguishable blue / red / magenta
 
-red        = "#ce3d02"         # 57         19      33
+red        = "#df5102"         # 62         19      41
 green      = "#129104"         # 57         19      142
 yellow     = "#b0890e"         # 65         13      88
 blue       = "#0a74e4"         # 57         19      256
-magenta    = "#ac45b4"         # 57         19      324
+magenta    = "#aa5dd8"         # 62         19      311
 cyan       = "#04a3a8"         # 65         11      199
 
 lightred   = "#ec5639"         # 65
