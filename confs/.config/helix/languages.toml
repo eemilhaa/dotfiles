@@ -40,7 +40,7 @@ language-servers = ["texlab", "ltex-ls"]
 
 [[language]]
 name = "typst"
-language-servers = ["typst-lsp", "ltex-ls"]
+language-servers = ["typst-lsp"]
 
 [[language]]
 name = "markdown"
