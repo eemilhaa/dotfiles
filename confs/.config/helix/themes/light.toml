@@ -56,9 +56,9 @@
 "ui.linenr.selected"        = "fg0"
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
-"ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
-"ui.statusline.select"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fgr", bg = "fg0", modifiers = ["bold"] }
+"ui.statusline.insert"      = { fg = "fgr", bg = "lightgreen", modifiers = ["bold"] }
+"ui.statusline.select"      = { fg = "fgr", bg = "lightblue", modifiers = ["bold"] }
+"ui.statusline.normal"      = { fg = "fgr", bg = "fg2", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -70,7 +70,7 @@
 "ui.virtual.whitespace"     = "bg2"
 "ui.virtual.jump-label"     = { fg = "fgr", bg = "lightblue" }
 "ui.menu"                   = { fg = "fg0", bg = "bg2" }
-"ui.menu.selected"          = { fg = "fgr", bg = "fg0" }
+"ui.menu.selected"          = { fg = "fgr", bg = "fg2" }
 "ui.menu.scroll"            = { fg = "fg1", bg = "bg2" }
 "ui.selection"              = { fg = "fg0", bg = "bg2" }
 "ui.selection.primary"      = { fg = "fgr", bg = "lightblue" }

@@ -123,8 +123,8 @@ set_prompt () {
   add-zsh-hook precmd venv_indicator
 
   PROMPT="
-$green$hostname$blue$workdir$cyan$git_info$venv
-$normal$prompt"
+$bold$green$hostname$blue$workdir$cyan$git_info$venv
+$normal$bold$prompt$normal"
 }
 
 set_extras () {
