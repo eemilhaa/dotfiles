@@ -1,4 +1,4 @@
-#font pango:Monospace 11
+font pango:Monospace 11
 
 # Detect xwayland
 for_window [app_id="firefox"] title_format "Firefox"
@@ -25,11 +25,11 @@ set $nothing         #00000000
 
 set $fg0             #ffffff
 set $fg1             #c4c4c4
-set $fg2             #9d9d9d
+set $fg2             #888888
 set $fgr             #000000
 set $bg0             #1e1e1e
 set $bg1             #242424
-set $bg2             #353535
+set $bg2             #404040
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
