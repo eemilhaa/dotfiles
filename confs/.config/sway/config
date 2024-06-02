@@ -308,8 +308,8 @@ for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set wid
 # Window colors
 # Window state           bar border        bar fill    bar text    window border    split direction border
 client.focused           $neutralborder    $neutral    $fg0        $neutralborder   $neutralborder
-client.focused_inactive  $bg2              $bg1        $fg0        $bg2             $bg2
-client.unfocused         $bg2              $bg1        $fg0        $bg2             $bg2
+client.focused_inactive  $bg2              $bg1        $fg2        $bg2             $bg2
+client.unfocused         $bg2              $bg1        $fg2        $bg2             $bg2
 client.urgent            $urgentborder     $urgent     $fg0        $urgent          $urgent
 
 
