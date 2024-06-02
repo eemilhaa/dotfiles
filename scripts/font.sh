@@ -4,6 +4,6 @@ mkdir -p $font_dir
 
 echo "installing font to $font_dir"
 
-wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/$font_name.zip"
-unzip "$font_name.zip" -d $font_dir
+wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/$font_name.zip"
+unzip "$font_name.zip" -d $font_dir && rm "$font_name.zip"
 fc-cache -fv
