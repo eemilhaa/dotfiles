@@ -1,4 +1,5 @@
 brightnessctl
+distrobox
 fuzzel
 git
 grim
