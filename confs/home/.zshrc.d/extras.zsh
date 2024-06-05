@@ -7,7 +7,7 @@ define_aliases () {
     upower -i $(upower -e | grep 'BAT') | grep -E "state|percentage"
   }
   dbinit () {
-    distrobox create -n $1 --image ghcr.io/eemilhaa/dotfiles:main
+    distrobox create -n $1 --hostname $1 --image ghcr.io/eemilhaa/dotfiles:main
   }
   dev () {
     podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/dotfiles:main
@@ -25,6 +25,9 @@ define_aliases () {
     else
       distrobox enter $1
     fi
+  }
+  firefox-open () {
+    gtk-launch org.mozilla.firefox.desktop $1
   }
 }
 

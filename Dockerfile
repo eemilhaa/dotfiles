@@ -2,8 +2,8 @@ FROM docker.io/library/archlinux:latest
 
 # env
 ENV TZ=Europe/Helsinki
-ENV HOST=kontti
-ENV HOSTNAME=$HOST
+# ENV HOST=kontti
+# ENV HOSTNAME=$HOST
 
 # Setup pacman, install packages, clean cache
 RUN pacman -Syyu --noconfirm \
