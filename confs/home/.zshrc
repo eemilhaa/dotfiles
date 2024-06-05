@@ -54,6 +54,7 @@ set_exports () {
   export HISTFILE="$HOME/.zsh_history"
   export HISTSIZE=1000
   export SAVEHIST=1000
+  export LS_COLORS="${LS_COLORS}ow=1;37;42:"
 }
 
 define_aliases () {
