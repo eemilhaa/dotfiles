@@ -3,6 +3,7 @@ define_aliases () {
   alias recordscreen='wf-recorder -g "$(slurp)"'
   alias db="distrobox"
   alias dbh="distrobox-host-exec"
+  alias qgis="XDG_SESSION_TYPE=x11 && qgis"
   battery () {
     upower -i $(upower -e | grep 'BAT') | grep -E "state|percentage"
   }
