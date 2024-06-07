@@ -3,13 +3,13 @@
 @define-color fg2 #888888;
 @define-color fgr #000000;
 @define-color bg0 #1e1e1e;
-@define-color bg1 #242424;
+@define-color bg1 #282828;
 @define-color bg2 #404040;
 
 @define-color neutral #285577;
 @define-color neutralborder #4c7899;
-@define-color urgent #ce3d02;
-@define-color urgentborder #e75527;
+@define-color urgent #900000;
+@define-color urgentborder #af2d22;
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */

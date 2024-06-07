@@ -4,6 +4,7 @@
 
 "type"                   = "red"
 "constructor"            = "red"
+"tag"                    = "red"
 
 "constant"               = "magenta"
 
@@ -18,7 +19,6 @@
 
 "keyword"                = "fg0"
 "variable.builtin"       = "fg0"
-"tag"                    = "red"
 "label"                  = "fg0"
 
 "punctuation"            = "fg1"
@@ -109,7 +109,7 @@ blue       = "#0a74e4"         # 57         19      256
 magenta    = "#aa5dd8"         # 62         19      311
 cyan       = "#04a3a8"         # 65         11      199
 
-lightred   = "#ec5639"         # 65
+lightred   = "#ea5b18"         # 65
 lightgreen = "#38aa2f"         # 65
 lightblue  = "#318dff"         # 65
 attention  = "#fef2b3"         # 96         0.08    98

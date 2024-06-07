@@ -3,26 +3,40 @@ inherits = "light"
 "function"               = "blue"
 "special"                = "blue"
 
-"type"                   = "cyan"
-"constructor"            = "cyan"
+"type"                   = "magenta"
+"constructor"            = "magenta"
+"tag"                    = "magenta"
 
-"constant"               = "magenta"
-"constant.builtin"       = "magenta"
-"constant.numeric"       = "magenta"
-"constant.character"     = "magenta"
+"constant"               = "cyan"
+
+"namespace"              = "fg0"
+"module"                 = "fg0"
+"variable"               = "fg0"
+
+"attribute"              = "fg0"
+"variable.parameter"     = "fg0"
+"variable.other.member"  = "fg0"
+"type.parameter"         = "fg0"
+
+"keyword"                = "fg0"
+"variable.builtin"       = "fg0"
+"label"                  = "fg0"
+
+"punctuation"            = "fg1"
+"operator"               = "fg1"
 
 "string"                 = "green"
 
 "comment"                = "yellow"
 
 # Markup
-"markup.heading.marker"  = { fg = "blue", modifiers = ["bold"] }
 "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
+"markup.heading.marker"  = { fg = "blue", modifiers = ["bold"] }
 "markup.list"            = "blue"
 "markup.bold"            = { modifiers = ["bold"] }
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = { modifiers = ["crossed_out"] }
-"markup.link"            = "magenta"
+"markup.link"            = "green"
 "markup.link.text"       = "blue"
 "markup.quote"           = "green"
 "markup.raw"             = "green"
@@ -37,9 +51,9 @@ inherits = "light"
 "ui.statusline.select"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
 "ui.statusline.normal"      = { fg = "fgr", bg = "yellow", modifiers = ["bold"] }
 "ui.selection"              = { fg = "fgr", bg = "fg2" }
-"ui.bufferline.background"  = { bg = "bg0" }
-"ui.bufferline"             = { fg = "fg0", bg = "bg2" }
-"ui.bufferline.active"      = { fg = "fgr", bg = "yellow" }
+# "ui.bufferline.background"  = { bg = "bg0" }
+# "ui.bufferline"             = { fg = "fg0", bg = "bg2" }
+# "ui.bufferline.active"      = { fg = "fgr", bg = "yellow" }
 
 [palette]
 red        = "#FF4D51"
