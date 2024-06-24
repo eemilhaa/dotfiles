@@ -1,4 +1,4 @@
-font_name='IosevkaTerm'
+font_name='JetBrainsMono'
 font_dir="$HOME/.local/share/fonts/"
 mkdir -p $font_dir
 
