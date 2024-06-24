@@ -5,9 +5,7 @@ layout {
 	        plugin location="zellij:compact-bar"
 	    }
 	}
-	tab name=" 1 " focus=true
-	tab name=" 2 "
-	tab name=" 3 "
-	tab name=" 4 "
-	tab name=" 5 "
+	tab name="Tab #1" focus=true
+	tab name="Tab #2"
+	tab name="Tab #3"
 }
