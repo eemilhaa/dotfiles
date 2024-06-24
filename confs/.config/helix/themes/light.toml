@@ -104,19 +104,19 @@
 
 red        = "#df5102"         # 62         19      41
 green      = "#129104"         # 57         19      142
-yellow     = "#b0890e"         # 65         13      88
+yellow     = "#c47d04"         # 65         14      70
 blue       = "#0a74e4"         # 57         19      256
 magenta    = "#aa5dd8"         # 62         19      311
 cyan       = "#04a3a8"         # 65         11      199
 
-lightred   = "#ea5b18"         # 65
+lightred   = "#ec5353"         # 65
 lightgreen = "#38aa2f"         # 65
 lightblue  = "#318dff"         # 65
 attention  = "#fef2b3"         # 96         0.08    98
 
 # Neutral
 
-fg0        = "#242424"
+fg0        = "#282828"
 fg1        = "#6d6d6d"
 fg2        = "#929292"
 fgr        = "#ffffff"
