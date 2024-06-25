@@ -92,26 +92,16 @@
 "error"    = "lightred"
 
 [palette]
-# Colors                oklch:   Lightness  chroma  hue
-# red        = "#d2393b"         # 57         19      25
-# green      = "#12930f"         # 57         19      142
-# yellow     = "#b98c00"         # 66         14      86
-# blue       = "#0077e6"         # 57         19      255
-# magenta    = "#a94abe"         # 57         19      320
-# cyan       = "#00999e"         # 62         11      199
-
-# More distinguishable blue / red / magenta
-
-red        = "#df5102"         # 62         19      41
-green      = "#129104"         # 57         19      142
+red        = "#d55d05"         # 62         19      41
+green      = "#0e7c03"         # 57         19      142
 yellow     = "#c47d04"         # 65         14      70
-blue       = "#0a74e4"         # 57         19      256
-magenta    = "#aa5dd8"         # 62         19      311
+blue       = "#0278d7"         # 57         19      256
+magenta    = "#a763d0"         # 62         19      311
 cyan       = "#04a3a8"         # 65         11      199
 
 lightred   = "#ec5353"         # 65
 lightgreen = "#38aa2f"         # 65
-lightblue  = "#318dff"         # 65
+lightblue  = "#2f91f2"         # 65
 attention  = "#fef2b3"         # 96         0.08    98
 
 # Neutral
