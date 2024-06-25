@@ -262,10 +262,10 @@ bindsym $mod+m mode "Move"
 
 mode "Capture" {
     # to clipboard
-    bindsym c exec grim -c -g "$(slurp; sleep 5)" - | wl-copy
+    bindsym c exec grim -g "$(slurp)" - | wl-copy
     # to Pictures
     bindsym s exec grim -c -g "$(slurp; sleep 5)"
-
+    bindsym w exec sh ~/.config/sway/screenshot_window.sh; mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
