@@ -2,9 +2,9 @@
 "function"               = "blue"
 "special"                = "blue"
 
-"type"                   = "red"
-"constructor"            = "red"
-"tag"                    = "red"
+"type"                   = "orange"
+"constructor"            = "orange"
+"tag"                    = "orange"
 
 "constant"               = "magenta"
 
@@ -41,8 +41,8 @@
 "markup.raw"             = "green"
 
 # UI
-"diff.plus"   = "lightgreen"
-"diff.minus"  = "lightred"
+"diff.plus"   = "green"
+"diff.minus"  = "red"
 "diff.delta"  = "lightblue"
 
 "ui.background"             = { fg = "fg1", bg = "bg0" }
@@ -56,7 +56,7 @@
 "ui.linenr.selected"        = "fg0"
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
-"ui.statusline.insert"      = { fg = "fgr", bg = "lightgreen", modifiers = ["bold"] }
+"ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
 "ui.statusline.select"      = { fg = "fgr", bg = "lightblue", modifiers = ["bold"] }
 "ui.statusline.normal"      = { fg = "fgr", bg = "fg2", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
@@ -81,7 +81,7 @@
 "ui.bufferline"             = { fg = "fg0", bg = "bg2" }
 "ui.bufferline.active"      = { fg = "fg0", bg = "bg0" }
 
-"diagnostic.error"    = { underline = { color = "lightred", style = "curl" } }
+"diagnostic.error"    = { underline = { color = "red", style = "curl" } }
 "diagnostic.warning"  = { underline = { color = "yellow", style = "curl" } }
 "diagnostic.info"     = { underline = { color = "lightblue", style = "curl" } }
 "diagnostic.hint"     = { underline = { color = "lightblue", style = "curl" } }
@@ -89,20 +89,19 @@
 "info"     = "lightblue"
 "hint"     = "lightblue"
 "warning"  = "yellow"
-"error"    = "lightred"
+"error"    = "red"
 
 [palette]
-red        = "#d55d05"         # 62         19      41
-green      = "#0e7c03"         # 57         19      142
-yellow     = "#c47d04"         # 65         14      70
-blue       = "#0278d7"         # 57         19      256
-magenta    = "#a763d0"         # 62         19      311
-cyan       = "#04a3a8"         # 65         11      199
+red        = "#da5252"
+green      = "#089336"
+yellow     = "#c47d04"
+blue       = "#0e82e1"
+magenta    = "#a763d0"
+cyan       = "#04a3a8"
+orange     = "#d55d05"
 
-lightred   = "#ec5353"         # 65
-lightgreen = "#38aa2f"         # 65
-lightblue  = "#2f91f2"         # 65
-attention  = "#fef2b3"         # 96         0.08    98
+lightblue  = "#2992f2"
+attention  = "#fef2b3"
 
 # Neutral
 
