@@ -114,7 +114,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 # Basics:
 #
     # Terminal
-    bindsym $mod+return exec $term
+    bindsym $mod+t exec $term
 
     # Kill focused window
     bindsym $mod+q kill
@@ -270,6 +270,9 @@ mode "Capture" {
     bindsym Escape mode "default"
 }
 bindsym $mod+c mode "Capture"
+
+bindsym $mod+Return exec sh ~/.config/sway/mark.sh add
+bindsym $mod+Apostrophe exec sh ~/.config/sway/mark.sh go_to
 
 mode "Go to" {
     bindsym 1 workspace number 1
