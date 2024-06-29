@@ -114,13 +114,13 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 # Basics:
 #
     # Terminal
-    bindsym $mod+t exec $term
+    bindsym $mod+Return exec $term
 
     # Kill focused window
     bindsym $mod+q kill
 
     # Start your launcher
-    set $launcher fuzzel
+    set $launcher fuzzel --prompt "Launch: "
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -167,7 +167,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     bindsym $mod+bracketright workspace next_on_output
     bindsym $mod+bracketleft workspace prev_on_output
 
-    assign [title="Slack"] workspace number 10
+    #assign [title="Slack"] workspace number 10
 
     # splits
     bindsym $mod+n splith
@@ -250,6 +250,8 @@ mode "Move" {
     bindsym 9 move container to workspace number 9, workspace number 9
     bindsym 0 move container to workspace number 10, workspace number 10
 
+    bindsym w exec sh ~/.config/sway/workspace.sh move_to_workspace; mode "default"
+
     bindsym Shift+$right move workspace to output right
     bindsym Shift+$left move workspace to output left
     bindsym Shift+$down move workspace to output down
@@ -271,8 +273,7 @@ mode "Capture" {
 }
 bindsym $mod+c mode "Capture"
 
-bindsym $mod+Return exec sh ~/.config/sway/mark.sh add
-bindsym $mod+Apostrophe exec sh ~/.config/sway/mark.sh go_to
+bindsym --release Super_L exec sh ~/.config/sway/workspace.sh go_to_workspace
 
 mode "Go to" {
     bindsym 1 workspace number 1
