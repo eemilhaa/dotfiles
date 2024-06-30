@@ -58,7 +58,8 @@
         "states": {
             "good": 100,
             "ok": 50,
-            "bad": 20,
+            "bad": 25,
+            "critical": 15,
         },
         "format": "Battery: {capacity}%",
         // "format-plugged": "Battery (plugged): {capacity}%",

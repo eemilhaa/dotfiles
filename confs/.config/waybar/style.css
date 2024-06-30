@@ -81,6 +81,20 @@ window#waybar {
   border: 1px solid @urgentborder;
 }
 
+@keyframes blink {
+  to {
+    background-color: @fg0;
+    border: 1px solid @fg0;
+    color: @fgr;
+  }
+}
+#battery.critical:not(.charging) {
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 #workspaces button.focused,
 #mode,
 #battery.charging,
