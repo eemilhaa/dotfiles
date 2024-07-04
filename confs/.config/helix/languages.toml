@@ -12,6 +12,7 @@ command = "clippy"
 name = "python"
 language-servers = ["pyright", "ruff-lsp"]
 formatter = { command = "black", args = ["--quiet", "-"] }
+auto-format = true
 
 [[language]]
 name = "html"
