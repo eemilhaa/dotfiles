@@ -94,7 +94,7 @@
 [palette]
 red        = "#da5252"
 green      = "#089336"
-yellow     = "#c47d04"
+yellow     = "#b37e04"
 blue       = "#0e82e1"
 magenta    = "#a763d0"
 cyan       = "#04a3a8"
@@ -111,7 +111,7 @@ fg2        = "#929292"
 fgr        = "#ffffff"
 bg0        = "#FcFcFc"
 bg1        = "#f0f0f0"
-bg2        = "#d5d5d5"
+bg2        = "#dadada"
 
 # Warm
 

@@ -6,7 +6,7 @@
 "type"                   = "cyan"
 "constructor"            = "cyan"
 
-"constant"               = "blue"
+"constant"               = "yellow"
 
 "variable"               = "warm-white"
 "module"                 = "warm-white"
@@ -32,7 +32,7 @@
 
 "punctuation"            = "punct"
 
-"comment"                = "yellow"
+"comment"                = "blue"
 
 # UI, markup, other non-syntax stuff
 # ----------------------------------------------------
@@ -61,12 +61,12 @@
 "ui.statusline" = { fg = "light-fg", bg = "light-bg" }
 "ui.statusline.inactive" = { fg = "dark-fg", bg = "light-bg" }
 "ui.statusline.insert" = { fg = "black", bg = "green" }
-"ui.statusline.select" = { fg = "black", bg = "yellow" }
-"ui.statusline.normal" = { fg = "black", bg = "orange" }
+"ui.statusline.select" = { fg = "black", bg = "blue" }
+"ui.statusline.normal" = "light-fg"
 
 "ui.bufferline.background" = { bg = "dark-bg" }
 "ui.bufferline" = { fg = "light-fg", bg = "light-bg" }
-"ui.bufferline.active" = { fg = "white", bg = "dark-fg" }
+"ui.bufferline.active" = { fg = "dark-bg", bg = "yellow" }
 
 # hover, whichkey
 "ui.popup" = { fg = "dark-fg", bg = "light-bg" }
@@ -114,20 +114,21 @@
 [palette]
 red        = "#FE5F55"
 green      = "#88B830"
-yellow     = "#FFDE82"
-dark-cyan  = "#54B3A0"
+yellow     = "#FCC568"
+blue       = "#07A8C9"
+dark-cyan  = "#58B090"
+cyan       = "#90E0B0"
+magenta    = "#F8B5FF"
 orange     = "#F09038"
-cyan       = "#93E6B4"
-blue       = "#30B0F0"
 warm-white = "#fffdf0"
-punct      = "#98A8A0"
+punct      = "#B0B098"
 comment    = "#929292"
 
 black      = "#1e1e1e"
 dark-bg    = "#242424"
 medium-bg  = "#2D2D2D"
-light-bg   = "#353535"
-indent     = "#404040"
+light-bg   = "#505050"
+indent     = "#505050"
 dark-fg    = "#616161"
 light-fg   = "#fffdf0"
 white      = "#fffdf0"  # very bright text

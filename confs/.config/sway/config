@@ -21,12 +21,12 @@ set $urgent          #900000
 set $urgentborder    #af2d22
 set $secondary       #616161
 set $secondaryborder #717171
-set $nothing         #00000000
+set $nothing         #00000020
 
-set $fg0             #ffffff
+set $fg0             #f0f0f0
 set $fg1             #c4c4c4
 set $fg2             #888888
-set $fgr             #000000
+set $fgr             #282828
 set $bg0             #1e1e1e
 set $bg1             #282828
 set $bg2             #404040
@@ -323,16 +323,16 @@ for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set wid
 
 # Window colors
 # Window state           bar border        bar fill    bar text    window border    split direction border
-client.focused           $neutralborder    $neutral    $fg0        $neutral         $neutral
-client.focused_inactive  $bg2              $bg1        $fg2        $bg1             $bg1
-client.unfocused         $bg2              $bg1        $fg2        $bg1             $bg1
+client.focused           $neutralborder    $neutral    $fg0        $neutralborder   $neutralborder
+client.focused_inactive  $bg2              $bg1        $fg1        $nothing         $nothing
+client.unfocused         $bg2              $bg1        $fg1        $nothing         $nothing
 client.urgent            $urgentborder     $urgent     $fg0        $urgent          $urgent
 
 
 # Gaps and borders
 #smart_gaps on
 #smart_borders on
-#gaps inner 8
+#gaps inner 4
 default_border normal 1
 default_floating_border normal 1
 
