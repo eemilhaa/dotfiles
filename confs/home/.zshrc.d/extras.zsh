@@ -1,5 +1,5 @@
 define_aliases () {
-  alias colorpick='grim -g "$(slurp -p)" -t ppm - | convert - -format "%[pixel:p{0,0}]" txt:-'
+  alias colorpick='grim -g "$(slurp -p)" -t ppm - | magick - -format "%[pixel:p{0,0}]" txt:-'
   alias recordscreen='wf-recorder -g "$(slurp)"'
   alias db="distrobox"
   alias dbh="distrobox-host-exec"
