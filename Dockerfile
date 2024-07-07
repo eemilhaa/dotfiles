@@ -57,7 +57,7 @@ RUN npm install -g \
     typescript \
     typescript-language-server \
     npm-check-updates \
-    vscode-langservers-extracted \
+    # vscode-langservers-extracted \
     && npm cache clean -f
 
 # poetry
