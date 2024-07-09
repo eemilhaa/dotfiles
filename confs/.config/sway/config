@@ -114,7 +114,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 # Basics:
 #
     # Terminal
-    bindsym $mod+t exec $term
+    bindsym $mod+Return exec $term
 
     # Kill focused window
     bindsym $mod+q kill
@@ -138,8 +138,8 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 # General keybinds:
 #
     # launcher
-    bindsym $mod+Return exec $launcher
-    # bindsym $mod+Space exec $launcher xargs swaymsg exec --
+    # bindsym $mod+Return exec $launcher
+    bindsym $mod+Slash exec $launcher xargs swaymsg exec --
 
     # Moving around:
     bindsym $mod+$left focus left
@@ -296,7 +296,7 @@ mode "Go to" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Slash mode "Go to"
+bindsym $mod+g mode "Go to"
 
 mode "Volume" {
     bindsym u exec wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+
