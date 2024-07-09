@@ -54,8 +54,9 @@ define_sway_stuff () {
     sway
   }
 
-  sway_ext_output_scale () {  # TODO get output dynamically
-    swaymsg output HDMI-A-1 enable scale $1
+  sway_scale () {
+    output=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused==true).name')
+    swaymsg output $output enable scale $1
   }
 
   sway_ext_output_position () {
