@@ -127,7 +127,8 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
-    floating_modifier $mod normal
+    # tiling_drag disable
+    floating_modifier none
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -139,7 +140,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 #
     # launcher
     # bindsym $mod+Return exec $launcher
-    bindsym $mod+Slash exec $launcher xargs swaymsg exec --
+    bindsym $mod+Space exec $launcher xargs swaymsg exec --
 
     # Moving around:
     bindsym $mod+$left focus left
@@ -276,7 +277,7 @@ mode "Capture" {
 }
 bindsym $mod+c mode "Capture"
 
-bindsym $mod+Space exec sh ~/.config/sway/workspace.sh go_to_workspace
+bindsym --release Super_L exec sh ~/.config/sway/workspace.sh go_to_workspace
 
 mode "Go to" {
     bindsym 1 workspace number 1
