@@ -1,0 +1,90 @@
+* {
+    bg-col:  #282828;
+    bg-col-light: #282828;
+    border-col: #404040;
+    selected-col: #285577;
+    blue: #f0f0f0;
+    fg-col: #f0f0f0;
+    grey: #737994;
+
+    width: 900;
+    font: "Monospace 12";
+}
+
+element-text, element-icon, mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+	padding: 0.2em;
+    height: 20em;
+    border: 1px;
+    border-color: @border-col;
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: @bg-col;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @bg-col;
+}
+
+prompt {
+	enabled: false;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    text-color: @fg-col;
+    background-color: @bg-col;
+}
+
+listview {
+    background-color: @bg-col;
+}
+
+element {
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+element-icon {
+    size: 25px;
+}
+
+element selected {
+    background-color: @selected-col;
+    text-color: @fg-col;
+    text-color: #ffffff;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    background-color: @bg-col-light;
+    text-color: @grey;
+}
+
+button selected {
+  background-color: @bg-col;
+  text-color: @blue;
+}
+
+message {
+    background-color: @bg-col-light;
+}
+
+textbox {
+    text-color: @blue;
+    background-color: @bg-col-light;
+}
