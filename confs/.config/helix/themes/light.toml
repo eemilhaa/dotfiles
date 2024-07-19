@@ -2,8 +2,8 @@
 "function"               = "blue"
 "special"                = "blue"
 
-"type"                   = "orange"
-"constructor"            = "orange"
+"type"                   = "yellow"
+"constructor"            = "yellow"
 
 "constant"               = "magenta"
 
@@ -92,15 +92,27 @@
 "error"    = "red"
 
 [palette]
-red        = "#da5252"
-green      = "#089336"
-yellow     = "#b37e04"
-blue       = "#0e82e1"
-magenta    = "#a763d0"
-cyan       = "#04a3a8"
-orange     = "#d55d05"
+# chroma .17
 
-lightblue  = "#2992f2"
+# red        = "#da5252"
+# green      = "#048824"
+# yellow     = "#b37e04"
+# blue       = "#0076d5"
+# magenta    = "#ae60c9"
+# cyan       = "#04a3a8"
+# orange     = "#d55d05"
+
+# chroma .15
+
+red        = "#ba343a"
+green      = "#0a924b"
+yellow     = "#cc7200"
+blue       = "#006ebe"
+magenta    = "#a763be"
+cyan       = "#069ce4"
+orange     = "#c56604"
+
+lightblue  = "#069ce4"
 attention  = "#fef2b3"
 
 # Neutral

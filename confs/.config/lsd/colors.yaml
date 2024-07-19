@@ -1,5 +1,5 @@
-user: magenta
-group: blue
+user: blue
+group: cyan
 permission:
   read: blue
   write: blue
