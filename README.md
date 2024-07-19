@@ -1,21 +1,20 @@
 # dotfiles
 
-<img align="right" width="50%" src="https://github.com/eemilhaa/dotfiles/assets/70660230/a36b9697-65cf-42cf-bf86-cffcef97b2ad" alt="Screenshot">
+<img align="right" width="50%" src="https://github.com/user-attachments/assets/bd8d0427-aa58-4599-9acb-b5e2c0e3f234" alt="Screenshot">
 
-My configurations for various things.
-- GUI: Swaywm, Waybar, Fuzzel
-- CLI: Zsh, Helix, Zellij and many more
+My configuration files.
+Mostly Swaywm and various cli tools.
 
 ### Install
-To setup all configs:
+Clone the repo to `~/`. Setup all configs with:
 ```console
 bash scripts/symlink.sh
 ```
 
 ### Container
-Some generic cli utilities
-(shell, multiplexer, editor, language tooling etc.)
-along with their configs are bundled into a container image.
+Basic cli utilities
+(shell, multiplexer, editor, some language tooling etc.)
+and their configs are bundled into a container image.
 It gets built automatically once a week with a github action.
 
 The image works as a portable cli environment wherever the container can be run:
