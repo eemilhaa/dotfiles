@@ -28,7 +28,6 @@ RUN pacman -Syyu --noconfirm \
         python \
         python-pip \
         pyright \
-        ruff-lsp \
         rustup \
         rust-analyzer \
         texlab \
