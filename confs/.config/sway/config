@@ -58,8 +58,8 @@ set $term foot
 
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
-    #output * bg #1e1e1e solid_color
-    output * bg ~/Pictures/walls/road.png fill
+    output * bg #404040 solid_color
+    #output * bg ~/Pictures/walls/road.png fill
 
 # Screen closing disables laptop
     bindswitch lid:on output eDP-1 disable
@@ -132,7 +132,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
     # tiling_drag disable
-    floating_modifier none
+    floating_modifier Alt
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -338,8 +338,9 @@ client.urgent            $urgentborder     $urgent     $fg0        $urgent      
 #smart_gaps on
 #smart_borders on
 #gaps inner 4
-default_border normal 1
-default_floating_border normal 1
+default_border pixel 1
+default_floating_border pixel 1
+hide_edge_borders both
 
 titlebar_padding 1
 #title_align center

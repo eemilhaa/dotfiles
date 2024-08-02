@@ -8,6 +8,7 @@
     "modules-left": [
         "sway/workspaces",
         "sway/scratchpad",
+        "sway/window",
         "sway/mode",
     ],
     "modules-center": [
@@ -42,7 +43,7 @@
         "format": "{}"
     },
     "sway/window": {
-        "max-length": 80,
+        "max-length": 40,
         "format": "{title}"
     },
     "tray": {
