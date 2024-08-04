@@ -12,12 +12,30 @@ bar:
             map:
               default: {string: {text: "({name}) "}}
               conditions:
-                ~focused: {string: {text: ""}}
+                ~focused:
+                  string: {text: ""}
                 mode != "default":
                   string: {text: "{mode} ({name}) "}
           current: { string: {text: "{title}", max: 80}}
 
   right:
+    - battery:
+        name: BAT0
+        poll-interval: 30000
+        content:
+          map:
+            conditions:
+              state != "charging":
+                ramp:
+                  tag: capacity
+                  items:
+                    - string: {text: "Battery {capacity}%", margin: 10, foreground: ff0000ff}
+                    - string: {text: "Battery {capacity}%", margin: 10}
+                    - string: {text: "Battery {capacity}%", margin: 10}
+                    - string: {text: "Battery {capacity}%", margin: 10}
+              state == "charging":
+                - string: {text: "Battery {capacity}% (charging)", foreground: 00ff00ff}
+
     - network:
         content:
           map:
@@ -27,22 +45,16 @@ bar:
               state != "up":
                 string: {text: ""}
               state == "down":
-                string: {text: "Network {status}", margin: 10}
+                string: {text: "Network {state}", margin: 10}
 
     - pipewire:
         content:
           map:
             conditions:
               ~muted:
-                string: {text: "{cubic_volume}% ({form_factor})", margin: 10}      
+                string: {text: "Volume ({form_factor}) {cubic_volume}%", margin: 10}
               muted:
-                string: {text: "{cubic_volume}% ({form_factor})", margin: 10, foreground: 888888ff}      
-
-    - battery:
-        name: BAT0
-        poll-interval: 30000
-        content:
-          string: {text: "BAT: {capacity}%", margin: 10}
+                string: {text: "Volume ({form_factor}) {cubic_volume}%", margin: 10, foreground: 888888ff}
 
     - clock:
         content:
