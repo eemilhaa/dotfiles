@@ -17,6 +17,7 @@ wl-mirror
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
+yambar
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
