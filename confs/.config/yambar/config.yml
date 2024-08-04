@@ -29,7 +29,7 @@ bar:
                 ramp:
                   tag: capacity
                   items:
-                    - string: {text: "Battery {capacity}%", margin: 10, foreground: ff0000ff}
+                    - string: {text: "Battery {capacity}%", margin: 10, foreground: ff5050ff}
                     - string: {text: "Battery {capacity}%", margin: 10}
                     - string: {text: "Battery {capacity}%", margin: 10}
                     - string: {text: "Battery {capacity}%", margin: 10}
