@@ -1,0 +1,49 @@
+bar:
+  height: 20
+  location: top
+  background: 282828ff
+  foreground: f0f0f0ff
+  font: monospace:pixelsize=14
+
+  left:
+    - i3:
+        content:
+          "":
+            map:
+              default: {string: {text: "({name}) "}}
+              conditions:
+                ~focused: {string: {text: ""}}
+                mode != "default":
+                  string: {text: "{mode} ({name}) "}
+          current: { string: {text: "{title}", max: 80}}
+
+  right:
+    - network:
+        content:
+          map:
+            default:
+              string: {text: "Network {quality}%", margin: 10}
+            conditions:
+              state != "up":
+                string: {text: ""}
+              state == "down":
+                string: {text: "Network {status}", margin: 10}
+
+    - pipewire:
+        content:
+          map:
+            conditions:
+              ~muted:
+                string: {text: "{cubic_volume}% ({form_factor})", margin: 10}      
+              muted:
+                string: {text: "{cubic_volume}% ({form_factor})", margin: 10, foreground: 888888ff}      
+
+    - battery:
+        name: BAT0
+        poll-interval: 30000
+        content:
+          string: {text: "BAT: {capacity}%", margin: 10}
+
+    - clock:
+        content:
+          - string: {text: "{time}", left-margin: 10}
