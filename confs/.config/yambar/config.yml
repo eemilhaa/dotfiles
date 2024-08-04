@@ -39,17 +39,22 @@ bar:
     - network:
         content:
           map:
-            default:
-              string: {text: "Network {quality}%", margin: 10}
+            default: {empty: {}}
             conditions:
-              state != "up":
-                string: {text: ""}
-              state == "down":
-                string: {text: "Network {state}", margin: 10}
+              name == wlp3s0:
+                map:
+                  default:
+                    string: {text: "Wifi {quality}%", margin: 10}
+                  conditions:
+                    state == "up":
+                      string: {text: "Wifi {quality}%", margin: 10}
+                    state == "down":
+                      string: {text: "Wifi {state}", margin: 10}
 
     - pipewire:
         content:
           map:
+            on-click: /bin/sh -c "pavucontrol"
             conditions:
               ~muted:
                 string: {text: "Volume ({form_factor}) {cubic_volume}%", margin: 10}
