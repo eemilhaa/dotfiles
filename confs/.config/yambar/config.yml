@@ -29,12 +29,12 @@ bar:
                 ramp:
                   tag: capacity
                   items:
-                    - string: {text: "Battery {capacity}%", margin: 10, foreground: ff5050ff}
+                    - string: {text: "Battery {capacity}%", margin: 10, foreground: FF4D51ff}
                     - string: {text: "Battery {capacity}%", margin: 10}
                     - string: {text: "Battery {capacity}%", margin: 10}
                     - string: {text: "Battery {capacity}%", margin: 10}
               state == "charging":
-                - string: {text: "Battery {capacity}% (charging)", foreground: 00ff00ff}
+                - string: {text: "Battery {capacity}% (charging)", margin: 10, foreground: 35D450ff}
 
     - network:
         content:
@@ -51,15 +51,25 @@ bar:
                     state == "down":
                       string: {text: "Wifi {state}", margin: 10}
 
-    - pipewire:
+    - pulse:
         content:
           map:
             on-click: /bin/sh -c "pavucontrol"
             conditions:
-              ~muted:
-                string: {text: "Volume ({form_factor}) {cubic_volume}%", margin: 10}
-              muted:
-                string: {text: "Volume ({form_factor}) {cubic_volume}%", margin: 10, foreground: 888888ff}
+              ~sink_muted:
+                string: {text: "{sink_port} {sink_percent}%", margin: 10}
+              sink_muted:
+                string: {text: "{sink_port} {sink_percent}%", margin: 10, foreground: 888888ff}
+
+    # - pipewire:
+    #     content:
+    #       map:
+    #         on-click: /bin/sh -c "pavucontrol"
+    #         conditions:
+    #           ~muted:
+    #             string: {text: "{form_factor} {cubic_volume}%", margin: 10}
+    #           muted:
+    #             string: {text: "{form_factor} {cubic_volume}%", margin: 10, foreground: 888888ff}
 
     - clock:
         content:
