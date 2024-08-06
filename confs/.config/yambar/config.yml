@@ -1,6 +1,6 @@
 bar:
   height: 20
-  location: top
+  location: bottom
   background: 282828ff
   foreground: f0f0f0ff
   font: monospace:pixelsize=14
@@ -10,13 +10,13 @@ bar:
         content:
           "":
             map:
-              default: {string: {text: "({name}) "}}
+              default: {string: {text: "{name} "}}
               conditions:
                 ~focused:
                   string: {text: ""}
                 mode != "default":
-                  string: {text: "{mode} ({name}) "}
-          current: { string: {text: "{title}", max: 80}}
+                  string: {text: "{name} ({mode}) "}
+          # current: { string: {text: "{title}", max: 80}}
 
   right:
     - battery:
@@ -59,7 +59,7 @@ bar:
               ~sink_muted:
                 string: {text: "{sink_port} {sink_percent}%", margin: 10}
               sink_muted:
-                string: {text: "{sink_port} {sink_percent}%", margin: 10, foreground: 888888ff}
+                string: {text: "{sink_port} {sink_percent}%", margin: 10, foreground: 8e8e8eff}
 
     # - pipewire:
     #     content:
