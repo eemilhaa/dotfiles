@@ -201,16 +201,16 @@ exec swayidle -w \
 #
 # Scratchpad:
 #
-#    bindsym $mod+Escape move window to scratchpad
-#    set $scratch_title Scratch-term
-#    set $scratch_term $term --title $scratch_title --override locked-title=yes
-#    for_window [title="$scratch_title"] move container to scratchpad
-#    exec $scratch_term
-#    bindsym $mod+Shift+s exec $scratch_term
-#    bindsym $mod+Semicolon scratchpad show; \
-#        [title="$scratch_title" floating con_id=__focused__] fullscreen enable
-#    #    [title="$scratch_title" floating con_id=__focused__] border normal 1
+set $scratch_term_title Scratch-terminal
+set $scratch_term $term --title $scratch_term_title --override locked-title=yes
+exec $scratch_term
+bindsym $mod+Shift+s exec $scratch_term
 
+for_window [title="$scratch_term_title"] move to scratchpad
+
+bindsym $mod+Shift+Semicolon scratchpad show; \
+    [title="$scratch_term_title" floating con_id=__focused__] \
+    resize set 50ppt 25ppt; move position 25ppt 0
 #
 # Notes:
 #
