@@ -189,10 +189,10 @@ exec swayidle -w \
     bindsym $mod+Shift+p focus child
 
     # resize
-    bindsym $mod+Shift+$left resize shrink width 60px
-    bindsym $mod+Shift+$down resize grow height 60px
-    bindsym $mod+Shift+$up resize shrink height 60px
-    bindsym $mod+Shift+$right resize grow width 60px
+    bindsym $mod+Shift+$left resize shrink width 5ppt
+    bindsym $mod+Shift+$down resize grow height 5ppt
+    bindsym $mod+Shift+$up resize shrink height 5ppt
+    bindsym $mod+Shift+$right resize grow width 5ppt
 
     # layouts
     bindsym $mod+i layout toggle split
