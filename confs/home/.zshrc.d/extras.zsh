@@ -1,6 +1,7 @@
 define_aliases () {
   alias colorpick='grim -g "$(slurp -p)" -t ppm - | magick - -format "%[pixel:p{0,0}]" txt:-'
   alias recordscreen='wf-recorder -g "$(slurp)"'
+  alias locknow='swaymsg "output * dpms off" && swaylock && swaymsg "output * dpms on"'
   alias db="distrobox"
   alias dbh="distrobox-host-exec"
   alias qgis="XDG_SESSION_TYPE=x11 && qgis"
