@@ -30,6 +30,7 @@ RUN pacman -Syyu --noconfirm \
         pyright \
         rustup \
         rust-analyzer \
+        shellcheck \
         texlab \
         tree \
         unzip \
