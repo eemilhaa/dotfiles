@@ -75,8 +75,7 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 
 ### Idle configuration
 exec swayidle -w \
-    timeout 300 'swaylock -f -c 000000' \
-    timeout 600 'swaymsg "output * dpms off"' \
+    timeout 300 'swaymsg "output * dpms off"; swaylock -f -c 000000' \
          resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock -f -c 000000'
 
@@ -208,7 +207,7 @@ bindsym $mod+Shift+s exec $scratch_term
 
 for_window [title="$scratch_term_title"] move to scratchpad
 
-bindsym $mod+Shift+Semicolon scratchpad show; \
+bindsym $mod+period scratchpad show; \
     [title="$scratch_term_title" floating con_id=__focused__] \
     resize set 50ppt 25ppt; move position 25ppt 0
 #

@@ -10,6 +10,9 @@ polkit-gnome
 power-profiles-daemon
 slurp
 sway
+swaybg
+swayidle
+swaylock
 waybar
 wf-recorder
 wl-clipboard
