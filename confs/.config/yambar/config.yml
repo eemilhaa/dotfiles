@@ -10,13 +10,18 @@ bar:
         content:
           "":
             map:
-              default: {string: {text: "{name} "}}
+              default: {string: {text: ""}}
               conditions:
-                ~focused:
-                  string: {text: ""}
+                focused:
+                  string: {text: "{name} "}
+                urgent:
+                  string: {text: "{name} ", foreground: FF4D51ff}
+          current:
+            map:
+              conditions:
                 mode != "default":
-                  string: {text: "{name} ({mode}) "}
-          # current: { string: {text: "{title}", max: 80}}
+                  string: {text: "({mode}) "}
+
 
   right:
     - battery:
