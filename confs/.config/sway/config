@@ -59,8 +59,8 @@ set $term foot
 
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
-    output * bg #404040 solid_color
-    #output * bg ~/Pictures/walls/road.png fill
+    #output * bg #404040 solid_color
+    output * bg ~/Pictures/walls/moss.png fill
 
 # Screen closing disables laptop
     bindswitch lid:on output eDP-1 disable
