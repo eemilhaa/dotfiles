@@ -1,8 +1,8 @@
 bar:
   height: 20
   location: bottom
-  background: 282828ff
-  foreground: f0f0f0ff
+  background: 222222ff
+  foreground: ffffffff
   font: monospace:pixelsize=14
 
   left:
@@ -64,7 +64,7 @@ bar:
               ~sink_muted:
                 string: {text: "{sink_port} {sink_percent}%", margin: 10}
               sink_muted:
-                string: {text: "{sink_port} {sink_percent}%", margin: 10, foreground: 8e8e8eff}
+                string: {text: "{sink_port} {sink_percent}%", margin: 10, foreground: 888888ff}
 
     # - pipewire:
     #     content:
