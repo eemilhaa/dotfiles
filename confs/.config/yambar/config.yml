@@ -1,9 +1,18 @@
+definitions:
+  fonts:
+    - font: &font-default monospace:pixelsize=14
+    - font: &font-bold monospace:bold:pixelsize=14
+  colors:
+    - color: &color-good 35D450ff
+    - color: &color-urgent FF4D51ff
+    - color: &color-fade 888888ff
+
 bar:
   height: 20
-  location: bottom
+  location: top
   background: 222222ff
   foreground: ffffffff
-  font: monospace:pixelsize=14
+  font: *font-default
 
   left:
     - i3:
@@ -15,7 +24,7 @@ bar:
                 focused:
                   string: {text: "{name} "}
                 urgent:
-                  string: {text: "{name} ", foreground: FF4D51ff}
+                  string: {text: "{name} ", foreground: *color-urgent, font: *font-bold}
           current:
             map:
               conditions:
@@ -34,12 +43,12 @@ bar:
                 ramp:
                   tag: capacity
                   items:
-                    - string: {text: "Battery {capacity}%", margin: 10, foreground: FF4D51ff}
+                    - string: {text: "BATTERY LOW {capacity}%", margin: 10, foreground: *color-urgent, font: *font-bold}
                     - string: {text: "Battery {capacity}%", margin: 10}
                     - string: {text: "Battery {capacity}%", margin: 10}
                     - string: {text: "Battery {capacity}%", margin: 10}
               state == "charging":
-                - string: {text: "Battery {capacity}% (charging)", margin: 10, foreground: 35D450ff}
+                - string: {text: "Battery {capacity}% (charging)", margin: 10, foreground: *color-good}
 
     - network:
         content:
@@ -64,7 +73,7 @@ bar:
               ~sink_muted:
                 string: {text: "{sink_port} {sink_percent}%", margin: 10}
               sink_muted:
-                string: {text: "{sink_port} {sink_percent}%", margin: 10, foreground: 888888ff}
+                string: {text: "{sink_port} {sink_percent}%", margin: 10, foreground: *color-fade}
 
     # - pipewire:
     #     content:
