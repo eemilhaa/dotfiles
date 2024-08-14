@@ -176,7 +176,7 @@ exec swayidle -w \
 
     # layouts
     bindsym $mod+i layout toggle split
-    bindsym $mod+o layout toggle tabbed split
+    bindsym $mod+o layout toggle tabbed stacking split
 
 #
 # Scratchpad:
@@ -318,7 +318,7 @@ default_border normal 1
 default_floating_border normal 1
 hide_edge_borders both
 
-titlebar_padding 1
+titlebar_padding 2
 #title_align center
 
 
