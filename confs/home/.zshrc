@@ -140,10 +140,10 @@ check_extra_dir () {
 
 precmd () {
   vcs_info
-  print -Pn "\e]0;zsh %~\e"
+  print -Pn "\e]0;zsh %~\a"
 }
 preexec () {
-  print -Pn "\e]0;$1 %~\e"
+  print -Pn "\e]0;$1 %~\a"
 }
 
 
