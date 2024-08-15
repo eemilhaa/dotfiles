@@ -190,14 +190,7 @@ for_window [title="$scratch_term_title"] move to scratchpad
 
 bindsym $mod+period scratchpad show; \
     [title="$scratch_term_title" floating con_id=__focused__] \
-    resize set 50ppt 25ppt; move position 25ppt 0
-#
-# Notes:
-#
-    set $notes_title Note
-    set $notes_term $term --working-directory ~/repos/mdnotes --title $notes_title -W 120x40 --override locked-title=yes
-    bindsym $mod+Shift+n exec $notes_term; \
-        for_window [title="$notes_title"] floating enable
+    resize set 100ppt 30ppt; move position 0 70ppt
 
 #
 # MODES:
