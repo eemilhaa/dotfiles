@@ -92,11 +92,6 @@ set_prompt () {
   # zstyle ':vcs_info:git*' formats "(%b)"
   zstyle ':vcs_info:git:*' formats '(%b) '
 
-  precmd () {
-    vcs_info
-    print -Pn "\e]0;Terminal: %~\e"
-  }
-
   bold='%B'
   red='%F{red}'
   green='%F{green}'
@@ -142,6 +137,15 @@ check_extra_dir () {
     done
   fi
 }
+
+precmd () {
+  vcs_info
+  print -Pn "\e]0;zsh %~\e"
+}
+preexec () {
+  print -Pn "\e]0;$1 %~\e"
+}
+
 
 set_general_settings
 set_exports
