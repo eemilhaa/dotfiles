@@ -36,6 +36,7 @@ RUN pacman -Syyu --noconfirm \
         unzip \
         wget \
         wl-clipboard \
+        yaml-language-server \
         zellij \
         zsh \
         zsh-syntax-highlighting \
