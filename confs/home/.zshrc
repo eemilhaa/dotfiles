@@ -1,24 +1,24 @@
 # zmodload zsh/zprof  # debug zsh startup time
 
+autoload -Uz compinit
+
+# for dump in ~/.zcompdump(N.mh+24); do  # compinit only once a day
+#   compinit
+# done
+# compinit -C
+
+autoload -Uz compinit && compinit  # compinit always
+autoload -Uz add-zsh-hook
+autoload -Uz history-search-end
+autoload -Uz edit-command-line
+
 source_if_exists() {
-  if [ -f $1 ]; then
-    source $1
+  if [ -f "$1" ]; then
+    source "$1"
   fi
 }
 
 set_general_settings () {
-  set_completion() {
-    autoload -Uz compinit
-    for dump in ~/.zcompdump(N.mh+24); do  # compinit only once a day
-      compinit
-    done
-    compinit -C
-    # autoload -Uz compinit && compinit  # compinit always
-  }
-  set_completion
-  autoload -Uz add-zsh-hook
-  autoload -U history-search-end
-  autoload -z edit-command-line
   zstyle ':completion:*' menu select
   zle -N history-beginning-search-backward-end history-search-end
   zle -N history-beginning-search-forward-end history-search-end
@@ -57,7 +57,7 @@ set_exports () {
   export LS_COLORS="${LS_COLORS}ow=1;37;42:"
 }
 
-define_aliases () {
+set_custom_commands () {
   alias ls="ls --color=auto"
   if hash lsd 2>/dev/null; then
     alias ls='lsd'
@@ -70,10 +70,14 @@ define_aliases () {
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'
-  alias zel="zellij"
   alias gs="git status"
   alias gd="git diff --color-words"
   alias gl="git log --graph --abbrev-commit --oneline"
+  alias zel="zellij"
+  alias zeltab="zellij action new-tab --name"
+  getignore () {
+    wget -O - "https://raw.githubusercontent.com/github/gitignore/main/$1.gitignore" > "$PWD/.gitignore"
+  }
 }
 
 set_keybinds () {
@@ -85,7 +89,7 @@ set_keybinds () {
   bindkey "^O" edit-command-line
 }
 
-set_prompt () {
+set_prompt_and_title () {
   setopt prompt_subst
   autoload -Uz vcs_info
   zstyle ':vcs_info:*' enable git svn
@@ -104,9 +108,10 @@ set_prompt () {
   newline=$'\n'
   hostname='@%m '
   workdir='%2~ '
+  workdir_full='%~ '
   git_info='${vcs_info_msg_0_}'
   venv='%(1V.(%1v) .)'
-  prompt='❯ '
+  prompt_symbol='❯ '
 
   export VIRTUAL_ENV_DISABLE_PROMPT=1
   venv_indicator () {
@@ -117,10 +122,24 @@ set_prompt () {
     fi
   }
   add-zsh-hook precmd venv_indicator
+  add-zsh-hook precmd vcs_info
 
   PROMPT="
 $green$hostname$blue$workdir$cyan$git_info$venv
-$normal$prompt"
+$normal$prompt_symbol"
+
+  title_info () {
+    print -Pn "$hostname$workdir_full$git_info$venv"
+  }
+  set_base_title () {
+    echo -en "\e]0;zsh $(title_info)\a"
+  }
+  set_cmd_title () {
+    echo -en "\e]0;$1 $(title_info)\a"
+  }
+
+  add-zsh-hook precmd set_base_title
+  add-zsh-hook preexec set_cmd_title
 }
 
 set_extras () {
@@ -131,28 +150,19 @@ set_extras () {
 }
 
 check_extra_dir () {
-  if [ -d $1 ]; then
-    for rc in $1/*; do
+  if [ -d "$1" ]; then
+    for rc in "$1"/*; do
       source_if_exists "$rc"
     done
   fi
 }
 
-precmd () {
-  vcs_info
-  print -Pn "\e]0;zsh %~\a"
-}
-preexec () {
-  print -Pn "\e]0;$1 %~\a"
-}
-
-
 set_general_settings
 set_exports
-define_aliases
+set_custom_commands
 set_keybinds
 set_extras
-set_prompt
+set_prompt_and_title
 check_extra_dir ~/.zshrc.d  # Any extra zsh stuff / possible overrides
 
 # zprof  # debug zsh startup time

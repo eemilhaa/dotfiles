@@ -1,4 +1,4 @@
-define_aliases () {
+set_custom_commands () {
   alias colorpick='grim -g "$(slurp -p)" -t ppm - | magick - -format "%[pixel:p{0,0}]" txt:-'
   alias recordscreen='wf-recorder -g "$(slurp)"'
   alias locknow='swaymsg "output * dpms off" && swaylock && swaymsg "output * dpms on"'
@@ -66,6 +66,6 @@ define_sway_stuff () {
   }
 }
 
-define_aliases
+set_custom_commands
 set_osc7_shell_escape
 define_sway_stuff
