@@ -14,23 +14,22 @@ keybinds {
         unbind "Esc"
         bind "Ctrl b" { SwitchToMode "normal"; }
     }
+    normal {
+        bind "t" { SwitchToMode "tab"; }
+        bind "p" { SwitchToMode "pane"; }
+        bind "o" { SwitchToMode "session"; }
+        bind "r" { SwitchToMode "resize"; }
+        bind "s" { SwitchToMode "scroll"; }
+        bind "m" { SwitchToMode "move"; }
+        bind "Esc" { SwitchToMode "locked"; }
+    }
     tab {
-        bind "1" { GoToTab 1; }
-        bind "2" { GoToTab 2; }
-        bind "3" { GoToTab 3; }
-        bind "4" { GoToTab 4; }
-        bind "5" { GoToTab 5; }
-        bind "6" { GoToTab 6; }
-        bind "7" { GoToTab 7; }
-        bind "8" { GoToTab 8; }
-        bind "9" { GoToTab 9; }
-        bind "0" { GoToTab 10; }
         bind "n" { NewTab; }
         bind "x" { CloseTab; }
     }
     pane {
-        bind "n" { NewPane "Right"; SwitchToMode "normal"; }
-        bind "b" { NewPane "Down"; SwitchToMode "normal"; }
+        bind "n" { NewPane "Right"; }
+        bind "b" { NewPane "Down"; }
     }
 }
 
