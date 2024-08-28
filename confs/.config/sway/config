@@ -1,4 +1,4 @@
-font pango:Monospace 10
+font pango:Monospace semibold 10
 
 # Detect xwayland
 #for_window [app_id="firefox"] title_format "Firefox"

@@ -1,6 +1,6 @@
 definitions:
   fonts:
-    - font: &font-default monospace:pixelsize=14
+    - font: &font-default monospace:semibold:pixelsize=14
     - font: &font-bold monospace:bold:pixelsize=14
   colors:
     - color: &color-good 35D450ff
@@ -9,7 +9,7 @@ definitions:
 
 bar:
   height: 20
-  location: top
+  location: bottom
   background: 222222ff
   foreground: ffffffff
   font: *font-default
