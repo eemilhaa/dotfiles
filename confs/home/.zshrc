@@ -52,8 +52,8 @@ set_exports () {
   export PATH="$HOME/.local/bin:$PATH"
   export PATH="$HOME/.cargo/bin:$PATH"
   export HISTFILE="$HOME/.zsh_history"
-  export HISTSIZE=1000
-  export SAVEHIST=1000
+  export HISTSIZE=1000000
+  export SAVEHIST=1000000
   export LS_COLORS="${LS_COLORS}ow=1;37;42:"
 }
 
