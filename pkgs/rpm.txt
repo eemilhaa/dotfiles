@@ -9,6 +9,7 @@ pavucontrol
 polkit-gnome
 power-profiles-daemon
 slurp
+swappy
 sway
 swaybg
 swayidle
