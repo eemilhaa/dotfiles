@@ -9,7 +9,7 @@ definitions:
 
 bar:
   height: 20
-  location: bottom
+  location: top
   background: 222222ff
   foreground: ffffffff
   font: *font-default
@@ -24,7 +24,7 @@ bar:
                 focused:
                   string: {text: "{name} "}
                 urgent:
-                  string: {text: "{name} ", foreground: *color-urgent, font: *font-bold}
+                  string: {text: "{name} ", on-click: "swaymsg --quiet workspace {name}", foreground: *color-urgent, font: *font-bold}
           current:
             map:
               conditions:
