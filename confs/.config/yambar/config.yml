@@ -6,6 +6,8 @@ definitions:
     - color: &color-good 35D450ff
     - color: &color-urgent FF4D51ff
     - color: &color-fade 888888ff
+  margins:
+    - margin: &margin-default 15
 
 bar:
   height: 20
@@ -43,12 +45,12 @@ bar:
                 ramp:
                   tag: capacity
                   items:
-                    - string: {text: "BATTERY LOW {capacity}%", margin: 10, foreground: *color-urgent, font: *font-bold}
-                    - string: {text: "Battery {capacity}%", margin: 10}
-                    - string: {text: "Battery {capacity}%", margin: 10}
-                    - string: {text: "Battery {capacity}%", margin: 10}
+                    - string: {text: "BATTERY LOW {capacity}%", margin: *margin-default, foreground: *color-urgent, font: *font-bold}
+                    - string: {text: "Battery {capacity}%", margin: *margin-default}
+                    - string: {text: "Battery {capacity}%", margin: *margin-default}
+                    - string: {text: "Battery {capacity}%", margin: *margin-default}
               state == "charging":
-                - string: {text: "Battery {capacity}% (charging)", margin: 10, foreground: *color-good}
+                - string: {text: "Battery {capacity}% (charging)", margin: *margin-default, foreground: *color-good}
 
     - network:
         content:
@@ -58,12 +60,12 @@ bar:
               name == wlp3s0:
                 map:
                   default:
-                    string: {text: "Wifi {quality}%", margin: 10}
+                    string: {text: "Wifi {quality}%", margin: *margin-default}
                   conditions:
                     state == "up":
-                      string: {text: "Wifi {quality}%", margin: 10}
+                      string: {text: "Wifi {quality}%", margin: *margin-default}
                     state == "down":
-                      string: {text: "Wifi {state}", margin: 10}
+                      string: {text: "Wifi {state}", margin: *margin-default}
 
     - pulse:
         content:
@@ -71,9 +73,9 @@ bar:
             on-click: /bin/sh -c "pavucontrol"
             conditions:
               ~sink_muted:
-                string: {text: "{sink_port} {sink_percent}%", margin: 10}
+                string: {text: "{sink_port} {sink_percent}%", margin: *margin-default}
               sink_muted:
-                string: {text: "{sink_port} {sink_percent}%", margin: 10, foreground: *color-fade}
+                string: {text: "{sink_port} {sink_percent}%", margin: *margin-default, foreground: *color-fade}
 
     # - pipewire:
     #     content:
@@ -81,10 +83,10 @@ bar:
     #         on-click: /bin/sh -c "pavucontrol"
     #         conditions:
     #           ~muted:
-    #             string: {text: "{form_factor} {cubic_volume}%", margin: 10}
+    #             string: {text: "{form_factor} {cubic_volume}%", margin: *margin-default}
     #           muted:
-    #             string: {text: "{form_factor} {cubic_volume}%", margin: 10, foreground: 888888ff}
+    #             string: {text: "{form_factor} {cubic_volume}%", margin: *margin-default, foreground: 888888ff}
 
     - clock:
         content:
-          - string: {text: "{time}", left-margin: 10}
+          - string: {text: "{time}", left-margin: *margin-default}
