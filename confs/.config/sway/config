@@ -31,9 +31,13 @@ set $term foot
 
     #output DP-1 mode 2560x1440@143.998Hz position 0,-1440
     #output DP-2 mode 2560x1440@143.998Hz position 0,-1440
+
     output DP-1 mode 2560x1440@143.998Hz position 1920,0
     output DP-2 mode 2560x1440@143.998Hz position 1920,0
+
     output DP-3 position 0,-1080
+    #output DP-5 position 1920,-1080
+    output DP-5 disable
 
     # output DP-2 transform 270
     output HDMI-A-1 position 1920,0
@@ -41,7 +45,7 @@ set $term foot
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
 
     #output * bg #404040 solid_color
-    output * bg ~/Pictures/walls/moss.png fill
+    output * bg ~/Pictures/walls/iceland.jpeg fill
 
 # Screen closing disables laptop
     bindswitch lid:on output eDP-1 disable
