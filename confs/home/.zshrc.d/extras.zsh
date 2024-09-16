@@ -4,7 +4,7 @@ set_custom_commands () {
   alias locknow='swaymsg "output * dpms off" && swaylock && swaymsg "output * dpms on"'
   alias db="distrobox"
   alias dbh="distrobox-host-exec"
-  alias qgis="XDG_SESSION_TYPE=x11 && qgis"
+  # alias qgis="XDG_SESSION_TYPE=x11 && qgis"
   battery () {
     upower -i $(upower -e | grep 'BAT') | grep -E "state|percentage"
   }
