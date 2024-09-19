@@ -124,8 +124,8 @@ exec swayidle -w \
 # General keybinds:
 #
     # launcher
-    # bindsym $mod+Return exec $launcher
-    bindsym $mod+Space exec $launcher xargs swaymsg exec --
+    bindsym $mod+Slash exec $launcher
+    #bindsym $mod+Space exec $launcher xargs swaymsg exec --
 
     # Moving around:
     bindsym $mod+$left focus left
@@ -192,9 +192,9 @@ bindsym $mod+Shift+s exec $scratch_term
 
 for_window [title="$scratch_term_title"] move to scratchpad
 
-bindsym $mod+period scratchpad show; \
+bindsym $mod+Semicolon scratchpad show; \
     [title="$scratch_term_title" floating con_id=__focused__] \
-    resize set 100ppt 30ppt; move position 0 70ppt
+    resize set 100ppt 100ppt; move position 0 0ppt
 
 #
 # MODES:
@@ -246,11 +246,11 @@ bindsym $mod+m mode "Move"
 
 mode "Capture" {
     # to clipboard
-    bindsym c exec grim -g "$(slurp)" - | wl-copy
+    bindsym c exec grim -g "$(slurp)" - | wl-copy; mode "default"
     # annotate
-    bindsym a exec grim -g "$(slurp)" - | swappy -f -
+    bindsym a exec grim -g "$(slurp)" - | swappy -f -; mode "default"
     # to Pictures
-    bindsym s exec grim -c -g "$(slurp; sleep 5)"
+    bindsym s exec grim -c -g "$(slurp; sleep 5)"; mode "default"
     # window
     bindsym w exec sh ~/.config/sway/screenshot_window.sh; mode "default"
     bindsym Return mode "default"
@@ -260,7 +260,7 @@ bindsym $mod+c mode "Capture"
 
 bindsym $mod+Equal exec sh ~/.config/sway/magnify.sh
 
-bindsym $mod+Semicolon exec sh ~/.config/sway/workspace.sh go_to_workspace
+bindsym $mod+Space exec sh ~/.config/sway/workspace.sh go_to_workspace
 
 mode "Go to" {
     bindsym 1 workspace number 1
