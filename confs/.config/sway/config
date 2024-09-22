@@ -193,7 +193,7 @@ bindsym $mod+Shift+s exec $scratch_term
 for_window [title="$scratch_term_title"] move to scratchpad
 
 bindsym $mod+Semicolon scratchpad show; \
-    [title="$scratch_term_title" floating con_id=__focused__] \
+    [title="$scratch_term_title"] \
     resize set 100ppt 100ppt; move position 0 0ppt
 
 #
