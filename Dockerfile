@@ -57,6 +57,7 @@ RUN rustup default stable
 RUN npm install -g \
     typescript \
     typescript-language-server \
+    @astrojs/language-server \
     npm-check-updates \
     # vscode-langservers-extracted \
     && npm cache clean -f

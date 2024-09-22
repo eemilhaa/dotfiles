@@ -35,6 +35,20 @@ name = "typescript"
 formatter = { command = 'npx', args = ["prettier", "--parser", "typescript"] }
 auto-format = true
 
+[language-server.astro-ls]
+command = "astro-ls"
+args = ["--stdio"]
+config = { typescript = { tsdk = "/usr/lib/node_modules/typescript/lib" }}
+
+[[language]]
+name = "astro"
+scope = "source.astro"
+injection-regex = "astro"
+file-types = ["astro"]
+language-servers = ["astro-ls"]
+formatter = { command = "npx", args = ["prettier", "--plugin", "prettier-plugin-astro", "--parser", "astro"] }
+auto-format = true
+
 [[language]]
 name = "tsx"
 file-types = ["tsx"]
