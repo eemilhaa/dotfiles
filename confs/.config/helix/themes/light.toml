@@ -20,8 +20,9 @@
 "variable.builtin"       = "fg0"
 "label"                  = "fg0"
 
-"punctuation"            = "fg1"
-"operator"               = "fg1"
+"punctuation"            = "fg0"
+"punctuation.bracket"    = "fg0"
+"operator"               = "fg0"
 "tag"                    = "fg1"
 
 "string"                 = "green"
@@ -43,7 +44,7 @@
 # UI
 "diff.plus"   = "green"
 "diff.minus"  = "red"
-"diff.delta"  = "lightblue"
+"diff.delta"  = "blue"
 
 "ui.background"             = { fg = "fg1", bg = "bg0" }
 "ui.cursor"                 = { fg = "fgr", bg = "fg1" }
@@ -86,9 +87,9 @@
 "diagnostic.info"     = { underline = { color = "lightblue", style = "curl" } }
 "diagnostic.hint"     = { underline = { color = "lightblue", style = "curl" } }
 
-"info"     = "lightblue"
-"hint"     = "lightblue"
-"warning"  = "yellow"
+"info"     = "blue"
+"hint"     = "blue"
+"warning"  = "fg0"
 "error"    = "red"
 
 [palette]
@@ -105,7 +106,7 @@
 # chroma .15
 
 red        = "#ba343a"
-green      = "#0a924b"
+green      = "#028c43"
 yellow     = "#cc7200"
 blue       = "#006ebe"
 magenta    = "#a763be"
@@ -113,12 +114,12 @@ cyan       = "#069ce4"
 orange     = "#c56604"
 
 lightblue  = "#069ce4"
-attention  = "#fef2b3"
+attention  = "#dadada"
 
 # Neutral
 
-fg0        = "#242424"
-fg1        = "#808080"
+fg0        = "#222222"
+fg1        = "#757575"
 fg2        = "#929292"
 fgr        = "#ffffff"
 bg0        = "#FcFcFc"
