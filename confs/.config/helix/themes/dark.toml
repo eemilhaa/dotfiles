@@ -5,55 +5,63 @@ inherits = "light"
 
 "type"                   = "magenta"
 "constructor"            = "magenta"
-"tag"                    = "magenta"
+# "tag"                    = "magenta"
 
 "constant"               = "cyan"
-
-"namespace"              = "fg0"
-"module"                 = "fg0"
-"variable"               = "fg0"
-
-"attribute"              = "fg0"
-"variable.parameter"     = "fg0"
-"variable.other.member"  = "fg0"
-"type.parameter"         = "fg0"
-
-"keyword"                = "fg0"
-"variable.builtin"       = "fg0"
-"label"                  = "fg0"
-
-"punctuation"            = "fg1"
-"operator"               = "fg1"
 
 "string"                 = "green"
 
 "comment"                = "yellow"
 
-# Markup
-"markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
-"markup.heading.marker"  = { fg = "blue", modifiers = ["bold"] }
-"markup.list"            = "blue"
-"markup.bold"            = { modifiers = ["bold"] }
-"markup.italic"          = { modifiers = ["italic"] }
-"markup.strikethrough"   = { modifiers = ["crossed_out"] }
-"markup.link"            = "green"
-"markup.link.text"       = "blue"
-"markup.quote"           = "green"
-"markup.raw"             = "green"
+"operator"               = "fg0"
+"punctuation"            = "fg0"
+# "keyword"                = "fg1"
+# "variable.builtin"       = "fg1"
+# "label"                  = "fg1"
+
+# "namespace"              = "fg0"
+# "module"                 = "fg0"
+# "variable"               = "fg0"
+
+# "attribute"              = "fg0"
+# "variable.parameter"     = "fg0"
+# "variable.other.member"  = "fg0"
+# "type.parameter"         = "fg0"
+
+# "keyword"                = "fg0"
+# "variable.builtin"       = "fg0"
+# "label"                  = "fg0"
+
+# # Markup
+# "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
+# "markup.heading.marker"  = { fg = "blue", modifiers = ["bold"] }
+# "markup.list"            = "blue"
+# "markup.bold"            = { modifiers = ["bold"] }
+# "markup.italic"          = { modifiers = ["italic"] }
+# "markup.strikethrough"   = { modifiers = ["crossed_out"] }
+# "markup.link"            = "green"
+# "markup.link.text"       = "blue"
+# "markup.quote"           = "green"
+# "markup.raw"             = "green"
 
 # UI
-"ui.cursor"                 = { fg = "fgr", bg = "fg1" }
+"ui.cursor"                 = { fg = "fgr", bg = "fg0" }
 "ui.cursor.primary"         = { fg = "fgr", bg = "yellow" }
 "ui.cursor.match"           = { fg = "yellow", bg = "bg2", modifiers = ["underlined"] }
 "ui.linenr.selected"        = "yellow"
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
-"ui.statusline.select"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fgr", bg = "yellow", modifiers = ["bold"] }
+"ui.statusline.select"      = { fg = "fgr", bg = "magenta", modifiers = ["bold"] }
+"ui.statusline.normal"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
+"ui.menu"                   = { fg = "fg0", bg = "bg2" }
+"ui.menu.selected"          = { fg = "fgr", bg = "blue" }
+"ui.menu.scroll"            = { fg = "fg1", bg = "bg2" }
 "ui.selection"              = { fg = "fgr", bg = "fg2" }
-# "ui.bufferline.background"  = { bg = "bg0" }
-# "ui.bufferline"             = { fg = "fg0", bg = "bg2" }
-# "ui.bufferline.active"      = { fg = "fgr", bg = "yellow" }
+"ui.selection.primary"      = { fg = "fgr", bg = "blue" }
+"ui.virtual.jump-label"     = { fg = "fgr", bg = "blue" }
+"ui.bufferline.background"  = { bg = "bg0" }
+"ui.bufferline"             = { fg = "fg0", bg = "bg2" }
+"ui.bufferline.active"      = { fg = "fgr", bg = "blue" }
 
 [palette]
 red        = "#FF4D51"
@@ -63,15 +71,16 @@ blue       = "#5DC5F8"
 magenta    = "#FEABF2"
 cyan       = "#24DFC4"
 
-selection  = "#5DC5F8"
+selection  = "#285577"
+lightblue  = "#5DC5F8"
 
 # Grays
 fg0        = "#f0f0f0"
-fg1        = "#c4c4c4"
-fg2        = "#9d9d9d"
+fg1        = "#b8b8b8"
+fg2        = "#888888"
 fgr        = "#000000"
-bg0        = "#242424"
-bg1        = "#353535"
-bg2        = "#505050"
+bg0        = "#222222"
+bg1        = "#333333"
+bg2        = "#333333"
 
 # https://coolors.co/FF4D51-35D450-E9E836-5DC5F8-FEABF2-24DFC4

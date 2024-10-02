@@ -21,13 +21,13 @@
 "label"                  = "fg0"
 
 "punctuation"            = "fg0"
-"punctuation.bracket"    = "fg0"
+# "punctuation.bracket"    = "fg0"
 "operator"               = "fg0"
 "tag"                    = "fg1"
 
 "string"                 = "green"
 
-"comment"                = { fg = "fg0", bg = "attention" }
+"comment"                = { fg = "fg0", bg = "bg2" }
 
 # Markup
 "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
@@ -58,8 +58,8 @@
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
-"ui.statusline.select"      = { fg = "fgr", bg = "lightblue", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fgr", bg = "fg2", modifiers = ["bold"] }
+"ui.statusline.select"      = { fg = "fgr", bg = "cyan", modifiers = ["bold"] }
+"ui.statusline.normal"      = { fg = "fg0", bg = "bg2", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -69,12 +69,12 @@
 "ui.virtual.ruler"          = { bg = "bg2" }
 "ui.virtual.indent-guide"   = "bg2"
 "ui.virtual.whitespace"     = "bg2"
-"ui.virtual.jump-label"     = { fg = "fgr", bg = "lightblue" }
+"ui.virtual.jump-label"     = { fg = "fgr", bg = "cyan" }
 "ui.menu"                   = { fg = "fg0", bg = "bg2" }
 "ui.menu.selected"          = { fg = "fgr", bg = "fg2" }
 "ui.menu.scroll"            = { fg = "fg1", bg = "bg2" }
-"ui.selection"              = { fg = "fg0", bg = "bg2" }
-"ui.selection.primary"      = { fg = "fgr", bg = "lightblue" }
+"ui.selection"              = { fg = "fgr", bg = "fg2" }
+"ui.selection.primary"      = { fg = "fgr", bg = "cyan" }
 "ui.highlight"              = { bg = "bg1" }
 "ui.cursorline.primary"     = { bg = "bg1" }
 "ui.cursorcolumn.primary"   = { bg = "bg1" }
@@ -84,12 +84,12 @@
 
 "diagnostic.error"    = { underline = { color = "red", style = "curl" } }
 "diagnostic.warning"  = { underline = { color = "yellow", style = "curl" } }
-"diagnostic.info"     = { underline = { color = "lightblue", style = "curl" } }
-"diagnostic.hint"     = { underline = { color = "lightblue", style = "curl" } }
+"diagnostic.info"     = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.hint"     = { underline = { color = "cyan", style = "curl" } }
 
 "info"     = "blue"
 "hint"     = "blue"
-"warning"  = "fg0"
+"warning"  = "yellow"
 "error"    = "red"
 
 [palette]
@@ -105,26 +105,24 @@
 
 # chroma .15
 
-red        = "#ba343a"
-green      = "#028c43"
-yellow     = "#cc7200"
-blue       = "#006ebe"
-magenta    = "#a763be"
-cyan       = "#069ce4"
-orange     = "#c56604"
+red        = "#b00925"
+green      = "#088539"
+yellow     = "#ba5702"
+blue       = "#0256a9"
+magenta    = "#9f59b2"
+cyan       = "#0486d3"
 
-lightblue  = "#069ce4"
 attention  = "#dadada"
 
 # Neutral
 
-fg0        = "#222222"
+fg0        = "#333333"
 fg1        = "#757575"
 fg2        = "#929292"
 fgr        = "#ffffff"
 bg0        = "#FcFcFc"
-bg1        = "#f0f0f0"
-bg2        = "#dadada"
+bg1        = "#f5f5f5"
+bg2        = "#e0e0e0"
 
 # Warm
 

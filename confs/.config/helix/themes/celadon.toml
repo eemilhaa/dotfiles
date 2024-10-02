@@ -6,7 +6,7 @@
 "type"                   = "cyan"
 "constructor"            = "cyan"
 
-"constant"               = "yellow"
+"constant"               = "blue"
 
 "variable"               = "warm-white"
 "module"                 = "warm-white"
@@ -24,15 +24,15 @@
 "operator"               = "orange"
 "special"                = "orange" # fuzzy highlight
 
-"punctuation.special"    = "orange"
-"string.special"         = "orange"
-"string.regexp"          = "orange"
+# "punctuation.special"    = "orange"
+# "string.special"         = "orange"
+# "string.regexp"          = "orange"
 
 "string"                 = "dark-cyan"
 
 "punctuation"            = "punct"
 
-"comment"                = "blue"
+"comment"                = "yellow"
 
 # UI, markup, other non-syntax stuff
 # ----------------------------------------------------
@@ -113,19 +113,19 @@
 
 [palette]
 red        = "#FE5F55"
-green      = "#88B830"
-yellow     = "#FCC568"
-blue       = "#07A8C9"
-dark-cyan  = "#58B090"
-cyan       = "#90E0B0"
+green      = "#A0C335"
+yellow     = "#FDF475"
+blue       = "#6FBEE9"
+dark-cyan  = "#85C185"
+cyan       = "#8AE1B3"
 magenta    = "#F8B5FF"
-orange     = "#F09038"
+orange     = "#F09A43"
 warm-white = "#fffdf0"
 punct      = "#B0B098"
-comment    = "#929292"
+comment    = "#CD8576"
 
 black      = "#1e1e1e"
-dark-bg    = "#242424"
+dark-bg    = "#222222"
 medium-bg  = "#2D2D2D"
 light-bg   = "#505050"
 indent     = "#505050"

@@ -20,7 +20,7 @@ formatter = { command = 'prettier', args = ["--parser", "html"] }
 
 [[language]]
 name = "json"
-formatter = { command = 'prettier', args = ["--parser", "json"] }
+formatter = { command = 'npx', args = ["prettier", "--parser", "json"] }
 
 [[language]]
 name = "css"
