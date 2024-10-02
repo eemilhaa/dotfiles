@@ -58,9 +58,9 @@ set_exports () {
 }
 
 set_custom_commands () {
-  alias ls="ls --color=auto"
+  alias ls="ls -F --color=auto"
   if hash lsd 2>/dev/null; then
-    alias ls='lsd'
+    alias ls='lsd -F'
     alias lls='ls -l --almost-all --total-size'
     alias lt='ls --tree'
   fi
@@ -105,7 +105,7 @@ set_prompt_and_title () {
   cyan='%F{cyan}'
   normal='%b%f'
 
-  newline=$'\n'
+  # newline='\n'
   hostname='@%m '
   workdir='%2~ '
   workdir_full='%~ '

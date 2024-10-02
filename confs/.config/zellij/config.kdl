@@ -43,10 +43,10 @@ themes {
     dark {
         black   "#1e1e1e"
 
-        bg      "#353535"
+        bg      "#222222"
 
-        fg      "#4a4a4a"
-        white   "#4a4a4a"
+        fg      "#858585"
+        white   "#858585"
 
         red     "#f0f0f0"
         green   "#f0f0f0"
@@ -65,11 +65,11 @@ themes {
         white   "#929292"
         magenta "#929292"
 
-        red     "#282828"
-        green   "#282828"
-        yellow  "#282828"
-        blue    "#282828"
-        cyan    "#282828"
-        orange  "#282828"
+        red     "#222222"
+        green   "#222222"
+        yellow  "#222222"
+        blue    "#222222"
+        cyan    "#222222"
+        orange  "#222222"
     }
 }
