@@ -58,15 +58,10 @@ set_exports () {
 }
 
 set_custom_commands () {
-  alias ls="ls -F --color=auto"
-  if hash lsd 2>/dev/null; then
-    alias ls='lsd -F'
-    alias lls='ls -l --almost-all --total-size'
-    alias lt='ls --tree'
-  fi
-  alias l='ls -l'
-  alias ll='ls -l --almost-all'
+  alias ls='ls -F --color=auto --group-directories-first'
   alias la='ls -a'
+  alias l='ls -lh'
+  alias ll='ls -lh --almost-all'
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'

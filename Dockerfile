@@ -17,7 +17,6 @@ RUN pacman -Syyu --noconfirm \
         git \
         git-delta \
         helix \
-        lsd \
         man-db \
         make \
         neofetch \
