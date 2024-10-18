@@ -11,6 +11,16 @@ set_custom_commands () {
   dbinit () {
     distrobox create -n $1 --hostname $1 --image ghcr.io/eemilhaa/dotfiles:main
   }
+  dbinit-separate-home () {
+    local target_dir="${HOME}/distrobox/${1}"
+    mkdir -p "${target_dir}"
+    ln -s "${HOME}/.zshrc" "${target_dir}/.zshrc"
+    distrobox create \
+      --name "${1}" \
+      --hostname "${1}" \
+      --home "${target_dir}" \
+      --image "${2}"
+  }
   dev () {
     podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/dotfiles:main
   }
