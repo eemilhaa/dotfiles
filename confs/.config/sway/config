@@ -194,7 +194,8 @@ for_window [title="$scratch_term_title"] move to scratchpad
 
 bindsym $mod+Semicolon scratchpad show; \
     [title="$scratch_term_title"] \
-    resize set 100ppt 60ppt; move position 0ppt 0ppt
+    fullscreen enable
+    #resize set 100ppt 60ppt; move position 0ppt 0ppt
 
 #
 # MODES:
