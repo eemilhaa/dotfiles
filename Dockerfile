@@ -33,6 +33,7 @@ RUN pacman -Syyu --noconfirm \
         texlab \
         tree \
         unzip \
+        uv \
         wget \
         wl-clipboard \
         yaml-language-server \
@@ -62,7 +63,7 @@ RUN npm install -g \
     && npm cache clean -f
 
 # poetry
-RUN curl -sSL https://install.python-poetry.org | python3 -
+# RUN curl -sSL https://install.python-poetry.org | python3 -
 
 WORKDIR /root/work
 
