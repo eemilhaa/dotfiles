@@ -11,7 +11,7 @@ definitions:
 
 bar:
   height: 20
-  location: top
+  location: bottom
   background: 222222ff
   foreground: ffffffff
   font: *font-default
