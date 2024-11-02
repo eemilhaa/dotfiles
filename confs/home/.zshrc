@@ -76,9 +76,10 @@ set_custom_commands () {
 }
 
 set_keybinds () {
-  bindkey "^ " history-incremental-search-backward
-  bindkey "^P" history-beginning-search-backward-end
-  bindkey "^N" history-beginning-search-forward-end
+  bindkey "^P" history-incremental-search-backward
+  bindkey "^N" history-incremental-search-forward
+  # bindkey "^P" history-beginning-search-backward-end
+  # bindkey "^N" history-beginning-search-forward-end
   bindkey "^[[1;5C" forward-word
   bindkey "^[[1;5D" backward-word
   bindkey "^O" edit-command-line
