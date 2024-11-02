@@ -37,7 +37,7 @@ RUN pacman -Syyu --noconfirm \
         wget \
         wl-clipboard \
         yaml-language-server \
-        zellij \
+        tmux \
         zsh \
         zsh-syntax-highlighting \
         zsh-autosuggestions \
