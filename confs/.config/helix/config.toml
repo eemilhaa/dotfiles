@@ -9,7 +9,8 @@ color-modes = true
 cursorline = true
 auto-format = true
 bufferline = "always"
-jump-label-alphabet = " asdfghjkl;qwertyuiopzxcvbnm,."
+# jump-label-alphabet = " asdfghjkl;qwertyuiopzxcvbnm,."
+jump-label-alphabet = "jfkdls;a urieowpqnvmc,x.zhgytb"
 # rulers = [80]
 
 [editor.auto-pairs]

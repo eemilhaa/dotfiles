@@ -1,5 +1,6 @@
-[language-server.ruff-lsp]
-command = "ruff-lsp"
+[language-server.ruff]
+command = "uvx"
+args = ["ruff", "server"]
 
 [language-server.ltex-ls]  # get this from aur
 command = "ltex-ls"
@@ -10,10 +11,10 @@ command = "clippy"
 
 [[language]]
 name = "python"
-language-servers = ["pyright", "ruff-lsp"]
+language-servers = ["pyright"]
 # formatter = { command = "black", args = ["--quiet", "-"] }
 formatter = { command = "uvx", args = ["ruff", "format", "-"] }
-auto-format = false
+auto-format = true
 
 [[language]]
 name = "html"

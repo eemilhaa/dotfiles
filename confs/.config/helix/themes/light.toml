@@ -82,10 +82,12 @@
 "ui.bufferline"             = { fg = "fg0", bg = "bg2" }
 "ui.bufferline.active"      = { fg = "fg0", bg = "bg0" }
 
-"diagnostic.error"    = { underline = { color = "red", style = "curl" } }
-"diagnostic.warning"  = { underline = { color = "yellow", style = "curl" } }
-"diagnostic.info"     = { underline = { color = "cyan", style = "curl" } }
-"diagnostic.hint"     = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.error"        = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning"      = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info"         = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.hint"         = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.unnecessary"  = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.deprecated"   = { underline = { color = "cyan", style = "curl" } }
 
 "info"     = "blue"
 "hint"     = "blue"
