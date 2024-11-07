@@ -71,4 +71,4 @@ name = "markdown"
 file-types = ["md", "rmd", "Rmd"]
 # language-servers = ["ltex-ls"]
 formatter = { command = "uvx", args = ["mdformat", "--wrap", "80", "-"] }
-auto-format = false
+auto-format = true
