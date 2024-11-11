@@ -125,7 +125,7 @@ $green$hostname$blue$workdir$cyan$git_info$venv
 $normal$prompt_symbol"
 
   title_info () {
-    print -Pn "$hostname$workdir_full$git_info$venv"
+    print -Pn "$hostname$workdir_full"
   }
   set_base_title () {
     echo -en "\e]0;zsh $(title_info)\a"
