@@ -2,10 +2,13 @@
 "function"               = "blue"
 "special"                = "blue"
 
-"type"                   = "yellow"
-"constructor"            = "yellow"
+"type"                   = "magenta"
+"constructor"            = "magenta"
 
-"constant"               = "magenta"
+"constant"               = "fg0"
+"constant.numeric"       = "yellow"
+"constant.builtin"       = "yellow"
+"constant.character"     = "yellow"
 
 "namespace"              = "fg0"
 "module"                 = "fg0"
@@ -14,15 +17,16 @@
 "attribute"              = "fg0"
 "variable.parameter"     = "fg0"
 "variable.other.member"  = "fg0"
-"type.parameter"         = "fg0"
+# "type.parameter"         = "fg0"
 
 "keyword"                = "fg0"
 "variable.builtin"       = "fg0"
 "label"                  = "fg0"
 
-"punctuation"            = "fg0"
-# "punctuation.bracket"    = "fg0"
-"operator"               = "fg0"
+"punctuation"            = "fg1"
+"operator"               = "fg1"
+"punctuation.bracket"    = "fg1"
+
 "tag"                    = "fg1"
 
 "string"                 = "green"
