@@ -6,6 +6,4 @@ layout {
 	    }
 	}
 	tab name="Tab #1" focus=true
-	tab name="Tab #2"
-	tab name="Tab #3"
 }
