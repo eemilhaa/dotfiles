@@ -27,7 +27,7 @@ set $term foot
 
 ### Output configuration swaymsg -t get_outputs
     # laptop screen
-    #output eDP-1 position 0,0
+    output eDP-1 position 0,0
 
     #output DP-1 mode 2560x1440@143.998Hz position 0,-1440
     #output DP-2 mode 2560x1440@143.998Hz position 0,-1440
@@ -42,7 +42,7 @@ set $term foot
     # output DP-2 transform 270
     # output HDMI-A-1 position 1920,0
 
-    output eDP-1 position 2560,0
+    #output eDP-1 position 2560,0
     output HDMI-A-1 position 0,0
 
     # output DP-2 mode 2560x1440@59.951Hz position 1920,0
@@ -197,8 +197,8 @@ for_window [title="$scratch_term_title"] move to scratchpad
 
 bindsym $mod+Semicolon scratchpad show; \
     [title="$scratch_term_title"] \
-    fullscreen enable
-    #resize set 100ppt 60ppt; move position 0ppt 0ppt
+    resize set 100ppt 50ppt; move position 0ppt 0ppt
+    #fullscreen enable
 
 #
 # MODES:
