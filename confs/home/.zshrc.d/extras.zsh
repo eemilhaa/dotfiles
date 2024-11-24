@@ -6,10 +6,15 @@ set_custom_commands () {
   alias dbh="distrobox-host-exec"
   # alias qgis="XDG_SESSION_TYPE=x11 && qgis"
   battery () {
-    upower -i $(upower -e | grep 'BAT') | grep -E "state|percentage"
+    upower -i "$(upower -e | grep 'BAT')" | grep -E "state|percentage"
   }
   dbinit () {
-    distrobox create -n $1 --hostname $1 --image ghcr.io/eemilhaa/dotfiles:main
+    if [ -z "${2}" ]; then
+      local image="ghcr.io/eemilhaa/dotfiles:main"
+    else
+      local image="${2}"
+    fi
+    distrobox create -n "${1}" --hostname "${1}" --image "${image}"
   }
   dbinit-separate-home () {
     local target_dir="${HOME}/distrobox/${1}"
@@ -22,24 +27,24 @@ set_custom_commands () {
       --image "${2}"
   }
   dev () {
-    podman run -it --network host --rm -v $1:/root/work/:z ghcr.io/eemilhaa/dotfiles:main
+    podman run -it --network host --rm -v "${1}:/root/work/:z ghcr.io/eemilhaa/dotfiles:main"
   }
   ghclone () {
-    if [ -z $2 ]; then
-      git clone git@github.com:eemilhaa/$1.git
+    if [ -z "${2}" ]; then
+      git clone "git@github.com:eemilhaa/${1}.git"
     else
-      git clone git@github.com:$1/$2.git
+      git clone "git@github.com:${1}/${2}.git"
     fi
   }
   dbe () {
-    if [ -z $1 ]; then
+    if [ -z "${1}" ]; then
       distrobox enter kontti
     else
-      distrobox enter $1
+      distrobox enter "${1}"
     fi
   }
   firefox-open () {
-    gtk-launch org.mozilla.firefox.desktop $1
+    gtk-launch org.mozilla.firefox.desktop "${1}"
   }
 }
 
@@ -67,12 +72,12 @@ define_sway_stuff () {
 
   sway_scale () {
     output=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused==true).name')
-    swaymsg output $output enable scale $1
+    swaymsg output "${output}" enable scale "${1}"
   }
 
   sway_ext_output_position () {
     swaymsg output HDMI-A-1 position 0 0
-    swaymsg output eDP-1 position $1 $2
+    swaymsg output eDP-1 position "${1}" "${2}"
   }
 }
 

@@ -12,8 +12,8 @@ keybinds {
         bind "7" { GoToTab 7; SwitchToMode "normal"; }
         bind "8" { GoToTab 8; SwitchToMode "normal"; }
         bind "9" { GoToTab 9; SwitchToMode "normal"; }
-        bind "Ctrl h" { GoToPreviousTab; }
-        bind "Ctrl l" { GoToNextTab; }
+        bind "Ctrl h" { GoToPreviousTab; SwitchToMode "normal"; }
+        bind "Ctrl l" { GoToNextTab; SwitchToMode "normal"; }
         // bind "h" { MoveFocus "left"; }
         // bind "j" { MoveFocus "down"; }
         // bind "k" { MoveFocus "up"; }
