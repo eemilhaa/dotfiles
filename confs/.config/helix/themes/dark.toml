@@ -1,36 +1,37 @@
 inherits = "light"
 
+# Syntax
 "function"               = "blue"
 "special"                = "blue"
 
 "type"                   = "magenta"
 "constructor"            = "magenta"
-# "tag"                    = "magenta"
 
-"constant"               = "cyan"
+"constant.numeric"       = "cyan"
+"constant.builtin"       = "cyan"
+"constant.character"     = "cyan"
+
+"constant"               = "fg0"
+"namespace"              = "fg0"
+"module"                 = "fg0"
+"variable"               = "fg0"
+"attribute"              = "fg0"
+"variable.parameter"     = "fg0"
+"variable.other.member"  = "fg0"
+# "type.parameter"         = "fg0"
+
+"keyword"                = "fg0"
+"variable.builtin"       = "fg0"
+"label"                  = "fg0"
+
+"punctuation"            = "fg1"
+"operator"               = "fg1"
+"punctuation.bracket"    = "fg1"
+"tag"                    = "fg1"
 
 "string"                 = "green"
 
 "comment"                = "yellow"
-
-"operator"               = "fg0"
-"punctuation"            = "fg0"
-# "keyword"                = "fg1"
-# "variable.builtin"       = "fg1"
-# "label"                  = "fg1"
-
-# "namespace"              = "fg0"
-# "module"                 = "fg0"
-# "variable"               = "fg0"
-
-# "attribute"              = "fg0"
-# "variable.parameter"     = "fg0"
-# "variable.other.member"  = "fg0"
-# "type.parameter"         = "fg0"
-
-# "keyword"                = "fg0"
-# "variable.builtin"       = "fg0"
-# "label"                  = "fg0"
 
 # # Markup
 # "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
@@ -71,12 +72,9 @@ blue       = "#5DC5F8"
 magenta    = "#FEABF2"
 cyan       = "#24DFC4"
 
-selection  = "#285577"
-lightblue  = "#5DC5F8"
-
 # Grays
 fg0        = "#f0f0f0"
-fg1        = "#b8b8b8"
+fg1        = "#acacac"
 fg2        = "#888888"
 fgr        = "#000000"
 bg0        = "#222222"

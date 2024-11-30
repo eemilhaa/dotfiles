@@ -5,19 +5,16 @@
 "type"                   = "magenta"
 "constructor"            = "magenta"
 
-"constant"               = "fg0"
 "constant.numeric"       = "yellow"
 "constant.builtin"       = "yellow"
 "constant.character"     = "yellow"
+"tag"                    = "yellow"
 
 "namespace"              = "fg0"
 "module"                 = "fg0"
 "variable"               = "fg0"
-
+"constant"               = "fg0"
 "attribute"              = "fg0"
-"variable.parameter"     = "fg0"
-"variable.other.member"  = "fg0"
-# "type.parameter"         = "fg0"
 
 "keyword"                = "fg0"
 "variable.builtin"       = "fg0"
@@ -27,7 +24,6 @@
 "operator"               = "fg1"
 "punctuation.bracket"    = "fg1"
 
-"tag"                    = "fg1"
 
 "string"                 = "green"
 
@@ -115,7 +111,8 @@ red        = "#b00925"
 green      = "#088539"
 yellow     = "#ba5702"
 blue       = "#0256a9"
-magenta    = "#9f59b2"
+# magenta    = "#9f59b2"
+magenta    = "#8c47a0"
 cyan       = "#0486d3"
 
 attention  = "#dadada"

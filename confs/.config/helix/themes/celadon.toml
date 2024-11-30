@@ -1,141 +1,48 @@
+inherits = "dark"
 # Syntax
 # ----------------------------------------------------
 # Syntax
 "function"               = "green"
 
-"type"                   = "cyan"
-"constructor"            = "cyan"
+"type"                   = "yellow"
+"constructor"            = "yellow"
 
-"constant"               = "blue"
+"constant.numeric"       = "blue"
+"constant.builtin"       = "blue"
+"constant.character"     = "blue"
 
-"variable"               = "warm-white"
-"module"                 = "warm-white"
-
-"namespace"              = "warm-white"
-"attribute"              = "warm-white"
-"variable.parameter"     = "warm-white"
-"variable.other.member"  = "warm-white"
-"type.parameter"         = "warm-white"
+"namespace"              = "cyan"
+"module"                 = "cyan"
+"variable"               = "cyan"
+"constant"               = "cyan"
+"attribute"              = "cyan"
+"variable.parameter"     = "cyan"
+"variable.other.member"  = "cyan"
 
 "keyword"                = "orange"
 "variable.builtin"       = "orange"
 "label"                  = "orange"
-"tag"                    = "orange"
-"operator"               = "orange"
-"special"                = "orange" # fuzzy highlight
+"special"                = "orange"
 
-# "punctuation.special"    = "orange"
-# "string.special"         = "orange"
-# "string.regexp"          = "orange"
+"punctuation"            = "fg1"
+"operator"               = "fg1"
+"punctuation.bracket"    = "fg1"
+"tag"                    = "fg1"
 
-"string"                 = "dark-cyan"
+"string"                 = "dark-green"
 
-"punctuation"            = "punct"
-
-"comment"                = "yellow"
-
-# UI, markup, other non-syntax stuff
-# ----------------------------------------------------
-
-"markup.heading.marker" = { fg = "orange", modifiers = ["bold"] }
-"markup.heading" = { fg = "white", modifiers = ["bold"] }
-"markup.list" = "orange"
-"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
-"markup.italic" = { fg = "yellow", modifiers = ["italic"] }
-"markup.link.url" = "dark-cyan"
-"markup.link.text" = "cyan"
-"markup.quote" = "green"
-"markup.raw" = "green"
-
-"diff.plus" = "green"
-"diff.delta" = "blue"
-"diff.minus" = "red"
-
-# User Interface
-# --------------
-"ui.background" = { fg = "dark-fg", bg = "dark-bg" }
-
-"ui.linenr" = { fg = "dark-fg" }
-"ui.linenr.selected" = "saturated-yellow"
-
-"ui.statusline" = { fg = "light-fg", bg = "light-bg" }
-"ui.statusline.inactive" = { fg = "dark-fg", bg = "light-bg" }
-"ui.statusline.insert" = { fg = "black", bg = "green" }
-"ui.statusline.select" = { fg = "black", bg = "blue" }
-"ui.statusline.normal" = "light-fg"
-
-"ui.bufferline.background" = { bg = "dark-bg" }
-"ui.bufferline" = { fg = "light-fg", bg = "light-bg" }
-"ui.bufferline.active" = { fg = "dark-bg", bg = "yellow" }
-
-# hover, whichkey
-"ui.popup" = { fg = "dark-fg", bg = "light-bg" }
-# menus
-"ui.menu" = { fg = "light-fg", bg = "light-bg" }
-"ui.menu.selected" = { fg = "white", bg = "dark-fg", modifiers = ["bold"] }
-# command description
-"ui.help" = { fg = "light-fg", bg = "light-bg" }
-# splits
-"ui.window" = { fg = "light-bg", bg = "dark-bg" }
-
-# base text (including markdown)
-"ui.text" = "light-fg"
-# picker hl
-"ui.text.focus" = { fg = "white", bg = "light-bg", modifiers = ["bold"] }
-
-"ui.virtual" = "dark-fg"
-"ui.virtual.ruler" = { bg = "medium-bg" }
-"ui.virtual.indent-guide" = "indent"
-
-"ui.cursorline.primary" = { bg = "black" }
-"ui.cursorcolumn.primary" = { bg = "black" }
-
-# selections & cursors
-"ui.selection.primary" = { fg = "white", bg = "dark-blue" }
-"ui.selection" = { fg = "light-fg", bg = "dark-fg" }
-
-"ui.cursor.primary" = { fg = "black", bg = "saturated-yellow" }
-"ui.cursor.primary.select" = { fg = "black", bg = "yellow" }
-"ui.cursor.primary.insert" = { fg = "black", bg = "green" }
-"ui.cursor" = { fg = "black", bg = "light-fg" }
-"ui.cursor.match" = { fg = "black", bg = "blue", modifiers = ["bold"] }
-
-"ui.highlight" = { bg = "light-bg" }
-
-"info" = "blue"
-"hint" = "blue"
-"warning" = "saturated-yellow"
-"error" = "red"
-"diagnostic.error" = { underline = { color = "red", style = "curl" } }
-"diagnostic.warning" = { underline = { color = "saturated-yellow", style = "curl" } }
-"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
-"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
+"comment"                = "fg2"
 
 [palette]
 red        = "#FE5F55"
-green      = "#A0C335"
-yellow     = "#FDF475"
-blue       = "#6FBEE9"
-dark-cyan  = "#85C185"
-cyan       = "#8AE1B3"
+green      = "#88B830"
+yellow     = "#F0B858"
+blue       = "#30B0F0"
+cyan       = "#90E0B0"
 magenta    = "#F8B5FF"
-orange     = "#F09A43"
-warm-white = "#fffdf0"
-punct      = "#B0B098"
-comment    = "#CD8576"
+dark-green = "#50B068"
+orange     = "#F09038"
 
-black      = "#1e1e1e"
-dark-bg    = "#222222"
-medium-bg  = "#2D2D2D"
-light-bg   = "#505050"
-indent     = "#505050"
-dark-fg    = "#616161"
-light-fg   = "#fffdf0"
-white      = "#fffdf0"  # very bright text
-
-dark-blue         = "#007888"
-saturated-yellow  = "#F0B858"
-
-# Preview (syntax colors only)
-# ----------------------------------------------------
-# https://coolors.co/f09038-ffde82-30b0f0-90e0b0-489888-88b830-fdf6e3-98a8a0
+# fg1        = "#B8B8A0"
+# fg2        = "#809088"
+# fg0        = "#fcfaea"
