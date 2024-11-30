@@ -6,14 +6,16 @@ definitions:
     - color: &color-good 35D450ff
     - color: &color-urgent FF4D51ff
     - color: &color-fade 888888ff
+    - color: &color-bg 222222ff
+    - color: &color-fg ffffffff
   margins:
     - margin: &margin-default 15
 
 bar:
   height: 20
   location: bottom
-  background: 222222ff
-  foreground: ffffffff
+  background: *color-bg
+  foreground: *color-fg
   font: *font-default
 
   left:
@@ -26,12 +28,16 @@ bar:
                 focused:
                   string: {text: "{name} "}
                 urgent:
-                  string: {text: "{name} ", on-click: "swaymsg --quiet workspace {name}", foreground: *color-urgent, font: *font-bold}
+                  string:
+                    text: "{name} "
+                    on-click: "swaymsg --quiet workspace {name}"
+                    foreground: *color-urgent
+                    font: *font-bold
           current:
             map:
               conditions:
                 mode != "default":
-                  string: {text: "({mode}) "}
+                  string: {text: "({mode})"}
 
 
   right:
@@ -45,7 +51,12 @@ bar:
                 ramp:
                   tag: capacity
                   items:
-                    - string: {text: "BATTERY LOW {capacity}%", margin: *margin-default, foreground: *color-urgent, font: *font-bold}
+                    - string:
+                        text: "BATTERY LOW {capacity}%"
+                        margin: *margin-default
+                        foreground: *color-fg
+                        font: *font-bold
+                        deco: {background: {color: *color-urgent}}
                     - string: {text: "Battery {capacity}%", margin: *margin-default}
                     - string: {text: "Battery {capacity}%", margin: *margin-default}
                     - string: {text: "Battery {capacity}%", margin: *margin-default}
