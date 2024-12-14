@@ -13,7 +13,7 @@ definitions:
 
 bar:
   height: 20
-  location: bottom
+  location: top
   background: *color-bg
   foreground: *color-fg
   font: *font-default
