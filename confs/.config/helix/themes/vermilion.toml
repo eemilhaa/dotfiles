@@ -1,55 +1,51 @@
-inherits = "starlight"
+inherits = "dark"
 
 
-"function"               = "white"
-"constructor"            = "white"
+"function"               = "gray"
 
-"type"                   = "yellow"
-"string.special"         = "yellow"
-"string.regexp"          = "yellow"
-"constant"               = "yellow"
-"punctuation.special"    = "yellow"
+"type"                   = "orange"
+"constructor"            = "orange"
 
-"namespace"              = "green"
-"module"                 = "green"
-"variable"               = "green"
+"constant"               = "magenta"
+"constant.numeric"       = "magenta"
+"constant.builtin"       = "magenta"
+"constant.character"     = "magenta"
 
-"attribute"              = "cyan"
-"variable.parameter"     = "cyan"
-"variable.other.member"  = "cyan"
-"type.parameter"         = "cyan"
+"namespace"              = "fg0"
+"module"                 = "fg0"
+"variable"               = "fg0"
+"attribute"              = "fg0"
+"variable.parameter"     = "fg0"
+"variable.other.member"  = "fg0"
 
 "keyword"                = "red"
 "variable.builtin"       = "red"
 "label"                  = "red"
-"tag"                    = "red"
-"operator"               = "red"
 "special"                = "red"
+"tag"                    = "red"
 
-"string"                 = "sand"
+"punctuation"            = "fg1"
+"operator"               = "fg1"
+"punctuation.bracket"    = "fg1"
 
-"punctuation"            = "punct"
+"string"                 = "blue"
 
-"comment"                = "dark-fg"
+"comment"                = "green"
 
 
 [palette]
-red        = "#F08048"
-green      = "#8FA775"
-yellow     = "#F0A858"
+red        = "#F08868"
+green      = "#95E095"
+orange     = "#F0A858"
+yellow     = "#F0E070"
 sand       = "#E0C888"
-blue       = "#48B0E8"
-dark-blue  = "#1098E0"
-magenta    = "#B09890"
-cyan       = "#90E0B0"
-white      = "#ffffff"
-punct      = "#C9C9C9"
+blue       = "#7DC6E0"
+dark-blue  = "#80B0B8"
+magenta    = "#F0C6F0"
+cyan       = "#9DE7F0"
+gray       = "#B0C8D0"
+dark-gray  = "#A8B8D0"
 
-# Grays
-black      = "#1e1e1e"
-dark-bg    = "#242424"
-medium-bg  = "#2D2D2D"
-light-bg   = "#353535"
-indent     = "#616161"
-dark-fg    = "#929292"
-light-fg   = "#E6E6E6"
+# fg0        = "#E8F0F0"
+
+

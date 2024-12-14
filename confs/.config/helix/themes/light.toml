@@ -8,7 +8,7 @@
 "constant.numeric"       = "yellow"
 "constant.builtin"       = "yellow"
 "constant.character"     = "yellow"
-"tag"                    = "yellow"
+"tag"                    = "fg1"
 
 "namespace"              = "fg0"
 "module"                 = "fg0"
@@ -17,8 +17,8 @@
 "attribute"              = "fg0"
 
 "keyword"                = "fg0"
-"variable.builtin"       = "fg0"
 "label"                  = "fg0"
+"variable.builtin"       = "fg0"
 
 "punctuation"            = "fg1"
 "operator"               = "fg1"
@@ -27,7 +27,7 @@
 
 "string"                 = "green"
 
-"comment"                = { fg = "fg0", bg = "bg2" }
+"comment"                = { fg = "fg0", bg = "attention" }
 
 # Markup
 "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
@@ -107,19 +107,18 @@
 
 # chroma .15
 
-red        = "#b00925"
+red        = "#97274d"
 green      = "#088539"
 yellow     = "#ba5702"
 blue       = "#0256a9"
-# magenta    = "#9f59b2"
-magenta    = "#8c47a0"
+magenta    = "#8d50ac"
 cyan       = "#0486d3"
 
-attention  = "#dadada"
+attention  = "#FFEAA2"
 
 # Neutral
 
-fg0        = "#333333"
+fg0        = "#222222"
 fg1        = "#757575"
 fg2        = "#929292"
 fgr        = "#ffffff"
