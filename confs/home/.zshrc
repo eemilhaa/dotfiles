@@ -49,6 +49,8 @@ set_exports () {
   export COLORTERM="truecolor"
   export SHELL="/bin/zsh"
   export PATH="/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
+  export PATH="/usr/share/git-core/contrib:$PATH"
+  export PATH="/usr/share/git/diff-highlight:$PATH"
   export PATH="$HOME/.local/bin:$PATH"
   export PATH="$HOME/.cargo/bin:$PATH"
   export HISTFILE="$HOME/.zsh_history"
