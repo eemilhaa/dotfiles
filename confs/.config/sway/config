@@ -254,7 +254,7 @@ mode "Capture" {
     # annotate
     bindsym a exec grim -g "$(slurp)" - | swappy -f -; mode "default"
     # to Pictures
-    bindsym s exec grim -c -g "$(slurp; sleep 5)"; mode "default"
+    bindsym d exec grim -c -g "$(slurp; sleep 5)" - | wl-copy; mode "default"
     # window
     bindsym w exec sh ~/.config/sway/screenshot_window.sh; mode "default"
     bindsym Return mode "default"
