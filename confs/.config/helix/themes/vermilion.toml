@@ -6,10 +6,10 @@ inherits = "dark"
 "type"                   = "orange"
 "constructor"            = "orange"
 
-"constant"               = "magenta"
-"constant.numeric"       = "magenta"
-"constant.builtin"       = "magenta"
-"constant.character"     = "magenta"
+"constant"               = "fg0"
+"constant.numeric"       = "green"
+"constant.builtin"       = "green"
+"constant.character"     = "green"
 
 "namespace"              = "fg0"
 "module"                 = "fg0"
@@ -28,23 +28,28 @@ inherits = "dark"
 "operator"               = "fg1"
 "punctuation.bracket"    = "fg1"
 
-"string"                 = "blue"
+"string"                 = "dark-gray"
 
-"comment"                = "green"
+"comment"                = "yellow"
 
 
 [palette]
 red        = "#F08868"
-green      = "#95E095"
-orange     = "#F0A858"
-yellow     = "#F0E070"
+green      = "#BAF0B2"
+orange     = "#F0B880"
+yellow     = "#F0C800"
 sand       = "#E0C888"
 blue       = "#7DC6E0"
 dark-blue  = "#80B0B8"
-magenta    = "#F0C6F0"
-cyan       = "#9DE7F0"
+magenta    = "#F0C7F0"
+cyan       = "#78C8E8"
+dark-cyan  = "#78A8B8"
 gray       = "#B0C8D0"
-dark-gray  = "#A8B8D0"
+dark-green = "#789820"
+dark-gray  = "#58B088"
+
+fg1       = "#B0C8D0"
+fg2       = "#688088"
 
 # fg0        = "#E8F0F0"
 

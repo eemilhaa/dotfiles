@@ -95,35 +95,32 @@
 "error"    = "red"
 
 [palette]
-# chroma .17
-
-# red        = "#da5252"
-# green      = "#048824"
-# yellow     = "#b37e04"
-# blue       = "#0076d5"
-# magenta    = "#ae60c9"
-# cyan       = "#04a3a8"
-# orange     = "#d55d05"
+red        = "#b71920"
+green      = "#0f9b23"
+yellow     = "#e25500"
+blue       = "#0251c2"
+magenta    = "#994ec9"
+cyan       = "#4087fd"
 
 # chroma .15
 
-red        = "#97274d"
-green      = "#088539"
-yellow     = "#ba5702"
-blue       = "#0256a9"
-magenta    = "#8d50ac"
-cyan       = "#0486d3"
+# red        = "#97274d"
+# green      = "#088539"
+# yellow     = "#ba5702"
+# blue       = "#0256a9"
+# magenta    = "#8d50ac"
+# cyan       = "#0486d3"
 
 attention  = "#FFEAA2"
 
 # Neutral
 
 fg0        = "#222222"
-fg1        = "#757575"
+fg1        = "#6d6d6d"
 fg2        = "#929292"
 fgr        = "#ffffff"
 bg0        = "#FcFcFc"
-bg1        = "#f0f0f0"
+bg1        = "#f3f3f3"
 bg2        = "#e0e0e0"
 
 # Warm

@@ -123,8 +123,8 @@ set_prompt_and_title () {
   add-zsh-hook precmd vcs_info
 
   PROMPT="
-$green$hostname$blue$workdir$cyan$git_info$venv
-$normal$prompt_symbol"
+$bold$green$hostname$blue$workdir$cyan$git_info$venv
+$prompt_symbol$normal"
 
   title_info () {
     print -Pn "$hostname$workdir_full"
