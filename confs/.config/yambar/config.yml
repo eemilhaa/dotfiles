@@ -8,8 +8,6 @@ definitions:
     - color: &color-fade 888888ff
     - color: &color-bg 222222ff
     - color: &color-fg ffffffff
-  margins:
-    - margin: &margin-default 15
 
 bar:
   height: 20
@@ -47,21 +45,22 @@ bar:
         content:
           map:
             conditions:
+              state == "unknown":
+                - string: {text: "", foreground: *color-good}
               state != "charging":
                 ramp:
                   tag: capacity
                   items:
                     - string:
-                        text: "BATTERY LOW {capacity}%"
-                        margin: *margin-default
+                        text: " BATTERY LOW {capacity}% "
                         foreground: *color-fg
                         font: *font-bold
                         deco: {background: {color: *color-urgent}}
-                    - string: {text: "Battery {capacity}%", margin: *margin-default}
-                    - string: {text: "Battery {capacity}%", margin: *margin-default}
-                    - string: {text: "Battery {capacity}%", margin: *margin-default}
+                    - string: {text: " Battery {capacity}% "}
+                    - string: {text: " Battery {capacity}% "}
+                    - string: {text: " Battery {capacity}% "}
               state == "charging":
-                - string: {text: "Battery {capacity}% (charging)", margin: *margin-default, foreground: *color-good}
+                - string: {text: " Battery {capacity}% (charging) ", foreground: *color-good}
 
     - network:
         content:
@@ -71,12 +70,12 @@ bar:
               name == wlp3s0:
                 map:
                   default:
-                    string: {text: "Wifi {quality}%", margin: *margin-default}
+                    string: {text: " Wifi {quality}% "}
                   conditions:
                     state == "up":
-                      string: {text: "Wifi {quality}%", margin: *margin-default}
+                      string: {text: " Wifi {quality}% "}
                     state == "down":
-                      string: {text: "Wifi {state}", margin: *margin-default}
+                      string: {text: " Wifi {state} "}
 
     - pulse:
         content:
@@ -84,9 +83,9 @@ bar:
             on-click: /bin/sh -c "pavucontrol"
             conditions:
               ~sink_muted:
-                string: {text: "{sink_port} {sink_percent}%", margin: *margin-default}
+                string: {text: " {sink_port} {sink_percent}% "}
               sink_muted:
-                string: {text: "{sink_port} {sink_percent}%", margin: *margin-default, foreground: *color-fade}
+                string: {text: " {sink_port} {sink_percent}% ", foreground: *color-fade}
 
     # - pipewire:
     #     content:
@@ -100,4 +99,4 @@ bar:
 
     - clock:
         content:
-          - string: {text: "{time}", left-margin: *margin-default}
+          - string: {text: " {time}"}

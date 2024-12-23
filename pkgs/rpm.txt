@@ -4,9 +4,9 @@ fuzzel
 git
 grim
 helix
+lxqt-policykit
 mako
 pavucontrol
-polkit-gnome
 power-profiles-daemon
 slurp
 swappy

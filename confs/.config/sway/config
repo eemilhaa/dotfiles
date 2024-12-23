@@ -1,208 +1,199 @@
+# Variables
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term foot
+set $launcher fuzzel
+
+
+# Font
 font pango:Monospace semibold 10
 
-# Detect xwayland
-#for_window [app_id="firefox"] title_format "Firefox"
-for_window [shell="xwayland"] title_format "%title (xwayland)"
 
-# waybar
+# Bar
+# Waybar
 #bar {
 #    swaybar_command waybar
 #    #mode hide
 #    #modifier Mod4
 #}
+
+
+# Exec
+# Yambar
 exec_always sh -c "killall yambar; yambar &"
-
-### Variables
-# Logo key. Use Mod1 for Alt.
-set $mod Mod4
-# Home row direction keys, like vim
-set $left h
-set $down j
-set $up k
-set $right l
-
-# terminal emulator
-set $term foot
-
-
-### Output configuration swaymsg -t get_outputs
-    # laptop screen
-    output eDP-1 position 0,0
-
-    #output DP-1 mode 2560x1440@143.998Hz position 0,-1440
-    #output DP-2 mode 2560x1440@143.998Hz position 0,-1440
-
-    output DP-1 mode 2560x1440@143.998Hz position 1920,0
-    output DP-2 mode 2560x1440@143.998Hz position 1920,0
-
-    output DP-3 position 0,-1080
-    #output DP-5 position 1920,-1080
-    output DP-5 disable
-
-    # output DP-2 transform 270
-    # output HDMI-A-1 position 1920,0
-
-    #output eDP-1 position 2560,0
-    output HDMI-A-1 position 0,0
-
-    # output DP-2 mode 2560x1440@59.951Hz position 1920,0
-
-    output * bg #404040 solid_color
-    #output * bg ~/Pictures/walls/moss.png fill
-
-# Screen closing disables laptop
-    bindswitch lid:on output eDP-1 disable
-    bindswitch lid:off output eDP-1 enable
-    bindsym $mod+shift+o output eDP-1 toggle
 
 # xdg-desktop-portal-wlr (screensharing)
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
 # fix slow startups for gtk+
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
-
-### Idle configuration
+# idle
 exec swayidle -w \
     timeout 300 'swaymsg "output * dpms off"; swaylock -f -c 000000' \
          resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock -f -c 000000'
 
-
-### Input configuration swaymsg -t get_inputs
-    input type:touchpad {
-        # dwt enabled
-        tap enabled
-        natural_scroll disabled
-        middle_emulation enabled
-        scroll_factor 0.3
-    }
-    input type:keyboard {
-        xkb_layout "us"
-        xkb_variant "altgr-intl"
-        xkb_options caps:escape
-        #xkb_options caps:swapescape
-    }
-    input type:mouse {
-        accel_profile "flat"  # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
-        pointer_accel 0       # set mouse sensitivity (between -1 and 1)
-    }
-    input 1189:32772:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse {
-        accel_profile "flat"
-        pointer_accel 0.75
-    }
-    input type:pointer {
-        #accel_profile "flat"
-        pointer_accel 0.4
-    }
-    seat * hide_cursor 5000
+# Polkit
+exec /usr/libexec/lxqt-policykit-agent
 
 
-### Key bindings
-#
-# Basics:
-#
-    # Terminal
-    bindsym $mod+Return exec $term
+# Outputs (swaymsg -t get_outputs)
 
-    # Kill focused window
-    bindsym $mod+q kill
+output eDP-1 position 0,0
+output DP-1 mode 2560x1440@143.998Hz position 1920,0
+#output DP-1 mode 2560x1440@143.998Hz position 0,-1440
+#output DP-2 mode 2560x1440@143.998Hz position 0,-1440
+#output DP-2 mode 2560x1440@59.951Hz position 1920,0
+output DP-2 mode 2560x1440@143.998Hz position 1920,0
+output DP-3 position 0,-1080
+#output DP-5 position 1920,-1080
+output DP-5 disable
+#output DP-2 transform 270
+#output HDMI-A-1 position 1920,0
+#output eDP-1 position 2560,0
+#output HDMI-A-1 position 0,0
 
-    # Start your launcher
-    set $launcher fuzzel --prompt "Launch: "
+output * bg #404040 solid_color
+#output * bg ~/Pictures/walls/moss.png fill
 
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
-    # tiling_drag disable
-    floating_modifier $mod
+# Screen closing disables laptop
+bindswitch lid:on output eDP-1 disable
+bindswitch lid:off output eDP-1 enable
 
-    # Reload the configuration file
-    bindsym $mod+Shift+c reload
 
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-#
-# General keybinds:
-#
-    # launcher
-    bindsym $mod+Slash exec $launcher
-    #bindsym $mod+Space exec $launcher xargs swaymsg exec --
+# Inputs (swaymsg -t get_inputs)
 
-    # Moving around:
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
+input type:touchpad {
+    # dwt enabled
+    tap enabled
+    natural_scroll disabled
+    middle_emulation enabled
+    scroll_factor 0.3
+}
+input type:keyboard {
+    xkb_layout "us"
+    xkb_variant "altgr-intl"
+    xkb_options caps:escape
+    #xkb_options caps:swapescape
+}
+input type:mouse {
+    accel_profile "flat"  # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
+    pointer_accel 0       # set mouse sensitivity (between -1 and 1)
+}
+input 1189:32772:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse {
+    accel_profile "flat"
+    pointer_accel 0.75
+}
+input type:pointer {
+    #accel_profile "flat"
+    pointer_accel 0.4
+}
+seat * hide_cursor 5000
 
-    # Workspaces:
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
-    bindsym $mod+Ctrl+$right workspace next_on_output
-    bindsym $mod+Ctrl+$left workspace prev_on_output
-    bindsym $mod+Ctrl+Right workspace next_on_output
-    bindsym $mod+Ctrl+Left workspace prev_on_output
-    bindsym $mod+bracketright workspace next_on_output
-    bindsym $mod+bracketleft workspace prev_on_output
-    bindsym $mod+tab workspace back_and_forth
 
-    #assign [title="Slack"] workspace number 10
+# Global binds
 
-    # splits
-    bindsym $mod+n splith
-    bindsym $mod+b splitv
+floating_modifier $mod
 
-    # Make the current focus fullscreen
-    bindsym $mod+z fullscreen
+# Reload the configuration file
+bindsym $mod+Shift+c reload
 
-    # Swap focus between the tiling area and the floating area
-    bindsym $mod+f focus mode_toggle
+# Exit sway (logs you out of your Wayland session)
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
-    # Move focus to the parent container
-    bindsym $mod+p focus parent
-    bindsym $mod+Shift+p focus child
+# Kill focused window
+bindsym $mod+q kill
 
-    # resize
-    bindsym $mod+Shift+$left resize shrink width 60px
-    bindsym $mod+Shift+$down resize grow height 60px
-    bindsym $mod+Shift+$up resize shrink height 60px
-    bindsym $mod+Shift+$right resize grow width 60px
+# Terminal
+bindsym $mod+Return exec $term
 
-    # layouts
-    bindsym $mod+i layout toggle split
-    bindsym $mod+o layout toggle tabbed stacking split
+# Launcher
+bindsym $mod+Slash exec $launcher --prompt "Launch: "
+#bindsym $mod+Space exec $launcher xargs swaymsg exec --
 
-#
-# Scratchpad:
-#
+# Toggle laptop screen
+bindsym $mod+shift+o output eDP-1 toggle
+
+# Moving around
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Workspaces
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+bindsym $mod+Ctrl+$right workspace next_on_output
+bindsym $mod+Ctrl+$left workspace prev_on_output
+bindsym $mod+Ctrl+Right workspace next_on_output
+bindsym $mod+Ctrl+Left workspace prev_on_output
+bindsym $mod+tab workspace back_and_forth
+
+# Splits
+bindsym $mod+n splith
+bindsym $mod+b splitv
+
+# Make the current focus fullscreen
+bindsym $mod+z fullscreen
+
+# Swap focus between the tiling area and the floating area
+bindsym $mod+f focus mode_toggle
+
+# Move focus to the parent container
+bindsym $mod+p focus parent
+bindsym $mod+Shift+p focus child
+
+# Resize
+bindsym $mod+Shift+$left resize shrink width 60px
+bindsym $mod+Shift+$down resize grow height 60px
+bindsym $mod+Shift+$up resize shrink height 60px
+bindsym $mod+Shift+$right resize grow width 60px
+
+# Layouts
+bindsym $mod+i layout toggle split
+bindsym $mod+o layout toggle tabbed stacking split
+
+# Switch / create workspaces
+bindsym $mod+Space exec sh ~/.config/sway/workspace.sh go_to_workspace
+
+# Brightness
+bindsym {
+    XF86MonBrightnessDown exec brightnessctl set 5%-
+    XF86MonBrightnessUp exec brightnessctl set 5%+
+}
+# Audio
+bindsym $mod+a exec pavucontrol
+
+# Scratchpad
 set $scratch_term_title Scratch-terminal
 set $scratch_term $term --title $scratch_term_title --override locked-title=yes
 exec $scratch_term
 bindsym $mod+Shift+s exec $scratch_term
-
 for_window [title="$scratch_term_title"] move to scratchpad
-
 bindsym $mod+Semicolon scratchpad show; \
     [title="$scratch_term_title"] \
     resize set 100ppt 50ppt; move position 0ppt 0ppt
     #fullscreen enable
 
-#
-# MODES:
-#
+
+# Modes
+
 mode "Swap" {
     # swap
     bindsym $left mark --add "_swap", focus left, swap container with mark "_swap", focus left, unmark "_swap"
@@ -253,18 +244,17 @@ mode "Capture" {
     bindsym c exec grim -g "$(slurp)" - | wl-copy; mode "default"
     # annotate
     bindsym a exec grim -g "$(slurp)" - | swappy -f -; mode "default"
-    # to Pictures
+    # delay
     bindsym d exec grim -c -g "$(slurp; sleep 5)" - | wl-copy; mode "default"
     # window
     bindsym w exec sh ~/.config/sway/screenshot_window.sh; mode "default"
+    # magnify
+    bindsym Equal exec sh ~/.config/sway/magnify.sh; mode "default"
+
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
 bindsym $mod+c mode "Capture"
-
-bindsym $mod+Equal exec sh ~/.config/sway/magnify.sh
-
-bindsym $mod+Space exec sh ~/.config/sway/workspace.sh go_to_workspace
 
 mode "Go to" {
     bindsym 1 workspace number 1
@@ -297,7 +287,8 @@ mode "Volume" {
 bindsym $mod+v mode "Volume"
 
 
-# Floats
+# Window rules
+
 for_window [title="(?:Open|Save) (?:File|Folder|As)"] floating enable;
 #for_window [title="(?:Open|Save) (?:File|Folder|As)"] resize set 800 600
 for_window [window_role="pop-up"] floating enable
@@ -307,7 +298,11 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [app_id="pavucontrol"] floating enable, sticky enable, resize set width 550 px height 600px, move position cursor
+for_window [app_id="lxqt-policykit-agent"] floating enable, move position center
+for_window [shell="xwayland"] title_format "%title (xwayland)"
 
+
+# Decorations
 
 # Window colors
 # Window state           bar border  bar fill  bar text  split border  window border
@@ -325,22 +320,7 @@ default_floating_border normal 1
 hide_edge_borders both
 
 titlebar_padding 2
-#title_align center
 
 
-# Program specific binds
-# Light
-# bindsym {
-#     XF86MonBrightnessUp exec light -A 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
-#     XF86MonBrightnessDown exec light -U 5 && light -G | cut -d'.' -f1 > $SWAYSOCK.wob
-# }
-bindsym {
-    XF86MonBrightnessDown exec brightnessctl set 5%-
-    XF86MonBrightnessUp exec brightnessctl set 5%+
-}
-# Audio
-bindsym $mod+a exec pavucontrol
-
-exec /usr/libexec/polkit-gnome-authentication-agent-1
-
+# Some goodies from the sway spin
 include /etc/sway/config.d/*
