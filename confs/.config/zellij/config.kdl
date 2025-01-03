@@ -63,11 +63,11 @@ themes {
         white   "#929292"
         magenta "#929292"
 
-        red     "#222222"
-        green   "#222222"
-        yellow  "#222222"
-        blue    "#222222"
-        cyan    "#222222"
-        orange  "#222222"
+        red     "#333333"
+        green   "#333333"
+        yellow  "#333333"
+        blue    "#333333"
+        cyan    "#333333"
+        orange  "#333333"
     }
 }

@@ -124,7 +124,7 @@ set_prompt_and_title () {
 
   PROMPT="
 $bold$green$hostname$blue$workdir$cyan$git_info$venv
-$prompt_symbol$normal"
+$blue$prompt_symbol$normal"
 
   title_info () {
     print -Pn "$hostname$workdir_full"

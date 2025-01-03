@@ -7,11 +7,11 @@ inherits = "dark"
 "type"                   = "cyan"
 "constructor"            = "cyan"
 
-"constant"               = "blue"
-"constant.numeric"       = "blue"
-"constant.builtin"       = "blue"
-"constant.character"     = "blue"
+"constant.numeric"       = "yellow"
+"constant.builtin"       = "yellow"
+"constant.character"     = "yellow"
 
+"constant"               = "fg0"
 "namespace"              = "fg0"
 "module"                 = "fg0"
 "variable"               = "fg0"
@@ -31,7 +31,7 @@ inherits = "dark"
 
 "string"                 = "dark-green"
 
-"comment"                = "yellow"
+"comment"                = "blue"
 
 [palette]
 red        = "#FE5F55"

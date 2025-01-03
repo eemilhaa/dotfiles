@@ -1,37 +1,34 @@
 inherits = "light"
 
 # Syntax
-"function"               = "blue"
+"function"               = "magenta"
 "special"                = "blue"
 
-"type"                   = "magenta"
-"constructor"            = "magenta"
+"type"                   = "cyan"
+"constructor"            = "cyan"
+"module"                 = "cyan"
+"namespace"              = "cyan"
 
-"constant.numeric"       = "cyan"
-"constant.builtin"       = "cyan"
-"constant.character"     = "cyan"
+"constant.numeric"       = "blue"
+"constant.character"     = "blue"
 
-"constant"               = "fg0"
-"namespace"              = "fg0"
-"module"                 = "fg0"
+"constant.builtin"       = "blue"
+"keyword"                = "blue"
+"label"                  = "blue"
+"variable.builtin"       = "blue"
+"tag"                    = "blue"
+
 "variable"               = "fg0"
+"constant"               = "fg0"
 "attribute"              = "fg0"
-"variable.parameter"     = "fg0"
-"variable.other.member"  = "fg0"
-# "type.parameter"         = "fg0"
 
-"keyword"                = "fg0"
-"variable.builtin"       = "fg0"
-"label"                  = "fg0"
-
-"punctuation"            = "fg1"
-"operator"               = "fg1"
-"punctuation.bracket"    = "fg1"
-"tag"                    = "fg1"
+"punctuation"            = "blue"
+"operator"               = "blue"
+"punctuation.bracket"    = "blue"
 
 "string"                 = "green"
 
-"comment"                = "yellow"
+"comment"                = "fg1"
 
 # # Markup
 # "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }

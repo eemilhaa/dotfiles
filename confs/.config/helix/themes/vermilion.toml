@@ -5,14 +5,14 @@ inherits = "dark"
 
 "type"                   = "orange"
 "constructor"            = "orange"
+"namespace"              = "orange"
+"module"                 = "orange"
 
 "constant"               = "fg0"
 "constant.numeric"       = "green"
 "constant.builtin"       = "green"
 "constant.character"     = "green"
 
-"namespace"              = "fg0"
-"module"                 = "fg0"
 "variable"               = "fg0"
 "attribute"              = "fg0"
 "variable.parameter"     = "fg0"
@@ -28,9 +28,9 @@ inherits = "dark"
 "operator"               = "fg1"
 "punctuation.bracket"    = "fg1"
 
-"string"                 = "dark-gray"
+"string"                 = "blue"
 
-"comment"                = "yellow"
+"comment"                = "dark-gray"
 
 
 [palette]

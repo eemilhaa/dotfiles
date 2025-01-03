@@ -1,33 +1,32 @@
 # Syntax
-"function"               = "blue"
+"function"               = "magenta"
+
+"type"                   = "yellow"
+"constructor"            = "yellow"
+"module"                 = "yellow"
+"namespace"              = "yellow"
+
+"constant.numeric"       = "blue"
+"constant.builtin"       = "blue"
+"constant.character"     = "blue"
+
 "special"                = "blue"
+"keyword"                = "blue"
+"label"                  = "blue"
+"variable.builtin"       = "blue"
+"tag"                    = "blue"
 
-"type"                   = "magenta"
-"constructor"            = "magenta"
-
-"constant.numeric"       = "yellow"
-"constant.builtin"       = "yellow"
-"constant.character"     = "yellow"
-"tag"                    = "fg1"
-
-"namespace"              = "fg0"
-"module"                 = "fg0"
 "variable"               = "fg0"
 "constant"               = "fg0"
 "attribute"              = "fg0"
-
-"keyword"                = "fg0"
-"label"                  = "fg0"
-"variable.builtin"       = "fg0"
 
 "punctuation"            = "fg1"
 "operator"               = "fg1"
 "punctuation.bracket"    = "fg1"
 
-
 "string"                 = "green"
 
-"comment"                = { fg = "fg0", bg = "attention" }
+"comment"                = { fg = "fg1", bg = "bg2" }
 
 # Markup
 "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
@@ -36,8 +35,8 @@
 "markup.bold"            = { modifiers = ["bold"] }
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = { modifiers = ["crossed_out"] }
-"markup.link"            = "green"
-"markup.link.text"       = "blue"
+"markup.link"            = "blue"
+"markup.link.text"       = "yellow"
 "markup.quote"           = "green"
 "markup.raw"             = "green"
 
@@ -95,12 +94,13 @@
 "error"    = "red"
 
 [palette]
-red        = "#b71920"
-green      = "#0f9b23"
-yellow     = "#e25500"
+red        = "#ac001e"
+green      = "#02910e"
+yellow     = "#ce3d02"
 blue       = "#0251c2"
 magenta    = "#994ec9"
 cyan       = "#4087fd"
+# magenta    = "#9957c4"
 
 # chroma .15
 
@@ -115,8 +115,8 @@ attention  = "#FFEAA2"
 
 # Neutral
 
-fg0        = "#222222"
-fg1        = "#6d6d6d"
+fg0        = "#333333"
+fg1        = "#757575"
 fg2        = "#929292"
 fgr        = "#ffffff"
 bg0        = "#FcFcFc"
