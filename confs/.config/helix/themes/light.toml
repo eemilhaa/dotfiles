@@ -4,14 +4,14 @@
 
 "type"                   = "magenta"
 "constructor"            = "magenta"
+"module"                 = "magenta"
+"namespace"              = "magenta"
 
 "constant.numeric"       = "yellow"
 "constant.builtin"       = "yellow"
 "constant.character"     = "yellow"
 "tag"                    = "fg1"
 
-"namespace"              = "fg0"
-"module"                 = "fg0"
 "variable"               = "fg0"
 "constant"               = "fg0"
 "attribute"              = "fg0"
@@ -27,7 +27,7 @@
 
 "string"                 = "green"
 
-"comment"                = { fg = "fg0", bg = "attention" }
+"comment"                = { fg = "fg1", bg = "bg2" }
 
 # Markup
 "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
@@ -36,8 +36,8 @@
 "markup.bold"            = { modifiers = ["bold"] }
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = { modifiers = ["crossed_out"] }
-"markup.link"            = "green"
-"markup.link.text"       = "blue"
+"markup.link"            = "blue"
+"markup.link.text"       = "yellow"
 "markup.quote"           = "green"
 "markup.raw"             = "green"
 
@@ -95,9 +95,9 @@
 "error"    = "red"
 
 [palette]
-red        = "#b71920"
-green      = "#0f9b23"
-yellow     = "#e25500"
+red        = "#ac040c"
+green      = "#0c9414"
+yellow     = "#df5102"
 blue       = "#0251c2"
 magenta    = "#994ec9"
 cyan       = "#4087fd"
