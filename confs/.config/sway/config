@@ -112,7 +112,7 @@ bindsym $mod+q kill
 bindsym $mod+Return exec $term
 
 # Launcher
-bindsym $mod+Slash exec $launcher --prompt "Launch: "
+bindsym $mod+Slash exec $launcher --placeholder "Launch"
 #bindsym $mod+Space exec $launcher xargs swaymsg exec --
 
 # Toggle laptop screen
