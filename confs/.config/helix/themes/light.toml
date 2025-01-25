@@ -3,8 +3,8 @@
 
 "type"                   = "yellow"
 "constructor"            = "yellow"
-"module"                 = "yellow"
-"namespace"              = "yellow"
+"module"                 = "fg0"
+"namespace"              = "fg0"
 
 "constant.numeric"       = "blue"
 "constant.builtin"       = "blue"
@@ -94,22 +94,24 @@
 "error"    = "red"
 
 [palette]
-red        = "#ac001e"
-green      = "#02910e"
-yellow     = "#ce3d02"
-blue       = "#0251c2"
-magenta    = "#994ec9"
-cyan       = "#4087fd"
-# magenta    = "#9957c4"
 
-# chroma .15
+# chroma .19
 
-# red        = "#97274d"
-# green      = "#088539"
-# yellow     = "#ba5702"
-# blue       = "#0256a9"
-# magenta    = "#8d50ac"
-# cyan       = "#0486d3"
+# red        = "#ac001e"
+# green      = "#02910e"
+# yellow     = "#ce3d02"
+# blue       = "#0251c2"
+# magenta    = "#994ec9"
+# cyan       = "#4087fd"
+
+# chroma .17
+
+red        = "#940015"
+green      = "#0e861e"
+yellow     = "#c84e05"
+blue       = "#0145a7"
+magenta    = "#8557c8"
+cyan       = "#508ff9"
 
 attention  = "#FFEAA2"
 
