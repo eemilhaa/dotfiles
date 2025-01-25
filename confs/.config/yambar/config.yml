@@ -3,11 +3,13 @@ definitions:
     - font: &font-default monospace:semibold:pixelsize=14
     - font: &font-bold monospace:bold:pixelsize=14
   colors:
-    - color: &color-good 35D450ff
-    - color: &color-urgent FF4D51ff
+    - color: &color-good 0ae442ff
+    - color: &color-urgent ff0000ff
+    - color: &color-focus 285577ff
     - color: &color-fade 888888ff
     - color: &color-bg 222222ff
     - color: &color-fg ffffffff
+    - color: &color-fgr 000000ff
 
 bar:
   height: 20
@@ -19,24 +21,27 @@ bar:
   left:
     - i3:
         content:
-          "":
+          current:
+            string:
+              text: "{name} "
+    - i3:
+        content:
+          "":  # catch-all to map to every workspace
             map:
-              default: {string: {text: ""}}
+              # default: {string: {text: ""}}
               conditions:
-                focused:
-                  string: {text: "{name} "}
                 urgent:
                   string:
-                    text: "{name} "
+                    text: " Go to: {name} "
                     on-click: "swaymsg --quiet workspace {name}"
-                    foreground: *color-urgent
+                    foreground: *color-fg
                     font: *font-bold
-          current:
-            map:
-              conditions:
-                mode != "default":
-                  string: {text: "({mode})"}
-
+                    deco: {background: {color: *color-urgent}}
+                mode != "default" && focused:
+                  string:
+                    text: " {mode} "
+                    font: *font-bold
+                    deco: {background: {color: *color-focus}}
 
   right:
     - battery:
@@ -60,7 +65,10 @@ bar:
                     - string: {text: " Battery {capacity}% "}
                     - string: {text: " Battery {capacity}% "}
               state == "charging":
-                - string: {text: " Battery {capacity}% (charging) ", foreground: *color-good}
+                - string:
+                    text: " Battery {capacity}% (charging) "
+                    foreground: *color-good
+                    # deco: {background: {color: *color-focus}}
 
     - network:
         content:

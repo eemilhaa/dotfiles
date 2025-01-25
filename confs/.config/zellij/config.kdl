@@ -35,7 +35,7 @@ pane_frames false
 simplified_ui true
 default_mode "normal"
 
-theme "light"
+theme "dark"
 
 themes {
     dark {
@@ -43,21 +43,21 @@ themes {
 
         bg      "#222222"
 
-        fg      "#858585"
-        white   "#858585"
+        fg      "#888888"
+        white   "#888888"
 
-        red     "#f0f0f0"
-        green   "#f0f0f0"
-        yellow  "#f0f0f0"
-        blue    "#f0f0f0"
-        magenta "#f0f0f0"
-        cyan    "#f0f0f0"
-        orange  "#f0f0f0"
+        red     "#cecece"
+        green   "#cecece"
+        yellow  "#cecece"
+        blue    "#cecece"
+        magenta "#cecece"
+        cyan    "#cecece"
+        orange  "#cecece"
     }
     light {
-        black   "#e0e0e0"
+        black   "#e8e8e8"
 
-        bg      "#e0e0e0"
+        bg      "#e8e8e8"
 
         fg      "#929292"
         white   "#929292"

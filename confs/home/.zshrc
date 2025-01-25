@@ -106,7 +106,6 @@ set_prompt_and_title () {
   # newline='\n'
   hostname='@%m '
   workdir='%2~ '
-  workdir_full='%~ '
   git_info='${vcs_info_msg_0_}'
   venv='%(1V.(%1v) .)'
   prompt_symbol='❯ '
@@ -124,9 +123,10 @@ set_prompt_and_title () {
 
   PROMPT="
 $bold$green$hostname$blue$workdir$cyan$git_info$venv
-$blue$prompt_symbol$normal"
+$prompt_symbol$normal"
 
   title_info () {
+    workdir_full='%~'
     print -Pn "$hostname$workdir_full"
   }
   set_base_title () {
