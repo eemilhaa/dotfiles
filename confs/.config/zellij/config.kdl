@@ -46,28 +46,28 @@ themes {
         fg      "#888888"
         white   "#888888"
 
-        red     "#cecece"
-        green   "#cecece"
-        yellow  "#cecece"
-        blue    "#cecece"
-        magenta "#cecece"
-        cyan    "#cecece"
-        orange  "#cecece"
+        red     "#dedede"
+        green   "#dedede"
+        yellow  "#dedede"
+        blue    "#dedede"
+        magenta "#dedede"
+        cyan    "#dedede"
+        orange  "#dedede"
     }
     light {
-        black   "#e8e8e8"
+        black   "#e7e8e9"
 
-        bg      "#e8e8e8"
+        bg      "#e7e8e9"
 
-        fg      "#929292"
-        white   "#929292"
-        magenta "#929292"
+        fg      "#919293"
+        white   "#919293"
+        magenta "#919293"
 
-        red     "#333333"
-        green   "#333333"
-        yellow  "#333333"
-        blue    "#333333"
-        cyan    "#333333"
-        orange  "#333333"
+        red     "#010203"
+        green   "#010203"
+        yellow  "#010203"
+        blue    "#010203"
+        cyan    "#010203"
+        orange  "#010203"
     }
 }
