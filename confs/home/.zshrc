@@ -57,6 +57,7 @@ set_exports () {
   export HISTSIZE=1000000
   export SAVEHIST=1000000
   export LS_COLORS="${LS_COLORS}ow=1;37;42:"
+  export DFT_SYNTAX_HIGHLIGHT=off
 }
 
 set_custom_commands () {
@@ -68,7 +69,6 @@ set_custom_commands () {
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'
   alias gs="git status"
-  alias gd="git diff --color-words"
   alias gl="git log --graph --abbrev-commit --oneline"
   alias zel="zellij"
   alias zeltab="zellij action new-tab --name"

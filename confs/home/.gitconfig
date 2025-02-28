@@ -4,9 +4,13 @@
 
 [safe]
     directory = /root/work
-[pager]
-	log = diff-highlight | less
-	show = diff-highlight | less
-	diff = diff-highlight | less
-[interactive]
-	diffFilter = diff-highlight
+
+[alias]
+    # `git log` with patches shown with difftastic.
+    dflog = -c diff.external=difft log -p --ext-diff
+
+    # Show the most recent commit with difftastic.
+    dfshow = -c diff.external=difft show --ext-diff
+
+    # `git diff` with difftastic.
+    df = -c diff.external=difft diff
