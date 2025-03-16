@@ -53,11 +53,11 @@ output DP-3 position 0,-1080
 #output DP-5 position 1920,-1080
 output DP-5 disable
 #output DP-2 transform 270
-output HDMI-A-1 position 1920,-400
+output HDMI-A-1 position 1920,0
 #output eDP-1 position 2560,0
 #output HDMI-A-1 position 0,0
 
-#output * bg #222222 solid_color
+# output * bg #202224 solid_color
 output * bg ~/Pictures/walls/moss.png fill
 
 # Screen closing disables laptop
@@ -309,17 +309,17 @@ for_window [shell="xwayland"] title_format "%title (xwayland)"
 # Window colors
 # Window state           bar border  bar fill  bar text  split border  window border
 client.focused           #4c7899     #285577   #ffffff   #4c7899       #4c7899
-client.focused_inactive  #333333     #5f676a   #ffffff   #5f676a       #5f676a
-client.unfocused         #333333     #222222   #888888   #222222       #222222
-client.urgent            #333333     #900000   #ffffff   #900000       #900000
+client.focused_inactive  #313335     #45484a   #dbdee1   #202224       #202224
+client.unfocused         #313335     #202224   #868a8c   #202224       #202224
+client.urgent            #313335     #900000   #ffffff   #900000       #900000
 
 # Gaps and borders
-#smart_gaps on
-#smart_borders on
-#gaps inner 4
-default_border normal 1
-default_floating_border normal 1
-#hide_edge_borders both
+# smart_gaps on
+# smart_borders on
+# gaps inner 4
+default_border pixel 1
+default_floating_border pixel 1
+# hide_edge_borders both
 
 titlebar_padding 2
 

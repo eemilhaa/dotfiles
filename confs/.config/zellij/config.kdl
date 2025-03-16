@@ -39,35 +39,35 @@ theme "dark"
 
 themes {
     dark {
-        black   "#1e1e1e"
+        black   "#202224"
 
-        bg      "#222222"
+        bg      "#202224"
 
-        fg      "#888888"
-        white   "#888888"
+        fg      "#868a8c"
+        white   "#868a8c"
 
-        red     "#dedede"
-        green   "#dedede"
-        yellow  "#dedede"
-        blue    "#dedede"
-        magenta "#dedede"
-        cyan    "#dedede"
-        orange  "#dedede"
+        red     "#dbdee1"
+        green   "#dbdee1"
+        yellow  "#dbdee1"
+        blue    "#dbdee1"
+        magenta "#dbdee1"
+        cyan    "#dbdee1"
+        orange  "#dbdee1"
     }
     light {
         black   "#e7e8e9"
 
         bg      "#e7e8e9"
 
-        fg      "#919293"
-        white   "#919293"
-        magenta "#919293"
+        fg      "#878889"
+        white   "#878889"
+        magenta "#878889"
 
-        red     "#010203"
-        green   "#010203"
-        yellow  "#010203"
-        blue    "#010203"
-        cyan    "#010203"
-        orange  "#010203"
+        red     "#2d2e2f"
+        green   "#2d2e2f"
+        yellow  "#2d2e2f"
+        blue    "#2d2e2f"
+        cyan    "#2d2e2f"
+        orange  "#2d2e2f"
     }
 }

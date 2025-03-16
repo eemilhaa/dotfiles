@@ -1,24 +1,24 @@
 # Syntax
-"function"               = "magenta"
+"function"               = "cyan"
 
 "type"                   = "yellow"
 "constructor"            = "yellow"
-"module"                 = "fg0"
-"namespace"              = "fg0"
 
-"constant.numeric"       = "blue"
-"constant.builtin"       = "blue"
-"constant.character"     = "blue"
-
-"special"                = "blue"
+"constant.numeric"       = "magenta"
+"constant.builtin"       = "magenta"
+"constant.character"     = "magenta"
 "keyword"                = "blue"
 "label"                  = "blue"
 "variable.builtin"       = "blue"
 "tag"                    = "blue"
+"punctuation.special"    = "blue"
+"special"                = "blue"
 
 "variable"               = "fg0"
 "constant"               = "fg0"
 "attribute"              = "fg0"
+"module"                 = "fg0"
+"namespace"              = "fg0"
 
 "punctuation"            = "fg1"
 "operator"               = "fg1"
@@ -26,7 +26,7 @@
 
 "string"                 = "green"
 
-"comment"                = { fg = "fg1", bg = "bg2" }
+"comment"                = "fg2"
 
 # Markup
 "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
@@ -35,7 +35,7 @@
 "markup.bold"            = { modifiers = ["bold"] }
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = { modifiers = ["crossed_out"] }
-"markup.link"            = "blue"
+"markup.link"            = "cyan"
 "markup.link.text"       = "yellow"
 "markup.quote"           = "green"
 "markup.raw"             = "green"
@@ -43,7 +43,7 @@
 # UI
 "diff.plus"   = "green"
 "diff.minus"  = "red"
-"diff.delta"  = "blue"
+"diff.delta"  = "cyan"
 
 "ui.background"             = { fg = "fg1", bg = "bg0" }
 "ui.cursor"                 = { fg = "fgr", bg = "fg1" }
@@ -57,8 +57,8 @@
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
-"ui.statusline.select"      = { fg = "fgr", bg = "cyan", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fg0", bg = "bg2", modifiers = ["bold"] }
+"ui.statusline.select"      = { fg = "fgr", bg = "yellow", modifiers = ["bold"] }
+"ui.statusline.normal"      = { fg = "fgr", bg = "cyan", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -83,14 +83,14 @@
 
 "diagnostic.error"        = { underline = { color = "red", style = "curl" } }
 "diagnostic.warning"      = { underline = { color = "fg1", style = "curl" } }
-"diagnostic.info"         = { underline = { color = "blue", style = "curl" } }
-"diagnostic.hint"         = { underline = { color = "blue", style = "curl" } }
-"diagnostic.unnecessary"  = { underline = { color = "blue", style = "curl" } }
-"diagnostic.deprecated"   = { underline = { color = "blue", style = "curl" } }
+"diagnostic.info"         = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.hint"         = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.unnecessary"  = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.deprecated"   = { underline = { color = "cyan", style = "curl" } }
 
-"info"     = "blue"
-"hint"     = "blue"
-"warning"  = "fg1"
+"info"     = "cyan"
+"hint"     = "cyan"
+"warning"  = "yellow"
 "error"    = "red"
 
 [palette]
@@ -106,24 +106,24 @@
 
 # chroma .17
 
-red        = "#a30660"
-green      = "#0d8626"
+red        = "#ad0266"
+green      = "#008120"
 yellow     = "#cd4805"
-blue       = "#1b3fad"
+blue       = "#0e30ad"
 magenta    = "#914bbe"
-cyan       = "#4472e3"
+cyan       = "#096bd4"
 
 attention  = "#fef1a1"
 
 # Neutral
 
-fg0        = "#333333"
-fg1        = "#575757"
-fg2        = "#929292"
+fg0        = "#2d2e2f"
+fg1        = "#676869"
+fg2        = "#878889"
 fgr        = "#ffffff"
-bg0        = "#FcFcFc"
-bg1        = "#f3f3f3"
-bg2        = "#e8e8e8"
+bg0        = "#fdfeff"
+bg1        = "#f2f3f4"
+bg2        = "#e7e8e9"
 
 # Warm
 
