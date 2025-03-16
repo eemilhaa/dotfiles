@@ -53,4 +53,10 @@ enable = true
 "C-l" = ":bn"
 "C-h" = ":bp"
 "f" = "goto_word"
-"space" = { f = "file_picker_in_current_directory" }
+
+[keys.normal.space]
+"f" = "file_picker_in_current_directory"
+"y" = ":clipboard-yank-join" # Join and yank selections to clipboard
+
+[keys.select.space]
+"y" = ":clipboard-yank-join" # Join and yank selections to clipboard

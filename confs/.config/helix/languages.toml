@@ -4,7 +4,7 @@ args = ["ruff", "server"]
 
 [language-server.ltex-ls]  # get this from aur
 command = "ltex-ls"
-config = { ltex.language = "en-GB" }
+config = { ltex.language = "en-US" }
 
 [language-server.rust-analyzer.config.check]
 command = "clippy"
