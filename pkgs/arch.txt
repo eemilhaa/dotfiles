@@ -16,7 +16,6 @@ pyright
 python
 python-pip
 shellcheck
-texlab
 tmux
 tree
 unzip
