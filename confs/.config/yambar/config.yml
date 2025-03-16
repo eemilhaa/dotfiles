@@ -20,11 +20,15 @@ bar:
   font: *font-default
 
   left:
+    # current workspace name
     - i3:
         content:
           current:
             string:
-              text: "{name} "
+              # text: "{name} "
+              text: "[{name}] {title} "
+              max: 80
+    # urgent workspaces if exists
     - i3:
         content:
           "":  # catch-all to map to every workspace
@@ -35,16 +39,35 @@ bar:
                   string:
                     text: " Go to: {name} "
                     on-click: "swaymsg --quiet workspace {name}"
-                    foreground: *color-fg
+                    foreground: *color-fgh
                     font: *font-bold
                     deco: {background: {color: *color-urgent}}
+
+  # center:
+  #   # current window name
+  #   - i3:
+  #       content:
+  #         current:
+  #           string:
+  #             text: " {title} "
+  #             max: 80
+
+  right:
+
+    # mode if not default
+    - i3:
+        content:
+          "":  # catch-all to map to every workspace
+            map:
+              # default: {string: {text: ""}}
+              conditions:
                 mode != "default" && focused:
                   string:
                     text: " {mode} "
+                    foreground: *color-fgh
                     font: *font-bold
                     deco: {background: {color: *color-focus}}
 
-  right:
     - battery:
         name: BAT0
         poll-interval: 30000
@@ -59,7 +82,7 @@ bar:
                   items:
                     - string:
                         text: " BATTERY LOW {capacity}% "
-                        foreground: *color-fg
+                        foreground: *color-fgh
                         font: *font-bold
                         deco: {background: {color: *color-urgent}}
                     - string: {text: " Battery {capacity}% "}
