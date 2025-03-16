@@ -167,7 +167,7 @@ bindsym $mod+Shift+$right resize grow width 60px
 
 # Layouts
 bindsym $mod+i layout toggle split
-bindsym $mod+o layout toggle tabbed stacking split
+bindsym $mod+o layout toggle tabbed split
 
 # Switch / create workspaces
 bindsym $mod+Space exec sh ~/.config/sway/workspace.sh go_to_workspace
