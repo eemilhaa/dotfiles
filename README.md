@@ -1,8 +1,9 @@
 # dotfiles
 
-<img align="right" width="50%" src="https://github.com/user-attachments/assets/bd8d0427-aa58-4599-9acb-b5e2c0e3f234" alt="Screenshot">
+<img align="right" width="50%" src="https://github.com/user-attachments/assets/67e7b38a-7a82-4bf0-b230-3ac6aaf6e398" alt="Screenshot">
 
-Sway-based graphical environment and various cli tools.
+This repo contains my configuration files for Linux. It also hosts a portable
+version of my command-line environment as a container image.
 
 ### Install
 
@@ -14,29 +15,29 @@ bash scripts/symlink.sh
 
 Get packages for fedora:
 
-```
+```console
 dnf install $(cat pkgs/fedora.txt)
 ```
 
 or for atomic fedora:
 
-```
-rpm-ostree install --allow-inactive --idempotent $(cat pkgs/rpm.txt)
+```console
+rpm-ostree install --allow-inactive --idempotent $(cat pkgs/fedora.txt)
 ```
 
 ### Container
 
-Basic cli utilities (shell, multiplexer, editor, some language tooling etc.) and
-their configs are bundled into a container image. It gets built automatically
-once a week with a github action.
+A container image with the command-line tools & their configs gets built
+automatically once a week with a github action.
 
-The image works as a portable cli environment wherever the container can be run:
+It works as a portable development environment wherever the container can be
+run:
 
 ```console
 podman run -it --rm -v <your/working/dir>:/root/work/ ghcr.io/eemilhaa/dotfiles:main
 ```
 
-Or as a base for a more integrated environment with Distrobox:
+Or, as a base for a more integrated environment with Distrobox:
 
 ```console
 distrobox create -n <name> --image ghcr.io/eemilhaa/dotfiles:main
