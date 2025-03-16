@@ -96,6 +96,23 @@ bar:
               sink_muted:
                 string: {text: " {sink_port} {sink_percent}% ", foreground: *color-fade}
 
+    - script:
+        path: /home/eemil/dotfiles/confs/.config/yambar/do-not-disturb.sh
+        args: []
+        poll-interval: 5000
+        content:
+          map:
+            conditions:
+              state == "on":
+                string:
+                  text: " Do not disturb "
+                  on-click: "/home/eemil/dotfiles/confs/.config/yambar/do-not-disturb.sh toggle"
+              state == "off":
+                string:
+                  text: " Do not disturb "
+                  on-click: "/home/eemil/dotfiles/confs/.config/yambar/do-not-disturb.sh toggle"
+                  foreground: *color-fade
+
     # - pipewire:
     #     content:
     #       map:
