@@ -20,20 +20,16 @@ bar:
   font: *font-default
 
   left:
-    # current workspace name
     - i3:
         content:
           current:
             string:
-              # text: "{name} "
               text: "[{name}] {title} "
               max: 80
-    # urgent workspaces if exists
     - i3:
         content:
           "":  # catch-all to map to every workspace
             map:
-              # default: {string: {text: ""}}
               conditions:
                 urgent:
                   string:
@@ -43,23 +39,12 @@ bar:
                     font: *font-bold
                     deco: {background: {color: *color-urgent}}
 
-  # center:
-  #   # current window name
-  #   - i3:
-  #       content:
-  #         current:
-  #           string:
-  #             text: " {title} "
-  #             max: 80
-
   right:
 
-    # mode if not default
     - i3:
         content:
-          "":  # catch-all to map to every workspace
+          "":
             map:
-              # default: {string: {text: ""}}
               conditions:
                 mode != "default" && focused:
                   string:
