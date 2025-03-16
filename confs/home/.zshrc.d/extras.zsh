@@ -9,22 +9,7 @@ set_custom_commands () {
     upower -i "$(upower -e | grep 'BAT')" | grep -E "state|percentage"
   }
   dbinit () {
-    if [ -z "${2}" ]; then
-      local image="ghcr.io/eemilhaa/dotfiles:main"
-    else
-      local image="${2}"
-    fi
-    distrobox create -n "${1}" --hostname "${1}" --image "${image}"
-  }
-  dbinit-separate-home () {
-    local target_dir="${HOME}/distrobox/${1}"
-    mkdir -p "${target_dir}"
-    ln -s "${HOME}/.zshrc" "${target_dir}/.zshrc"
-    distrobox create \
-      --name "${1}" \
-      --hostname "${1}" \
-      --home "${target_dir}" \
-      --image "${2}"
+    distrobox create -n "${1}" --hostname "${1}" "${@:2}"
   }
   dev () {
     podman run -it --network host --rm -v "${1}:/root/work/:z ghcr.io/eemilhaa/dotfiles:main"

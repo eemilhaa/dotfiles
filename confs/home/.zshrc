@@ -56,7 +56,7 @@ set_exports () {
   export HISTFILE="$HOME/.zsh_history"
   export HISTSIZE=1000000
   export SAVEHIST=1000000
-  export LS_COLORS="${LS_COLORS}ow=1;37;42:"
+  export LS_COLORS="${LS_COLORS}ow=1;102;30:"
   export DFT_SYNTAX_HIGHLIGHT=off
 }
 
@@ -73,7 +73,10 @@ set_custom_commands () {
   alias zel="zellij"
   alias zeltab="zellij action new-tab --name"
   getignore () {
-    wget -O - "https://raw.githubusercontent.com/github/gitignore/main/$1.gitignore" > "$PWD/.gitignore"
+    wget -O - "https://raw.githubusercontent.com/github/gitignore/main/$1.gitignore" >> "$PWD/.gitignore"
+  }
+  muxnew () {
+    tmux new -s "$(basename "${1}")" -c "${1}" "${@:2}"
   }
 }
 
