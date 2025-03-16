@@ -1,1 +1,4 @@
 set selection-clipboard clipboard
+
+map <Up> navigate previous
+map <Down> navigate next
