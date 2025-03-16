@@ -188,8 +188,8 @@ bindsym $mod+Shift+s exec $scratch_term
 for_window [title="$scratch_term_title"] move to scratchpad
 bindsym $mod+Semicolon scratchpad show; \
     [title="$scratch_term_title"] \
-    fullscreen enable
-    #resize set 100ppt 50ppt; move position 0ppt 0ppt
+    resize set 100ppt 50ppt; move position 0ppt 0ppt
+    # fullscreen enable
 
 # Dump
 bindsym $mod+d move container to workspace dump
