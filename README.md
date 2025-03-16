@@ -15,7 +15,7 @@ bash scripts/symlink.sh
 Get packages for fedora:
 
 ```
-dnf install $(cat pkgs/rpm.txt)
+dnf install $(cat pkgs/fedora.txt)
 ```
 
 or for atomic fedora:

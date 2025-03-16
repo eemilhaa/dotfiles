@@ -1,0 +1,3 @@
+mpv
+zathura
+zathura-pdf-poppler
