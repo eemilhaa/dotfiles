@@ -24,7 +24,7 @@ bar:
         content:
           current:
             string:
-              text: "[{name}] {title} "
+              text: "{name} "
               max: 80
     - i3:
         content:
@@ -39,8 +39,6 @@ bar:
                     font: *font-bold
                     deco: {background: {color: *color-urgent}}
 
-  right:
-
     - i3:
         content:
           "":
@@ -52,6 +50,8 @@ bar:
                     foreground: *color-fgh
                     font: *font-bold
                     deco: {background: {color: *color-focus}}
+
+  right:
 
     - battery:
         name: BAT0
