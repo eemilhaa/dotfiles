@@ -1,0 +1,21 @@
+[manager]
+
+border_style = { fg = "black", bg = "reset" }
+
+[mode]
+
+normal_main = { fg = "black", bg = "blue", bold = true }
+normal_alt  = { fg = "reset", bg = "reset" }
+
+# Select mode
+select_main = { fg = "black", bg = "yellow", bold = true }
+select_alt  = { fg = "reset", bg = "reset" }
+
+# Unset mode
+unset_main = { fg = "black", bg = "red", bold = true }
+unset_alt  = { fg = "reset", bg = "reset" }
+
+[status]
+
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
