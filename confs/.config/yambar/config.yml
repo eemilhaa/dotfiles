@@ -3,7 +3,7 @@ definitions:
     - font: &font-default monospace:semibold:pixelsize=14
     - font: &font-bold monospace:bold:pixelsize=14
   colors:
-    - color: &color-good 89d298ff
+    - color: &color-good 73cb87ff
     - color: &color-urgent ff0000ff
     - color: &color-focus 285577ff
     - color: &color-fade 868a8cff
@@ -97,7 +97,10 @@ bar:
     - pulse:
         content:
           map:
-            on-click: /bin/sh -c "pavucontrol"
+            on-click:
+              left: /bin/sh -c "pavucontrol"
+              wheel-up: wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%+
+              wheel-down: wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
             conditions:
               ~sink_muted:
                 string: {text: " {sink_port} {sink_percent}% "}
