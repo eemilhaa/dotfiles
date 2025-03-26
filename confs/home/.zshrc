@@ -78,6 +78,14 @@ set_custom_commands () {
   muxnew () {
     tmux new -s "$(basename "${1}")" -c "${1}" "${@:2}"
   }
+  li () {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+      builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
 }
 
 set_keybinds () {
