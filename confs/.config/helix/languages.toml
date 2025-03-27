@@ -17,6 +17,15 @@ formatter = { command = "uvx", args = ["ruff", "format", "-"] }
 auto-format = true
 
 [[language]]
+name = "sql"
+language-servers = ["postgrestools"]
+
+[language-server.postgrestools]
+command = "postgrestools"
+args = ["lsp-proxy"]
+# config = { typescript = { tsdk = "/usr/lib/node_modules/typescript/lib" }}
+
+[[language]]
 name = "c"
 auto-format = true
 
@@ -73,7 +82,7 @@ language-servers = ["typst-lsp"]
 [[language]]
 name = "markdown"
 file-types = ["md", "rmd", "Rmd"]
-language-servers = ["ltex-ls"]
+language-servers = ["marksman", "ltex-ls"]
 formatter = { command = "uvx", args = ["mdformat", "--wrap", "80", "-"] }
 auto-format = true
 

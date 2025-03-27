@@ -7,7 +7,7 @@ completion-timeout = 5
 completion-trigger-len = 1
 color-modes = true
 cursorline = false
-auto-format = true
+auto-format = false
 bufferline = "always"
 # jump-label-alphabet = " asdfghjkl;qwertyuiopzxcvbnm,."
 jump-label-alphabet = "jfkdls;a urieowpqnvmc,x.zhgytb"
@@ -25,7 +25,7 @@ jump-label-alphabet = "jfkdls;a urieowpqnvmc,x.zhgytb"
 [editor.statusline]
 left = ["mode", "selections", "diagnostics", "spinner"]
 center = []
-right = ["file-name", "version-control", "spacer"]
+right = ["position-percentage", "file-name", "version-control", "spacer"]
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"

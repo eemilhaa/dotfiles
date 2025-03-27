@@ -1,18 +1,18 @@
 # Syntax
-"function"               = "cyan"
+"function"               = "magenta"
+"special"                = "blue"
 
 "type"                   = "yellow"
 "constructor"            = "yellow"
 
-"constant.numeric"       = "magenta"
-"constant.builtin"       = "magenta"
-"constant.character"     = "magenta"
+"constant.numeric"       = "blue"
+"constant.builtin"       = "blue"
+"constant.character"     = "blue"
+"variable.builtin"       = "blue"
+"punctuation.special"    = "blue"
+"tag"                    = "blue"
 "keyword"                = "blue"
 "label"                  = "blue"
-"variable.builtin"       = "blue"
-"tag"                    = "blue"
-"punctuation.special"    = "blue"
-"special"                = "blue"
 
 "variable"               = "fg0"
 "constant"               = "fg0"
@@ -20,13 +20,13 @@
 "module"                 = "fg0"
 "namespace"              = "fg0"
 
-"punctuation"            = "fg1"
-"operator"               = "fg1"
-"punctuation.bracket"    = "fg1"
+"punctuation"            = "fg0"
+"operator"               = "fg0"
+"punctuation.bracket"    = "fg0"
 
 "string"                 = "green"
 
-"comment"                = "fg2"
+"comment"                = { fg = "fg1", bg = "bg2" }
 
 # Markup
 "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
@@ -35,7 +35,7 @@
 "markup.bold"            = { modifiers = ["bold"] }
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = { modifiers = ["crossed_out"] }
-"markup.link"            = "cyan"
+"markup.link"            = "blue"
 "markup.link.text"       = "yellow"
 "markup.quote"           = "green"
 "markup.raw"             = "green"
@@ -58,7 +58,7 @@
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
 "ui.statusline.select"      = { fg = "fgr", bg = "yellow", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fgr", bg = "cyan", modifiers = ["bold"] }
+"ui.statusline.normal"      = { fg = "fg0", bg = "bg2", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
@@ -106,24 +106,24 @@
 
 # chroma .17
 
-red        = "#ad0266"
-green      = "#008120"
+red        = "#c50575"
+green      = "#008a23"
 yellow     = "#cd4805"
-blue       = "#0e30ad"
+blue       = "#2249b7"
 magenta    = "#914bbe"
-cyan       = "#096bd4"
+cyan       = "#3c68d9"
 
 attention  = "#fef1a1"
 
 # Neutral
 
-fg0        = "#2d2e2f"
-fg1        = "#676869"
-fg2        = "#878889"
+fg0        = "#3a3a3a"
+fg1        = "#686868"
+fg2        = "#929292"
 fgr        = "#ffffff"
-bg0        = "#fdfeff"
-bg1        = "#f2f3f4"
-bg2        = "#e7e8e9"
+bg0        = "#ffffff"
+bg1        = "#f3f3f3"
+bg2        = "#e8e8e8"
 
 # Warm
 

@@ -19,13 +19,13 @@
 "module"                 = "cyan"
 "namespace"              = "cyan"
 
-"punctuation"            = "fg0"
-"operator"               = "fg0"
-"punctuation.bracket"    = "fg0"
+"punctuation"            = "fg1"
+"operator"               = "fg1"
+"punctuation.bracket"    = "fg1"
 
 "string"                 = "green"
 
-"comment"                = "fg1"
+"comment"                = "fg2"
 
 "markup.heading"         = { fg = "fgh", modifiers = ["bold"] }
 "markup.heading.marker"  = { fg = "blue", modifiers = ["bold"] }
@@ -43,22 +43,23 @@
 "diff.minus"  = "red"
 "diff.delta"  = "blue"
 
-"ui.background"             = { fg = "fg1", bg = "bg0" }
+"ui.background"             = { fg = "fg2", bg = "bg0" }
 "ui.cursor"                 = { fg = "fgr", bg = "fg0" }
 "ui.cursor.primary"         = { fg = "fgr", bg = "yellow" }
 # "ui.cursor.primary.select"  = { fg = "fgr", bg = "red" }
 # "ui.cursor.primary.insert"  = { fg = "fgr", bg = "green" }
 "ui.cursor.match"           = { fg = "yellow", bg = "bg2", modifiers = ["underlined"] }
-# "ui.gutter"                 = {fg = "fg1", bg = "bg1" }
-"ui.linenr"                 = "fg1"
+# "ui.gutter"                 = {fg = "fg2", bg = "bg1" }
+"ui.linenr"                 = "fg2"
 "ui.linenr.selected"        = "yellow"
 "ui.statusline"             = { fg = "fg0", bg = "bg1" }
-"ui.statusline.inactive"    = { fg = "fg1", bg = "bg1" }
+"ui.statusline.inactive"    = { fg = "fg2", bg = "bg1" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
 "ui.statusline.select"      = { fg = "fgr", bg = "orange", modifiers = ["bold"] }
 "ui.statusline.normal"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg0", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
+"ui.picker.header.column.active" = { fg = "fgr", bg = "blue" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
 "ui.text"                   = "fg0"
 "ui.text.focus"             = { fg = "fgh", bg = "bg1", modifiers = ["bold"] }
@@ -69,8 +70,8 @@
 "ui.virtual.jump-label"     = { fg = "fgr", bg = "blue" }
 "ui.menu"                   = { fg = "fg0", bg = "bg1" }
 "ui.menu.selected"          = { fg = "fgr", bg = "blue" }
-"ui.menu.scroll"            = { fg = "fg1", bg = "bg1" }
-"ui.selection"              = { fg = "fgr", bg = "fg1" }
+"ui.menu.scroll"            = { fg = "fg2", bg = "bg1" }
+"ui.selection"              = { fg = "fgr", bg = "fg2" }
 "ui.selection.primary"      = { fg = "fgr", bg = "blue" }
 "ui.highlight"              = { bg = "bg1" }
 "ui.cursorline.primary"     = { bg = "bg1" }
@@ -94,20 +95,21 @@
 [palette]
 
 red        = "#ff8692"
-green      = "#7ccd8e"
+green      = "#73cb87"
 yellow     = "#fffaaa"
-blue       = "#69c1fc"
+blue       = "#5cbefe"
 magenta    = "#fec0f7"
-cyan       = "#b2fffe"
-orange     = "#ffbc85"
+cyan       = "#a4f6f5"
+orange     = "#fcb67c"
 
 # Grays
-fg0        = "#dbdee1"
-fg1        = "#9c9fa1"
+fg0        = "#dedede"
+fg1        = "#c1c1c1"
+fg2        = "#9c9c9c"
 fgh        = "#ffffff"
 fgr        = "#000000"
-bg0        = "#313335"
-bg1        = "#202224"
-bg2        = "#45484a"
+bg0        = "#333333"
+bg1        = "#222222"
+bg2        = "#444444"
 
 # https://coolors.co/ff8692-8ed09c-fffaaa-80c7f8-fec0f7-87f3f2-ffbe8a-c9faf9
