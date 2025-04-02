@@ -1,18 +1,20 @@
 [manager]
 
+hovered = { fg = "black", bg = "blue" }
 border_style = { fg = "black", bg = "reset" }
+find_keyword = { fg = "black", bg = "yellow", bold = true }
 
 [mode]
 
-normal_main = { fg = "black", bg = "blue", bold = true }
+normal_main = { fg = "black", bg = "blue", bold = false }
 normal_alt  = { fg = "reset", bg = "reset" }
 
 # Select mode
-select_main = { fg = "black", bg = "yellow", bold = true }
+select_main = { fg = "black", bg = "yellow", bold = false }
 select_alt  = { fg = "reset", bg = "reset" }
 
 # Unset mode
-unset_main = { fg = "black", bg = "red", bold = true }
+unset_main = { fg = "black", bg = "red", bold = false }
 unset_alt  = { fg = "reset", bg = "reset" }
 
 [status]

@@ -6,15 +6,15 @@ definitions:
     - color: &color-good 73cb87ff
     - color: &color-urgent ff0000ff
     - color: &color-focus 285577ff
-    - color: &color-fade 868a8cff
-    - color: &color-bg 202224ff
+    - color: &color-fade 888888ff
+    - color: &color-bg 222222ff
     - color: &color-fg ffffffff
     - color: &color-fgh ffffffff
     - color: &color-fgr 000000ff
 
 bar:
   height: 20
-  location: top
+  location: bottom
   background: *color-bg
   foreground: *color-fg
   font: *font-default
