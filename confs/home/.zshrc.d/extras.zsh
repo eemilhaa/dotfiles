@@ -4,12 +4,24 @@ set_custom_commands () {
   alias locknow='swaymsg "output * dpms off" && swaylock && swaymsg "output * dpms on"'
   alias db="distrobox"
   alias dbh="distrobox-host-exec"
-  # alias qgis="XDG_SESSION_TYPE=x11 && qgis"
+  alias qgis="XDG_SESSION_TYPE=x11 && qgis"
   battery () {
     upower -i "$(upower -e | grep 'BAT')" | grep -E "state|percentage"
   }
-  dbinit () {
+  dbinit_shared () {
     distrobox create -n "${1}" --hostname "${1}" "${@:2}"
+  }
+  dbinit_separate () {
+    local target_home="${HOME}/distrobox/${1}"
+    mkdir -p "${target_home}"
+
+    cp -r "${HOME}/.zshrc" "${HOME}/.zshrc.d" "${target_home}/"
+
+    distrobox create \
+    --name "${1}" \
+    --hostname "${1}" \
+    --home "${target_home}" \
+    "${@:2}"
   }
   dev () {
     podman run -it --network host --rm -v "${1}:/root/work/:z ghcr.io/eemilhaa/dotfiles:main"
