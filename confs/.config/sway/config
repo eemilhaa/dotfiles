@@ -84,14 +84,16 @@ input type:mouse {
     accel_profile "flat"  # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
     pointer_accel 0       # set mouse sensitivity (between -1 and 1)
 }
-input 1189:32772:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse {
-    accel_profile "flat"
-    pointer_accel 0.75
-}
+# input 1189:32772:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse {
+#     accel_profile "flat"
+#     pointer_accel 0.75
+# }
+
 input type:pointer {
-    #accel_profile "flat"
-    pointer_accel 0.4
+    accel_profile "flat"
+    pointer_accel 0.25
 }
+
 seat * hide_cursor 5000
 
 
@@ -187,9 +189,9 @@ exec $scratch_term
 bindsym $mod+Shift+s exec $scratch_term
 for_window [title="$scratch_term_title"] move to scratchpad
 bindsym $mod+Semicolon scratchpad show; \
-    [title="$scratch_term_title"] resize set 100ppt 50ppt; \
-    [title="$scratch_term_title"] fullscreen enable
-    # [title="$scratch_term_title"] move position 0ppt 0ppt
+    [title="$scratch_term_title"] resize set 100ppt 70ppt; \
+    [title="$scratch_term_title"] move position 0ppt 0ppt
+    # [title="$scratch_term_title"] fullscreen enable
 
 # Dump
 bindsym $mod+d move container to workspace dump
@@ -319,7 +321,7 @@ client.urgent            #333333     #900000   #ffffff   #900000       #900000
 # gaps inner 4
 default_border normal 1
 default_floating_border normal 1
-# hide_edge_borders both
+hide_edge_borders both
 
 titlebar_padding 2
 
