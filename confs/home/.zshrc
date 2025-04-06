@@ -76,7 +76,10 @@ set_custom_commands () {
     wget -O - "https://raw.githubusercontent.com/github/gitignore/main/$1.gitignore" >> "$PWD/.gitignore"
   }
   muxnew () {
-    tmux new -s "$(basename "${1}")" -c "${1}" "${@:2}"
+    for arg
+    do tmux new -s "$(basename "${arg}")" -c "${arg}" -d
+    done
+    tmux a -dt "$(basename "${1}")"
   }
   li () {
     local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
