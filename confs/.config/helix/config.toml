@@ -7,7 +7,7 @@ completion-timeout = 5
 completion-trigger-len = 1
 color-modes = true
 cursorline = false
-auto-format = false
+auto-format = true
 bufferline = "always"
 # jump-label-alphabet = " asdfghjkl;qwertyuiopzxcvbnm,."
 jump-label-alphabet = "jfkdls;a urieowpqnvmc,x.zhgytb"
@@ -57,6 +57,7 @@ enable = true
 [keys.normal.space]
 "f" = "file_picker_in_current_directory"
 "y" = ":clipboard-yank-join" # Join and yank selections to clipboard
+"e" = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh open'"
 
 [keys.select.space]
 "y" = ":clipboard-yank-join" # Join and yank selections to clipboard
