@@ -46,6 +46,10 @@ hidden = false
 render = true
 # character = "▏"
 
+[editor.inline-diagnostics]
+cursor-line = "hint"
+other-lines = "disable"
+
 [editor.soft-wrap]
 enable = true
 
