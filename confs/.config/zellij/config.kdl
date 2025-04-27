@@ -39,20 +39,122 @@ theme "dark"
 
 themes {
     dark {
-        black   "#202224"
-
-        bg      "#202224"
-
-        fg      "#868a8c"
-        white   "#868a8c"
-
-        red     "#dbdee1"
-        green   "#dbdee1"
-        yellow  "#dbdee1"
-        blue    "#dbdee1"
-        magenta "#dbdee1"
-        cyan    "#dbdee1"
-        orange  "#dbdee1"
+        text_unselected {
+            base "#dedede"
+            background "#333333"
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#a4f6f5"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#ffffff"
+        }
+        text_selected {
+            base "#dedede"
+            background "#444444"
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#a4f6f5"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#ffffff"
+        }
+        ribbon_unselected {
+            base "#dedede"
+            background "#333333"
+            emphasis_0 "#333333"
+            emphasis_1 "#333333"
+            emphasis_2 "#333333"
+            emphasis_3 "#333333"
+        }
+        ribbon_selected {
+            base "#000000"
+            background "#73cb87"
+            emphasis_0 "#000000"
+            emphasis_1 "#000000"
+            emphasis_2 "#000000"
+            emphasis_3 "#000000"
+        }
+        table_title {
+            base "#73cb87"
+            background "#333333"
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#a4f6f5"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#ffffff"
+        }
+        table_cell_selected {
+            base "#ffffff"
+            background "#444444"
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#a4f6f5"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#ffffff"
+        }
+        table_cell_unselected {
+            base "#dedede"
+            background "#333333"
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#a4f6f5"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#ffffff"
+        }
+        list_selected {
+            base "#ffffff"
+            background "#444444"
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#a4f6f5"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#ffffff"
+        }
+        list_unselected {
+            base "#dedede"
+            background "#333333"
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#a4f6f5"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#ffffff"
+        }
+        frame_selected {
+            base "#73cb87"
+            background 0
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#a4f6f5"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#ffffff"
+        }
+        frame_highlight {
+            base "#fcb67c"
+            background 0
+            emphasis_0 "#fcb67c"
+            emphasis_1 "#fcb67c"
+            emphasis_2 "#fcb67c"
+            emphasis_3 "#ffffff"
+        }
+        exit_code_success {
+            base "#73cb87"
+            background 0
+            emphasis_0 "#73cb87"
+            emphasis_1 "#73cb87"
+            emphasis_2 "#73cb87"
+            emphasis_3 "#73cb87"
+        }
+        exit_code_error {
+            base "#ff7c8a"
+            background 0
+            emphasis_0 "#ff7c8a"
+            emphasis_1 "#ff7c8a"
+            emphasis_2 "#ff7c8a"
+            emphasis_3 "#ff7c8a"
+        }
+        multiplayer_user_colors {
+            player_1 0
+            player_2 0
+            player_3 0
+            player_4 0
+            player_5 0
+            player_6 0
+            player_7 0
+            player_8 0
+            player_9 0
+            player_10 0
+        }
     }
     light {
         black   "#e7e8e9"

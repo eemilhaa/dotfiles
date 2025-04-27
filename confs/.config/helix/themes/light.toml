@@ -106,7 +106,7 @@
 
 # chroma .17
 
-red        = "#c50575"
+red        = "#c23359"
 green      = "#008a23"
 yellow     = "#cd4805"
 blue       = "#2249b7"
@@ -117,7 +117,7 @@ attention  = "#fef1a1"
 
 # Neutral
 
-fg0        = "#3a3a3a"
+fg0        = "#333333"
 fg1        = "#686868"
 fg2        = "#929292"
 fgr        = "#ffffff"

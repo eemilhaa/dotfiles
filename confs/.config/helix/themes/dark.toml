@@ -56,7 +56,7 @@
 "ui.statusline.inactive"    = { fg = "fg2", bg = "bg1" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
 "ui.statusline.select"      = { fg = "fgr", bg = "orange", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.normal"      = { fg = "fg0", bg = "bg1" }
 "ui.popup"                  = { fg = "fg0", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.picker.header.column.active" = { fg = "fgr", bg = "blue" }
@@ -66,8 +66,8 @@
 "ui.virtual"                = "bg2"
 "ui.virtual.ruler"          = { bg = "bg2" }
 "ui.virtual.indent-guide"   = "bg2"
-"ui.virtual.whitespace"     = "bg2"
-"ui.virtual.jump-label"     = { fg = "fgr", bg = "blue" }
+"ui.virtual.whitespace"     = "fg2"
+"ui.virtual.jump-label"     = { fg = "fgh", bg = "bg2" }
 "ui.menu"                   = { fg = "fg0", bg = "bg1" }
 "ui.menu.selected"          = { fg = "fgr", bg = "blue" }
 "ui.menu.scroll"            = { fg = "fg2", bg = "bg1" }
@@ -112,4 +112,4 @@ bg0        = "#333333"
 bg1        = "#222222"
 bg2        = "#444444"
 
-# https://coolors.co/ff8692-8ed09c-fffaaa-80c7f8-fec0f7-87f3f2-ffbe8a-c9faf9
+# https://coolors.co/ff7c8a-73cb87-fffaaa-5cbefe-fec0f7-a4f6f5-fcb67c
