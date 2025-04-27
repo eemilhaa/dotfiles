@@ -20,7 +20,7 @@ keybinds {
         // bind "l" { MoveFocus "right"; }
         bind "e" { EditScrollback; SwitchToMode "normal"; }
         bind "m" { SwitchToMode "move"; }
-        bind "=" { SwitchToMode "resize"; }
+        bind "r" { SwitchToMode "resize"; }
         bind "s" {
             LaunchOrFocusPlugin "session-manager" {
                 floating true
@@ -28,6 +28,10 @@ keybinds {
             };
             SwitchToMode "Normal"
         }
+        bind "f" { ToggleFloatingPanes; SwitchToMode "normal"; }
+    }
+    move {
+        bind "f" { TogglePaneEmbedOrFloating; SwitchToMode "normal"; }
     }
 }
 
