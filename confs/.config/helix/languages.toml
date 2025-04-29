@@ -83,7 +83,7 @@ language-servers = ["typst-lsp"]
 name = "markdown"
 file-types = ["md", "rmd", "Rmd"]
 language-servers = ["marksman", "ltex-ls"]
-formatter = { command = "uvx", args = ["mdformat", "--wrap", "80", "-"] }
+formatter = { command = "uvx", args = ["--from", "mdformat-tables", "mdformat", "--wrap", "80", "-"] }
 auto-format = true
 
 [[language]]
