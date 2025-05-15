@@ -52,11 +52,11 @@
 # "ui.gutter"                 = {fg = "fg2", bg = "bg1" }
 "ui.linenr"                 = "fg2"
 "ui.linenr.selected"        = "yellow"
-"ui.statusline"             = { fg = "fg0", bg = "bg1" }
+"ui.statusline"             = { fg = "fg0", bg = "bg0" }
 "ui.statusline.inactive"    = { fg = "fg2", bg = "bg1" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
 "ui.statusline.select"      = { fg = "fgr", bg = "orange", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fg0", bg = "bg1" }
+"ui.statusline.normal"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg0", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.picker.header.column.active" = { fg = "fgr", bg = "blue" }
@@ -94,7 +94,7 @@
 
 [palette]
 
-red        = "#ff7c8a"
+red        = "#fd697d"
 green      = "#73cb87"
 yellow     = "#fffaaa"
 blue       = "#5cbefe"
