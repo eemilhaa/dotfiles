@@ -20,9 +20,9 @@
 "module"                 = "fg0"
 "namespace"              = "fg0"
 
-"punctuation"            = "fg0"
-"operator"               = "fg0"
-"punctuation.bracket"    = "fg0"
+"punctuation"            = "fg1"
+"operator"               = "fg1"
+"punctuation.bracket"    = "fg1"
 
 "string"                 = "green"
 
@@ -95,8 +95,6 @@
 
 [palette]
 
-# chroma .19
-
 # red        = "#ac001e"
 # green      = "#02910e"
 # yellow     = "#ce3d02"
@@ -104,14 +102,12 @@
 # magenta    = "#994ec9"
 # cyan       = "#4087fd"
 
-# chroma .17
-
-red        = "#c23359"
-green      = "#008a23"
-yellow     = "#cd4805"
-blue       = "#2249b7"
-magenta    = "#914bbe"
-cyan       = "#3c68d9"
+red        = "#d91450"
+green      = "#02870c"
+yellow     = "#cb3904"
+blue       = "#0047b9"
+magenta    = "#914dca"
+cyan       = "#2f70e5"
 
 attention  = "#fef1a1"
 
@@ -119,7 +115,7 @@ attention  = "#fef1a1"
 
 fg0        = "#333333"
 fg1        = "#686868"
-fg2        = "#929292"
+fg2        = "#949494"
 fgr        = "#ffffff"
 bg0        = "#ffffff"
 bg1        = "#f3f3f3"

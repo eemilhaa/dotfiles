@@ -4,6 +4,8 @@
 
 "type"                   = "orange"
 "constructor"            = "orange"
+"module"                 = "orange"
+"namespace"              = "orange"
 
 "constant.numeric"       = "blue"
 "constant.character"     = "blue"
@@ -16,12 +18,10 @@
 "variable"               = "cyan"
 "constant"               = "cyan"
 "attribute"              = "cyan"
-"module"                 = "cyan"
-"namespace"              = "cyan"
 
-"punctuation"            = "fg1"
-"operator"               = "fg1"
-"punctuation.bracket"    = "fg1"
+"punctuation"            = "blue"
+"operator"               = "blue"
+"punctuation.bracket"    = "blue"
 
 "string"                 = "green"
 
@@ -52,11 +52,11 @@
 # "ui.gutter"                 = {fg = "fg2", bg = "bg1" }
 "ui.linenr"                 = "fg2"
 "ui.linenr.selected"        = "yellow"
-"ui.statusline"             = { fg = "fg0", bg = "bg1" }
-"ui.statusline.inactive"    = { fg = "fg2", bg = "bg1" }
+"ui.statusline"             = { fg = "fg0", bg = "bg0" }
+"ui.statusline.inactive"    = { fg = "fg2", bg = "bg0" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
 "ui.statusline.select"      = { fg = "fgr", bg = "orange", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fg0", bg = "bg1" }
+"ui.statusline.normal"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg0", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.picker.header.column.active" = { fg = "fgr", bg = "blue" }
@@ -76,8 +76,8 @@
 "ui.highlight"              = { bg = "bg1" }
 "ui.cursorline.primary"     = { bg = "bg1" }
 "ui.cursorcolumn.primary"   = { bg = "bg1" }
-"ui.bufferline.background"  = { bg = "bg1" }
-"ui.bufferline"             = { fg = "fg0", bg = "bg1" }
+"ui.bufferline.background"  = { bg = "bg0" }
+"ui.bufferline"             = { fg = "fg0", bg = "bg0" }
 "ui.bufferline.active"      = { fg = "fgr", bg = "blue" }
 
 "diagnostic.error"        = { underline = { color = "red", style = "curl" } }
@@ -94,22 +94,35 @@
 
 [palette]
 
-red        = "#ff7c8a"
-green      = "#73cb87"
-yellow     = "#fffaaa"
-blue       = "#5cbefe"
+red        = "#ff3963"
+green      = "#65c67d"
+yellow     = "#f5f2bc"
+blue       = "#4ab8fd"
 magenta    = "#fec0f7"
-cyan       = "#a4f6f5"
-orange     = "#fcb67c"
+cyan       = "#a9eafd"
+orange     = "#ffa659"
+
+# red        = "#fe6272"
+# green      = "#0dcaa9"
+# yellow     = "#fee5b3"
+# blue       = "#72a7ff"
+# magenta    = "#fec0f7"
+# cyan       = "#abeeff"
+# orange     = "#ff936d"
+
+# orange     = "#fcb67c"
+# green      = "#73cb87"
+# blue       = "#5cbefe"
+# cyan       = "#a4f6f5"
 
 # Grays
 fg0        = "#dedede"
-fg1        = "#c1c1c1"
-fg2        = "#9c9c9c"
+fg1        = "#bebebe"
+fg2        = "#888888"
 fgh        = "#ffffff"
 fgr        = "#000000"
-bg0        = "#333333"
-bg1        = "#222222"
+bg0        = "#222222"
+bg1        = "#111111"
 bg2        = "#444444"
 
 # https://coolors.co/ff7c8a-73cb87-fffaaa-5cbefe-fec0f7-a4f6f5-fcb67c

@@ -4,10 +4,10 @@ definitions:
     - font: &font-bold monospace:bold:pixelsize=14
   colors:
     - color: &color-good 73cb87ff
-    - color: &color-urgent ff0000ff
+    - color: &color-urgent 900000ff
     - color: &color-focus 285577ff
     - color: &color-fade 888888ff
-    - color: &color-bg 222222ff
+    - color: &color-bg 111111c0
     - color: &color-fg ffffffff
     - color: &color-fgh ffffffff
     - color: &color-fgr 000000ff
