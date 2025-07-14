@@ -12,11 +12,12 @@ general {
         color_good      = '#65c67d'
         color_degraded  = '#888888'
         color_bad       = '#ff3963'
+        separator = ""
 }
 
 # order += "ipv6"
 order += "wireless _first_"
-# order += "ethernet _first_"
+order += "ethernet _first_"
 order += "battery all"
 # order += "disk /"
 # order += "load"
@@ -30,8 +31,8 @@ wireless _first_ {
 }
 
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_up = "E%speed"
+        format_down = ""
 }
 
 battery all {
