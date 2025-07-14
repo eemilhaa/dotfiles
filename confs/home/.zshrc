@@ -12,13 +12,13 @@ autoload -Uz add-zsh-hook
 autoload -Uz history-search-end
 autoload -Uz edit-command-line
 
-source_if_exists() {
+_rc_source_if_exists() {
   if [ -f "$1" ]; then
     source "$1"
   fi
 }
 
-set_general_settings () {
+_rc_set_general_settings () {
   zstyle ':completion:*' menu select
   zle -N history-beginning-search-backward-end history-search-end
   zle -N history-beginning-search-forward-end history-search-end
@@ -33,19 +33,19 @@ set_general_settings () {
   setopt incappendhistory
 }
 
-set_exports () {
-  pick_editor () {
-    if hash helix 2>/dev/null; then
+_rc_set_exports () {
+  _rc_pick_editor () {
+    if command -v helix &>/dev/null; then
       alias hx='helix'
       export VISUAL=helix
-    elif hash hx 2>/dev/null; then
+    elif command -v hx &>/dev/null; then
       export VISUAL=hx
     else
       export VISUAL=vi
     fi
     export EDITOR="$VISUAL"
   }
-  pick_editor
+  _rc_pick_editor
   export COLORTERM="truecolor"
   export SHELL="/bin/zsh"
   export PATH="/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$PATH"
@@ -60,7 +60,7 @@ set_exports () {
   export DFT_SYNTAX_HIGHLIGHT=off
 }
 
-set_custom_commands () {
+_rc_set_custom_commands () {
   alias ls='ls -F --color=auto --group-directories-first'
   alias la='ls -a'
   alias l='ls -lh'
@@ -72,6 +72,7 @@ set_custom_commands () {
   alias gl="git log --graph --abbrev-commit --oneline"
   alias zel="zellij"
   alias zeltab="zellij action new-tab --name"
+  alias code="code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto"
   getignore () {
     wget -O - "https://raw.githubusercontent.com/github/gitignore/main/$1.gitignore" >> "$PWD/.gitignore"
   }
@@ -88,10 +89,10 @@ set_custom_commands () {
       builtin cd -- "$cwd"
     fi
     rm -f -- "$tmp"
-}
+  }
 }
 
-set_keybinds () {
+_rc_set_keybinds () {
   bindkey "^P" history-incremental-search-backward
   bindkey "^N" history-incremental-search-forward
   # bindkey "^P" history-beginning-search-backward-end
@@ -99,9 +100,10 @@ set_keybinds () {
   bindkey "^[[1;5C" forward-word
   bindkey "^[[1;5D" backward-word
   bindkey "^O" edit-command-line
+  bindkey ";5;13~" autosuggest-accept
 }
 
-set_prompt_and_title () {
+_rc_set_prompt_and_title () {
   setopt prompt_subst
   autoload -Uz vcs_info
   zstyle ':vcs_info:*' enable git svn
@@ -154,27 +156,34 @@ $prompt_symbol$normal"
   add-zsh-hook preexec set_cmd_title
 }
 
-set_extras () {
-  source_if_exists /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-  source_if_exists /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-  source_if_exists /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-  source_if_exists /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+_rc_set_extras () {
+  _rc_source_if_exists /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  _rc_source_if_exists /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+  _rc_source_if_exists /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  _rc_source_if_exists /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+  if command -v fzf &>/dev/null; then
+    source <(fzf --zsh)
+    export FZF_DEFAULT_OPTS="
+    --layout=reverse \
+    --color=16 \
+    "
+  fi
 }
 
-check_extra_dir () {
+_rc_check_extra_dir () {
   if [ -d "$1" ]; then
     for rc in "$1"/*; do
-      source_if_exists "$rc"
+      _rc_source_if_exists "$rc"
     done
   fi
 }
 
-set_general_settings
-set_exports
-set_custom_commands
-set_keybinds
-set_extras
-set_prompt_and_title
-check_extra_dir ~/.zshrc.d  # Any extra zsh stuff / possible overrides
+_rc_set_general_settings
+_rc_set_exports
+_rc_set_custom_commands
+_rc_set_keybinds
+_rc_set_extras
+_rc_set_prompt_and_title
+_rc_check_extra_dir ~/.zshrc.d  # Any extra zsh stuff / possible overrides
 
 # zprof  # debug zsh startup time
