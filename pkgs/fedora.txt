@@ -4,6 +4,7 @@ fuzzel
 git
 grim
 helix
+i3status
 lxqt-policykit
 mako
 pavucontrol
@@ -20,7 +21,6 @@ wl-mirror
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
-yambar
 zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
