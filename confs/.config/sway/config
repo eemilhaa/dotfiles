@@ -304,7 +304,7 @@ for_window [shell="xwayland"] title_format "%title (xwayland)"
 
 # Window colors
 # Window state           bar border  bar fill  bar text  split border  window border
-client.focused           #4c7899     #285577   #ffffff   #285577       #285577
+client.focused           #4c7899     #285577   #ffffff   #4c7899       #4c7899
 # client.focused_inactive  #444444     #333333   #ffffff   #222222       #222222
 # client.unfocused         #222222     #111111   #888888   #111111       #111111
 # client.urgent            #333333     #900000   #ffffff   #900000       #900000
