@@ -1,4 +1,5 @@
 set selection-clipboard clipboard
+set guioptions "none"
 
 map <Up> navigate previous
 map <Down> navigate next
