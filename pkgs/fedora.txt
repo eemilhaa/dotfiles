@@ -8,7 +8,6 @@ i3status
 lxqt-policykit
 mako
 pavucontrol
-power-profiles-daemon
 slurp
 swappy
 sway
