@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 
 hovered = { fg = "black", bg = "blue" }
 border_style = { fg = "black", bg = "reset" }
