@@ -2,7 +2,11 @@ bash-language-server
 curl
 debugedit
 difftastic
+docker
+docker-buildx
+docker-compose
 fakeroot
+fzf
 gcc
 git
 helix
