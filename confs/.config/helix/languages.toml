@@ -75,9 +75,13 @@ name = "latex"
 file-types = ["tex", "sty"]
 language-servers = ["texlab", "ltex-ls"]
 
+
+[language-server.tinymist]
+command = "tinymist"
+
 [[language]]
 name = "typst"
-language-servers = ["typst-lsp"]
+language-servers = ["tinymist"]
 
 [[language]]
 name = "markdown"

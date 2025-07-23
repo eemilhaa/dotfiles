@@ -1,6 +1,6 @@
 # Syntax
 "function"               = "yellow"
-"special"                = "blue"
+"special"                = "yellow"
 
 "type"                   = "orange"
 "constructor"            = "orange"
