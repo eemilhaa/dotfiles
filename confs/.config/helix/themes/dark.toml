@@ -62,6 +62,7 @@
 "ui.picker.header.column.active" = { fg = "fgr", bg = "blue" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
 "ui.text"                   = "fg0"
+"ui.text.directory"         = { fg = "blue", modifiers = ["bold"] }
 "ui.text.focus"             = { fg = "fgh", bg = "bg1", modifiers = ["bold"] }
 "ui.virtual"                = "bg2"
 "ui.virtual.ruler"          = { bg = "bg2" }
@@ -102,27 +103,6 @@ magenta    = "#fec0f7"
 cyan       = "#a9eafd"
 orange     = "#ffa659"
 
-# red        = "#ff3963"
-# green      = "#68c276"
-# yellow     = "#fef8c1"
-# blue       = "#54b3fd"
-# magenta    = "#fec0f7"
-# cyan       = "#a8ebfb"
-# orange     = "#fda259"
-
-# red        = "#fe6272"
-# green      = "#0dcaa9"
-# yellow     = "#fee5b3"
-# blue       = "#72a7ff"
-# magenta    = "#fec0f7"
-# cyan       = "#abeeff"
-# orange     = "#ff936d"
-
-# orange     = "#fcb67c"
-# green      = "#73cb87"
-# blue       = "#5cbefe"
-# cyan       = "#a4f6f5"
-
 # Grays
 
 fg0        = "#dedede"
@@ -133,14 +113,5 @@ fgr        = "#000000"
 bg0        = "#222222"
 bg1        = "#111111"
 bg2        = "#444444"
-
-# fg0        = "#dcdee0"
-# fg1        = "#aaacae"
-# fg2        = "#868890"
-# fgh        = "#ffffff"
-# fgr        = "#000000"
-# bg0        = "#202224"
-# bg1        = "#101214"
-# bg2        = "#404244"
 
 # https://coolors.co/ff7c8a-73cb87-fffaaa-5cbefe-fec0f7-a4f6f5-fcb67c

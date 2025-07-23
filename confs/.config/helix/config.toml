@@ -61,7 +61,6 @@ enable = true
 [keys.normal.space]
 "f" = "file_picker_in_current_directory"
 "y" = ":clipboard-yank-join" # Join and yank selections to clipboard
-"e" = ":sh tmux new-window -n fx '~/.config/helix/yazi-picker.sh open'"
 
 [keys.select.space]
 "y" = ":clipboard-yank-join" # Join and yank selections to clipboard
