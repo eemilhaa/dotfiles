@@ -32,9 +32,9 @@ exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSO
 
 # idle
 exec swayidle -w \
-    timeout 300 'swaymsg "output * dpms off"; swaylock -f -c 000000' \
-         resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -f -c 000000'
+    timeout 300 'swaymsg "output * dpms off" && swaylock -f' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock -f'
 
 # Polkit
 exec /usr/libexec/lxqt-policykit-agent
