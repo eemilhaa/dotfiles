@@ -1,5 +1,5 @@
 # Syntax
-"function"               = "yellow"
+"function"               = "paleyellow"
 "special"                = "yellow"
 
 "type"                   = "orange"
@@ -97,21 +97,22 @@
 
 red        = "#ff3963"
 green      = "#65c67d"
-yellow     = "#fffcc5"
+yellow     = "#fcf47e"
 blue       = "#4ab8fd"
 magenta    = "#fec0f7"
 cyan       = "#a9eafd"
 orange     = "#ffa659"
+paleyellow = "#fffcc5"
 
 # Grays
 
-fg0        = "#dedede"
-fg1        = "#acacac"
-fg2        = "#888888"
+fg0        = "#dbdee1"  # .90
+fg1        = "#abaeb1"  # .75
+fg2        = "#868a8c"  # .63
 fgh        = "#ffffff"
 fgr        = "#000000"
-bg0        = "#222222"
-bg1        = "#111111"
-bg2        = "#444444"
+bg0        = "#202224"  # .25
+bg1        = "#141618"  # .20
+bg2        = "#383b3d"  # .35
 
 # https://coolors.co/ff7c8a-73cb87-fffaaa-5cbefe-fec0f7-a4f6f5-fcb67c

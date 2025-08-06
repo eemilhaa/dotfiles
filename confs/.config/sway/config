@@ -7,6 +7,17 @@ set $right l
 set $term foot
 set $launcher fuzzel
 
+set $focused_fill #285577
+set $focused_border #4c7899
+set $urgent_fill #900000
+set $fg0 #dbdee1
+set $fg1 #abaeb1
+set $fg2 #868a8c
+set $fgh #ffffff
+set $fgr #000000
+set $bg0 #202224
+set $bg1 #141618
+set $bg2 #383b3d
 
 # Font
 font pango:Monospace semibold 10
@@ -18,6 +29,14 @@ bar {
     status_command i3status
     height 22
     position top
+    colors {
+        background         #000000
+        statusline         $fgh
+        focused_workspace  $focused_border $focused_fill $fgh
+        active_workspace   $bg0 $bg2 $fgh
+        inactive_workspace $bg0 $bg1 $fg2
+        urgent_workspace   $bg0 $urgent_fill $fgh
+    }
 }
 
 # Exec
@@ -303,11 +322,11 @@ for_window [shell="xwayland"] title_format "%title (xwayland)"
 # Decorations
 
 # Window colors
-# Window state           bar border  bar fill  bar text  split border  window border
-client.focused           #4c7899     #285577   #ffffff   #4c7899       #4c7899
-# client.focused_inactive  #444444     #333333   #ffffff   #222222       #222222
-# client.unfocused         #222222     #111111   #888888   #111111       #111111
-# client.urgent            #333333     #900000   #ffffff   #900000       #900000
+# Window state           bar border      bar fill      bar text  split border    window border
+client.focused           $focused_border $focused_fill $fgh      $focused_border $focused_border
+client.focused_inactive  $bg0            $bg2          $fgh      $bg2            $bg2
+client.unfocused         $bg0            $bg1          $fg2      $bg1            $bg1
+client.urgent            $bg0            $urgent_fill  $fgh      $urgent_fill    $urgent_fill
 
 # Gaps and borders
 # smart_gaps on
