@@ -58,7 +58,7 @@ _rc_set_exports () {
   export SAVEHIST=1000000
   export LS_COLORS="${LS_COLORS}ow=1;102;30:"
   export DFT_SYNTAX_HIGHLIGHT=off
-  export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
+  # export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
 }
 
 _rc_set_custom_commands () {
