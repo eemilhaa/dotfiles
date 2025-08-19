@@ -10,14 +10,14 @@ set $launcher fuzzel
 set $focused_fill #285577
 set $focused_border #4c7899
 set $urgent_fill #900000
-set $fg0 #dbdee1
-set $fg1 #abaeb1
-set $fg2 #868a8c
+set $fg0 #dedede
+set $fg1 #acacac
+set $fg2 #888888
 set $fgh #ffffff
 set $fgr #000000
-set $bg0 #202224
-set $bg1 #141618
-set $bg2 #383b3d
+set $bg0 #222222
+set $bg1 #111111
+set $bg2 #333333
 
 # Font
 font pango:Monospace semibold 10

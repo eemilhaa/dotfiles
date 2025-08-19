@@ -1,6 +1,6 @@
 # Syntax
 "function"               = "paleyellow"
-"special"                = "yellow"
+"special"                = "orange"
 
 "type"                   = "orange"
 "constructor"            = "orange"
@@ -74,7 +74,7 @@
 "ui.menu.scroll"            = { fg = "fg2", bg = "bg1" }
 "ui.selection"              = { fg = "fgr", bg = "fg2" }
 "ui.selection.primary"      = { fg = "fgr", bg = "blue" }
-"ui.highlight"              = { bg = "bg1" }
+"ui.highlight"              = { bg = "bg2" }
 "ui.cursorline.primary"     = { bg = "bg1" }
 "ui.cursorcolumn.primary"   = { bg = "bg1" }
 "ui.bufferline.background"  = { bg = "bg0" }
@@ -96,23 +96,24 @@
 [palette]
 
 red        = "#ff3963"
-green      = "#65c67d"
+green      = "#4ac06c"
 yellow     = "#fcf47e"
-blue       = "#4ab8fd"
-magenta    = "#fec0f7"
-cyan       = "#a9eafd"
+blue       = "#19affe"
+magenta    = "#fdcbf8"
+cyan       = "#9de8fe"
 orange     = "#ffa659"
-paleyellow = "#fffcc5"
+paleyellow = "#fdf9ba"
+darkcyan   = "#3cdab4"
 
 # Grays
 
-fg0        = "#dbdee1"  # .90
-fg1        = "#abaeb1"  # .75
-fg2        = "#868a8c"  # .63
+fg0        = "#dedede"  # .90
+fg1        = "#a4a4a4"  # .72
+fg2        = "#888888"  # .63
 fgh        = "#ffffff"
 fgr        = "#000000"
-bg0        = "#202224"  # .25
-bg1        = "#141618"  # .20
-bg2        = "#383b3d"  # .35
+bg0        = "#222222"  # .25
+bg1        = "#111111"  # .20
+bg2        = "#333333"  # .35
 
 # https://coolors.co/ff7c8a-73cb87-fffaaa-5cbefe-fec0f7-a4f6f5-fcb67c

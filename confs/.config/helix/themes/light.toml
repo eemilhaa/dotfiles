@@ -1,9 +1,9 @@
 # Syntax
 "function"               = "magenta"
-"special"                = "blue"
+"special"                = "red"
 
-"type"                   = "yellow"
-"constructor"            = "yellow"
+"type"                   = "red"
+"constructor"            = "red"
 
 "constant.numeric"       = "blue"
 "constant.builtin"       = "blue"
@@ -36,7 +36,7 @@
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = { modifiers = ["crossed_out"] }
 "markup.link"            = "blue"
-"markup.link.text"       = "yellow"
+"markup.link.text"       = "red"
 "markup.quote"           = "green"
 "markup.raw"             = "green"
 
@@ -57,12 +57,13 @@
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
 "ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
-"ui.statusline.select"      = { fg = "fgr", bg = "yellow", modifiers = ["bold"] }
+"ui.statusline.select"      = { fg = "fgr", bg = "red", modifiers = ["bold"] }
 "ui.statusline.normal"      = { fg = "fg0", bg = "bg2", modifiers = ["bold"] }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
 "ui.text"                   = "fg0"
+"ui.text.directory"         = { fg = "blue", modifiers = ["bold"] }
 "ui.text.focus"             = { fg = "fg0", bg = "bg1", modifiers = ["bold"] }
 "ui.virtual"                = "fg2"
 "ui.virtual.ruler"          = { bg = "bg2" }
@@ -82,7 +83,7 @@
 "ui.bufferline.active"      = { fg = "fg0", bg = "bg0" }
 
 "diagnostic.error"        = { underline = { color = "red", style = "curl" } }
-"diagnostic.warning"      = { underline = { color = "fg1", style = "curl" } }
+"diagnostic.warning"      = { underline = { color = "magenta", style = "curl" } }
 "diagnostic.info"         = { underline = { color = "cyan", style = "curl" } }
 "diagnostic.hint"         = { underline = { color = "cyan", style = "curl" } }
 "diagnostic.unnecessary"  = { underline = { color = "cyan", style = "curl" } }
@@ -90,7 +91,7 @@
 
 "info"     = "cyan"
 "hint"     = "cyan"
-"warning"  = "yellow"
+"warning"  = "magenta"
 "error"    = "red"
 
 [palette]
@@ -102,18 +103,18 @@
 # magenta    = "#994ec9"
 # cyan       = "#4087fd"
 
-red        = "#d91450"
-green      = "#02870c"
-yellow     = "#cb3904"
-blue       = "#0047b9"
-magenta    = "#914dca"
-cyan       = "#2f70e5"
+red        = "#dd4202"
+green      = "#009508"
+yellow     = "#a87c17"
+blue       = "#0647c1"
+magenta    = "#9145ca"
+cyan       = "#3c7cfa"
 
 attention  = "#fef1a1"
 
 # Neutral
 
-fg0        = "#333333"
+fg0        = "#444444"
 fg1        = "#686868"
 fg2        = "#949494"
 fgr        = "#ffffff"
