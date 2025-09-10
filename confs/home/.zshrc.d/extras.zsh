@@ -9,7 +9,7 @@ set_custom_commands () {
     upower -i "$(upower -e | grep 'BAT')" | grep -E "state|percentage"
   }
   dbinit_shared () {
-    distrobox create -n "${1}" --hostname "${1}" "${@:2}"
+    distrobox-create -n "${1}" --hostname "${1}" "${@:2}"
   }
   dbinit_separate () {
     local target_home="${HOME}/distrobox/${1}"
@@ -17,7 +17,7 @@ set_custom_commands () {
 
     cp -r "${HOME}/.zshrc" "${HOME}/.zshrc.d" "${target_home}/"
 
-    distrobox create \
+    distrobox-create \
     --name "${1}" \
     --hostname "${1}" \
     --home "${target_home}" \
@@ -34,10 +34,12 @@ set_custom_commands () {
     fi
   }
   dbe () {
-    if [ -z "${1}" ]; then
-      distrobox enter kontti
+    if [[ -z "${1}" ]]; then
+      distrobox-enter kontti
+    elif [[ -n "${CONTAINER_ID}" ]] then
+      distrobox-host-exec distrobox-enter "${1}"
     else
-      distrobox enter "${1}"
+      distrobox-enter "${1}"
     fi
   }
   firefox-open () {
