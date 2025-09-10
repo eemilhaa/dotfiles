@@ -7,8 +7,10 @@ set $right l
 set $term foot
 set $launcher fuzzel
 
-set $focused_fill #285577
-set $focused_border #4c7899
+# set $focused_fill #285577
+# set $focused_border #4c7899
+set $focused_fill #444444
+set $focused_border #444444
 set $urgent_fill #900000
 set $fg0 #dedede
 set $fg1 #acacac
@@ -17,7 +19,7 @@ set $fgh #ffffff
 set $fgr #000000
 set $bg0 #222222
 set $bg1 #111111
-set $bg2 #333333
+set $bg2 #444444
 
 # Font
 font pango:Monospace semibold 10
@@ -33,8 +35,8 @@ bar {
         background         #000000
         statusline         $fgh
         focused_workspace  $focused_border $focused_fill $fgh
-        active_workspace   $bg0 $bg2 $fgh
-        inactive_workspace $bg0 $bg1 $fg2
+        active_workspace   $bg0 $bg0 $fg1
+        inactive_workspace $bg0 $bg0 $fg2
         urgent_workspace   $bg0 $urgent_fill $fgh
     }
 }
@@ -63,9 +65,9 @@ exec /usr/libexec/lxqt-policykit-agent
 
 output eDP-1 position 0,0
 # output DP-1 mode 2560x1440@143.998Hz position 1920,0
-# output DP-2 mode 2560x1440@143.998Hz position 1920,0
+output DP-2 mode 2560x1440@143.998Hz position 1920,0
 output DP-1 position 1920,0
-output DP-2 position 1920,0
+# output DP-2 position 1920,0
 output DP-3 position 1920,0
 output DP-5 disable
 output HDMI-A-1 position 1920,0
@@ -324,7 +326,7 @@ for_window [shell="xwayland"] title_format "%title (xwayland)"
 # Window colors
 # Window state           bar border      bar fill      bar text  split border    window border
 client.focused           $focused_border $focused_fill $fgh      $focused_border $focused_border
-client.focused_inactive  $bg0            $bg2          $fgh      $bg2            $bg2
+client.focused_inactive  $bg0            $bg0          $fg0      $bg1            $bg1
 client.unfocused         $bg0            $bg1          $fg2      $bg1            $bg1
 client.urgent            $bg0            $urgent_fill  $fgh      $urgent_fill    $urgent_fill
 
@@ -332,8 +334,8 @@ client.urgent            $bg0            $urgent_fill  $fgh      $urgent_fill   
 # smart_gaps on
 # smart_borders on
 gaps inner 8
-default_border normal 1
-default_floating_border normal 1
+default_border pixel 2
+default_floating_border pixel 2
 # hide_edge_borders both
 
 titlebar_padding 2

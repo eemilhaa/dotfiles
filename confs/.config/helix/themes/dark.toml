@@ -1,6 +1,6 @@
 # Syntax
 "function"               = "paleyellow"
-"special"                = "orange"
+"special"                = "blue"
 
 "type"                   = "orange"
 "constructor"            = "orange"
@@ -44,33 +44,33 @@
 "diff.delta"  = "blue"
 
 "ui.background"             = { fg = "fg2", bg = "bg0" }
-"ui.cursor"                 = { fg = "fgr", bg = "fg0" }
-"ui.cursor.primary"         = { fg = "fgr", bg = "yellow" }
+"ui.cursor"                 = { fg = "fgr", bg = "fg1" }
+"ui.cursor.primary"         = { fg = "fgr", bg = "fg0" }
 # "ui.cursor.primary.select"  = { fg = "fgr", bg = "red" }
 # "ui.cursor.primary.insert"  = { fg = "fgr", bg = "green" }
 "ui.cursor.match"           = { fg = "yellow", bg = "bg2", modifiers = ["underlined"] }
 # "ui.gutter"                 = {fg = "fg2", bg = "bg1" }
 "ui.linenr"                 = "fg2"
-"ui.linenr.selected"        = "yellow"
+"ui.linenr.selected"        = "fg0"
 "ui.statusline"             = { fg = "fg0", bg = "bg0" }
 "ui.statusline.inactive"    = { fg = "fg2", bg = "bg0" }
-"ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
-"ui.statusline.select"      = { fg = "fgr", bg = "orange", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fgr", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.insert"      = { fg = "fgr", bg = "green" }
+"ui.statusline.select"      = { fg = "fgr", bg = "orange" }
+"ui.statusline.normal"      = { fg = "fgh", bg = "bg2" }
 "ui.popup"                  = { fg = "fg0", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.picker.header.column.active" = { fg = "fgr", bg = "blue" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
 "ui.text"                   = "fg0"
-"ui.text.directory"         = { fg = "blue", modifiers = ["bold"] }
-"ui.text.focus"             = { fg = "fgh", bg = "bg1", modifiers = ["bold"] }
+"ui.text.directory"         = { fg = "fg2" }
+"ui.text.focus"             = { fg = "fgh", bg = "bg1" }
 "ui.virtual"                = "bg2"
 "ui.virtual.ruler"          = { bg = "bg2" }
 "ui.virtual.indent-guide"   = "bg2"
 "ui.virtual.whitespace"     = "fg2"
 "ui.virtual.jump-label"     = { fg = "fgh", bg = "bg2" }
 "ui.menu"                   = { fg = "fg0", bg = "bg1" }
-"ui.menu.selected"          = { fg = "fgr", bg = "blue" }
+"ui.menu.selected"          = { fg = "fgh", bg = "bg2" }
 "ui.menu.scroll"            = { fg = "fg2", bg = "bg1" }
 "ui.selection"              = { fg = "fgr", bg = "fg2" }
 "ui.selection.primary"      = { fg = "fgr", bg = "blue" }
@@ -79,7 +79,7 @@
 "ui.cursorcolumn.primary"   = { bg = "bg1" }
 "ui.bufferline.background"  = { bg = "bg0" }
 "ui.bufferline"             = { fg = "fg0", bg = "bg0" }
-"ui.bufferline.active"      = { fg = "fgr", bg = "blue" }
+"ui.bufferline.active"      = { fg = "fgh", bg = "bg2" }
 
 "diagnostic.error"        = { underline = { color = "red", style = "curl" } }
 "diagnostic.warning"      = { underline = { color = "yellow", style = "curl" } }
@@ -114,6 +114,6 @@ fgh        = "#ffffff"
 fgr        = "#000000"
 bg0        = "#222222"  # .25
 bg1        = "#111111"  # .20
-bg2        = "#333333"  # .35
+bg2        = "#444444"  # .35
 
 # https://coolors.co/ff7c8a-73cb87-fffaaa-5cbefe-fec0f7-a4f6f5-fcb67c
