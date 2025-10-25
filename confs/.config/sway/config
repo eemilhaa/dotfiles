@@ -11,18 +11,18 @@ set $focused_fill #285577
 set $focused_border #4c7899
 # set $focused_fill #444444
 # set $focused_border #444444
-set $unfocused #111111
-set $unfocused_border #11111120
+set $unfocused #1e1e1e
+set $unfocused_border #1e1e1e1e
 set $urgent_fill #900000
 set $urgent_border #b73a2e
 set $fg0 #cecece
 set $fg1 #9e9e9e
-set $fg2 #888888
+set $fg2 #858585
 set $fgh #ffffff
 set $fgr #000000
-set $bg0 #222222
-set $bg1 #333333
-set $bg2 #444444
+set $bg0 #1e1e1e
+set $bg1 #2e2e2e
+set $bg2 #3e3e3e
 
 # Font
 font pango:Monospace semibold 10
@@ -75,8 +75,8 @@ output DP-3 position 1920,0
 output DP-5 disable
 output HDMI-A-1 position 1920,0
 
-output * bg #333333 solid_color
-# output * bg ~/Pictures/walls/forest3.jpg fill
+# output * bg #333333 solid_color
+output * bg ~/Pictures/walls/forest3.jpg fill
 
 # Screen closing disables laptop
 # bindswitch lid:on output eDP-1 disable

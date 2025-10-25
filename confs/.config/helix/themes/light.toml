@@ -104,17 +104,17 @@
 # cyan       = "#4087fd"
 
 red        = "#d02c2e"
-green      = "#01a233"
-yellow     = "#f15a0a"
-blue       = "#335cdb"
-magenta    = "#9565f0"
+green      = "#039c10"
+yellow     = "#e44a08"
+blue       = "#1f57d3"
+magenta    = "#8860ea"
 cyan       = "#2f84ff"
 
 attention  = "#fef1a1"
 
 # Neutral
 
-fg0        = "#444444"
+fg0        = "#3e3e3e"
 fg1        = "#686868"
 fg2        = "#949494"
 fgr        = "#ffffff"
