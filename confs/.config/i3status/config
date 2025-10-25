@@ -9,9 +9,9 @@
 general {
         colors = true
         interval = 5
-        color_good      = '#65c67d'
-        color_degraded  = '#888888'
-        color_bad       = '#ff3963'
+        color_good      = '#43b966'
+        color_degraded  = '#ffffff'
+        color_bad       = '#ff0000'
         separator = ""
 }
 
@@ -26,37 +26,44 @@ order += "volume master"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "W%quality"
-        format_down = "W down"
+        format_up = "WIFI%quality"
+        format_down = "WIFI down"
+        separator_block_width = 16
 }
 
 ethernet _first_ {
         format_up = "E%speed"
         format_down = ""
+        separator_block_width = 16
 }
 
 battery all {
         format = "%status %percentage"
         last_full_capacity = true
         integer_battery_capacity = true
+        separator_block_width = 16
 }
 
 disk "/" {
         format = "%avail"
+        separator_block_width = 16
 }
 
 load {
         format = "%1min"
+        separator_block_width = 16
 }
 
 memory {
         format = "%used | %available"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
+        separator_block_width = 16
 }
 
 tztime local {
         format = "%Y-%m-%d %H:%M"
+        separator_block_width = 16
 }
 
 volume master {
@@ -65,4 +72,5 @@ volume master {
         device = "default"
         mixer = "Master"
         mixer_idx = 0
+        separator_block_width = 16
 }

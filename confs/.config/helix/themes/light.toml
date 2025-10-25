@@ -1,9 +1,11 @@
 # Syntax
 "function"               = "magenta"
-"special"                = "red"
+"special"                = "yellow"
 
-"type"                   = "red"
-"constructor"            = "red"
+"type"                   = "yellow"
+"constructor"            = "yellow"
+"module"                 = "yellow"
+"namespace"              = "yellow"
 
 "constant.numeric"       = "blue"
 "constant.builtin"       = "blue"
@@ -17,8 +19,6 @@
 "variable"               = "fg0"
 "constant"               = "fg0"
 "attribute"              = "fg0"
-"module"                 = "fg0"
-"namespace"              = "fg0"
 
 "punctuation"            = "fg1"
 "operator"               = "fg1"
@@ -26,7 +26,7 @@
 
 "string"                 = "green"
 
-"comment"                = { fg = "fg1", bg = "bg2" }
+"comment"                = { fg = "fg2", modifiers = [ "italic" ] }
 
 # Markup
 "markup.heading"         = { fg = "fg0", modifiers = ["bold"] }
@@ -36,7 +36,7 @@
 "markup.italic"          = { modifiers = ["italic"] }
 "markup.strikethrough"   = { modifiers = ["crossed_out"] }
 "markup.link"            = "blue"
-"markup.link.text"       = "red"
+"markup.link.text"       = "yellow"
 "markup.quote"           = "green"
 "markup.raw"             = "green"
 
@@ -56,20 +56,20 @@
 "ui.linenr.selected"        = "fg0"
 "ui.statusline"             = { fg = "fg0", bg = "bg2" }
 "ui.statusline.inactive"    = { fg = "fg1", bg = "bg2" }
-"ui.statusline.insert"      = { fg = "fgr", bg = "green", modifiers = ["bold"] }
-"ui.statusline.select"      = { fg = "fgr", bg = "red", modifiers = ["bold"] }
-"ui.statusline.normal"      = { fg = "fg0", bg = "bg2", modifiers = ["bold"] }
+"ui.statusline.insert"      = { fg = "fgr", bg = "green"  }
+"ui.statusline.select"      = { fg = "fgr", bg = "yellow"  }
+"ui.statusline.normal"      = { fg = "fg0", bg = "bg2"  }
 "ui.popup"                  = { fg = "fg1", bg = "bg1" }
 "ui.window"                 = { fg = "bg2", bg = "bg0" }
 "ui.help"                   = { fg = "fg0", bg = "bg1" }
 "ui.text"                   = "fg0"
-"ui.text.directory"         = { fg = "blue", modifiers = ["bold"] }
-"ui.text.focus"             = { fg = "fg0", bg = "bg1", modifiers = ["bold"] }
+"ui.text.directory"         = "blue"
+"ui.text.focus"             = { fg = "fg0", bg = "bg1" }
 "ui.virtual"                = "fg2"
 "ui.virtual.ruler"          = { bg = "bg2" }
 "ui.virtual.indent-guide"   = "bg2"
 "ui.virtual.whitespace"     = "bg2"
-"ui.virtual.jump-label"     = { fg = "fgr", bg = "cyan" }
+"ui.virtual.jump-label"     = { fg = "fg0", bg = "bg2" }
 "ui.menu"                   = { fg = "fg0", bg = "bg2" }
 "ui.menu.selected"          = { fg = "fgr", bg = "fg2" }
 "ui.menu.scroll"            = { fg = "fg1", bg = "bg2" }
@@ -83,7 +83,7 @@
 "ui.bufferline.active"      = { fg = "fg0", bg = "bg0" }
 
 "diagnostic.error"        = { underline = { color = "red", style = "curl" } }
-"diagnostic.warning"      = { underline = { color = "magenta", style = "curl" } }
+"diagnostic.warning"      = { underline = { color = "yellow", style = "curl" } }
 "diagnostic.info"         = { underline = { color = "cyan", style = "curl" } }
 "diagnostic.hint"         = { underline = { color = "cyan", style = "curl" } }
 "diagnostic.unnecessary"  = { underline = { color = "cyan", style = "curl" } }
@@ -91,7 +91,7 @@
 
 "info"     = "cyan"
 "hint"     = "cyan"
-"warning"  = "magenta"
+"warning"  = "yellow"
 "error"    = "red"
 
 [palette]
@@ -103,12 +103,12 @@
 # magenta    = "#994ec9"
 # cyan       = "#4087fd"
 
-red        = "#dd4202"
-green      = "#009508"
-yellow     = "#a87c17"
-blue       = "#0647c1"
-magenta    = "#9145ca"
-cyan       = "#3c7cfa"
+red        = "#d02c2e"
+green      = "#01a233"
+yellow     = "#f15a0a"
+blue       = "#335cdb"
+magenta    = "#9565f0"
+cyan       = "#2f84ff"
 
 attention  = "#fef1a1"
 

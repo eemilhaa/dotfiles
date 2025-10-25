@@ -7,18 +7,21 @@ set $right l
 set $term foot
 set $launcher fuzzel
 
-# set $focused_fill #285577
-# set $focused_border #4c7899
-set $focused_fill #444444
-set $focused_border #444444
+set $focused_fill #285577
+set $focused_border #4c7899
+# set $focused_fill #444444
+# set $focused_border #444444
+set $unfocused #111111
+set $unfocused_border #11111120
 set $urgent_fill #900000
-set $fg0 #dedede
-set $fg1 #acacac
+set $urgent_border #b73a2e
+set $fg0 #cecece
+set $fg1 #9e9e9e
 set $fg2 #888888
 set $fgh #ffffff
 set $fgr #000000
 set $bg0 #222222
-set $bg1 #111111
+set $bg1 #333333
 set $bg2 #444444
 
 # Font
@@ -29,15 +32,15 @@ font pango:Monospace semibold 10
  # Waybar
 bar {
     status_command i3status
-    height 22
+    height 20
     position top
     colors {
         background         #000000
         statusline         $fgh
-        focused_workspace  $focused_border $focused_fill $fgh
-        active_workspace   $bg0 $bg0 $fg1
+        focused_workspace  $focused_border  $focused_fill $fgh
+        active_workspace   $bg2 $bg2 $fg0
         inactive_workspace $bg0 $bg0 $fg2
-        urgent_workspace   $bg0 $urgent_fill $fgh
+        urgent_workspace   $urgent_border $urgent_fill $fgh
     }
 }
 
@@ -324,21 +327,21 @@ for_window [shell="xwayland"] title_format "%title (xwayland)"
 # Decorations
 
 # Window colors
-# Window state           bar border      bar fill      bar text  split border    window border
-client.focused           $focused_border $focused_fill $fgh      $focused_border $focused_border
-client.focused_inactive  $bg0            $bg0          $fg0      $bg1            $bg1
-client.unfocused         $bg0            $bg1          $fg2      $bg1            $bg1
-client.urgent            $bg0            $urgent_fill  $fgh      $urgent_fill    $urgent_fill
+# Window state           bar border      bar fill      bar text  split border      window border
+client.focused           $focused_border $focused_fill $fgh      $focused_border   $focused_border
+client.focused_inactive  $bg2            $bg2          $fg0      $bg2              $bg2
+client.unfocused         $unfocused      $unfocused    $fg2      $unfocused_border $unfocused_border
+client.urgent            $urgent_border  $urgent_fill  $fgh      $urgent_border    $urgent_border
 
 # Gaps and borders
-# smart_gaps on
-# smart_borders on
+smart_gaps on
+smart_borders on
 gaps inner 8
-default_border pixel 2
-default_floating_border pixel 2
+default_border pixel 1
+default_floating_border pixel 1
 # hide_edge_borders both
 
-titlebar_padding 2
+titlebar_padding 1
 
 
 # Some goodies from the sway spin

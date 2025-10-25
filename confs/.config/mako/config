@@ -3,16 +3,16 @@ default-timeout=10000
 ignore-timeout=1
 anchor=top-center
 
-background-color=#444444
 text-color=#ffffff
-border-color=#444444
+background-color=#285577
+border-color=#4c7899
 
 [urgency=critical]
 default-timeout=300000
 ignore-timeout=1
-background-color=#900000
 text-color=#ffffff
-border-color=#111111
+background-color=#900000
+border-color=#b73a2e
 
 [mode=do-not-disturb]
 invisible=1
