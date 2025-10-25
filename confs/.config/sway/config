@@ -75,12 +75,12 @@ output DP-3 position 1920,0
 output DP-5 disable
 output HDMI-A-1 position 1920,0
 
-# output * bg #444444 solid_color
-output * bg ~/Pictures/walls/forest3.jpg fill
+output * bg #333333 solid_color
+# output * bg ~/Pictures/walls/forest3.jpg fill
 
 # Screen closing disables laptop
-bindswitch lid:on output eDP-1 disable
-bindswitch lid:off output eDP-1 enable
+# bindswitch lid:on output eDP-1 disable
+# bindswitch lid:off output eDP-1 enable
 
 
 # Inputs (swaymsg -t get_inputs)
@@ -99,7 +99,7 @@ input type:keyboard {
     #xkb_options caps:swapescape
 }
 input type:mouse {
-    # accel_profile "flat"  # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
+    accel_profile "flat"  # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
     pointer_accel 0       # set mouse sensitivity (between -1 and 1)
 }
 # input 1189:32772:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse {
@@ -108,8 +108,8 @@ input type:mouse {
 # }
 
 input type:pointer {
-    # accel_profile "flat"
-    pointer_accel 0.5
+    accel_profile "flat"
+    pointer_accel 0
 }
 
 seat * hide_cursor 5000
