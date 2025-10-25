@@ -160,6 +160,7 @@ file-types = [
   "qgs",
   "sld",
   "qml",
+  "qpt",
 ]
 
 [[language]]

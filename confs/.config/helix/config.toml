@@ -61,7 +61,13 @@ enable = true
 [keys.normal.space]
 "f" = "file_picker_in_current_directory"
 "F" = "file_picker_in_current_buffer_directory"
-"e" = "file_explorer_in_current_directory"
+"e" = [
+  ':sh rm -f /tmp/unique-file',
+  ':insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file',
+  ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ':open %sh{cat /tmp/unique-file}',
+  ':redraw',
+]
 "E" = "file_explorer_in_current_buffer_directory"
 "y" = ":clipboard-yank-join" # Join and yank selections to clipboard
 
